@@ -8,6 +8,9 @@ html, body {
 	z-index: 1; /* for amp-img */
 	position: fixed;
 	height: 50px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 #site-header-content {
