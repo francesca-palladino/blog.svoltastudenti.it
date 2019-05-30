@@ -1,6 +1,10 @@
 <div id="site-header">
 	<div id="site-header-content">
-		<a href="https://blog.svoltastudenti.it/">
+		{% if page.url == "/" %}
+			<a href="https://svoltastudenti.it/">
+		{% else %}
+			<a href="https://blog.svoltastudenti.it/">
+		{% endif %}
 			<amp-img src="/assets/img/text.png" layout="fixed" width="184" height="50" alt="Svoltastudenti">
 				<div placeholder></div>
 			</amp-img>
