@@ -7,7 +7,7 @@ html, body {
 #site-header {
 	z-index: 1; /* for amp-img */
 	position: fixed;
-	height: 50px;
+	height: 60px;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -24,11 +24,11 @@ html, body {
 }
 
 #site-header-content > * {
-	height: 50px;
+	height: 60px;
 }
 
 #site-content {
-	margin-top: 50px;
+	margin-top: 60px;
 }
 
 #site-header img {
