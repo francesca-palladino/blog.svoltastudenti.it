@@ -5,7 +5,7 @@ html, body {
 }
 
 #site-header {
-	z-index: 1; /* for amp-img */
+//	z-index: 1; /* for amp-img */
 	//position: fixed;
 	height: 60px;
     //top: 0px;
@@ -29,7 +29,7 @@ html, body {
 }
 
 #site-content {
-	//margin-top: 100px;
+	margin-top: 10px;
 }
 
 #site-header img {
@@ -83,7 +83,7 @@ html, body {
 }
 
 #site-content > article > header amp-img {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	padding-right: 3%;
 	padding-left: 3%;
 }
