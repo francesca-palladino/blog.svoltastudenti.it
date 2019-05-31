@@ -6,12 +6,12 @@ html, body {
 
 #site-header {
 	z-index: 1; /* for amp-img */
-	position: fixed;
+	//position: fixed;
 	height: 60px;
-    top: 0px;
-    left: 0px;
+    //top: 0px;
+    //left: 0px;
     width: 100%;
-    border-bottom: 1px solid #FF6600;
+    //border-bottom: 1px solid #FF6600;
 }
 
 #site-header-content {
