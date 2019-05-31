@@ -29,7 +29,7 @@ html, body {
 }
 
 #site-content {
-	margin-top: 100px;
+	//margin-top: 100px;
 }
 
 #site-header img {
@@ -83,7 +83,7 @@ html, body {
 }
 
 #site-content > article > header amp-img {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	padding-right: 3%;
 	padding-left: 3%;
 }
