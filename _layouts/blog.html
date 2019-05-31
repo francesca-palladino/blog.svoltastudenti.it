@@ -2,12 +2,12 @@
 layout: default
 ---
 <article>
-	<header><amp-img src="https://source.unsplash.com/{{page.image}}/1920x540" layout="responsive" height="540" width="1920" alt="Cover"></amp-img>
-	
+	<header>
 		<div class="info">
 			{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
 		</div>
-		<h1>{{page.title}}</h1>
+		<h1>{{page.title}}</h1><amp-img src="https://source.unsplash.com/{{page.image}}/1920x540" layout="responsive" height="540" width="1920" alt="Cover"></amp-img>
+	
 		</header>
 	<div id="content">
 		{{content}}
