@@ -139,6 +139,25 @@ html, body {
 	text-align: right;
 }
 
+.articlesList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.articlesList > * {
+	width: 480px;
+	padding-left: 16px;
+	padding-right: 16px;
+	flex-shrink: 1;
+}
+
+@media all and (min-width: 1024px){
+	.articlesList > *
+		flex-grow: 1;
+	}
+}
 
 .article-header {
 	color: inherit;
