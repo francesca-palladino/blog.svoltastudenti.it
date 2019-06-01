@@ -1,22 +1,16 @@
 html, body {
-	padding: 0px;
 	margin: 0px;
-	max-width: 1024px;
+	max-width: 992px;		/* tot = 1024px */
+	padding-left: 16px;		/* tot = 1024px */
+	padding-right: 16px;	/* tot = 1024px */
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Lato', sans-serif;
+	font-size: medium;
 }
 
 #site-content {
 	margin-top: 10px;
-}
-
-#site-content > article {
-	max-width: 720px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: medium;
-	padding: 0;
 }
 
 #site-content > article h2 {
