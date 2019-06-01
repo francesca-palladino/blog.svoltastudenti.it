@@ -4,12 +4,12 @@ layout: default
 <div class="articlesList">
 	{% for post in site.posts %}
 		<a href="{{ post.url | prepend: site.baseurl }}" class="article-header">
-			<img src="https://source.unsplash.com/{{post.image}}/1920x1080" class="thumb"></img>
+			<div style="background: url('https://source.unsplash.com/{{post.image}}/1920x1080');" class="thumb"></div>
 	        <div class="info">
-				{{post.place}} - {{ post.date | date: "%-d %B %Y" }}
+				{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
 			</div>
 			<div class="title">
-				{{post.title}}
+				{{page.title}}
 			</div>
 		</a>
 	{% endfor %}
