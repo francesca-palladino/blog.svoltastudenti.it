@@ -120,11 +120,6 @@ html, body {
 	text-decoration: underline;
 }
 
-.flex-grow {
-	flex-grow: 1;
-	flex-shrink: 1;
-}
-
 .alignLeft {
 	text-align: left;
 }
@@ -137,13 +132,11 @@ html, body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .articlesList > * {
 	width: 480px;
-	padding-left: 16px;
-	padding-right: 16px;
 	flex-shrink: 1;
 }
 
