@@ -11,6 +11,7 @@ title: News Giugno-Settembre
 fb_title: News Giugno-Settembre
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -13,6 +13,7 @@ title: 'Lecco: il nuovo campus sempre più a misura di studente'
 fb_title: 'Lecco: il nuovo campus sempre più a misura di studente'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

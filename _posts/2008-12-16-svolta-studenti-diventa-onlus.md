@@ -11,6 +11,7 @@ title: Svolta Studenti diventa ONLUS
 fb_title: Svolta Studenti diventa ONLUS
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -13,6 +13,7 @@ title: Tagli all'Università e Meritocrazia
 fb_title: Tagli all'Università e Meritocrazia
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

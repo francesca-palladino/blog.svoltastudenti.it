@@ -14,6 +14,7 @@ title: News dagli organi centrali del mese di Febbraio - Senato Accademico
 fb_title: News dagli organi centrali del mese di Febbraio - Senato Accademico
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

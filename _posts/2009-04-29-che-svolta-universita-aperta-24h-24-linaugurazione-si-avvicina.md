@@ -13,6 +13,7 @@ title: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
 fb_title: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

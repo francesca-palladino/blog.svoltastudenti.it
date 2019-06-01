@@ -12,6 +12,7 @@ title: L’attività del Comitato Sportivo nel biennio 2013-2015
 fb_title: L’attività del Comitato Sportivo nel biennio 2013-2015
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

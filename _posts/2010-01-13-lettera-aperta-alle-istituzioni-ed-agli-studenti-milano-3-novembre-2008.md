@@ -13,6 +13,7 @@ title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 20
 fb_title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

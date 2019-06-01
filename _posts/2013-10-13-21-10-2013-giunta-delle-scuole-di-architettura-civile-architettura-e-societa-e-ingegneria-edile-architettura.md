@@ -17,6 +17,7 @@ fb_title: >-
   e ingegneria edile-architettura
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

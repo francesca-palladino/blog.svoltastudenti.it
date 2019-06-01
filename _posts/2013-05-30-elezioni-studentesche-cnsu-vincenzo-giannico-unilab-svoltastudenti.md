@@ -12,6 +12,7 @@ title: Elezioni Studentesche CNSU Vincenzo Giannico - UniLab-Svoltastudenti
 fb_title: Elezioni Studentesche CNSU Vincenzo Giannico - UniLab-Svoltastudenti
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

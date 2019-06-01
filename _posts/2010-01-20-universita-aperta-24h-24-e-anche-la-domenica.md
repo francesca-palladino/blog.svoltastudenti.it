@@ -13,6 +13,7 @@ title: Università aperta 24h/24 e anche la domenica!
 fb_title: Università aperta 24h/24 e anche la domenica!
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

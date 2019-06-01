@@ -13,6 +13,7 @@ title: News dagli Organi Centrali - Gennaio 2019
 fb_title: News dagli Organi Centrali - Gennaio 2019
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

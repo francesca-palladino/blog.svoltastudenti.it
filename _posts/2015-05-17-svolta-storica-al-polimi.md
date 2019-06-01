@@ -12,6 +12,7 @@ title: ↱SVOLTA STORICA AL POLIMI↱
 fb_title: ↱SVOLTA STORICA AL POLIMI↱
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -11,6 +11,7 @@ title: Nuovo Calendario Accademico
 fb_title: Nuovo Calendario Accademico
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

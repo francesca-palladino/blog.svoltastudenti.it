@@ -14,6 +14,7 @@ title: Consiglio degli Studenti
 fb_title: Consiglio degli Studenti
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

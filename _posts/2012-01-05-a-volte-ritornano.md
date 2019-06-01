@@ -13,6 +13,7 @@ title: A volte ritornano..
 fb_title: A volte ritornano..
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

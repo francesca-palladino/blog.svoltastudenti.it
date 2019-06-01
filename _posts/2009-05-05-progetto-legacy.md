@@ -11,6 +11,7 @@ title: Progetto LEGACY
 fb_title: Progetto LEGACY
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

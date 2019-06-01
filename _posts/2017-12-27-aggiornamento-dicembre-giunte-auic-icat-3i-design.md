@@ -11,6 +11,7 @@ title: 'Aggiornamento Dicembre - Giunte AUIC, ICAT, 3I & Design'
 fb_title: 'Aggiornamento Dicembre - Giunte AUIC, ICAT, 3I & Design'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -11,6 +11,7 @@ title: 'Terremoto in Abruzzo: riflettere sugli errori'
 fb_title: 'Terremoto in Abruzzo: riflettere sugli errori'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

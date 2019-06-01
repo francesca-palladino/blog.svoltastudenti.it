@@ -11,6 +11,7 @@ title: Novità Bando Diritto Allo Studio
 fb_title: Novità Bando Diritto Allo Studio
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

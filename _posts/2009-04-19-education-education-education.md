@@ -13,6 +13,7 @@ title: Education! Education! Education!
 fb_title: Education! Education! Education!
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -17,6 +17,7 @@ fb_title: >-
   aperta 24h/24, Spazi per i gruppi studenteschi, bacheche
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

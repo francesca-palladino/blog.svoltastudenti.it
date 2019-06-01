@@ -11,6 +11,7 @@ title: 'Update Lauree: Comunicato congiunto'
 fb_title: 'Update Lauree: Comunicato congiunto'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

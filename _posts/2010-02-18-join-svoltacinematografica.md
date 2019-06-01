@@ -11,6 +11,7 @@ title: Join SvoltaCinematografica!
 fb_title: Join SvoltaCinematografica!
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

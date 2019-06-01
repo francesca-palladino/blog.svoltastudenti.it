@@ -11,6 +11,7 @@ title: 'In pillole: la prova finale di Progettazione dell''Architettura'
 fb_title: 'In pillole: la prova finale di Progettazione dell''Architettura'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

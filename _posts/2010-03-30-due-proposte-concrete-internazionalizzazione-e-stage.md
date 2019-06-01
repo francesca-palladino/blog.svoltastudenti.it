@@ -13,6 +13,7 @@ title: 'Due proposte concrete: internazionalizzazione e stage'
 fb_title: 'Due proposte concrete: internazionalizzazione e stage'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -15,6 +15,7 @@ fb_title: >-
   rappresentanza.
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

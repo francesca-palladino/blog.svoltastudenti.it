@@ -11,6 +11,7 @@ title: Comunicato Svoltastudenti - 17 gennaio
 fb_title: Comunicato Svoltastudenti - 17 gennaio
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

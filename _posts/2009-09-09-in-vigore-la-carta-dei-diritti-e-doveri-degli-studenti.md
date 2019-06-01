@@ -13,6 +13,7 @@ title: in vigore la Carta dei Diritti e Doveri degli Studenti
 fb_title: in vigore la Carta dei Diritti e Doveri degli Studenti
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

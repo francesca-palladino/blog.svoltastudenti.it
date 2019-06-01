@@ -11,6 +11,7 @@ title: Polimi with a View - Progetti ViVi.Polimi e Renzo Piano
 fb_title: Polimi with a View - Progetti ViVi.Polimi e Renzo Piano
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

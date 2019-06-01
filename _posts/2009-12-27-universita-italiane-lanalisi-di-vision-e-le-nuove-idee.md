@@ -14,6 +14,7 @@ title: 'Università italiane: l''analisi di Vision e le nuove idee'
 fb_title: 'Università italiane: l''analisi di Vision e le nuove idee'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

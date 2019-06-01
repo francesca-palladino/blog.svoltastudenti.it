@@ -11,6 +11,7 @@ title: Sciopero docenti Giugno - Luglio 2018
 fb_title: Sciopero docenti Giugno - Luglio 2018
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 place: Milano
 ---

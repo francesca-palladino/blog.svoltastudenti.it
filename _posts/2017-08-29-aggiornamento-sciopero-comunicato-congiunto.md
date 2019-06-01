@@ -11,6 +11,7 @@ title: AGGIORNAMENTO SCIOPERO - Comunicato Congiunto
 fb_title: AGGIORNAMENTO SCIOPERO - Comunicato Congiunto
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

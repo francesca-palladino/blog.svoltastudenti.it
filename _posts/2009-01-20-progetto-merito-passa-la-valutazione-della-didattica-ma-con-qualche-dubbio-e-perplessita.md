@@ -17,6 +17,7 @@ fb_title: >-
   perplessità
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

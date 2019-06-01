@@ -13,6 +13,7 @@ title: Giunta della scuola di ing. Edile-Architettura - 12/12/2013
 fb_title: Giunta della scuola di ing. Edile-Architettura - 12/12/2013
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

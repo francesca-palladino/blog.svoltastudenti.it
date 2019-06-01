@@ -13,6 +13,7 @@ title: Università aperta 24h/24 - La risposta del polimi
 fb_title: Università aperta 24h/24 - La risposta del polimi
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

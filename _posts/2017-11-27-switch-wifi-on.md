@@ -11,6 +11,7 @@ title: SWITCH WIFI ON
 fb_title: SWITCH WIFI ON
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

@@ -14,6 +14,7 @@ title: ACQUA PUBBLICA E GRATIS PER TUTTI!
 fb_title: ACQUA PUBBLICA E GRATIS PER TUTTI!
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

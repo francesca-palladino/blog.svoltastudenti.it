@@ -17,6 +17,7 @@ fb_title: >-
   del titolo di studio
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

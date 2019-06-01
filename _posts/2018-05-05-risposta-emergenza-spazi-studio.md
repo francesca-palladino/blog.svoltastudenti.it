@@ -11,6 +11,7 @@ title: Risposta emergenza spazi studio
 fb_title: Risposta emergenza spazi studio
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

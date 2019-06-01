@@ -17,6 +17,7 @@ fb_title: >-
   Stato ritiene necessario documentarsi!
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

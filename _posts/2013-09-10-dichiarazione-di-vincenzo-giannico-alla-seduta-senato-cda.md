@@ -17,6 +17,7 @@ fb_title: >-
   al Consiglio di Stato sulle LM in inglese
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

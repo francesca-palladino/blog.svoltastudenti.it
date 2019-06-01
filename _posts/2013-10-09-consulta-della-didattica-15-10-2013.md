@@ -13,6 +13,7 @@ title: Consulta della Didattica 15-10-2013
 fb_title: Consulta della Didattica 15-10-2013
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

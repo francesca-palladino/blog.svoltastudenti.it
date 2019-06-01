@@ -11,6 +11,7 @@ title: Prove in itinere? Le novità dell'anno prossimo
 fb_title: Prove in itinere? Le novità dell'anno prossimo
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

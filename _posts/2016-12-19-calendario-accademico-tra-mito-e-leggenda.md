@@ -11,6 +11,7 @@ title: 'Calendario Accademico: tra mito e leggenda'
 fb_title: 'Calendario Accademico: tra mito e leggenda'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

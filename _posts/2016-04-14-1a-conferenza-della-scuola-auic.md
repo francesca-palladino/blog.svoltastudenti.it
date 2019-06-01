@@ -14,6 +14,7 @@ title: 1A CONFERENZA DELLA SCUOLA AUIC
 fb_title: 1A CONFERENZA DELLA SCUOLA AUIC
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

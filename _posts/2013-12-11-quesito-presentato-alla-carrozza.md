@@ -13,6 +13,7 @@ title: Quesito presentato alla Carrozza
 fb_title: Quesito presentato alla Carrozza
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

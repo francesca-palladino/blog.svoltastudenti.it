@@ -11,6 +11,7 @@ title: Giunta di Scuola di Ingegneria Industriale e dell'Informazione
 fb_title: Giunta di Scuola di Ingegneria Industriale e dell'Informazione
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

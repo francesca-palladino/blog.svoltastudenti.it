@@ -12,6 +12,7 @@ title: Intervista al Prorettore Vicario Alessandro Balducci
 fb_title: Intervista al Prorettore Vicario Alessandro Balducci
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

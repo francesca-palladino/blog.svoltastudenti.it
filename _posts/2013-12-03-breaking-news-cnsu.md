@@ -13,6 +13,7 @@ title: +++ Breaking news CNSU +++
 fb_title: +++ Breaking news CNSU +++
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

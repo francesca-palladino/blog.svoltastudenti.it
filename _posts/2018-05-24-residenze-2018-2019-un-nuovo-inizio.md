@@ -11,6 +11,7 @@ title: 'Residenze 2018/2019: Un nuovo inizio.'
 fb_title: 'Residenze 2018/2019: Un nuovo inizio.'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

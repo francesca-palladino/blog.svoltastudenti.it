@@ -12,6 +12,7 @@ title: Senato Accademico del 21 Settembre
 fb_title: Senato Accademico del 21 Settembre
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

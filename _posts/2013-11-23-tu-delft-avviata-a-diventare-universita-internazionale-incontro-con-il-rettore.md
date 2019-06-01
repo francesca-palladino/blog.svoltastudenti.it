@@ -16,6 +16,7 @@ fb_title: >-
   Rettore
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

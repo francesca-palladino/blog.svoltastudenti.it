@@ -11,6 +11,7 @@ title: 'Poliversa, un giornale per gli studenti: incontro per nuove idee'
 fb_title: 'Poliversa, un giornale per gli studenti: incontro per nuove idee'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

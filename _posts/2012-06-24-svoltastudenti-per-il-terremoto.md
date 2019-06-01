@@ -11,6 +11,7 @@ title: SvoltaStudenti per il terremoto
 fb_title: SvoltaStudenti per il terremoto
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

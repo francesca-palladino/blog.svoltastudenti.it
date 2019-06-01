@@ -11,6 +11,7 @@ title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 
 fb_title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

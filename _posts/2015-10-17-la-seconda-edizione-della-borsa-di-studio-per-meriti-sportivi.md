@@ -14,6 +14,7 @@ title: La seconda edizione della borsa di studio per meriti sportivi
 fb_title: La seconda edizione della borsa di studio per meriti sportivi
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

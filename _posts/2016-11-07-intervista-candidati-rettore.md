@@ -11,6 +11,7 @@ title: Intervista candidati Rettore
 fb_title: Intervista candidati Rettore
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

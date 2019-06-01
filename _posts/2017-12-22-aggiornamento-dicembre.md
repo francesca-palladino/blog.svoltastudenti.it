@@ -11,6 +11,7 @@ title: Aggiornamento Dicembre
 fb_title: Aggiornamento Dicembre
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

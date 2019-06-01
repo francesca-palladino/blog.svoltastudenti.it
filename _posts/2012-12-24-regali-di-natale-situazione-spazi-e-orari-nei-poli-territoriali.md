@@ -14,6 +14,7 @@ title: REGALI DI NATALE - Situazione spazi e orari nei Poli territoriali
 fb_title: REGALI DI NATALE - Situazione spazi e orari nei Poli territoriali
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

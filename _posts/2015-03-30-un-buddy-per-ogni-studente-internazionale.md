@@ -13,6 +13,7 @@ title: Un buddy per ogni studente internazionale!
 fb_title: Un buddy per ogni studente internazionale!
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

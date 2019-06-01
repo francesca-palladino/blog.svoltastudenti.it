@@ -11,6 +11,7 @@ title: Consiglio degli Studenti 9 Giugno 2016
 fb_title: Consiglio degli Studenti 9 Giugno 2016
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

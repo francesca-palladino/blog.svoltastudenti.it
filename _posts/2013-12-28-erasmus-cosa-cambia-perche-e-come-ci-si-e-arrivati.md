@@ -13,6 +13,7 @@ title: 'Erasmus: cosa cambia, perché e come ci si è arrivati'
 fb_title: 'Erasmus: cosa cambia, perché e come ci si è arrivati'
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 

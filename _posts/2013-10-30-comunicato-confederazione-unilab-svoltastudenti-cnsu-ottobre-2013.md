@@ -13,6 +13,7 @@ title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU ottobre 2013
 fb_title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU ottobre 2013
 
 image: bj3l739cwc8
+lang: it
 place: Milano
 ---
 
