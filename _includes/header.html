@@ -1,11 +1,9 @@
 <div id="site-header">
-	<div id="site-header-content">
-		{% if page.url == "/" %}
-			<a href="https://svoltastudenti.it/">
-		{% else %}
-			<a href="https://blog.svoltastudenti.it/">
-		{% endif %}
-			<img src="/assets/img/header.png" layout="fixed" width="236" height="60" alt="Svoltastudenti Rappresentanza" noloading></img>
-		</a>
-	</div>
+	{% if page.url == "/" %}
+		<a href="https://svoltastudenti.it/">
+	{% else %}
+		<a href="https://blog.svoltastudenti.it/">
+	{% endif %}
+		<img src="/assets/img/header.png" layout="fixed" width="236" height="60" alt="Svoltastudenti Rappresentanza" noloading></img>
+	</a>
 </div>
