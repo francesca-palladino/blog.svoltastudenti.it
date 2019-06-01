@@ -153,6 +153,10 @@ html, body {
 	flex-shrink: 1;
 }
 
+.articlesList > *:first-child {
+	width: 100%;
+}
+
 @media all and (min-width: 1024px){
 	.articlesList > * {
 		flex-grow: 1;
