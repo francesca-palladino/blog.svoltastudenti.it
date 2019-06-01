@@ -4,7 +4,7 @@ layout: default
 <div class="articlesList">
 	{% for post in site.posts %}
 		<a href="{{ post.url | prepend: site.baseurl }}" class="article-header">
-			<div style="background-image: url('https://source.unsplash.com/random/1920x1080?{{post.date}}');" class="thumb"></div>
+			<div style="background-image: url('https://source.unsplash.com/random/992x558?{{post.date}}');" class="thumb"></div>
 	        <div class="info">
 				{{post.place}} - {{ post.date | date: "%-d %B %Y" }}
 			</div>
