@@ -42,32 +42,6 @@ html, body {
 	padding-left: 40px;
 }
 
-#site-content > article > header h1 {
-	font-size: x-large;
-	font-size: xx-large;
-	font-weight: bold;
-	color: #FF6600;
-	padding-right: 3%;
-	padding-left: 3%;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-#site-content > article > header amp-img {
-	margin-bottom: 10px;
-	padding-right: 3%;
-	padding-left: 3%;
-}
-
-#site-content > article > header .info {
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: medium;
-	padding-right: 3%;
-	padding-left: 3%;
-	margin-top: 15px;
-}
-
 #site-content > article > #content {
 	padding-right: 3%;
 	padding-left: 3%;
@@ -147,7 +121,7 @@ html, body {
 	width: 480px;
 	flex-grow: 1;
 	flex-shrink: 1;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .articlesList > *:first-child {
