@@ -165,7 +165,5 @@ html, body {
 #backToTop {
 	position: fixed;
 	bottom: 10px;
-    text-align: center;
-    display: block;
-    width: 100%;
+	right: 10px;
 }
