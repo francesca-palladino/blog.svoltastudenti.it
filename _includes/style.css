@@ -1,10 +1,9 @@
-html {
+html, body {
 	margin: 0px;
 	padding: 0px;
-	width: 100%;
 }
 
-body {
+#pageWrapper {
 	max-width: 992px;		/* tot = 1024px */
 	padding-left: 16px;		/* tot = 1024px */
 	padding-right: 16px;	/* tot = 1024px */
