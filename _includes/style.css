@@ -43,11 +43,6 @@ html, body {
 	padding-left: 40px;
 }
 
-#site-content > article > #content {
-	padding-right: 3%;
-	padding-left: 3%;
-}
-
 #site-content > article > footer {
 	padding-top: 10px;
 	margin-top: 50px;
