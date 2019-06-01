@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
 	<header class="article-header">
-		<img src="https://source.unsplash.com/{{post.image}}/1920x1080" height="1080" width="1920" class="thumb"></img>
+		<div style="background: url('https://source.unsplash.com/{{post.image}}/1920x1080');" class="thumb"></div>
         <div class="info">
 			{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
 		</div>
