@@ -154,7 +154,7 @@ html, body {
 }
 
 @media all and (min-width: 1024px){
-	.articlesList > *
+	.articlesList > * {
 		flex-grow: 1;
 	}
 }
