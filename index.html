@@ -6,10 +6,10 @@ layout: default
 		<a href="{{ post.url | prepend: site.baseurl }}" class="article-header">
 			<div style="background: url('https://source.unsplash.com/{{post.image}}/1920x1080');" class="thumb"></div>
 	        <div class="info">
-				{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
+				{{post.place}} - {{ post.date | date: "%-d %B %Y" }}
 			</div>
 			<div class="title">
-				{{page.title}}
+				{{post.title}}
 			</div>
 		</a>
 	{% endfor %}
