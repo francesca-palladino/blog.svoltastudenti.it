@@ -148,6 +148,7 @@ html, body {
 
 .article-header .thumb {
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 .article-header .info {
