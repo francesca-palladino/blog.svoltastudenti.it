@@ -1,10 +1,16 @@
-html, body {
+html {
 	margin: 0px;
+	padding: 0px;
+}
+
+body {
 	max-width: 992px;		/* tot = 1024px */
 	padding-left: 16px;		/* tot = 1024px */
 	padding-right: 16px;	/* tot = 1024px */
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-family: 'Lato', sans-serif;
 	font-size: medium;
 }
