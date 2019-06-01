@@ -148,8 +148,7 @@ html, body {
 
 .article-header .thumb {
 	margin-bottom: 10px;
-	width: 100%;\
-	padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	width: 100%;
 }
 
 .article-header .info {
