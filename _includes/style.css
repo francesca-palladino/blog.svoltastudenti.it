@@ -134,6 +134,8 @@ html, body {
 	text-align: right;
 }
 
+
+
 .articlesList {
 	display: flex;
 	flex-direction: row;
@@ -158,6 +160,8 @@ html, body {
 	}
 }
 
+
+
 .article-header {
 	color: inherit;
 	text-decoration: none;
@@ -168,23 +172,17 @@ html, body {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FF6600;
-	padding-right: 3%;
-	padding-left: 3%;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
 .article-header .thumb {
 	margin-bottom: 10px;
-	padding-right: 3%;
-	padding-left: 3%;
 }
 
 .article-header .info {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: medium;
-	padding-right: 3%;
-	padding-left: 3%;
 	margin-top: 15px;
 }
