@@ -52,7 +52,7 @@ html, body {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .article-footer > * {
