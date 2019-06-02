@@ -14,6 +14,7 @@ html, body {
 	font-family: 'Lato', sans-serif;
 	font-size: medium;
 	padding-bottom: 50px;	/* For BackToTop div */
+	overflow-x: hidden;
 }
 
 #site-content {
@@ -139,7 +140,6 @@ html, body {
 
 .article-header .title {
 	font-size: x-large;
-	font-size: xx-large;
 	font-weight: bold;
 	color: #FF6600;
 	margin-top: 5px;
