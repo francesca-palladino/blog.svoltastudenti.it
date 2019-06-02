@@ -120,13 +120,13 @@ html, body {
 	margin-bottom: 50px;
 }
 
-.articlesList > *:first-child {
-	width: 100%;
-}
-
 @media all and (min-width: 1024px){
 	.articlesList > * {
 		flex-grow: 0;
+	}
+	
+	.articlesList > *:first-child {
+		width: 100%;
 	}
 }
 
@@ -156,6 +156,12 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #DDDDDD;
+}
+
+edia all and (min-width: 1024px){
+	.article-header:first-child .thumb {	
+		padding-top: 28.12%;
+	}
 }
 
 .article-header .info {
