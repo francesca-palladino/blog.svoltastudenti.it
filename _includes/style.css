@@ -132,7 +132,7 @@ html, body {
 }
 
 .articlesList > * {
-	width: 480px;
+	width: 100%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	margin-bottom: 50px;
@@ -141,6 +141,7 @@ html, body {
 @media all and (min-width: 1024px){
 	.articlesList > * {
 		flex-grow: 0;
+		width: 480px;
 	}
 	
 	.articlesList > *:first-child {
