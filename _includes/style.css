@@ -60,6 +60,7 @@ html, body {
 	color: #FF6600;
 	font-size: large;
 	text-decoration: none;
+	display: block;
 }
 	
 /* #site-content > article > footer .prevNext {
