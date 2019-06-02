@@ -158,7 +158,7 @@ html, body {
     background-color: #DDDDDD;
 }
 
-edia all and (min-width: 1024px){
+@media all and (min-width: 1024px){
 	.article-header:first-child .thumb {	
 		padding-top: 28.12%;
 	}
