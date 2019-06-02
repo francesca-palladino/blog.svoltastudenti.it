@@ -21,24 +21,24 @@ html, body {
 	margin-top: 10px;
 }
 
-#site-content > article h2 {
+.article-content h2 {
 	font-size: x-large;
 	font-weight: bold;
 }
-#site-content > article h3 {
+.article-content h3 {
 	font-size: x-large;
 	padding-left: 10px;
 }
-#site-content > article h4 {
+.article-content h4 {
 	font-size: large;
 	font-weight: bold;
 	padding-left: 20px;
 }
-#site-content > article h5 {
+.article-content h5 {
 	font-size: large;
 	padding-left: 30px;
 }
-#site-content > article h6 {
+.article-content h6 {
 	font-size: medium;
 	font-weight: bold;
 	padding-left: 40px;
@@ -51,7 +51,7 @@ html, body {
 	border-top: 1px solid #FF6600;
 }
 
-#site-content > article > footer .prevNext {
+/* #site-content > article > footer .prevNext {
 	display: flex;
 	flex-direction: row;
 	width: 94%;
@@ -67,7 +67,7 @@ html, body {
 	font-size: large;
 	text-decoration: none;
 }
-
+ */
 #site-content > article > footer .prevNext > *:hover {
 	text-decoration: underline;
 }
