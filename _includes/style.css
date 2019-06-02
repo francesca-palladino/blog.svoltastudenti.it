@@ -49,8 +49,19 @@ html, body {
 	margin-top: 50px;
 	padding-bottom: 20px;
 	border-top: 1px solid #FF6600;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
 }
 
+.article-footer > * {
+	width: 47%;
+	color: #FF6600;
+	font-size: large;
+	text-decoration: none;
+}
+	
 /* #site-content > article > footer .prevNext {
 	display: flex;
 	flex-direction: row;
@@ -68,7 +79,7 @@ html, body {
 	text-decoration: none;
 }
  */
-#site-content > article > footer .prevNext > *:hover {
+.article-footer > *:hover {
 	text-decoration: underline;
 }
 
