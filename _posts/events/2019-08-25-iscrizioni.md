@@ -1,9 +1,10 @@
 ---
-layout: blog
-category: blog
-pretix_id: tesseramento
-title: iscrizioni
-date: 2019-08-31T19:13:04.247Z
-price: 10
+layout: events
+category: events
+title: test
+fb_title: test
+tags: Associazione
+date: 2019-08-25T19:26:33.987Z
+image: bj3l739cwc8
 ---
-Tesseramento 2020
+test
