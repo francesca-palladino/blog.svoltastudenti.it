@@ -9,7 +9,7 @@ date: '2019-01-23'
 authors:
   - Carlo Giovani
   - Alessandro de Iasio
-title: News dagli Organi Centrali - Gennaio 2019
+title: Nuovi corsi di Laurea Magistrale, POLIMI SPORT, costi scuola AUIC, mense e spazi
 fb_title: News dagli Organi Centrali - Gennaio 2019
 
 image: bj3l739cwc8
