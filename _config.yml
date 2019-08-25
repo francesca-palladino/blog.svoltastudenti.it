@@ -5,3 +5,4 @@ description: La student's union del Politecnico di Milano
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://blog.svoltastudenti.it" # the base hostname & protocol for your site
 permalink: /:categories/:title
+future: true
