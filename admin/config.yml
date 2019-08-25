@@ -46,3 +46,4 @@ collections:
       - {label: "See Also", name: "related", widget: "relation", required: false, collection: "events", searchFields: "fields.title", valueField: "slug", multiple: true}
       - {label: "Descrizione", name: "body", widget: "markdown"}
       - {label: "Prezzo", name: "price", widget: "number"}
+      - {label: "Iniziativa realizzata con il contributo del Politecnico di Milano", name: "contributo_poli", widget: "boolean", default: true}
