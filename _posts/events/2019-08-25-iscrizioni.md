@@ -1,5 +1,5 @@
 ---
-layout: events
+layout: blog
 category: blog
 pretix_id: tesseramento
 title: iscrizioni
