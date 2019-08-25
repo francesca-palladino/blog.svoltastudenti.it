@@ -42,6 +42,7 @@ collections:
       - {label: "Category", name: "category", widget: "hidden", default: "events"}
       - {label: "Pretix ID", name: "pretix_id", widget: "string"}
       - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
       - {label: "See Also", name: "related", widget: "relation", required: false, collection: "events", searchFields: "fields.title", valueField: "slug", multiple: true}
       - {label: "Descrizione", name: "description", widget: "markdown"}
       - {label: "Prezzo", name: "price", widget: "number"}
