@@ -36,7 +36,7 @@ Sono stati infine presentati i Bandi di Ammissioni alle lauree di primo livello 
 
 Sono previste due finestre anche per la prova di Urbanistica, con le classiche modalità del colloquio con successiva graduatoria.
 
-<Per maggiori informazioni al sito di orientamento dell’Ateneo: http://www.poliorientami.polimi.it.>
+Per maggiori informazioni al sito di orientamento dell’Ateneo: <http://www.poliorientami.polimi.it.>
 
 Per dubbi o qualunque richiesta non esitate a scriverci.
 
