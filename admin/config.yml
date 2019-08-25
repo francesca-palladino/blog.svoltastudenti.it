@@ -31,4 +31,4 @@ collections:
       - {label: "Category", name: "category", widget: "hidden", default: "faq"}
       - {label: "Question", name: "title", widget: "string"}
       - {label: "Answer", name: "body", widget: "markdown"}
-      - {label: "Link", name: "link", widget: "markdown"}
+      - {label: "Link", name: "link", widget: "string"}
