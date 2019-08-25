@@ -32,3 +32,16 @@ collections:
       - {label: "Question", name: "title", widget: "string"}
       - {label: "Answer", name: "body", widget: "markdown"}
       - {label: "Link", name: "link", widget: "string"}
+  - name: "events" # Used in routes, e.g., /admin/collections/blog
+    label: "Events" # Used in the UI
+    folder: "_posts/events" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "events"}
+      - {label: "Category", name: "category", widget: "hidden", default: "events"}
+      - {label: "Pretix ID", name: "pretix_id", widget: "string"}
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "See Also", name: "related", widget: "relation", collection: "events", searchFields: "fields.title", valueField: "slug", multiple: true}
+      - {label: "Descrizione", name: "description", widget: "markdown"}
+      - {label: "Prezzo", name: "price", widget: "number"}
