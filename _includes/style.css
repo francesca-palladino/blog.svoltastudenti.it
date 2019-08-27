@@ -18,6 +18,18 @@ html, body {
 	overflow-x: hidden;
 }
 
+#site-nav {
+	background-color: red;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#site-nav a:hover {
+	background-color: black;
+}
+
 #site-content {
 	/* Contenuto della pagina (equivalente alla pagina in wordpress) */
 	margin-top: 10px;
