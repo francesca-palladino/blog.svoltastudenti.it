@@ -4,7 +4,7 @@ html, body {
 }
 
 #pageWrapper {
-	// Tutto il contenuto della pagina finisce qui dentro, e' una sorta di body
+	/* Tutto il contenuto della pagina finisce qui dentro, e' una sorta di body */
 	max-width: 992px;		/* tot = 1024px */
 	padding-left: 16px;		/* tot = 1024px */
 	padding-right: 16px;	/* tot = 1024px */
@@ -19,18 +19,18 @@ html, body {
 }
 
 #site-content {
-	// Contenuto della pagina (equivalente alla pagina in wordpress)
+	/* Contenuto della pagina (equivalente alla pagina in wordpress) */
 	margin-top: 10px;
 }
 
 .article-header {
-	// Header dell'articolo (immagine, metadati...)
+	/* Header dell'articolo (immagine, metadati...) */
 	color: inherit;
 	text-decoration: none;
 }
 
 .article-header .title {
-	// Titolo dell'articolo
+	/* Titolo dell'articolo */
 	font-size: x-large;
 	font-weight: bold;
 	color: #FF6600;
@@ -39,7 +39,7 @@ html, body {
 }
 
 .article-header .thumb {
-	// Immagine dell'articolo
+	/* Immagine dell'articolo */
 	margin-bottom: 10px;
 	width: 100%;
 	padding-top: 56.25%; /* 16:9 Aspect Ratio */
@@ -52,14 +52,14 @@ html, body {
 }
 
 @media all and (min-width: 1024px){
-	// Vedi sopra
+	/* Vedi sopra */
 	.article-header:first-child .thumb {	
 		padding-top: 28.12%;
 	}
 }
 
 .article-header .info {
-	// Metadati dell'articolo
+	/* Metadati dell'articolo */
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: medium;
@@ -90,7 +90,7 @@ html, body {
 }
 
 .article-footer {
-	// Footer dell'articolo (prossimo articolo and co)
+	/* Footer dell'articolo (prossimo articolo and co) */
 	padding-top: 10px;
 	margin-top: 50px;
 	padding-bottom: 20px;
@@ -100,13 +100,13 @@ html, body {
 }
 
 #site-footer {
-	// Footer del sito
+	/* Footer del sito
 	color: #777777;
 	font-size: small;
 }
 
 #backToTop {
-	// Pulsante per risalire
+	/* Pulsante per risalire */
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
@@ -135,7 +135,7 @@ html, body {
 
 
 .articlesList {
-	// Lista di articoli (come nella home)
+	/* Lista di articoli (come nella home) */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -143,7 +143,7 @@ html, body {
 }
 
 .articlesList > * {
-	// Ogni elemento della lista (ogni articolo)
+	/* Ogni elemento della lista (ogni articolo) */
 	width: 100%;
 	flex-grow: 1;
 	flex-shrink: 1;
@@ -151,7 +151,7 @@ html, body {
 }
 
 @media all and (min-width: 1024px){
-	// Vedi sopra
+	/* Vedi sopra */
 	.articlesList > * {
 		flex-grow: 0;
 		width: 480px;
