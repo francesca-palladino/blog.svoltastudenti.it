@@ -1,16 +1,214 @@
 ---
 layout: default
 ---
+<style>
+	#slides, .page {
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: center;
+		background-origin: padding-box;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #FF6600;
+		text-align: center;
+		top: 0vh;
+		overflow: hidden;
+	}
+
+	.page {
+		opacity: 0;
+		transition: opacity 2s;
+	}
+
+	.page.visible {
+		opacity: 1;
+		transition: opacity 2s;
+	}
+</style>
+<script>
+	const DEBOUNCE = 2000; // ms
+
+	var slidesCount = 7;
+	var current = 0;
+	var touchPoint = {
+		x: 0,
+		y: 0,
+	};
+	var lastChange = 0;
+
+	function touchHandler(e, div, type) {
+		console.log("a");
+		if (e.touches && e.touches.length > 0) {
+			list = e.touches
+		} else if (e.changedTouches && e.changedTouches.length > 0) {
+			list = e.changedTouches;
+		}
+
+		if (list && list.length == 1) {
+			var point = {
+				x: list[0].clientX,
+				y: list[0].clientY
+			};
+			if (type == "start") {
+				touchPoint = point;
+			} else {
+				if (Math.abs(touchPoint.y - point.y) > 20) {
+
+					lastChange = Date.now();
+					if ((touchPoint.y - point.y) < 0) {
+						move(-1);
+					} else {
+						move(+1);
+					}
+				}
+			}
+		}
+	}
+
+	function move(direction) {
+		if (lastChange < (Date.now() - DEBOUNCE)) {
+			lastChange = Date.now();
+			document.querySelector(".page[data-id='" + (current) + "']").classList.remove("visible");
+			current += direction;
+			if (current >= 0 && current < slidesCount) {
+				document.querySelector(".page[data-id='" + (current) + "']").classList.add("visible");
+			} else {
+				current -= direction;
+				document.querySelector(".page[data-id='" + (current) + "']").classList.add("visible");
+			}
+		}
+	}
+
+	document.addEventListener("DOMContentLoaded", function(event) {
+		document.addEventListener("wheel", function(e) {
+			if (e.deltaY > 0) {
+				move(+1);
+			}
+		});
+		document.addEventListener("wheel", function(e) {
+			if (e.deltaY < 0) {
+				move(-1);
+			}
+		});
+		document.addEventListener('touchstart', function(e) {
+			touchHandler(e, this, "start")
+		});
+		document.addEventListener('touchend', function(e) {
+			touchHandler(e, this, "end")
+		});
+
+		document.querySelectorAll("#slides .page").forEach(function(page) {
+			// "Scroll" event listeners
+			page.addEventListener("wheel", function(e) {
+				if (e.deltaY > 0) {
+					move(+1);
+				}
+			});
+			page.addEventListener("wheel", function(e) {
+				if (e.deltaY < 0) {
+					move(-1);
+				}
+			});
+			page.addEventListener('touchstart', function(e) {
+				touchHandler(e, this, "start")
+			});
+			page.addEventListener('touchend', function(e) {
+				touchHandler(e, this, "end")
+			});
+		});
+	});
+</script>
+<div id="slides">
+	<div class="page visible" style="background-image: url('/assets/home/bg0.png');" data-id="0">
+		<video src="/assets/home/video.mp4" autoplay mute loop></video>
+	</div>
+	<div class="page" style="background-image: url('/assets/home/bg1.png');" data-id="1">
+		<div class="title">
+			Associazione
+		</div>
+		<div class="content">
+			Svoltastudenti è la prima associazione studentesca italiana e no-profit a rispecchiare il modello anglosassone delle students’ union, rappresentando gli studenti senza nessun partito o gruppo religioso alle spalle che ne influenzerà né ora,
+			né mai, l’operato.
+		</div>
+	</div>
+	<div class="page" style="background-image: url('/assets/home/bg2.png');" data-id="2">
+		<div class="title">
+			Rappresentanza
+		</div>
+		<div class="content">
+			Il CNSU è l’organo consultivo di rappresentanza degli studenti universitari, viene votato da tutti gli studenti d’Italia ogni 3 anni.
+			Formula pareri e proposte per il Ministro dell’Istruzione, Università e Ricerca su tematiche riguardanti l’università in senso lato, temi di competenza sono: la Mobilità, l’Orientamento, gli Ordinamenti Didattici e il riordino del Sistema
+			Universitario, il Fondo di Finanziamento Ordinario (FFO) ed i suoi criteri di assegnazione.
+		</div>
+	</div>
+	<div class="page" style="background-image: url('/assets/home/bg3.png');" data-id="3">
+		<div class="title">
+			Eventi
+		</div>
+		<div class="content">
+			{% for post in site.posts limit:4 %}
+			<a class="th" href="{{ post.url | prepend: site.baseurl }}">
+				<img src="{% post.th %}" />
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="page" style="background-image: url('/assets/home/bg4.png');" data-id="4">
+		<div class="title">
+			Notizie
+		</div>
+		<div class="content">
+			{% for post in site.posts limit:4 %}
+			<a class="th" href="{{ post.url | prepend: site.baseurl }}">
+				<img src="{% post.th %}" />
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="page" style="background-image: url('/assets/home/bg5.png');" data-id="5">
+		<div class="title">
+			Giornalino in cerca di nome
+		</div>
+		<div class="content">
+			Qualcuno della redazione si ricordera' di riempire questa sezione, o almeno spero
+		</div>
+	</div>
+	<div class="page" style="background-image: url('/assets/home/bg6.png');" data-id="6">
+		<div class="title">
+			Social
+		</div>
+		<div class="content">
+			<a class="th" href="https://www.facebook.com/svoltastudenti" target="_blank">
+				<img src="/assets/social/facebook.png" />
+			</a>
+			<a class="th" href="https://www.twitter.com/svoltastudenti" target="_blank">
+				<img src="/assets/social/twitter.png" />
+			</a>
+			<a class="th" href="https://www.instagram.com/svoltastudenti" target="_blank">
+				<img src="/assets/social/instagram.png" />
+			</a>
+			<a class="th" href="mailto://info@svoltastudenti.it" target="_blank">
+				<img src="/assets/social/facebook.png" />
+			</a>
+		</div>
+	</div>
+</div>
+
 <div class="articlesList">
 	{% for post in site.posts %}
-		<a href="{{ post.url | prepend: site.baseurl }}" class="article-header">
-			<div style="background-image: url('https://source.unsplash.com/random/992x558?{{post.date}}');" class="thumb"></div>
-	        <div class="info">
-				{{post.place}} - {{ post.date | date: "%-d %B %Y" }}
-			</div>
-			<div class="title">
-				{{post.title}}
-			</div>
-		</a>
+	<a href="{{ post.url | prepend: site.baseurl }}" class="article-header">
+		<div style="background-image: url('https://source.unsplash.com/random/992x558?{{post.date}}');" class="thumb"></div>
+		<div class="info">
+			{{post.place}} - {{ post.date | date: "%-d %B %Y" }}
+		</div>
+		<div class="title">
+			{{post.title}}
+		</div>
+	</a>
 	{% endfor %}
 </div>
