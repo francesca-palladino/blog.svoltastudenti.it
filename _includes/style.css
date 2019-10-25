@@ -1,21 +1,21 @@
 html, body {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
-#pageWrapper {
-	/* Tutto il contenuto della pagina finisce qui dentro, e' una sorta di body */
-	max-width: 992px;		/* tot = 1024px */
-	padding-left: 16px;		/* tot = 1024px */
-	padding-right: 16px;	/* tot = 1024px */
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: 'Lato', sans-serif;
-	font-size: medium;
-	padding-bottom: 50px;	/* For BackToTop div */
-	overflow-x: hidden;
+#site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #site-nav {
@@ -30,146 +30,8 @@ html, body {
 	background-color: black;
 }
 
-#site-content {
+/* #site-content {
 	/* Contenuto della pagina (equivalente alla pagina in wordpress) */
 	margin-top: 10px;
-}
-
-.article-header {
-	/* Header dell'articolo (immagine, metadati...) */
-	color: inherit;
-	text-decoration: none;
-}
-
-.article-header .title {
-	/* Titolo dell'articolo */
-	font-size: x-large;
-	font-weight: bold;
-	color: #FF6600;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.article-header .thumb {
-	/* Immagine dell'articolo */
-	margin-bottom: 10px;
-	width: 100%;
-	padding-top: 56.25%; /* 16:9 Aspect Ratio */
-
-    background-origin: padding-box;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #DDDDDD;
-}
-
-@media all and (min-width: 1024px){
-	/* Vedi sopra */
-	.article-header:first-child .thumb {	
-		padding-top: 28.12%;
-	}
-}
-
-.article-header .info {
-	/* Metadati dell'articolo */
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: medium;
-	margin-top: 15px;
-}
-
-.article-content h2 {
-	font-size: x-large;
-	font-weight: bold;
-}
-.article-content h3 {
-	font-size: x-large;
-	padding-left: 10px;
-}
-.article-content h4 {
-	font-size: large;
-	font-weight: bold;
-	padding-left: 20px;
-}
-.article-content h5 {
-	font-size: large;
-	padding-left: 30px;
-}
-.article-content h6 {
-	font-size: medium;
-	font-weight: bold;
-	padding-left: 40px;
-}
-
-.article-footer {
-	/* Footer dell'articolo (prossimo articolo and co) */
-	padding-top: 10px;
-	margin-top: 50px;
-	padding-bottom: 20px;
-	border-top: 1px solid #FF6600;
-	color: #FF6600;
-	font-size: large;
-}
-
-#site-footer {
-	/* Footer del sito */
-	color: #777777;
-	font-size: small;
-}
-
-#backToTop {
-	/* Pulsante per risalire */
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-}
-
-.footer {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	justify-content: space-between;
-}
-
-.footer > * {
-	max-width: 47%;
-	display: block;
-}
-
-.footer a {	
-	text-decoration: none;
-	color: inherit;
-}
-
-.footer a:hover {
-	text-decoration: underline;
-}
-
-
-.articlesList {
-	/* Lista di articoli (come nella home) */
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.articlesList > * {
-	/* Ogni elemento della lista (ogni articolo) */
-	width: 100%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	margin-bottom: 50px;
-}
-
-@media all and (min-width: 1024px){
-	/* Vedi sopra */
-	.articlesList > * {
-		flex-grow: 0;
-		width: 480px;
-	}
-	
-	.articlesList > *:first-child {
-		width: 100%;
-	}
-}
+} */
+/*
