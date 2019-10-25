@@ -29,9 +29,22 @@ layout: default
 		transition: opacity 2s;
 	}
 
+	.page, .page * {
+		pointer-events: none;
+	}
+
+	.page.visible, .page.visible * {
+		pointer-events: initial;
+	}
+
 	.page.visible {
 		opacity: 1;
 		transition: opacity 2s;
+	}
+
+	.page .title {
+		font-family: "Helvetica";
+		font-size: 14pt;
 	}
 </style>
 <script>
