@@ -1,20 +1,9 @@
 <!doctype html>
 <html lang="{{page.lang}}">
-
   {% include head.html %}
-
   <body>
-	<div id="pageWrapper">
-		{% include header.html %}
-
-		<div id="site-content">
-		  {{ content }} 
-		</div>
-
-		{% include footer.html %}
-	</div>
-	<a id="backToTop" href="#pageWrapper">
-		<img src="/assets/img/top.png" height="30" width="30" alt="Back To Top" />
-	</a>
+  	{% include header.html %}
+    {{ content }}
+    {% include header.html %}
   </body>
 </html>
