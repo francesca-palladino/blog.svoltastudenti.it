@@ -1,109 +1,228 @@
 <html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Menu Tinto
+		</title>
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+			}
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		Menu Tinto
-	</title>
-	<style>
-		html,
-		body {
-			background-color: green;
-			margin: 0;
-			padding: 0;
-		}
+			h1 {
+				font-size: x-large;
+				font-size: xx-large;
+			}
 
-		h1 {
-			font-size: 300;
-		}
+/*			.scroll-progress {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 10px;
+			}*/
 
-		.scroll-progress {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 10px;
-		}
+/*			.barra {
+				display: block;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 0%;
+				height: 10px;
+				background: dodgerblue;
+				transition: width .05s linear;
+			}*/
+			header {
+				position: fixed;
+				top: 0;
+				right: 0;
+				height: 50px;
+				left: 0;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				background-color: #FF6600;
+			}
 
-		.barra {
-			display: block;
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			width: 0%;
-			height: 10px;
-			background: dodgerblue;
-			transition: width .05s linear;
-		}
+			#content {
+				margin-top: 50px;
+			}
 
-		#menu {
-			margin-top: 20px;
-			text-align: center;
-		}
+			/*
+			 * Menu
+			 */
+			#menu {
+				text-align: center;
+			}
 
+			#menu-content {
+				opacity: 0;
+				transition: opacity 1s;
+				pointer-events: none;
+				background-color: #FF6600;
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: 5;
+			}
 
-		#menu-content {
-			opacity: 0;
-			transition: opacity 1s;
-			pointer-events: none;
-			background-color: red;
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			z-index: 5;
-		}
+			#menu > #menu-checkbox {
+				display: none;
+			}
 
-		#menu>#menu-checkbox {
-			display: none;
-		}
+			#menu > #menu-checkbox:checked ~ #menu-content {
+				opacity: 1;
+				transition: opacity 1s;
+				pointer-events: initial;
+			}
 
-		#menu>#menu-checkbox:checked~#menu-content {
-			opacity: 1;
-			transition: opacity 1s;
-			pointer-events: initial;
-		}
+			/*
+			 * Cat Selector
+			 */ 
+			.cat {
+				display: none;
+			}
+			.catSelector[data-cat="prova"]:checked ~ label[for="catSelector-prova"] {
+				font-weight: bold;
+			}
+			.catSelector[data-cat="test"]:checked ~ label[for="catSelector-test"] {
+				font-weight: bold;
+			}
+			.catSelector[data-cat="prova"]:checked ~ .cat[data-cat="prova"]{
+				display: block;
+			}
+			.catSelector[data-cat="test"]:checked ~ .cat[data-cat="test"]{
+				display: block;
+			}
 
-		.cat {
-			display: none;
-		}
-		.catSelector[data-cat="prova"]:checked ~ label[for="catSelector-prova"] {
-			font-weight: bold;
-		}
-		.catSelector[data-cat="test"]:checked ~ label[for="catSelector-test"] {
-			font-weight: bold;
-		}
-		.catSelector[data-cat="prova"]:checked ~ .cat[data-cat="prova"]{
-			display: block;
-		}
-		.catSelector[data-cat="test"]:checked ~ .cat[data-cat="test"]{
-			display: block;
-		}
-	</style>
-</head>
+			/**
+			 * HOME
+			 */
+			#content > section {
+				min-height: 90vh;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+			}
 
-<body>
-<!-- 	<div class="scroll-progress">
-		<span class="barra"></span>
-	</div>
-	<div id="menu">
-		<label for="menu-checkbox">Menu</label>
-		<input type="checkbox" id="menu-checkbox">
-		<div id="menu-content">
-			<label for="menu-checkbox">Close</label>
+			/**
+			 *	Thumb
+			 */
+			.thWrapper {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			.thWrapper > a {
+				height: 30vmin;
+				width: 30vmin;
+				max-height: 250px;
+				max-width: 250px;
+				margin: 10px;
+				background-color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="https://store.svoltastudenti.it">
+				<img src="/img/highlight.png" />
+			</a>
+			<picture>
+				<source media="(min-width: 720px)" srcset="/img/logo_big.svg">
+				<source media="(max-width: 720px)" srcset="/img/logo_small.svg">
+				<img src="/img/logo_small.png" alt="logo">
+			</picture>
+			<div id="menu">
+				<label for="menu-checkbox">Menu</label>
+				<input type="checkbox" id="menu-checkbox">
+				<div id="menu-content">
+					<label for="menu-checkbox">Close</label>
+					<nav>
+						<a href="/">Home</a>
+						<a href="/rappresentanza">Rappresentanza</a>
+						<a href="/associazione">Associazione</a>
+						<a href="/notizie">Notizie</a>
+						<a href="/eventi">Eventi</a>
+					</nav>
+					<div id="socials">
+						<a href="https://www.facebook.com/svoltastudenti" target="_blank">Facebook</a>
+						<a href="https://www.twitter.com/svoltastudenti" target="_blank">Twitter</a>
+						<a href="mailto:info@svoltastudenti.it">Email</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="content">
+			<section>
+				<div>
+					<video src=""></video>
+				</section>
+				<section>
+					<div>
+					<h1>Rappresentanza</h1>
+					<p>...</p>
+				</section>
+				<section>
+					<div>
+					<h1>Associazione</h1>
+					<p>Lorem Ipsum Non ci ho sbatta...</p>
+				</section>
+				<section>
+					<div>
+					<h1>Notizie</h1>
+					<div class="thWrapper">
+						<a></a>
+						<a></a>
+						<a></a>
+						<a></a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div>
+					<h1>Eventi</h1>
+					<div class="thWrapper">
+						<a></a>
+						<a></a>
+						<a></a>
+						<a></a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div>
+					<h1>Social</h1>
+					<div class="thWrapper">
+						<a></a>
+						<a></a>
+						<a></a>
+						<a></a>
+					</div>
+				</div>
+			</section>
 		</div>
-	</div> -->
-
-	<div id="catWrapper">
+		<footer>
+			...
+		</footer>
+	</body>
+</html>
+<!-- 	<div id="catWrapper">
 		<div id="catList">
 		</div>
 
 		<input type="checkbox" id="catSelector-prova" class="catSelector" data-cat="prova" style="display:none"/><label for="catSelector-prova">PROVA</label>
 		<input type="checkbox" id="catSelector-test" class="catSelector" data-cat="test" style="display:none"/><label for="catSelector-test">TEST</label>
 		<div class="cat" data-cat="prova">cat PROVA</div><div class="cat" data-cat="test">cat TEST</div><div class="cat" data-cat="prova">cat PROVA</div><div class="cat" data-cat="test">cat TEST</div>
-	</div>
+	</div> -->
 
 	<!-- <div class="vacca">
 		<h1>svcniuaslv<br>niuwvnefwjv<br>lkmjnhbgvfcd<br>kjnhbugyvf<br>tcdrxdctfvgyh<br></h1>
@@ -132,7 +251,7 @@
 		document.addEventListener("scroll", updateProgress);
 		window.addEventListener("resize", updateProgress);
 	</script> -->
-
+<!-- 
 </body>
 
-</html>
+</html> -->
