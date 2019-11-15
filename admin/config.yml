@@ -19,7 +19,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Facebook Title", name: "fb_title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Image (unsplash id)", name: "image", widget: "string", default: "bj3l739cwc8"}
+      - {label: "Image", name: "image", widget: "file"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "faq" # Used in routes, e.g., /admin/collections/blog
     label: "FAQ" # Used in the UI
