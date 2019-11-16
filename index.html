@@ -24,11 +24,11 @@
 			}
 
 			#site-header, #site-footer {
-				position: fixed;
+/*				position: fixed;
 				top: 0;
-				right: 0;
+				right: 0;*/
 				height: 50px;
-				left: 0;
+				/*left: 0;*/
 				display: flex;
 				flex-direction: column;
 				align-items: stretch;
@@ -211,11 +211,7 @@
 				</div>
 			</div>
 			<div>
-				<p>
-					&copy <a href="mailto:info@svoltastudenti.it">Svoltastudenti</a> {{ "now" | date "Y" }} | C.F: | P.IVA:<br />
-					Indirizzo <br />
-					Cookie e Privacy<br />
-				</p>		
+					
 			</div>
 		</header>
 		<div id="site-content">
@@ -269,7 +265,15 @@
 		</div>
 		<footer id="site-footer">
 			<div>
-				...
+				<p>
+					&copy <a href="mailto:info@svoltastudenti.it">Svoltastudenti</a>{{ "now" | date "Y" }} <br />C.F: | P.IVA:<br />
+				</p>
+				<p>
+					Indirizzo <br />
+				</p>
+				<p>
+					Cookie e Privacy<br />
+				</p>	
 			</div>
 		</footer>
 	</body>
