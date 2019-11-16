@@ -1,34 +1,25 @@
 ---
 layout: default
 ---
-<div id="pageWrapper">
-	<div id="site-content">
-		<article>
-			<header class="article-header">
-				<div style="background-image: url('https://source.unsplash.com/{{page.image}}/992x558');" class="thumb"></div>
-		        <div class="info">
-					{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
-				</div>
-				<h1 class="title">
-					{{page.title}}
-				</h1>
-			</header>
-			<div class="article-content">
-				{{content}}
-			</div>
-			<footer class="article-footer footer">
-					<a style="text-align: left" href="{{page.previous.url}}">
-						{% if page.previous.url %}&laquo; {{page.previous.title}}{% endif %}
-					</a>
-					<a style="text-align: right" href="{{page.next.url}}">
-						{% if page.next.url %}{{page.next.title}} &raquo;{% endif %}
-					</a>
-			</footer>
-		</article>
+<article>
+	<header class="article-header">
+		<div style="background-image: url('https://source.unsplash.com/{{page.image}}/992x558');" class="thumb"></div>
+		<div class="info">
+			{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
+		</div>
+		<h1 class="title">
+			{{page.title}}
+		</h1>
+	</header>
+	<div class="article-content">
+		{{content}}
 	</div>
-
-	{% include footer.html %}
-</div>
-<a id="backToTop" href="#pageWrapper">
-	<img src="/assets/img/top.png" height="30" width="30" alt="Back To Top" />
-</a>
+	<footer class="article-footer footer">
+		<a style="text-align: left" href="{{page.previous.url}}">
+			{% if page.previous.url %}&laquo; {{page.previous.title}}{% endif %}
+		</a>
+		<a style="text-align: right" href="{{page.next.url}}">
+			{% if page.next.url %}{{page.next.title}} &raquo;{% endif %}
+		</a>
+	</footer>
+</article>
