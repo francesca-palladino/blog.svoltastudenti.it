@@ -1,3 +1,4 @@
+-----
 <html>
 	<head>
 		<meta name="theme-color" content="#FF6600">
@@ -18,7 +19,7 @@
 				font-size: xx-large;
 			}
 
-			header {
+			#site-header {
 				position: fixed;
 				top: 0;
 				right: 0;
@@ -32,11 +33,28 @@
 				transition: height 0.5s;
 			}
 			
-			#header-checkbox:checked ~ header {
+			#site-header-checkbox:checked ~ #site-header {
 			    height: 100%;
 			    transition: height 1s;
 			}
-			nav > * {
+
+			#site-header-top {
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-grow: 0;
+				flex-shrink: 0;
+			}
+
+			#site-header-content {
+				display: flex;
+				flex-grow: 1;
+				flex-shrink: 1;
+				flex-direction: column;
+			}
+
+			#site-header-content nav > * {
 				font-size: x-large;
 				font-weight: bold;
 				color: rgba(255,255,255,1);
@@ -46,8 +64,27 @@
 				text-align: center;
 			}
 
-			nav a:hover {
+			#site-header-content nav a:hover {
 				color: rgba(255,255,255,0.5);
+			}
+
+			@media all and (min-width: 720px){
+				#site-header-content {
+					flex-direction: row-reverse;
+				}
+
+				#site-header-content > * {
+					width: 50%;
+					min-width: 50%;
+					max-width: 50%;
+					flex-grow: 0;
+					flex-shrink: 0;
+				}
+
+				#site-header-content nav > * {
+					text-align: right;
+					font-size: 10vh;
+				}
 			}
 
 			#content {
@@ -106,11 +143,14 @@
 		</style>
 	</head>
 	<body>
-		<input type="checkbox" id="header-checkbox">
-		<header>
-			<div style="height: 50px; display: flex; align-items: center; justify-content: space-between; flex-grow: 0; flex-shrink: 0;">
+		<input type="checkbox" id="site-header-checkbox">
+		<header id="site-header">
+			<div id="site-header-top">
 				<a href="https://store.svoltastudenti.it">
-					<img src="/assets/img/highlight.png" height="35px" />
+					<picture>
+						<source height="35px" srcset="/assets/img/highlight.svg">
+						<img src="/assets/img/highlight.png" height="35px" alt="">
+					</picture>
 				</a>
 				<picture>
 					<source media="(min-width: 720px)" height="35px" srcset="/assets/img/logo_big.svg">
@@ -118,10 +158,13 @@
 					<img src="/assets/img/logo_small.png" height="35px" alt="logo">
 				</picture>
 				<label for="header-checkbox">
-					<img src="/assets/img/menu.png" height="35px" alt="Menu"/>
+					<picture>
+						<source height="35px" srcset="/assets/img/menu.svg">
+						<img src="/assets/img/highlight.png" height="35px" alt="Menu">
+					</picture>
 				</label>
 			</div>
-			<div style="display: flex; flex-grow: 1; flex-shrink: 1; flex-direction: column;">
+			<div id="site-header-content">
 				<nav>
 					<a href="/">Home</a>
 					<a href="/rappresentanza">Rappresentanza</a>
@@ -143,7 +186,7 @@
 						</a>
 					</div>
 				</nav>
-				<div id="newspaper" style="flex-grow: 1; flex-shrink:0">
+				<div id="newspaper" style="flex-grow: 1; flex-shrink: 1">
 					Loading latest news from our newspaper...
 				</div>
 			</div>
@@ -155,7 +198,7 @@
 				</p>		
 			</div>
 		</header>
-		<div id="content">
+		<div id="site-content">
 			<section>
 				<div>
 					<video src=""></video>
@@ -204,13 +247,12 @@
 				</div>
 			</section>
 		</div>
-		<footer>
+		<footer id="site-footer">
 			...
 		</footer>
 	</body>
 </html>
-			
-			<!-- 	<div id="catWrapper">
+<!-- 	<div id="catWrapper">
 		<div id="catList">
 		</div>
 
