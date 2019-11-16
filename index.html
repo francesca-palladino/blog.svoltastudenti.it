@@ -49,7 +49,7 @@
 			
 #header-checkbox:checked ~ header {
     height: 100%;
-    background-color: red;
+    transition: height 1s;
 }
 			
 
@@ -60,7 +60,7 @@
 			/*
 			 * Menu
 			 */
-			#menu {
+			/*#menu {
 				text-align: center;
 			}
 
@@ -85,7 +85,7 @@
 				opacity: 1;
 				transition: opacity 1s;
 				pointer-events: initial;
-			}
+			}*/
 
 			/*
 			 * Cat Selector
@@ -124,6 +124,8 @@
 				display: flex;
 				flex-direction: row;
 				flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 			}
 
 			.thWrapper > a {
