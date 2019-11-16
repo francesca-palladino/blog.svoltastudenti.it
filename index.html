@@ -1,13 +1,11 @@
------
 <html>
 	<head>
-
-<meta name="theme-color" content="#FF6600">
-<meta name="msapplication-navbutton-color" content="#FF6600">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#FF6600">
+		<meta name="msapplication-navbutton-color" content="#FF6600">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>
-			Menu Tinto
+			Home Page | Svoltastudenti
 		</title>
 		<style>
 			html, body {
@@ -20,25 +18,6 @@
 				font-size: xx-large;
 			}
 
-/*			.scroll-progress {
-				position: fixed;
-				top: 0;
-				left: 0;
-				right: 0;
-				height: 10px;
-			}*/
-
-/*			.barra {
-				display: block;
-				position: fixed;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 10px;
-				background: dodgerblue;
-				transition: width .05s linear;
-			}*/
 			header {
 				position: fixed;
 				top: 0;
@@ -48,63 +27,32 @@
 				display: flex;
 				flex-direction: column;
 				align-items: stretch;
-			
 				background-color: #FF6600;
-overflow: hidden;
-transition: height 0.5s;
+				overflow: hidden;
+				transition: height 0.5s;
 			}
 			
-#header-checkbox:checked ~ header {
-    height: 100%;
-    transition: height 1s;
-}
+			#header-checkbox:checked ~ header {
+			    height: 100%;
+			    transition: height 1s;
+			}
 			nav > * {
-font-size: x-large;
-font-weight: bold;
-color: rgba(255,255,255,1);
-transition: color 0.2s;
-text-decoration: none;
-display: block;
-text-align: center;
-}
+				font-size: x-large;
+				font-weight: bold;
+				color: rgba(255,255,255,1);
+				transition: color 0.2s;
+				text-decoration: none;
+				display: block;
+				text-align: center;
+			}
 
-nav a:hover {
-color: rgba(255,255,255,0.5);
-}
+			nav a:hover {
+				color: rgba(255,255,255,0.5);
+			}
 
 			#content {
 				margin-top: 50px;
 			}
-
-			/*
-			 * Menu
-			 */
-			/*#menu {
-				text-align: center;
-			}
-
-			#menu-content {
-				opacity: 0;
-				transition: opacity 1s;
-				pointer-events: none;
-				background-color: #FF6600;
-				position: fixed;
-				top: 0;
-				left: 0;
-				height: 100%;
-				width: 100%;
-				z-index: 5;
-			}
-
-			#menu > #menu-checkbox {
-				display: none;
-			}
-
-			#menu > #menu-checkbox:checked ~ #menu-content {
-				opacity: 1;
-				transition: opacity 1s;
-				pointer-events: initial;
-			}*/
 
 			/*
 			 * Cat Selector
@@ -143,8 +91,8 @@ color: rgba(255,255,255,0.5);
 				display: flex;
 				flex-direction: row;
 				flex-wrap: wrap;
-align-items: center;
-justify-content: center;
+				align-items: center;
+				justify-content: center;
 			}
 
 			.thWrapper > a {
@@ -157,68 +105,55 @@ justify-content: center;
 			}
 		</style>
 	</head>
-
 	<body>
-
-				<input type="checkbox" id="header-checkbox">
+		<input type="checkbox" id="header-checkbox">
 		<header>
-<div style="height: 50px; display: flex; align-items: center; justify-content: space-between; flex-grow: 0; flex-shrink: 0;">
-			<a href="https://store.svoltastudenti.it">
-				<img src="/assets/img/highlight.png" height="35px" />
-			</a>
-			<picture>
-				<source media="(min-width: 720px)" height="35px" srcset="/assets/img/logo_big.svg">
-				<source media="(max-width: 720px)" height="35px" srcset="/assets/img/logo_small.svg">
-				<img src="/assets/img/logo_small.png" height="35px" alt="logo">
-			</picture>
-			<label for="header-checkbox"><img src="/assets/img/menu.png" height="35px" alt="Menu"/></label>
-</div>
-<div style="display: flex; flex-grow: 1; flex-shrink: 1; flex-direction: column;">
-	
-					<nav>
-						<a href="/">Home</a>
-						<a href="/rappresentanza">Rappresentanza</a>
-						<a href="/associazione">Associazione</a>
-						<a href="/notizie">Notizie</a>
-						<a href="/eventi">Eventi</a>
-<div><a href="https://www.facebook.com/svoltastudenti" target="_blank">
-				<img src="/assets/img/facebook.png" height="35px" />
-			</a>
-<a href="https://www.twitter.com/svoltastudenti" target="_blank">
-				<img src="/assets/img/twitter.png" height="35px" />
-			</a>
-<a href="https://www.instagram.com/svoltastudenti" target="_blank">
-				<img src="/assets/img/instagram.png" height="35px" />
-			</a>
-<a href="mailto:info@svoltastudenti.it" target="_blank">
-				<img src="/assets/img/email.png" height="35px" />
-			</a></div>
-					</nav>
-					<div id="newspaper" style="flex-grow: 1; flex-shrink:0">
-Loading latest news from our newspaper...<!--<iframe
-  frameborder="1" style="border:1px solid black; width: 100%"
-  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-    &q=Space+Needle,Seattle+WA" allowfullscreen>
-</iframe>
+			<div style="height: 50px; display: flex; align-items: center; justify-content: space-between; flex-grow: 0; flex-shrink: 0;">
+				<a href="https://store.svoltastudenti.it">
+					<img src="/assets/img/highlight.png" height="35px" />
+				</a>
+				<picture>
+					<source media="(min-width: 720px)" height="35px" srcset="/assets/img/logo_big.svg">
+					<source media="(max-width: 720px)" height="35px" srcset="/assets/img/logo_small.svg">
+					<img src="/assets/img/logo_small.png" height="35px" alt="logo">
+				</picture>
+				<label for="header-checkbox">
+					<img src="/assets/img/menu.png" height="35px" alt="Menu"/>
+				</label>
+			</div>
+			<div style="display: flex; flex-grow: 1; flex-shrink: 1; flex-direction: column;">
+				<nav>
+					<a href="/">Home</a>
+					<a href="/rappresentanza">Rappresentanza</a>
+					<a href="/associazione">Associazione</a>
+					<a href="/notizie">Notizie</a>
+					<a href="/eventi">Eventi</a>
+					<div>
 						<a href="https://www.facebook.com/svoltastudenti" target="_blank">
-				<img src="/assets/img/facebook.png" height="35px" />
-			</a>
-<a href="https://www.twitter.com/svoltastudenti" target="_blank">
-				<img src="/assets/img/twitter.png" height="35px" />
-			</a>
-<a href="https://www.instagram.com/svoltastudenti" target="_blank">
-				<img src="/assets/img/instagram.png" height="35px" />
-			</a>
-<a href="mailto:info@svoltastudenti.it" target="_blank">
-				<img src="/assets/img/email.png" height="35px" />
-			</a>-->
-
-</div>
-<div>
-<p>&copy <a href="mailto:info@svoltastudenti.it">Svoltastudenti</a> {{ "now" | date "Y" }} | C.F: | P.IVA:<br />
-Indirizzo <br />
-Cookie e Privacy</p>		
-</div>
+							<img src="/assets/img/facebook.png" height="35px" />
+						</a>
+						<a href="https://www.twitter.com/svoltastudenti" target="_blank">
+							<img src="/assets/img/twitter.png" height="35px" />
+						</a>
+						<a href="https://www.instagram.com/svoltastudenti" target="_blank">
+							<img src="/assets/img/instagram.png" height="35px" />
+						</a>
+						<a href="mailto:info@svoltastudenti.it" target="_blank">
+							<img src="/assets/img/email.png" height="35px" />
+						</a>
+					</div>
+				</nav>
+				<div id="newspaper" style="flex-grow: 1; flex-shrink:0">
+					Loading latest news from our newspaper...
+				</div>
+			</div>
+			<div>
+				<p>
+					&copy <a href="mailto:info@svoltastudenti.it">Svoltastudenti</a> {{ "now" | date "Y" }} | C.F: | P.IVA:<br />
+					Indirizzo <br />
+					Cookie e Privacy<br />
+				</p>		
+			</div>
 		</header>
 		<div id="content">
 			<section>
@@ -274,7 +209,8 @@ Cookie e Privacy</p>
 		</footer>
 	</body>
 </html>
-<!-- 	<div id="catWrapper">
+			
+			<!-- 	<div id="catWrapper">
 		<div id="catList">
 		</div>
 
