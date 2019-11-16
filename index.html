@@ -33,7 +33,7 @@
 				justify-content: space-between;
 				overflow: hidden;
 				transition: background-color 0.5s;
-				background-color: rgba(255, 102, 0, 0.5);
+				background-color: rgba(255, 102, 0, 1);
 				flex-grow: 0;
 				flex-shrink: 0;
 				color: white;
@@ -41,97 +41,67 @@
 			}
 		
 			#site-menu, #site-content {
-				flex-grow: 1;
-				flex-shrink: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0
 			}
 
 			#site-menu {
 				background-color: #FF6600;
-				animation: hide 1s;
-				animation-fill-mode: forwards;
+				z-index: 1;
+				pointer-events: none;
+				opacity: 0;
+				transition: opacity 1s;
 			}
 
 			#site-content {
-				animation: hide 1s;
-				animation-fill-mode: forwards;
-				animation-direction: reverse;
-			}
-			#site-header:hover, #site-footer:hover {
-				background-color: rgba(255, 102, 0, 1);
-				transition: background-color 0.5s;
+				z-index: 0;
 			}
 
-			#site-header-top, #site-footer a {
+			#site-header a, #site-footer a{
 				color: white;
 				text-decoration: none;
 			}
 
-			#site-header-checkbox:checked ~ #site-menu {
-				animation: hide 1s;
-				animation-fill-mode: forwards;
-				animation-direction: reverse;
+			#site-menu-checkbox:checked ~ #site-menu {
+				opacity: 1;
+				pointer-events: initial;
 			}
 
-			#site-header-checkbox:checked ~ #site-content {
-				animation: hide 1s;
-				animation-fill-mode: forwards;
-			}
-
-			#site-header-checkbox:checked ~ #site-header, #site-header-checkbox:checked ~ #site-footer {
-				background-color: rgba(255, 102, 0, 1);
-				transition: background-color 1s;
-			}
-
-			#site-header-content {
+			#site-menu {
 				display: flex;
+				align-items: center;
 				flex-grow: 1;
 				flex-shrink: 1;
 				flex-direction: column;
+				padding: 7px;
 			}
 
-			#site-header-content nav > * {
+			#site-menu nav > * {
 				font-size: x-large;
 				font-weight: bold;
 				display: block;
 				text-align: center;
 			}
 
-			#site-header-content nav a {
+			#site-menu nav a {
 				color: rgba(255,255,255,1);
 				text-decoration: none;
-				transition: color 0.2s;
+				transition: color 0.5s;
 			}
 
-			#site-header-content nav > a:hover {
+			#site-menu nav > a:hover {
 				color: rgba(255,255,255,0.5);
 			}
 
-			@keyframes hide {
-				0%   {
-					opacity: 1;
-					pointer-events: initial;
-					display: block;
-				}
-				1%  {
-					opacity: 1;
-					pointer-events: none
-				}
-				99%  {
-					opacity: 0;
-					pointer-events: initial;
-				}
-				100% {
-					opacity: 0;
-					pointer-events: none;
-					display: none;
-				}
-			}
 			@media all and (min-width: 720px){
-				#site-header-content {
+				#site-menu {
 					flex-direction: row-reverse;
 				}
 
-				#site-header-content > * {
+				#site-menu > * {
 					width: 50%;
 					min-width: 50%;
 					max-width: 50%;
@@ -139,7 +109,7 @@
 					flex-shrink: 0;
 				}
 
-				#site-header-content nav > * {
+				#site-menu nav > * {
 					text-align: right;
 					font-size: 5vmin;
 				}
@@ -207,7 +177,6 @@
 		</style>
 	</head>
 	<body>
-		<input type="checkbox" id="site-header-checkbox" style="display: none">
 		<header id="site-header">
 			<a href="https://store.svoltastudenti.it">
 				<picture>
@@ -220,87 +189,91 @@
 				<source media="(max-width: 720px)" height="35px" srcset="/assets/img/logo_small.svg">
 				<img src="/assets/img/logo_small.png" height="35px" alt="logo">
 			</picture>
-			<label for="site-header-checkbox" style="cursor: pointer">
+			<label for="site-menu-checkbox" style="cursor: pointer">
 				<picture>
 					<source height="35px" srcset="/assets/img/menu.svg">
 					<img src="/assets/img/highlight.png" height="35px" alt="Menu">
 				</picture>
 			</label>
 		</header>
-		<div id="site-menu">
-			<nav>
-				<a href="/">Home</a>
-				<a href="/rappresentanza">Rappresentanza</a>
-				<a href="/associazione">Associazione</a>
-				<a href="/notizie">Notizie</a>
-				<a href="/eventi">Eventi</a>
-				<div>
-					<a href="https://www.facebook.com/svoltastudenti" target="_blank">
-						<img src="/assets/img/facebook.png" height="35px" />
-					</a>
-					<a href="https://www.twitter.com/svoltastudenti" target="_blank">
-						<img src="/assets/img/twitter.png" height="35px" />
-					</a>
-					<a href="https://www.instagram.com/svoltastudenti" target="_blank">
-						<img src="/assets/img/instagram.png" height="35px" />
-					</a>
-					<a href="mailto:info@svoltastudenti.it" target="_blank">
-						<img src="/assets/img/email.png" height="35px" />
-					</a>
+		<div style="position: relative; flex-grow: 1; flex-shrink: 1;">
+			<input type="checkbox" id="site-menu-checkbox" style="display: none">
+			<div id="site-menu">
+				<nav>
+					<a href="/">Home</a>
+					<a href="/rappresentanza">Rappresentanza</a>
+					<a href="/associazione">Associazione</a>
+					<a href="/notizie">Notizie</a>
+					<a href="/eventi">Eventi</a>
+					<div>
+						<a href="https://www.facebook.com/svoltastudenti" target="_blank">
+							<img src="/assets/img/facebook.png" height="35px" />
+						</a>
+						<a href="https://www.twitter.com/svoltastudenti" target="_blank">
+							<img src="/assets/img/twitter.png" height="35px" />
+						</a>
+						<a href="https://www.instagram.com/svoltastudenti" target="_blank">
+							<img src="/assets/img/instagram.png" height="35px" />
+						</a>
+						<a href="mailto:info@svoltastudenti.it" target="_blank">
+							<img src="/assets/img/email.png" height="35px" />
+						</a>
+					</div>
+				</nav>
+				<div id="newspaper" style="flex-grow: 1; flex-shrink: 1">
+					Loading latest news from our newspaper...
 				</div>
-			</nav>
-			<div id="newspaper" style="flex-grow: 1; flex-shrink: 1">
-				Loading latest news from our newspaper...
 			</div>
-		</div>
-		<div id="site-content">
-<!-- 			<section>
-				<video src=""></video>
-			</section> -->
-			<section>
-				<div>
-					<h1>Rappresentanza</h1>
-				<p>...</p>
-			</section>
-			<section>
-				<div>
-					<h1>Associazione</h1>
-					<p>Lorem Ipsum Non ci ho sbatta...</p>
-				</div>
-			</section>
-			<section>
-				<div>
-					<h1>Notizie</h1>
-					<div class="thWrapper">
-						<a></a>
-						<a></a>
-						<a></a>
-						<a></a>
+			<div id="site-content">
+	<!-- 			<section>
+					<video src=""></video>
+				</section> -->
+				<section>
+					<div>
+						<h1>Rappresentanza</h1>
+						<p>...</p>
 					</div>
-				</div>
-			</section>
-			<section>
-				<div>
-					<h1>Eventi</h1>
-					<div class="thWrapper">
-						<a></a>
-						<a></a>
-						<a></a>
-						<a></a>
+				</section>
+				<section>
+					<div>
+						<h1>Associazione</h1>
+						<p>Lorem Ipsum Non ci ho sbatta...</p>
 					</div>
-				</div>
-			</section>
-			<section>
-				<div>
-					<h1>Social</h1>
-					<div class="thWrapper">
-						<a></a>
-						<a></a>
-						<a></a>
-						<a></a>
+				</section>
+				<section>
+					<div>
+						<h1>Notizie</h1>
+						<div class="thWrapper">
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+				<section>
+					<div>
+						<h1>Eventi</h1>
+						<div class="thWrapper">
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<h1>Social</h1>
+						<div class="thWrapper">
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 		<footer id="site-footer">
 			<p>
