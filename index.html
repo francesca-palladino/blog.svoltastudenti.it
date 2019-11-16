@@ -86,7 +86,11 @@
 				}
 			}
 
-			#content {
+			#site-header-checkbox:checked ~ #site-content {
+				display: none;
+			}
+			
+			#site-content {
 				margin-top: 50px;
 			}
 
@@ -112,7 +116,7 @@
 			/**
 			 * HOME
 			 */
-			#content > section {
+			#site-content > section {
 				min-height: 90vh;
 				display: flex;
 				flex-direction: row;
@@ -156,7 +160,7 @@
 					<source media="(max-width: 720px)" height="35px" srcset="/assets/img/logo_small.svg">
 					<img src="/assets/img/logo_small.png" height="35px" alt="logo">
 				</picture>
-				<label for="header-checkbox">
+				<label for="site-header-checkbox">
 					<picture>
 						<source height="35px" srcset="/assets/img/menu.svg">
 						<img src="/assets/img/highlight.png" height="35px" alt="Menu">
