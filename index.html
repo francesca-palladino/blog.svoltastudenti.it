@@ -21,10 +21,11 @@ layout: default
 	<div>
 		<h1>Notizie</h1>
 		<div class="thWrapper">
-			<a></a>
-			<a></a>
-			<a></a>
-			<a></a>
+			{% for post in site.posts limit:4 %}
+				<a href="{{ post.url }}">
+					<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
+				</a>
+			{% endfor %}
 		</div>
 	</div>
 </section>
