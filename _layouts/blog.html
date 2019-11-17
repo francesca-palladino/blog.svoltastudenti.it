@@ -1,20 +1,53 @@
 ---
 layout: default
 ---
+<style>
+	article header {
+		display: flex;
+		flex-direction: row;
+	}
+
+	article header > * {
+		min-width: 400px;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	article footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	article footer > * {
+		width: 48%;
+	}
+
+	.article-content, article footer {
+		max-width: 1080px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+</style>
 <article>
 	<header class="article-header">
-		<div style="background-image: url('https://source.unsplash.com/{{page.image}}/992x558');" class="thumb"></div>
+		<img src="{{ page.image }}" alt="" />
 		<div class="info">
-			{{page.place}} - {{ page.date | date: "%-d %B %Y" }}
+			<p>
+				{{page.date | date: "%-d %B %Y" }} - {{ page.authors }}
+			</p>
+			<h1>
+				{{ page.title }}
+			</h1>
+			<p>
+				{{ page.tags }}
+			</p>
 		</div>
-		<h1 class="title">
-			{{page.title}}
-		</h1>
 	</header>
 	<div class="article-content">
 		{{content}}
 	</div>
-	<footer class="article-footer footer">
+	<footer>
 		<a style="text-align: left" href="{{page.previous.url}}">
 			{% if page.previous.url %}&laquo; {{page.previous.title}}{% endif %}
 		</a>
