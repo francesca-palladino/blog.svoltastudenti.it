@@ -22,9 +22,11 @@ layout: default
 		<h1>Notizie</h1>
 		<div class="thWrapper">
 			{% for post in site.posts limit:4 %}
-				<a href="{{ post.url }}">
-					<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
-				</a>
+				{% if post.categories contains "blog" %}
+					<a href="{{ post.url }}">
+						<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
+					</a>
+				{% endif %}
 			{% endfor %}
 		</div>
 	</div>
@@ -33,10 +35,13 @@ layout: default
 	<div>
 		<h1>Eventi</h1>
 		<div class="thWrapper">
-			<a></a>
-			<a></a>
-			<a></a>
-			<a></a>
+			{% for post in site.posts limit:4 %}
+				{% if post.categories contains "event" %}
+					<a href="{{ post.url }}">
+						<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
+					</a>
+				{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 </section>
