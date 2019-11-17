@@ -19,6 +19,10 @@ layout: default
 		flex-shrink: 1;
 	}
 
+	article header img {
+		max-width: 300px;
+		max-height: 300px;
+	}
 	article footer {
 		display: flex;
 		flex-direction: row;
@@ -38,7 +42,8 @@ layout: default
 </style>
 <article>
 	<header class="article-header">
-		<img src="{{ page.image }}" alt="" />
+		<!-- <img src="{{ page.image }}" alt="" /> -->
+		<img src="https://source.unsplash.com/MG8c-4n1QVE/300x300" alt="" />
 		<div class="info">
 			<p>
 				{{page.date | date: "%-d %B %Y" }} - {{ page.authors | join: "," }}
