@@ -30,4 +30,4 @@ _Consiglieri_: **Antonio Galli, Matteo Salamone, Francesca Palladino**
 
 - - -
 
-![foto dei nuovi membri al Consiglio del Direttivo di Svoltastudenti](/img/uploads/img_20191019_153800_01-1024x467.jpeg "nuovi membri al Consiglio del Direttivo di Svoltastudenti")
+![foto dei nuovi membri al Consiglio del Direttivo di Svoltastudenti](/assets/img/uploads/img_20191019_153800_01-1024x467.jpeg "nuovi membri al Consiglio del Direttivo di Svoltastudenti")
