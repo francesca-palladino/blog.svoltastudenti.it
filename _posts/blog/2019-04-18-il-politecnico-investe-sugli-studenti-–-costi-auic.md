@@ -2,9 +2,12 @@
 layout: blog
 category: blog
 title: Il Politecnico investe sugli studenti – Costi AUIC
-fb_title: Il Politecnico investe sugli studenti – Costi AUIC
+tags:
+  - Architettura Urbanistica Ingegneria delle Costruzioni
+  - Consiglio di Amministrazione
+  - Senato Accademico
 date: 2019-04-18T21:41:19.811Z
-image: bj3l739cwc8
+authors: Carlo Giovani
 ---
 
 Lo scorso martedì 16 Aprile è stato approvato in Consiglio di amministrazione il  **Bilancio** Consuntivo del 2018 e il piano degli investimenti. L’analisi presentata dal Rettore Ferruccio Resta ha mostrato un risultato di esercizio di circa  **28 mln€**, un buon risultato per l’Ateneo.
