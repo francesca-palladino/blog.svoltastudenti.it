@@ -6,22 +6,26 @@ layout: default
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
+	article > * {
+		max-width: 480px;
+	}
 /*	article header {
 		display: flex;
 		flex-direction: row;
 	}*/
 
-	article header > * {
+	/*article header > * {
 		min-width: 400px;
 		flex-grow: 1;
 		flex-shrink: 1;
-	}
+	}*/
 
 	article header img {
 		width: 100%;
-		max-width: 480px;
 	}
 	article footer {
 		display: flex;
@@ -32,16 +36,9 @@ layout: default
 	article footer > * {
 		width: 48%;
 	}
-
-	.article-content, article footer {
-		max-width: 1080px;
-		margin-left: 5px;
-		margin-right: 5px;
-
-	}
 </style>
 <article>
-	<header class="article-header">
+	<header>
 		<p>
 			{{page.date | date: "%-d %B %Y" }} - {{ page.authors | join: "," }}
 		</p>
