@@ -16,7 +16,7 @@ fb_title: >-
   NUOVI SERVIZI AGLI STUDENTI: NUOVI SERVIZI ONLINE | 1TB IN CLOUD | 5 LICENZE
   OFFICE
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

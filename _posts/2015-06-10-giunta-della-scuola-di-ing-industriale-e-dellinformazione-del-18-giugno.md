@@ -13,7 +13,7 @@ authors:
 title: Giunta della Scuola di Ing. Industriale e dell’Informazione del 18 Giugno
 fb_title: Giunta della Scuola di Ing. Industriale e dell’Informazione del 18 Giugno
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

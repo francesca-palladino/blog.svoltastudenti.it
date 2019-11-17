@@ -10,7 +10,7 @@ authors:
 title: Appelli Ing. Edile Gennaio - Febbraio 2018
 fb_title: Appelli Ing. Edile Gennaio - Febbraio 2018
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

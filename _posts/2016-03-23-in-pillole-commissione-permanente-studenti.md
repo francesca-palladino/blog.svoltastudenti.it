@@ -14,7 +14,7 @@ authors:
 title: 'In pillole: Commissione Permanente Studenti'
 fb_title: 'In pillole: Commissione Permanente Studenti'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

@@ -10,7 +10,7 @@ authors:
 title: Lavori in corso - Progetti ViVi.Polimi e Renzo Piano
 fb_title: Lavori in corso - Progetti ViVi.Polimi e Renzo Piano
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

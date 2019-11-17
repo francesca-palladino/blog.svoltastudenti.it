@@ -13,7 +13,7 @@ authors:
 title: 'In pillole: vincoli per trasferimento tra ingegnerie'
 fb_title: 'In pillole: vincoli per trasferimento tra ingegnerie'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

@@ -12,7 +12,7 @@ authors:
 title: Nuovi corsi di Laurea Magistrale, POLIMI SPORT, costi scuola AUIC, mense e spazi
 fb_title: News dagli Organi Centrali - Gennaio 2019
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

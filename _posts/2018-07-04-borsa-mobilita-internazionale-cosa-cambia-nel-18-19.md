@@ -10,7 +10,7 @@ authors:
 title: BORSA MOBILITÀ INTERNAZIONALE COSA CAMBIA NEL 18/19
 fb_title: BORSA MOBILITÀ INTERNAZIONALE COSA CAMBIA NEL 18/19
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

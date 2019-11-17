@@ -10,7 +10,7 @@ authors:
 title: Intervista candidati Rettore
 fb_title: Intervista candidati Rettore
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

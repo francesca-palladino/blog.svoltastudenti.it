@@ -12,7 +12,7 @@ authors:
 title: Il mio miglior nemico
 fb_title: Il mio miglior nemico
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

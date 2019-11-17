@@ -10,7 +10,7 @@ authors:
 title: Resoconto Giunte - Gennaio 2018
 fb_title: Resoconto Giunte - Gennaio 2018
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

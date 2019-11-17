@@ -14,7 +14,7 @@ authors:
 title: Cosa è successo oggi al Polimi?
 fb_title: Cosa è successo oggi al Polimi?
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

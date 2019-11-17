@@ -10,7 +10,7 @@ authors:
 title: Polizza assicurativa PoliMi
 fb_title: Polizza assicurativa PoliMi
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

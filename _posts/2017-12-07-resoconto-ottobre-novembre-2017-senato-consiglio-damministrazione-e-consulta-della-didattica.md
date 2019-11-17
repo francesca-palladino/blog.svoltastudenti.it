@@ -14,7 +14,7 @@ fb_title: >-
   Resoconto Ottobre/Novembre 2017 - Senato, Consiglio d'amministrazione e
   Consulta della Didattica
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

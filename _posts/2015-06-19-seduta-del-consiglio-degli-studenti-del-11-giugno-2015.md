@@ -14,7 +14,7 @@ authors:
 title: Seduta del Consiglio degli Studenti del 11 Giugno 2015
 fb_title: Seduta del Consiglio degli Studenti del 11 Giugno 2015
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

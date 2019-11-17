@@ -16,7 +16,7 @@ fb_title: >-
   Lauree in inglese: il Polimi ha rispettato la legge, ora la palla passa alla
   Corte costituzionale
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

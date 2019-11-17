@@ -11,7 +11,7 @@ authors:
 title: The impossible way to architecture
 fb_title: The impossible way to architecture
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

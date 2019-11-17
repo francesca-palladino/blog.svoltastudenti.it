@@ -10,7 +10,7 @@ authors:
 title: 'Elezioni indirette del consiglio degli studenti: Svolta e Terna dicono la loro'
 fb_title: 'Elezioni indirette del consiglio degli studenti: Svolta e Terna dicono la loro'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

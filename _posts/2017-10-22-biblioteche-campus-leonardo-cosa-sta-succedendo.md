@@ -10,7 +10,7 @@ authors:
 title: Biblioteche campus Leonardo - Cosa sta succedendo
 fb_title: Biblioteche campus Leonardo - Cosa sta succedendo
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

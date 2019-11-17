@@ -10,7 +10,7 @@ authors:
 title: Prove in Itinere per l'anno accademico 17/18
 fb_title: Prove in Itinere per l'anno accademico 17/18
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

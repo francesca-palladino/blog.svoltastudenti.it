@@ -10,7 +10,7 @@ authors:
 title: 'Il Calendario Accademico: Capitolo Finale'
 fb_title: 'Il Calendario Accademico: Capitolo Finale'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

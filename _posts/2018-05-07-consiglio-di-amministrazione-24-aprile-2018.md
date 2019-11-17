@@ -10,7 +10,7 @@ authors:
 title: CONSIGLIO DI AMMINISTRAZIONE 24 APRILE 2018
 fb_title: CONSIGLIO DI AMMINISTRAZIONE 24 APRILE 2018
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

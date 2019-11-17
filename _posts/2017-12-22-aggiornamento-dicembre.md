@@ -10,7 +10,7 @@ authors:
 title: Aggiornamento Dicembre
 fb_title: Aggiornamento Dicembre
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

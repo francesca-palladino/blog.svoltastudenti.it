@@ -12,7 +12,7 @@ authors:
 title: 'Lecco: prolungamento degli orari di apertura del polo e della biblioteca'
 fb_title: 'Lecco: prolungamento degli orari di apertura del polo e della biblioteca'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

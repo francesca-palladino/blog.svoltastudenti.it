@@ -10,7 +10,7 @@ authors:
 title: Aggiornamento Ottobre / Novembre AUIC
 fb_title: Aggiornamento Ottobre / Novembre AUIC
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

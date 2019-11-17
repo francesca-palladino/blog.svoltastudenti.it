@@ -13,7 +13,7 @@ authors:
 title: Seduta del Senato Accademico del 16 Novembre
 fb_title: Seduta del Senato Accademico del 16 Novembre
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

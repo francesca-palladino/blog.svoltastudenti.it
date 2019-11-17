@@ -10,7 +10,7 @@ authors:
 title: AGGIORNAMENTO SCIOPERO - Comunicato Congiunto
 fb_title: AGGIORNAMENTO SCIOPERO - Comunicato Congiunto
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

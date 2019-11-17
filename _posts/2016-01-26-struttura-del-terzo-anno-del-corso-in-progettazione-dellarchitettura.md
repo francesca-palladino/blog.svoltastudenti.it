@@ -12,7 +12,7 @@ authors:
 title: Struttura del terzo anno del corso in Progettazione dell'Architettura
 fb_title: Struttura del terzo anno del corso in Progettazione dell'Architettura
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

@@ -10,7 +10,7 @@ authors:
 title: 'Spazi studio: è giunta l’apocalisse?'
 fb_title: 'Spazi studio: è giunta l’apocalisse?'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

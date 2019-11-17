@@ -11,7 +11,7 @@ authors:
 title: Conferenza della Scuola di Architettura e Società
 fb_title: Conferenza della Scuola di Architettura e Società
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

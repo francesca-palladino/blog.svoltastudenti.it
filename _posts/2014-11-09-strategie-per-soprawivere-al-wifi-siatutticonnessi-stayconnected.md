@@ -12,7 +12,7 @@ authors:
 title: 'Strategie per sopraWivere al wifi! #siatutticonnessi #stayconnected'
 fb_title: 'Strategie per sopraWivere al wifi! #siatutticonnessi #stayconnected'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

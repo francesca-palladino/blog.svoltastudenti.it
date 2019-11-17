@@ -11,7 +11,7 @@ authors:
 title: Sciopero Docenti Settembre 2017
 fb_title: Sciopero Docenti Settembre 2017
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---
