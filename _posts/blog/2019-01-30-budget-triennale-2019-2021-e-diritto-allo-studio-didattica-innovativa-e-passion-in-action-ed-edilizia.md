@@ -4,12 +4,11 @@ category: blog
 title: >-
   Budget Triennale 2019-2021 e Diritto allo Studio, Didattica innovativa e
   passion in action ed edilizia
-fb_title: >-
-  Budget Triennale 2019-2021 e Diritto allo Studio, Didattica innovativa e
-  passion in action ed edilizia
-tags: Associazione
+tags:
+  - Consiglio di Amministrazione
+  - Rappresentanza
 date: 2019-01-30T21:52:31.365Z
-image: bj3l739cwc8
+authors: Alessandro De Iasio
 ---
 Condividiamo un nuovo resoconto delle ultime attività degli organi centrali, preparato sempre dai nostri Alessandro e Carlo.
 
