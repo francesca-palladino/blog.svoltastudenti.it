@@ -21,7 +21,7 @@ layout: default
 	<div>
 		<h1>Notizie</h1>
 		<div class="thWrapper">
-			{% for post in site.categories["blog"] %}
+			{% for post in site.categories["blog"] limit:4 %}
 				<a href="{{ post.url }}">
 					<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
 				</a>
@@ -33,12 +33,10 @@ layout: default
 	<div>
 		<h1>Eventi</h1>
 		<div class="thWrapper">
-			{% for post in site.posts limit:4 %}
-				{% if post.categories contains "event" %}
-					<a href="{{ post.url }}">
-						<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
-					</a>
-				{% endif %}
+			{% for post in site.categories["events"] limit:4 %}
+				<a href="{{ post.url }}">
+					<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
+				</a>
 			{% endfor %}
 		</div>
 	</div>
