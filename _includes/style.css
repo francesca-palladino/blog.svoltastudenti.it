@@ -14,12 +14,10 @@ h1 {
 }
 
 #site-header, #site-footer {
-	height: 36px;
 	padding: 7px;
 	font-size: 16px;
-	line-height: 30px;
+	line-height: 20px;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	overflow: hidden;
 	transition: background-color 0.5s;
@@ -30,6 +28,13 @@ h1 {
 	font-style: italic;
 }
 
+#site-header {
+	height: 36px;
+}
+
+#site-footer {
+	height: 20px;
+}
 #site-menu, #site-content {
 	position: absolute;
 	top: 0;
