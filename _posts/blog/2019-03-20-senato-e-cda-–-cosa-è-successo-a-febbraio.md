@@ -2,9 +2,11 @@
 layout: blog
 category: blog
 title: Senato e CdA – Cosa è successo a febbraio
-fb_title: Senato e CdA – Cosa è successo a febbraio
+tags:
+  - Consiglio di Amministrazione
+  - Senato Accademico
 date: 2019-03-20T22:34:20.900Z
-image: bj3l739cwc8
+authors: Alessandro De Iasio
 ---
 
 La riunione del senato accademico di Febbraio si è aperta con la presentazione dell’iniziativa  **Polisocial Award 2018**, un’iniziativa che ci vede tra le poche università italiane a sviluppare questo tipo di tematica.
