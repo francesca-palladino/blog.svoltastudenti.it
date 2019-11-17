@@ -2,9 +2,10 @@
 layout: blog
 category: blog
 title: 'SPORT @POLIMI: HOW TO?'
-fb_title: 'SPORT @POLIMI: HOW TO?'
+tags:
+  - Rappresentanza
 date: 2019-02-09T22:11:46.792Z
-image: bj3l739cwc8
+authors: Alessandro De Iasio
 ---
 _Un’altra giornata al Poli. Lezione alle 9:00, male ma poteva andare peggio. Un’intera giornata tra i banchi. Alle fine ero stanchissimo e avevo voglia di sfogarmi. Ho portato la borsa della palestra stamattina, l’ho lasciata nell’armadietto. La prendo e scappo al Centro Sportivo PoliMi Sport. È molto comodo, è vicinissimo all’università. Mostro la tessera, entro, mi cambio velocemente e via ad allenarmi. Ci sono un sacco di scelte, basket, tennis, pallavolo e squash. C’è anche una palestra che costa pochissimo e dei muri da arrampicata. Ah, e poi una pista di atletica tutta nostra. È tutto gestito dall’università e mi ritrovo con molti compagni di corso, ma anche altri studenti mai conosciuti prima. È un bel servizio, non me lo aspettavo, mi fa vivere questo posto in modo molto più leggero. Mentre correvo già sognavo la doccia calda nello spogliatoio e la serie TV del dopo cena. Dovrebbero esserci le piadine in frigo. Perfetto, anche questa giornata è andata._
 
