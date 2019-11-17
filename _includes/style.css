@@ -118,6 +118,9 @@ h1 {
 	padding-bottom: 50px;
 }
 
+#site-footer a:hover {
+	text-decoration: underline;
+}
 /*
  * Cat Selector
  */ 
