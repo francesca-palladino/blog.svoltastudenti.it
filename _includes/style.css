@@ -165,8 +165,8 @@ h1 {
 .thWrapper > a {
 	height: 40vmin;
 	width: 40vmin;
-	max-height: 250px;
-	max-width: 250px;
+	max-height: 500px;
+	max-width: 500px;
 	margin: 10px;
 	background-color: #FF6600;
 	color: white;

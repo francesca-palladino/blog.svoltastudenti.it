@@ -18,15 +18,6 @@ layout: default
 	article header img {
 		width: 100%;
 	}
-	article footer {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	article footer > * {
-		width: 48%;
-	}
 
 	article img {
 		max-width: 100%;
@@ -48,12 +39,4 @@ layout: default
 	<div class="article-content">
 		{{content}}
 	</div>
-	<footer>
-		<a style="text-align: left" href="{{page.previous.url}}">
-			{% if page.previous.url %}&laquo; {{page.previous.title}}{% endif %}
-		</a>
-		<a style="text-align: right" href="{{page.next.url}}">
-			{% if page.next.url %}{{page.next.title}} &raquo;{% endif %}
-		</a>
-	</footer>
 </article>
