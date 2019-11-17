@@ -2,9 +2,12 @@
 layout: blog
 category: blog
 title: Fund for Impact
-fb_title: Fund for Impact
+tags:
+  - Consiglio di Amministrazione
+  - Rappresentanza
+  - Senato Accademico
 date: 2019-02-28T22:20:35.519Z
-image: bj3l739cwc8
+authors: Priscilla Morbin
 ---
 _“Coltivare le proprie ambizioni di lavoro e carriera anche se non si hanno adeguati mezzi economici è una sfida che riguarda molti studenti.”_
 
