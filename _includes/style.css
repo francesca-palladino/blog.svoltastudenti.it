@@ -6,6 +6,7 @@ html, body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {
