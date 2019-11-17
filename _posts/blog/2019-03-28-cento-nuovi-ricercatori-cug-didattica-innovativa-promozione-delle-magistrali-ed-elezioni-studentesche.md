@@ -4,11 +4,11 @@ category: blog
 title: >-
   Cento nuovi Ricercatori, CUG, didattica innovativa, promozione delle
   magistrali ed elezioni studentesche
-fb_title: >-
-  Cento nuovi Ricercatori, CUG, didattica innovativa, promozione delle
-  magistrali ed elezioni studentesche
+tags:
+  - Rappresentanza
+  - Senato Accademico
 date: 2019-03-28T22:36:40.812Z
-image: bj3l739cwc8
+authors: Carlo Giovani
 ---
 
 Ciao ragazzi, vi riportiamo quanto successo durante le riunioni della Consulta della Didattica e Senato Accademico di questo mese.
