@@ -2,9 +2,10 @@
 layout: blog
 category: blog
 title: Pride Parade
-fb_title: Pride Parade
+tags:
+  - Consiglio degli Studenti
 date: 2019-06-29T22:03:44.726Z
-image: bj3l739cwc8
+authors: Priscilla Morbin
 ---
 
 Flash back. Siamo negli anni 60. Le incursioni della polizia nei bar gay e nei night club facevano regolarmente parte della vita gay nelle città degli USA. La polizia usava tutti i motivi che riusciva ad escogitare per giustificare un arresto con accuse di “indecenza”. Un bacio tra persone dello stesso sesso era proibito. Tenersi per mano era proibito. Usare abiti del sesso opposto? Era proibito anche questo.  
