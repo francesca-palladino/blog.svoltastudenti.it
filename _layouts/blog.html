@@ -2,6 +2,12 @@
 layout: default
 ---
 <style>
+	article {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	article header {
 		display: flex;
 		flex-direction: row;
@@ -27,6 +33,7 @@ layout: default
 		max-width: 1080px;
 		margin-left: 5px;
 		margin-right: 5px;
+
 	}
 </style>
 <article>
@@ -34,13 +41,13 @@ layout: default
 		<img src="{{ page.image }}" alt="" />
 		<div class="info">
 			<p>
-				{{page.date | date: "%-d %B %Y" }} - {{ page.authors }}
+				{{page.date | date: "%-d %B %Y" }} - {{ page.authors | join: "," }}
 			</p>
 			<h1>
 				{{ page.title }}
 			</h1>
 			<p>
-				{{ page.tags }}
+				{{ page.tags | join: "," }}
 			</p>
 		</div>
 	</header>
