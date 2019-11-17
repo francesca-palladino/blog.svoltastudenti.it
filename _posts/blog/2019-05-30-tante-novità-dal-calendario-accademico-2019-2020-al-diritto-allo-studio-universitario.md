@@ -4,11 +4,12 @@ category: blog
 title: >-
   Tante novità: dal Calendario Accademico 2019-2020 al Diritto allo Studio
   Universitario
-fb_title: >-
-  Tante novità: dal Calendario Accademico 2019-2020 al Diritto allo Studio
-  Universitario
+tags:
+  - Consiglio di Amministrazione
+  - Rappresentanza
+  - Senato Accademico
 date: 2019-05-30T21:57:29.765Z
-image: bj3l739cwc8
+authors: Carlo Giovani
 ---
 
 Tante sono le novità emerse dall’ultimo Consiglio di Amministrazione.  
