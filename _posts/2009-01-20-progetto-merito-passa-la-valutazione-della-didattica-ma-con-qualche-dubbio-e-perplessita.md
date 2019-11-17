@@ -16,7 +16,7 @@ fb_title: >-
   Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
   perplessità
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

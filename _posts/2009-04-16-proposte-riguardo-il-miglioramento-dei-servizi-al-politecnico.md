@@ -16,7 +16,7 @@ fb_title: >-
   Le proposte riguardo il miglioramento dei servizi al politecnico: Università
   aperta 24h/24, Spazi per i gruppi studenteschi, bacheche
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

@@ -14,7 +14,7 @@ fb_title: >-
   Svoltastudenti si racconta: tutto ciò che è stato fatto nei primi sei mesi di
   rappresentanza.
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

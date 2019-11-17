@@ -12,7 +12,7 @@ authors:
 title: 'Comunicare agli studenti: le attività del II semestre della Student Union'
 fb_title: 'Comunicare agli studenti: le attività del II semestre della Student Union'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

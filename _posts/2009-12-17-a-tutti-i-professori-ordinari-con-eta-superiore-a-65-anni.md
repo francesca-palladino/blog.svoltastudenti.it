@@ -12,7 +12,7 @@ authors:
 title: A tutti i professori ordinari con età superiore a 65 anni.
 fb_title: A tutti i professori ordinari con età superiore a 65 anni.
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

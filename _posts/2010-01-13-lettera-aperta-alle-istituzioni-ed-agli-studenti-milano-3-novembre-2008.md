@@ -12,7 +12,7 @@ authors:
 title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
 fb_title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

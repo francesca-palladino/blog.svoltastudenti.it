@@ -12,7 +12,7 @@ authors:
 title: Consiglio di Scuola di Ingegneria Edile - Architettura del 24 marzo 2014
 fb_title: Consiglio di Scuola di Ingegneria Edile - Architettura del 24 marzo 2014
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

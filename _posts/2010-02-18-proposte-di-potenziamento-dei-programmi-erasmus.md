@@ -12,7 +12,7 @@ authors:
 title: Proposte di potenziamento dei programmi Erasmus
 fb_title: Proposte di potenziamento dei programmi Erasmus
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

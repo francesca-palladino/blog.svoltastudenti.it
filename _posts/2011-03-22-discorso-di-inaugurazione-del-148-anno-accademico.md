@@ -11,7 +11,7 @@ authors:
 title: Discorso di Inaugurazione del 148° Anno Accademico
 fb_title: Discorso di Inaugurazione del 148° Anno Accademico
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

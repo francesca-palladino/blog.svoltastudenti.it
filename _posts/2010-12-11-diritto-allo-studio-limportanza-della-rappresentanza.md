@@ -13,7 +13,7 @@ authors:
 title: 'Diritto allo Studio: l''importanza della Rappresentanza'
 fb_title: 'Diritto allo Studio: l''importanza della Rappresentanza'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

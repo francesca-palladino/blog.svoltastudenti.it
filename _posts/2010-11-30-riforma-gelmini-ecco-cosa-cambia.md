@@ -13,7 +13,7 @@ authors:
 title: 'Riforma Gelmini, ecco cosa cambia'
 fb_title: 'Riforma Gelmini, ecco cosa cambia'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

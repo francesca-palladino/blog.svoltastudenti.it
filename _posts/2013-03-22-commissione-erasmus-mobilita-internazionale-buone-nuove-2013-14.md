@@ -12,7 +12,7 @@ authors:
 title: Commissione "Erasmus" Mobilità Internazionale - Buone Nuove 2013/14
 fb_title: Commissione "Erasmus" Mobilità Internazionale - Buone Nuove 2013/14
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

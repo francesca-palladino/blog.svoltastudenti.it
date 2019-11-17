@@ -12,7 +12,7 @@ authors:
 title: 'Università, più fondi alle migliori'
 fb_title: 'Università, più fondi alle migliori'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

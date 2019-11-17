@@ -11,7 +11,7 @@ authors:
 title: Una riflessione sui Digital Architecture e la rappresentazione al Politecnico
 fb_title: Una riflessione sui Digital Architecture e la rappresentazione al Politecnico
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

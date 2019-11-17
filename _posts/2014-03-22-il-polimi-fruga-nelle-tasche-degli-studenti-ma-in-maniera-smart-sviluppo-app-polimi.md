@@ -16,7 +16,7 @@ fb_title: >-
   Il Polimi fruga nelle tasche degli studenti (ma in maniera Smart): Sviluppo
   App Polimi
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

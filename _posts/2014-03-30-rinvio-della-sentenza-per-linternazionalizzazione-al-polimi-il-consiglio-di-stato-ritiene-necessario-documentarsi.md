@@ -16,7 +16,7 @@ fb_title: >-
   Rinvio della sentenza per l'internazionalizzazione al Polimi: il Consiglio di
   Stato ritiene necessario documentarsi!
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

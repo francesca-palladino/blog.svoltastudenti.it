@@ -12,7 +12,7 @@ authors:
 title: Comunicato stampa Unilab SvoltaStudenti 16-07-2014
 fb_title: Comunicato stampa Unilab SvoltaStudenti 16-07-2014
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

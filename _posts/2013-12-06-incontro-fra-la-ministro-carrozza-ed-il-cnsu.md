@@ -13,7 +13,7 @@ authors:
 title: Incontro fra la ministro Carrozza ed il CNSU
 fb_title: Incontro fra la ministro Carrozza ed il CNSU
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

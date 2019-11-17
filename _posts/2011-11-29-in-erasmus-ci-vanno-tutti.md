@@ -12,7 +12,7 @@ authors:
 title: In Erasmus Ci Vanno Tutti!!
 fb_title: In Erasmus Ci Vanno Tutti!!
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

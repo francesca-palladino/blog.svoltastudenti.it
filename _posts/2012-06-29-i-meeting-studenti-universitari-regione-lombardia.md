@@ -10,7 +10,7 @@ authors:
 title: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
 fb_title: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

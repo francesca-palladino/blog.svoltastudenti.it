@@ -12,7 +12,7 @@ authors:
 title: 'Al Polimi si premia anche lo sport, non solo sul podio!'
 fb_title: 'Al Polimi si premia anche lo sport, non solo sul podio!'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

@@ -12,7 +12,7 @@ authors:
 title: il messaggio del rettore
 fb_title: il messaggio del rettore
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

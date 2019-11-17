@@ -13,7 +13,7 @@ authors:
 title: News dagli organi centrali del mese di Febbraio - Consulta della didattica
 fb_title: News dagli organi centrali del mese di Febbraio - Consulta della didattica
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

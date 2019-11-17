@@ -10,7 +10,7 @@ authors:
 title: 3 Anni di LAVORO al PoliMI
 fb_title: 3 Anni di LAVORO al PoliMI
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

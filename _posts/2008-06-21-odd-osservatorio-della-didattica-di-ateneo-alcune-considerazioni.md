@@ -10,7 +10,7 @@ authors:
 title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
 fb_title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

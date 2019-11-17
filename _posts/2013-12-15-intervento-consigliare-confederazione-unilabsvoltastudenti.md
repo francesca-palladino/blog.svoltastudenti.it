@@ -12,7 +12,7 @@ authors:
 title: Intervento consigliare Confederazione - UnilabSvoltaStudenti
 fb_title: Intervento consigliare Confederazione - UnilabSvoltaStudenti
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

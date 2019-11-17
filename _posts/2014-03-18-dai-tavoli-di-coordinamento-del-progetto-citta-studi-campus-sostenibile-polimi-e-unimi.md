@@ -16,7 +16,7 @@ fb_title: >-
   Dai tavoli di coordinamento del progetto Città Studi Campus Sostenibile PoliMi
   e UniMi
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

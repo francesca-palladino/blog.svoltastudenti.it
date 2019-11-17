@@ -13,7 +13,7 @@ authors:
 title: 'Emendamento al Piano Triennale 2014-2016: E-book!'
 fb_title: 'Emendamento al Piano Triennale 2014-2016: E-book!'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

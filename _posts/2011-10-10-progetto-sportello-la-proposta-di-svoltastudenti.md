@@ -12,7 +12,7 @@ authors:
 title: Progetto "Sportello" - La proposta di SvoltaStudenti
 fb_title: Progetto "Sportello" - La proposta di SvoltaStudenti
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

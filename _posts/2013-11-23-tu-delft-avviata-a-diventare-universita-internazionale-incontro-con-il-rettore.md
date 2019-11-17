@@ -15,7 +15,7 @@ fb_title: >-
   TU DELFT AVVIATA A DIVENTARE UNIVERSITA’ INTERNAZIONALE. Incontro con il
   Rettore
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

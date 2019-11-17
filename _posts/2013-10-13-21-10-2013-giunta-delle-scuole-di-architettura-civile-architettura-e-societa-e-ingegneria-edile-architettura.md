@@ -16,7 +16,7 @@ fb_title: >-
   21-10-2013 Giunta delle scuole di architettura civile, architettura e società
   e ingegneria edile-architettura
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

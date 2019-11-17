@@ -12,7 +12,7 @@ authors:
 title: BORSE DI STUDIO
 fb_title: BORSE DI STUDIO
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

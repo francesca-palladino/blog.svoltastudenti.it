@@ -16,7 +16,7 @@ fb_title: >-
   Dichiarazione di Vincenzo Giannico alla seduta Senato-CdA in merito al ricorso
   al Consiglio di Stato sulle LM in inglese
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

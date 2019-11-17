@@ -13,7 +13,7 @@ authors:
 title: Istituito il FONDO per il MERITO da 2M€
 fb_title: Istituito il FONDO per il MERITO da 2M€
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

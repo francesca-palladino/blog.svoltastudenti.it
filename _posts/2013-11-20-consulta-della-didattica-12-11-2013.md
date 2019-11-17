@@ -13,7 +13,7 @@ authors:
 title: Consulta della Didattica 12-11-2013
 fb_title: Consulta della Didattica 12-11-2013
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

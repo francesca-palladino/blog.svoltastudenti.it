@@ -13,7 +13,7 @@ authors:
 title: Il posto del Professore è il tabù da sfatare.
 fb_title: Il posto del Professore è il tabù da sfatare.
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

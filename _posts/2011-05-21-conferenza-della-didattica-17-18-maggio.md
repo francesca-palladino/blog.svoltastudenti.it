@@ -12,7 +12,7 @@ authors:
 title: Conferenza della didattica 17-18 maggio
 fb_title: Conferenza della didattica 17-18 maggio
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

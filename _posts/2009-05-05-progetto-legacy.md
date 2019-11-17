@@ -10,7 +10,7 @@ authors:
 title: Progetto LEGACY
 fb_title: Progetto LEGACY
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

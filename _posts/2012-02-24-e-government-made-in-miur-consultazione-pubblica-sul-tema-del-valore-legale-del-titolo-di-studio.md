@@ -16,7 +16,7 @@ fb_title: >-
   E-Government made in MIUR: consultazione pubblica sul tema del valore legale
   del titolo di studio
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

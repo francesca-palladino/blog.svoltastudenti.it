@@ -11,7 +11,7 @@ authors:
 title: Il Politecnico che vorrei
 fb_title: Il Politecnico che vorrei
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

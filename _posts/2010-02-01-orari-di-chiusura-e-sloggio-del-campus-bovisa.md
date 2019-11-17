@@ -12,7 +12,7 @@ authors:
 title: Orari di Chiusura (e sloggio) del Campus Bovisa
 fb_title: Orari di Chiusura (e sloggio) del Campus Bovisa
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

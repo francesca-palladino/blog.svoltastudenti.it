@@ -12,7 +12,7 @@ authors:
 title: 'Beep Polimi, Miglioriamolo Insieme! - La Parola agli Studenti.'
 fb_title: 'Beep Polimi, Miglioriamolo Insieme! - La Parola agli Studenti.'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

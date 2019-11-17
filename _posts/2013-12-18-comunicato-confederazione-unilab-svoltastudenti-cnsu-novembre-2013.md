@@ -13,7 +13,7 @@ authors:
 title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU novembre 2013
 fb_title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU novembre 2013
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

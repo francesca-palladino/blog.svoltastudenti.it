@@ -13,7 +13,7 @@ authors:
 title: Tutti in piazza a difendere lo status quo?
 fb_title: Tutti in piazza a difendere lo status quo?
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

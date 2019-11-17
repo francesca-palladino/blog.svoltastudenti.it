@@ -14,7 +14,7 @@ authors:
 title: 'Il Governo taglia il Diritto allo studio: la nostra risposta.'
 fb_title: 'Il Governo taglia il Diritto allo studio: la nostra risposta.'
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

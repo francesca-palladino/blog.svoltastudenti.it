@@ -10,7 +10,7 @@ authors:
 title: Giornate Della Sostenibilità 12 e 13 Ottobre 2012
 fb_title: Giornate Della Sostenibilità 12 e 13 Ottobre 2012
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

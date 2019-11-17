@@ -11,7 +11,7 @@ authors:
 title: inaugurazione anno accademico
 fb_title: inaugurazione anno accademico
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---

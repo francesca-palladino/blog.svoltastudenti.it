@@ -16,7 +16,7 @@ fb_title: >-
   L’università oltre le lezioni, la realtà in Olanda, ancora un miraggio al
   Politecnico.
 
-image: bj3l739cwc8
+image: 
 lang: it
 place: Milano
 ---
