@@ -158,5 +158,6 @@ h1 {
 	max-height: 250px;
 	max-width: 250px;
 	margin: 10px;
-	background-color: black;
+	background-color: #FF6600;
+	color: white;
 }
