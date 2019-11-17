@@ -4,11 +4,14 @@ category: blog
 title: >-
   Contatto con i rappresentanti degli studenti, elezioni studentesche di maggio
   2019, Passion in Action e Bandi per le Lauree Triennali di Design ed AUIC
-fb_title: >-
-  Contatto con i rappresentanti degli studenti, elezioni studentesche di maggio
-  2019, Passion in Action e Bandi per le Lauree Triennali di Design ed AUIC
+tags:
+  - Architettura Urbanistica Ingegneria delle Costruzioni
+  - Consiglio di Amministrazione
+  - Consiglio Nazionale degli Studenti Universitari
+  - Rappresentanza
+  - Senato Accademico
 date: 2019-02-20T22:17:26.196Z
-image: bj3l739cwc8
+authors: Carlo Giovani
 ---
 Prima della riunione della Consulta della Didattica (la commissione del Senato Accademico che si occupa di didattica e che si riunisce mensilmente) si è proceduto all’elezione del nuovo Coordinatore, a seguito dell’elezione dei nuovi Presidi, da parte degli stessi e dei rappresentanti degli studenti negli organi centrali.
 
