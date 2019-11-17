@@ -4,11 +4,10 @@ category: blog
 title: >-
   Se mi dicono cosa posso o non posso fare, io #lotto – 8 Marzo Festa della
   Donna
-fb_title: >-
-  Se mi dicono cosa posso o non posso fare, io #lotto – 8 Marzo Festa della
-  Donna
+tags:
+  - Associazione
 date: 2019-03-08T22:29:30.614Z
-image: bj3l739cwc8
+authors: Alessandro De Iasio
 ---
 
 Questo è un messaggio anonimo di una studentessa qualunque. Buona lettura.
