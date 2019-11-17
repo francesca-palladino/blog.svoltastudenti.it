@@ -4,11 +4,10 @@ category: blog
 title: >-
   PROGETTO RENZO PIANO @POLIMI – IL SENATORE VISITA IL CANTIERE E LANCIA IL
   CAMPUS DEI CITTADINI
-fb_title: >-
-  PROGETTO RENZO PIANO @POLIMI – IL SENATORE VISITA IL CANTIERE E LANCIA IL
-  CAMPUS DEI CITTADINI
+tags:
+  - Consiglio di Amministrazione
 date: 2019-03-04T22:24:10.573Z
-image: bj3l739cwc8
+authors: Alessandro De Iasio
 ---
 *‘’I cantieri sono magia, sono sempre un gesto straordinario per il futuro. I cantieri portano insieme l’orgoglio di fare qualcosa per la società. Ogni cantiere è un’occasione di speranza.”*, ha affermato Piano.
 
