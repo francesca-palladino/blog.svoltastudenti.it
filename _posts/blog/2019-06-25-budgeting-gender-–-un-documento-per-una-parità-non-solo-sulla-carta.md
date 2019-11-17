@@ -2,9 +2,12 @@
 layout: blog
 category: blog
 title: Budgeting Gender – Un documento per una parità non solo sulla carta
-fb_title: Budgeting Gender – Un documento per una parità non solo sulla carta
+tags:
+  - Consiglio di Amministrazione
+  - Rappresentanza
+  - Senato Accademico
 date: 2019-06-25T22:00:37.316Z
-image: bj3l739cwc8
+authors: Alessio Rocca
 ---
 
 Nel 2019 è stato redatto il primo Budgeting Gender (o “Bilancio di Genere”) ossia un documento redatto dal Politecnico di Milano per analizzare la situazione all’interno dell’Ateneo riguardo alle tematiche di parità di genere, ed in generale di uguaglianza. Nel testo si sono inoltre discussi futuri provvedimenti per migliorare l’allocazione delle risorse dell’Università, in funzione di un ambiente privo di discriminazioni di genere, nonché una generale politica di inclusione sia a livello studentesco che del corpo docenti.
