@@ -52,6 +52,10 @@ h1 {
 	font-style: italic;
 }
 
+.site-header a, .site-footer a {
+	color: white;
+	text-decoration: none;
+}
 .site-header {
 	height: 36px;
 	position: fixed;
@@ -77,6 +81,32 @@ h1 {
 	opacity: 1;
 	pointer-events: initial;
 	transition: opacity 1s;
+}
+
+.site-nav {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-direction: column;
+	padding: 7px;
+}
+
+.site-nav nav > * {
+	font-size: x-large;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+
+.site-nav nav a {
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.site-nav nav > a:hover {
+	color: rgba(255,255,255,0.5);
 }
 
 @media all and (min-width: 720px){
