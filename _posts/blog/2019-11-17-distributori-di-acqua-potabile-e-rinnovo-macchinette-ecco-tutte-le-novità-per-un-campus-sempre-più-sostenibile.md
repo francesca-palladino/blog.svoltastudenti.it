@@ -10,6 +10,8 @@ tags:
   - Rappresentanza
 date: 2019-10-30T15:10:02.851Z
 authors: Alessio Rocca
+relEn: '#'
+image: /assets/img/uploads/photo5970916148704815739.jpg
 ---
 Il PoliMi diventa ancora più sostenibile con la sostituzione di tutte le vecchie macchinette ed il loro rinnovo!
 
