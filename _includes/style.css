@@ -28,6 +28,15 @@ h1 {
 	font-style: italic;
 }
 
+.site-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
 .site-header {
 	height: 36px;
 	position: fixed;
@@ -40,7 +49,7 @@ h1 {
 	height: 20px;
 }
 
-#site-menu, #site-content {
+.site-nav, #site-content {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -48,7 +57,7 @@ h1 {
 	bottom: 0
 }
 
-#site-menu {
+.site-nav {
 	background-color: #FF6600;
 	z-index: 1;
 	pointer-events: none;
@@ -65,12 +74,12 @@ h1 {
 	text-decoration: none;
 }
 
-#site-menu-checkbox:checked ~ #site-menu {
+#site-cover-checkbox:checked ~ .site-cover {
 	opacity: 1;
 	pointer-events: initial;
 }
 
-#site-menu {
+.site-nav {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
@@ -79,29 +88,29 @@ h1 {
 	padding: 7px;
 }
 
-#site-menu nav > * {
+.site-nav nav > * {
 	font-size: x-large;
 	font-weight: bold;
 	display: block;
 	text-align: center;
 }
 
-#site-menu nav a {
+.site-nav nav a {
 	color: rgba(255,255,255,1);
 	text-decoration: none;
 	transition: color 0.5s;
 }
 
-#site-menu nav > a:hover {
+.site-nav nav > a:hover {
 	color: rgba(255,255,255,0.5);
 }
 
 @media all and (min-width: 720px){
-	#site-menu {
+	.site-nav {
 		flex-direction: row-reverse;
 	}
 
-	#site-menu > * {
+	.site-nav > * {
 		width: 50%;
 		min-width: 50%;
 		max-width: 50%;
@@ -109,7 +118,7 @@ h1 {
 		flex-shrink: 0;
 	}
 
-	#site-menu nav > * {
+	.site-nav nav > * {
 		text-align: right;
 		font-size: 5vmin;
 	}
