@@ -27,7 +27,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: stretch;
 }
 
 .site-header {
@@ -35,10 +35,6 @@ h1 {
 	position: sticky;
 	top: 0;
 }
-
-
-
-
 
 .site-header, .site-footer {
 	padding: 7px;
@@ -53,15 +49,6 @@ h1 {
 	color: white;
 	font-style: italic;
 }
-/*
-.site-cover {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
-}*/
 
 .site-header {
 	height: 36px;
@@ -75,7 +62,32 @@ h1 {
 	height: 20px;
 }
 
-.site-nav, #site-content {
+.site-cover {
+	opacity: none;
+	pointer-events: none;
+}
+
+#site-cover-checkbox:checked ~ .site-cover {
+	opacity: 1;
+	pointer-events: initial;
+}
+
+
+
+
+/*
+.site-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}*/
+
+
+
+/*.site-nav, #site-content {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -95,13 +107,10 @@ h1 {
 	color: white;
 	text-decoration: none;
 }
+*/
 
-#site-cover-checkbox:checked ~ .site-cover {
-	opacity: 1;
-	pointer-events: initial;
-}
 
-.site-nav {
+/*.site-nav {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
@@ -155,7 +164,7 @@ h1 {
 
 #site-footer a:hover {
 	text-decoration: underline;
-}
+}*/
 /*
  * Cat Selector
  */ 
