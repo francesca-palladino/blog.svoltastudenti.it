@@ -30,6 +30,11 @@ h1 {
 	align-items: stretch;
 }
 
+.site-cover > *, .site-wrapper > * {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
 .site-header {
 	position: fixed;
 	position: sticky;
