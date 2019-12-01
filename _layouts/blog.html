@@ -22,6 +22,10 @@ layout: default
 	article img {
 		max-width: 100%;
 	}
+
+	article blockquote {
+		border-left: 10px solid #FF6600;
+	}
 </style>
 <article>
 	<header>
@@ -31,9 +35,10 @@ layout: default
 		<h1 style="display: none">
 			{{ page.title }}
 		</h1>
-		<p>
+<!-- 		<p>
 			{{ page.tags | join: "," }}
-		</p><!-- <img src="{{ page.image }}" alt="" /> -->
+		</p> -->
+		<!-- <img src="{{ page.image }}" alt="" /> -->
 		<img src="https://source.unsplash.com/MG8c-4n1QVE/1000x1000" alt="" />
 	</header>
 	<div class="article-content">
