@@ -45,14 +45,13 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
-	transition: background-color 0.5s;
-	background-color: rgb(255, 102, 0);
+	background-color: #FF6600;
 	flex-grow: 0;
 	flex-shrink: 0;
 	color: white;
 	font-style: italic;
 }
-
+/*
 .site-cover {
 	position: fixed;
 	top: 0;
@@ -60,14 +59,14 @@ h1 {
 	right: 0;
 	bottom: 0;
 	z-index: 1;
-}
+}*/
 
 .site-header {
 	height: 36px;
-	position: fixed;
+	/*position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
+	right: 0;*/
 }
 
 .site-footer {
@@ -88,10 +87,6 @@ h1 {
 	pointer-events: none;
 	opacity: 0;
 	transition: opacity 1s;
-}
-
-#site-content {
-	z-index: 0;
 }
 
 #site-header a, #site-footer a{
