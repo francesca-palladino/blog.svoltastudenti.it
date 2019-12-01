@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>Notizie</h1>
+<div class="thWrapper">
+	{% for post in site.categories["events"] %}
+		<a href="{{ post.url }}">
+			<img style="height: 100%; width: 100%" alt="{{ post.title }}" src="{{ post.image }}" />
+		</a>
+	{% endfor %}
+</div>
