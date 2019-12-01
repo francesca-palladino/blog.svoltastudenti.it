@@ -70,18 +70,12 @@ h1 {
 .site-cover {
 	opacity: 0;
 	pointer-events: none;
+	background-color: #FF6600;
 }
 
 #site-cover-checkbox:checked ~ .site-cover {
 	opacity: 1;
 	pointer-events: initial;
-}
-
-.site-nav {
-	background-color: #FF6600;
-	z-index: 1;
-	pointer-events: none;
-	opacity: 0;
 	transition: opacity 1s;
 }
 
