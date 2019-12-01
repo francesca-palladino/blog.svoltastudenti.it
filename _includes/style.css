@@ -6,12 +6,37 @@ html, body {
 	display: flex;
 	flex-direction: column; */
 	font-family: 'Lato', sans-serif;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 h1 {
 	font-size: x-large;
 	font-size: xx-large;
 }
+
+.site-cover, .site-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.site-header {
+	position: fixed;
+	position: sticky;
+	top: 0;
+}
+
+
+
+
 
 .site-header, .site-footer {
 	padding: 7px;

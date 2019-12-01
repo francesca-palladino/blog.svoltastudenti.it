@@ -2,18 +2,18 @@
 <html lang="{{page.lang}}">
   {% include head.html %}
   <body>
-	<input type="checkbox" id="site-cover-checkbox" style="display: none">
-  	<div class="site-cover">
-	  	{% include header.html %}
-	    {% include nav.html %}
-	    {% include footer.html %}
-  	</div>
+  	<input type="checkbox" id="site-cover-checkbox" style="display: none">
   	<div class="site-wrapper">
-	  	{% include header.html %}
-	    <main id="site-content">
+  		{% include header.html %}
+	    <main class="site-content">
 	      {{ content }}
 	    </main>
 	    {% include footer.html %}
 	</div>
+  	<div class="site-cover">
+  		{% include header.html %}
+	    {% include nav.html %}
+	    {% include footer.html %}
+  	</div>
   </body>
 </html>
