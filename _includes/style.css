@@ -56,6 +56,12 @@ h1 {
 	color: white;
 	text-decoration: none;
 }
+
+.site-header a:hover, .site-footer a:hover {
+	color: white;
+	text-decoration: initial;
+}
+
 .site-header {
 	height: 36px;
 	position: fixed;
