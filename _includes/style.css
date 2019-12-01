@@ -138,7 +138,6 @@ h1 {
   Scrollbar
 */
 
-<style type="text/css">
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -172,8 +171,6 @@ h1 {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-</style>
-
 
 /*
 .site-cover {
