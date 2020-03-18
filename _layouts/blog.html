@@ -41,10 +41,10 @@ layout: default
 		<img src="{{ page.image }}" alt="" />
 		{% unless page.link_en == "-" %}
 			<a href="{{site.url}}/en/{{page.link_en | slugify}}">ENG</a>
-		{% endunless}
+		{% endunless %}
 		{% unless page.link_it == "-" %}
 			<a href="{{site.url}}/it/{{page.link_it | slugify}}">ITA</a>
-		{% endunless}
+		{% endunless %}
 	</header>
 	<div class="article-content">
 		{{content}}
