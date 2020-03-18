@@ -1,5 +1,6 @@
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    multilingual: true
     label: "Blog" # Used in the UI
     folder: "_posts/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -17,6 +18,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
+    multilingual: true
     folder: "_posts/events" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
