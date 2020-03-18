@@ -23,7 +23,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Traduzione Italiana", name: "link_it", widget: "hidden", default: "-"}
-      - {label: "Traduzione Inglese", name: "link_en", widget: "relation", collection: "blog-en", required: false, searchFields: ["title"], valueField: "id", displayFields: "title"}
+      - {label: "Traduzione Inglese", name: "link_en", widget: "relation", collection: "blog-en", searchFields: ["title"], valueField: "id", displayFields: "title"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
     folder: "_posts/blog/en" # The path to the folder where the documents are stored
