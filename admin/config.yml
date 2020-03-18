@@ -24,7 +24,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Traduzione Italiana", name: "link_it", widget: "hidden", default: "-"}
-      - {label: "Traduzione Inglese", name: "link_en", widget: "relation", collection: "blog-en", searchFields: ["title"], displayFields: "title", valueField: "slug"}
+      - {label: "Traduzione Inglese", name: "link_en", widget: "relation", collection: "blog-en", searchFields: ["title"], displayFields: "title", valueField: "title"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
     folder: "_posts/blog/en" # The path to the folder where the documents are stored
@@ -40,7 +40,7 @@ collections:
       - {label: "Authors", name: "authors", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: "", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Traduzione Italiana", name: "link_it", widget: "relation", collection: "blog-it", required: false, searchFields: ["title"], valueField: "slug", displayFields: "title"}
+      - {label: "Traduzione Italiana", name: "link_it", widget: "relation", collection: "blog-it", required: false, searchFields: ["title"], valueField: "title", displayFields: "title"}
       - {label: "Traduzione Inglese", name: "link_en", widget: "hidden", default: "-"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
