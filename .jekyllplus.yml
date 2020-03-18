@@ -13,21 +13,11 @@ collections:
       - {label: "Category", name: "category", type: "hidden", default: "blog"}
       - {label: "Title", name: "title", type: "string"}
       - {label: "Tags", name: "tags", type: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
-      - {label: "Publish Date", name: "date", type: "datetime"}
+      - {label: "Publish Date", name: "date", type: "date"}
       - {label: "Authors", name: "authors", type: "string", default: "Svoltastudenti" }
       - {label: "English Version", name: "relEn", type: "string", default: ""}
       - {label: "Image", name: "image", type: "image", default: ""}
       - {label: "Body", name: "body", type: "markdown"}
-  - name: "blog_new" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog New" # Used in the UI
-    folder: "_posts/blog_new" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", type: "hidden", default: "blog"}
-      - {label: "Published", name: "published", type: "hidden", default: "true"}
-      - {label: "Category", name: "category", type: "hidden", default: "blog"}
-      - {label: "Title", name: "title", type: "string"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
     folder: "_posts/events" # The path to the folder where the documents are stored
