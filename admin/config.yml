@@ -7,16 +7,34 @@ publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+  - name: "blog-it" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog (it)" # Used in the UI
+    folder: "_posts/blog/it" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Published", name: "published", widget: "hidden", default: "true"}
-      - {label: "Lingua", name: "category", widget: "select", options: ["it", "en"]}
-      - {label: "English Version", name: "link_en", widget: "relation", collection: "blog"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
+      - {label: "Italian Version", name: "link_it", widget: "hidden", default: "-"}
+      - {label: "English Version", name: "link_en", widget: "relation", collection: "blog-en"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Authors", name: "authors", widget: "string", default: "Svoltastudenti" }
+      - {label: "Image", name: "image", widget: "image", default: "", require: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog (en)" # Used in the UI
+    folder: "_posts/blog/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Published", name: "published", widget: "hidden", default: "true"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
+      - {label: "Italian Version", name: "link_it", widget: "relation", collection: "blog-it"}
+      - {label: "English Version", name: "link_en", widget: "hidden", default: "-"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
