@@ -6,4 +6,4 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://blog.svoltastudenti.it" # the base hostname & protocol for your site
 permalink: /:categories/:title
 future: true
-lang: [ 'en', 'fr', 'cn' ]
+lang: [ 'it', 'en']
