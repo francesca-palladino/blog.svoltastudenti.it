@@ -29,16 +29,18 @@ layout: default
 </style>
 <article>
 	<header>
-<!-- 		<p>
+		<p>
 			{{page.date | date: "%-d %B %Y" }} - {{ page.authors | join: "," }}
-		</p> -->
-		<h1 style="display: none">
+		</p>
+		<h1>
 			{{ page.title }}
 		</h1>
-<!-- 		<p>
+		<p>
 			{{ page.tags | join: "," }}
-		</p> -->
+		</p>
 		<img src="{{ page.image }}" alt="" />
+		<a href="{{site.url}}/en/{{page.link_en | slugify}}">ENG</a>
+		<a href="{{site.url}}/en/{{page.link_it | slugify}}">ITA</a>
 		<!-- <img src="https://source.unsplash.com/MG8c-4n1QVE/1000x1000" alt="" /> -->
 	</header>
 	<div class="article-content">
