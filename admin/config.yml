@@ -21,7 +21,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Authors", name: "authors", widget: "string", default: "Svoltastudenti" }
+      - {label: "Authors", name: "authors", widget: "string" }
       - {label: "Image", name: "image", widget: "image", default: "", require: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
@@ -38,7 +38,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Authors", name: "authors", widget: "string", default: "Svoltastudenti" }
+      - {label: "Authors", name: "authors", widget: "string" }
       - {label: "Image", name: "image", widget: "image", default: "", require: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
