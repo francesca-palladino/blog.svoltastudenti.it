@@ -35,14 +35,16 @@ layout: default
 		<h1>
 			{{ page.title }}
 		</h1>
-		<p>
+<!-- 		<p>
 			{{ page.tags | join: "," }}
-		</p>
+		</p> -->
 		<img src="{{ page.image }}" alt="" />
-		<a href="{{site.url}}/en/{{page.link_en | slugify}}">ENG</a>
-		<a href="{{site.url}}/it/{{page.link_it | slugify}}">ITA</a>
-		{{page.link_it}} / {{page.link_en}}
-		<!-- <img src="https://source.unsplash.com/MG8c-4n1QVE/1000x1000" alt="" /> -->
+		{% unless page.link_en == "-" %}
+			<a href="{{site.url}}/en/{{page.link_en | slugify}}">ENG</a>
+		{% endunless}
+		{% unless page.link_it == "-" %}
+			<a href="{{site.url}}/it/{{page.link_it | slugify}}">ITA</a>
+		{% endunless}
 	</header>
 	<div class="article-content">
 		{{content}}
