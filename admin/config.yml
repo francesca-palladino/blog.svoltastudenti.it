@@ -19,8 +19,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Authors", name: "authors", widget: "string" }
-      - {label: "Image", name: "image", widget: "image", default: "", require: false}
+      - {label: "Authors", name: "authors", widget: "string", required: false }
+      - {label: "Image", name: "image", widget: "image", default: "", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Traduzione Italiana", name: "link_it", widget: "hidden", default: "-"}
       - {label: "Traduzione Inglese", name: "link_en", widget: "relation", collection: "blog-en", required: false}
@@ -36,8 +36,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Authors", name: "authors", widget: "string" }
-      - {label: "Image", name: "image", widget: "image", default: "", require: false}
+      - {label: "Authors", name: "authors", widget: "string", required:  }
+      - {label: "Image", name: "image", widget: "image", default: "", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Traduzione Italiana", name: "link_it", widget: "relation", collection: "blog-it", required: false}
       - {label: "Traduzione Inglese", name: "link_en", widget: "hidden", default: "-"}
