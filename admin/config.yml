@@ -39,7 +39,7 @@ collections:
       - {label: "Authors", name: "authors", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: "", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Traduzione Italiana", name: "link_it", widget: "hidden", default: "-"}
+      - {label: "Traduzione Inglese", name: "link_en", widget: "hidden", default: "-"}
       - {label: "Traduzione Italiana", name: "link_it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], valueField: "title", displayFields: "title"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
