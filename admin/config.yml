@@ -27,7 +27,7 @@ collections:
         name: "translations"
         widget: "object"
         fields:
-          - {label: "Traduzione Italiana", name: "it", widget: "hidden", default: "-"}
+          - {label: "Traduzione Italiana", name: "it", widget: "string", default: "-"}
           - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: "title", valueField: "title"}
       - label: "Immagini"
         name: "images"
