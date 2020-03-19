@@ -30,8 +30,16 @@ collections:
         fields:
           - {label: "Traduzione Italiana", name: "it", widget: "hidden", default: "-"}
           - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: "title", valueField: "title"}
-      - {label: "Image", name: "image", widget: "image", default: "", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Immagini"
+        name: "images"
+        widget: "object"
+        fields:
+          - {label: "Copertina Sito", name: "th", widget: "image", default: "", required: false}
+          - {label: "Social", name: "social", widget: "image", default: "", required: false}
+          - {label: "Ricerca 1:1 (Min 1200px Wide)", name: "amp_1-1", widget: "image", default: "", required: false}
+          - {label: "Ricerca 4:3 (Min 1200px Wide)", name: "amp_4-3", widget: "image", default: "", required: false}
+          - {label: "Ricerca 16:9 (Min 1200px Wide)", name: "amp_16-9", widget: "image", default: "", required: false}
+      - {label: "Testo", name: "body", widget: "markdown"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
     folder: "_posts/blog/en" # The path to the folder where the documents are stored
