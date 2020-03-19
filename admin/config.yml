@@ -23,6 +23,7 @@ collections:
         fields:
           - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
           - {label: "Autore", name: "author", widget: "string" }
+          - {label: "Descrizione", name: "desc", widget: "text" }
       - label: "Traduzioni"
         name: "translations"
         widget: "object"
@@ -55,6 +56,7 @@ collections:
         fields:
           - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
           - {label: "Autore", name: "author", widget: "string" }
+          - {label: "Descrizione", name: "desc", widget: "text" }
       - label: "Traduzioni"
         name: "translations"
         widget: "object"
