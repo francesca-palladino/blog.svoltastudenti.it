@@ -13,7 +13,7 @@ translations:
   it: Nuovo Italiano
 images:
   th: ''
-  social: ''
+  social: /assets/files/uploads/photo5954917803549108495-1.jpg
   amp_1-1: ''
   amp_4-3: /assets/files/uploads/photo5963206059638240374.jpg
   amp_16-9: ''
