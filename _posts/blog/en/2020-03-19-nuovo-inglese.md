@@ -8,6 +8,7 @@ info:
   tags:
     - Consiglio di Amministrazione
   author: FFabio Boh
+  desc: Breve Descrizione
 translations:
   it: Nuovo Italiano
 images:
