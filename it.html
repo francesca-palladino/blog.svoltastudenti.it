@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-{% for post in site.categories["blog-it"] %}
+1
+{% for post in (site.posts | where: "category", "it" | where: "layout", "blog") %}
 	<a href="{{ post.url }}">
 		{{ post.title }}
 	</a><br/>
