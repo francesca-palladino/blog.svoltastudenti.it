@@ -39,3 +39,37 @@ collections:
           - {label: "Ricerca 4:3 (Min 1200px Wide)", name: "amp_4-3", widget: "image", default: "", required: false}
           - {label: "Ricerca 16:9 (Min 1200px Wide)", name: "amp_16-9", widget: "image", default: "", required: false}
       - {label: "Testo", name: "body", widget: "markdown"}
+  - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog (en)" # Used in the UI
+    folder: "_posts/blog/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
+      - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
+      - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
+      - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
+      - label: "Info"
+        name: "info"
+        widget: "object"
+        fields:
+          - {label: "Tags", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
+          - {label: "Autore", name: "author", widget: "string" }
+      - label: "Traduzioni"
+        name: "translations"
+        widget: "object"
+        fields:
+          - {label: "Traduzione Inglese", name: "en", widget: "string", default: "-"}
+          - {label: "Traduzione Italiana", name: "it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: "title", valueField: "title"}
+      - label: "Immagini"
+        name: "images"
+        widget: "object"
+        fields:
+          - {label: "Copertina Sito", name: "th", widget: "image", default: "", required: false}
+          - {label: "Social", name: "social", widget: "image", default: "", required: false}
+          - {label: "Ricerca 1:1 (Min 1200px Wide)", name: "amp_1-1", widget: "image", default: "", required: false}
+          - {label: "Ricerca 4:3 (Min 1200px Wide)", name: "amp_4-3", widget: "image", default: "", required: false}
+          - {label: "Ricerca 16:9 (Min 1200px Wide)", name: "amp_16-9", widget: "image", default: "", required: false}
+      - {label: "Testo", name: "body", widget: "markdown"}
+
