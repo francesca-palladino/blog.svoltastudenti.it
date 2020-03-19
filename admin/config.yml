@@ -3,9 +3,8 @@ backend:
   accept_roles: #optional - accepts all users if left out
     - admin
     - editor
-publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
-public_folder: "/assets/img/uploads"
+public_folder: "/assets/files/uploads"
 collections:
   - name: "blog-it" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (it)" # Used in the UI
