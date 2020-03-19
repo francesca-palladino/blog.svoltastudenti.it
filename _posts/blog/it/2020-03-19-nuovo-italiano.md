@@ -8,6 +8,8 @@ info:
   tags:
     - Design
   author: Fabio Mauri Boh
+translations:
+  en: Nuovo Inglese
 images:
   th: ''
   social: ''
