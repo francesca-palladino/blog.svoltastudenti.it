@@ -14,7 +14,7 @@ images:
   th: ''
   social: ''
   amp_1-1: ''
-  amp_4-3: ''
+  amp_4-3: /assets/files/uploads/photo5963206059638240374.jpg
   amp_16-9: ''
 ---
 **INGLESE**
