@@ -14,6 +14,17 @@
 		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
 		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="{{ page.title }}" />
+		<meta property="og:description" content="{{ page.info.desc }}" />
+		<meta property="og:image" content="{{ page.images.social }}" />
+		
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@svoltastudenti">
+		<meta name="twitter:title" content="{{ page.title }}">
+		<meta name="twitter:description" content="{{ page.info.desc }}">
+		<meta name="twitter:image" content="{{ page.images.social }}">
 		<title>
 			Home Page | Svoltastudenti
 		</title>
