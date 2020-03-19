@@ -39,11 +39,11 @@ layout: default
 			{{ page.tags | join: "," }}
 		</p> -->
 		<img src="{{ page.image }}" alt="" />
-		{% if page.link_en %}
-			<a href="{{site.url}}/en/{{page.link_en | slugify}}">ENG</a>
+		{% if page.translations.en %}
+			<a href="{{site.url}}/en/{{page.trandlations.en | slugify}}">ENG</a>
 		{% endif %}
-		{% if page.link_it  %}
-			<a href="{{site.url}}/it/{{page.link_it | slugify}}">ITA</a>
+		{% if page.translations.it  %}
+			<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
 		{% endif %}
 	</header>
 	<div class="article-content">
