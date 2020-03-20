@@ -133,6 +133,11 @@
 				font-style: italic;
 				color: white;
 			}
+			
+			article #translations {
+				color: #FF6600;
+				text-transform: uppercase;
+			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
@@ -143,25 +148,20 @@
 	  <article>
 	
 	<header>
-		<p>
-			{{ page.date | date: "%-d %B %Y" }} - {{ page.authors | join: "," }}
-		</p>
 		<h1>
 			{{ page.title }}
 		</h1>
-		<p>{{ page.info.author }} - {{ page.date }}</p>
-<!-- 		<p>
-			{{ page.tags | join: "," }}
-		</p> -->
-		<img src="{{ page.image }}" alt="" />
-		{% if page.translations.en %}
-			<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
-		{% endif %}
-		{% if page.translations.it  %}
-			<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
-		{% endif %}
+		<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p>
 	</header>
 	<div class="article-content">
+		<span id="translations">
+			{% if page.translations.en %}
+				<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
+			{% endif %}
+			{% if page.translations.it  %}
+				<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
+			{% endif %}
+		</span>
 		{{ content  | replace: "<img", "<amp-img"}}
 	</div>
 </article>
