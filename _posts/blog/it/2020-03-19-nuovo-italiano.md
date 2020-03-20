@@ -12,8 +12,8 @@ info:
 translations:
   en: Nuovo Inglese
 images:
-  th: /assets/files/uploads/photo5954917803549108495-1.jpg
-  social: /assets/files/uploads/photo5963206059638240374.jpg
+  th: /assets/img/uploads/photo5963206059638240374.jpg
+  social: /assets/img/uploads/photo5954917803549108495-1.jpg
   amp_1-1: ''
   amp_4-3: ''
   amp_16-9: ''
