@@ -146,11 +146,14 @@
 				padding-top: 20px;
 			}
 			
+			article footer hr {
+				border: 1px solid #FF6600;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			
 			article footer {
 				padding-bottom: 20px;
-				margin-top: 10px;
-				border-top: 1px solid #FF6600;
-				padding-top: 10px;
 				color: #666666;
 				font-style: italic;
 			}
@@ -192,6 +195,7 @@
 				{{ content  | replace: "<img", "<amp-img"}}
 			</div>
 			<footer>
+				<hr />
 				Svoltastudenti e' un associazione bla bla bla
 				<br /><a href="/{{ page.category }}">Scopri di Piu'</a>
 			</footer>
