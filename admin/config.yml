@@ -4,7 +4,7 @@ backend:
     - admin
     - editor
 media_folder: "assets/img/uploads"
-public_folder: "/assets/files/uploads"
+public_folder: "/assets/img/uploads"
 collections:
   - name: "blog-it" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (it)" # Used in the UI
