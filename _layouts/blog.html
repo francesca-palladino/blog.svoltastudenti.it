@@ -68,9 +68,10 @@
 				height: 100%;
 				width: 100%;
 				background-color: gray;
+				position: relative;
 			}
 			
-			article::before {
+			html::before {
  				position: absolute;
 				top: 0;
 				left: 0;
@@ -84,7 +85,10 @@
 				background-color:gray;
 				background-image: url('{{ page.images.th }}');
 				filter: blur(5px); 
-				content: "prova"
+			}
+			
+			body {
+				z-index: 1;
 			}
 
 			article > * {
