@@ -146,35 +146,38 @@
 				font-weight: bold;
 			}
 			
-			
+			article #content {
+				max-width: 720px;
+				background-color: white;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
 	<style>
 		
 	</style>
-  <body>
-	  <article>
-	
-	<header>
-		<h1>
-			{{ page.title }}
-		</h1>
-		<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p>
-	</header>
-	<div class="article-content">
-		<span id="translations">
-			{% if page.translations.en %}
-				<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
-			{% endif %}
-			{% if page.translations.it  %}
-				<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
-			{% endif %} ■ 
-		</span>
-		{{ content  | replace: "<img", "<amp-img"}}
-	</div>
-</article>
-
-  </body>
+  	<body>
+		<article>
+			<header>
+				<h1>
+					{{ page.title }}
+				</h1>
+				<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p>
+			</header>
+			<div id="content">
+				<span id="translations">
+					{% if page.translations.en %}
+						<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
+					{% endif %}
+					{% if page.translations.it  %}
+						<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
+					{% endif %} ■ 
+				</span>
+				{{ content  | replace: "<img", "<amp-img"}}
+			</div>
+		</article>
+	</body>
 </html>
 
