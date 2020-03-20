@@ -2,16 +2,6 @@
 <html ⚡>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="theme-color" content="#FF6600">
-		<meta name="msapplication-navbutton-color" content="#FF6600">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="application-name" content="Svoltastudenti">
-		<meta name="apple-mobile-web-app-title" content="Svoltastudenti">
-		<meta name="description" content="{{ page.info.desc }}">
-		<meta name="author" content="{{ page.info.author }}">
-
 		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
 		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -26,6 +16,45 @@
 		<meta name="twitter:title" content="{{ page.title }}">
 		<meta name="twitter:description" content="{{ page.info.desc }}">
 		<meta name="twitter:image" content="{{ page.images.social }}">
+		
+		<script type="application/ld+json">
+		    {
+		      "@context": "https://schema.org",
+		      "@type": "Article",
+		      "author": {
+			"name": "{{ page.info.author }}"
+		      },
+		      "datePublished": "{{ page.date }}",
+		      "headline": "{{ page.title }}",
+		      "image": [
+			"{{ page.images.amp_1-1 }}",
+			"{{ page.images.amp_4-3 }}",
+			"{{ page.images.amp_16-9 }}"
+		      ],
+		      "description": " {{ page.info.desc }} ",
+		      "publisher": {
+			"@type": "Organization",
+			"logo": {
+			  "@type": "ImageObject",
+			  "url": "https://svoltastudenti.it/wp-content/uploads/logo_largo_bianco.png",
+			  "width": "3484",
+			  "height": "477"
+			},
+			"name": "Svoltastudenti"
+		      }
+		    }
+		</script>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="#FF6600">
+		<meta name="msapplication-navbutton-color" content="#FF6600">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="application-name" content="Svoltastudenti">
+		<meta name="apple-mobile-web-app-title" content="Svoltastudenti">
+		<meta name="description" content="{{ page.info.desc }}">
+		<meta name="author" content="{{ page.info.author }}">
+		
 		<title>
 			{{ page.title }} | Svoltastudenti
 		</title>
@@ -83,33 +112,7 @@
 	</style>
   <body>
 	  <article>
-	<script type="application/ld+json">
-	    {
-	      "@context": "https://schema.org",
-	      "@type": "Article",
-	      "author": {
-	      	"name": "{{ page.info.author }}"
-	      },
-	      "datePublished": "{{ page.date }}",
-	      "headline": "{{ page.title }}",
-	      "image": [
-	      	"{{ page.images.amp_1-1 }}",
-		"{{ page.images.amp_4-3 }}",
-		"{{ page.images.amp_16-9 }}"
-	      ],
-	      "description": " {{ page.info.desc }} ",
-	      "publisher": {
-	        "@type": "Organization",
-	        "logo": {
-		  "@type": "ImageObject",
-		  "url": "https://svoltastudenti.it/wp-content/uploads/logo_largo_bianco.png",
-		  "width": "3484",
-		  "height": "477"
-		},
-		"name": "Svoltastudenti"
-	      }
-	    }
-    	</script>
+	
 	<header>
 		<p>
 			{{page.date | date: "%-d %B %Y" }} - {{ page.authors | join: "," }}
