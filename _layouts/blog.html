@@ -127,6 +127,12 @@
 				color: white;
 				font-weight: bold;
 			}
+			
+			article h1 p {
+				font-size: 10vw;
+				font-style: italic;
+				color: white;
+			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
@@ -143,6 +149,7 @@
 		<h1>
 			{{ page.title }}
 		</h1>
+		<p>{{ p.info.author }} - {{ p.date }}</p>
 <!-- 		<p>
 			{{ page.tags | join: "," }}
 		</p> -->
