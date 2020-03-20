@@ -70,7 +70,26 @@
 				background-color: gray;
 				position: relative;
 			}
-			
+
+			article > * {
+				z-index: 1;
+			}
+			article {
+/* 				display: flex; */
+				position: relative;
+ 				top: 0;
+				left: 0;
+				/*flex-direction: column;
+				justify-content: center;
+				align-items: center; */
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-bottom: 20px;
+				height: 100%;
+				width: 100%;
+				min-height: 100vh;
+			}
+
 			article::before {
  				position: absolute;
 				top: 0;
@@ -87,26 +106,7 @@
 				filter: blur(5px); 
 				content: "";
 			}
-
-			article > * {
-				z-index: 1;
-			}
-			article {
-/* 				display: flex; */
-				position: relative;
-/* 				top: 0;
-				left: 0;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center; */
-				margin-left: 5px;
-				margin-right: 5px;
-				margin-bottom: 20px;
-				height: 100%;
-				width: 100%;
-				min-height: 100vh;
-			}
-
+			
 /* 			article > * {
 				max-width: 720px;
 			} */
