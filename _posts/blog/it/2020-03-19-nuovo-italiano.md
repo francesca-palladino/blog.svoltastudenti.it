@@ -7,7 +7,7 @@ title: Nuovo Italiano
 info:
   tags:
     - Design
-  author: Fabio Mauri Boh
+  author: 'Fabio Mauri Boh '
   desc: descrizione Italiana
 translations:
   en: Nuovo Inglese
