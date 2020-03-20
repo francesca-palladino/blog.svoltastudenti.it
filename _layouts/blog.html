@@ -140,7 +140,7 @@
 		{% endif %}
 	</header>
 	<div class="article-content">
-		{{ content replace: "<img " "<amp-img " }}
+		{{ content | replace: "<img" "<amp-img" }}
 	</div>
 </article>
 
