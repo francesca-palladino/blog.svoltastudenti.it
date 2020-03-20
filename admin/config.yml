@@ -88,7 +88,7 @@ collections:
         widget: "object"
         fields:
           - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: "0"}
-          - {label: "Categoria", name: "tags", widget: "select", options: ["Attivita'", "Conferenza", "Evento", "Viaggio", "Workshop"], multiple: true}
+          - {label: "Categoria", name: "tags", widget: "select", options: ["Attivita'", "Conferenza", "Evento", "Viaggio", "Workshop"]}
           - {label: "Descrizione Breve", name: "desc", widget: "text" }
           - {label: "Pretix", name: "pretix", widget: "string"}
       - label: "Traduzioni"
