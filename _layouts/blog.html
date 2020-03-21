@@ -193,15 +193,17 @@
 				<h1>
 					{{ page.title }}
 				</h1>
-				<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p> - 
-				<span id="translations">
-					{% if page.translations.en %}
-						<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
-					{% endif %}
-					{% if page.translations.it  %}
-						<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
-					{% endif %} ■ 
-				</span>
+				<p>
+					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }} - 
+					<span id="translations">
+						{% if page.translations.en %}
+							<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
+						{% endif %}
+						{% if page.translations.it  %}
+							<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
+						{% endif %}
+					</span>
+				</p>
 			</header>
 			<div id="wrapper">
 				<div id="content">
