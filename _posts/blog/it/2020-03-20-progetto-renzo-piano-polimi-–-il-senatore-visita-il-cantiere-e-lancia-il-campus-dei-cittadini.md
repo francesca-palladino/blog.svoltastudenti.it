@@ -14,7 +14,7 @@ info:
 translations:
   en: Nuovo Inglese
 images:
-  th: /assets/img/uploads/img_20190304_131951_424-247x300.jpg
+  th: /assets/img/uploads/chris-henry-bhigvn49udk-unsplash-1-.jpg
   social: ''
   amp_1-1: ''
   amp_4-3: ''
