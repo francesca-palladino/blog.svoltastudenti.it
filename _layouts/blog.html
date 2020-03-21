@@ -82,7 +82,7 @@
 				width: 100%;
 				min-height: 100vh;
 				perspective: 2px;
-				height: 100vh;
+				height: 100%;
 				overflow-y: auto;
 			}
 
@@ -97,14 +97,12 @@
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px;
 			}
-			article::before {
+			article::after {
 				position: absolute;
 				top: 0;
 				left: 0;
 				right: 0;
 				bottom: 0;
-				width: 100%;
-				height: 100%;
 				transform: translateZ(-1px) scale(1.5);
 				background-origin:padding-box;
 				background-position:center;
