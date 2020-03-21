@@ -127,7 +127,7 @@
 			article header > * {
 				padding-left: 1em;
 				padding-right: 1em;
-  				text-shadow: 0 0 5px #FF6600;
+  				text-shadow: 0 0 1px #000000;
 			}
 			
 			article h1 {
@@ -143,12 +143,12 @@
 				font-style: italic;
 				color: white;
 				margin-bottom: 20px;
+				color: #FF6600;
 			}
 			
 			article #translations, article #translations a,  article #translations a:visited {
 				color: #FF6600;
 				text-transform: uppercase;
-				font-weight: bold;
 			}
 			
 			article #wrapper {
@@ -193,7 +193,15 @@
 				<h1>
 					{{ page.title }}
 				</h1>
-				<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p>
+				<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p> - 
+				<span id="translations">
+					{% if page.translations.en %}
+						<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
+					{% endif %}
+					{% if page.translations.it  %}
+						<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
+					{% endif %} ■ 
+				</span>
 			</header>
 			<div id="wrapper">
 				<div id="content">
