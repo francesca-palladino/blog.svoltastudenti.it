@@ -82,9 +82,11 @@
 				width: 100%;
 				min-height: 100vh;
 				perspective: 2px;
+				height: 100vh;
+				overflow-y: auto;
 			}
 
-			article #background {
+			article::after {
 				position: absolute;
 				top: 0;
 				left: 0;
