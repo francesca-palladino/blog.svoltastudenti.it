@@ -82,6 +82,7 @@
 				width: 100%;
 				min-height: 100vh;
 				height: 100%;
+				perspective: 2px;
 			}
 			article header::before {
 				position: absolute;
@@ -96,6 +97,8 @@
 				background-color: #FF6600;
 				background-image: url('{{ page.images.th }}');
 				content: "";
+				transform: translateZ(-1px) scale(1.5);
+				background-size: 100%;
 			}
 			
 			article #wrapper {
