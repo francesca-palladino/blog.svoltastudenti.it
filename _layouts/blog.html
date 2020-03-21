@@ -76,13 +76,9 @@
 			}
 			
 			article {
-/* 				display: flex; */
 				position: relative;
  				top: 0;
 				left: 0;
-				/*flex-direction: column;
-				justify-content: center;
-				align-items: center; */
 				width: 100%;
 				min-height: 100vh;
 			}
@@ -103,28 +99,32 @@
 				content: "";
 			}
 			
+			article header, article #wrapper {
+				max-width: 1440px;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				padding-left: 1vw;
+				padding-right: 1vw;
+			}
+			
 			article header {
 				min-height: 50vh;
 			    	display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: flex-end;
-				width: 96vw;
-				max-width: 1440px;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center;
 			}
 			
 			article h1 {
-				font-size: 3vw;
+				font-size: 3vh;
 				color: white;
 				font-weight: bold;
 				margin: 0;
 			}
 			
 			article header p {
-				font-size: 1vw;
+				font-size: 1vh;
 				font-style: italic;
 				color: white;
 				margin-bottom: 20px;
@@ -136,23 +136,16 @@
 				font-weight: bold;
 			}
 			
-			article #content, article footer {
-				max-width: 1440px;
-				background-color: white;
-				margin-left: auto;
-				margin-right: auto;
-				padding-left: 1vw;
-				padding-right: 1vw;
-			}
-			
-			article #content {
+			article #wrapper {
 				border-top-left-radius: 15px;
 				border-top-right-radius: 15px;
 				padding-top: 20px;
 				padding-bottom: 10px;
-line-height: 1.5em;
-letter-spacing: 0.1em;
-
+			}
+			
+			article #content {
+				line-height: 1.5em;
+				letter-spacing: 0.1em;
 			}
 			
 			article footer hr {
@@ -182,28 +175,31 @@ letter-spacing: 0.1em;
 	</style>
   	<body>
 		<article>
+			<div id="background"></div>
 			<header>
 				<h1>
 					{{ page.title }}
 				</h1>
 				<p>{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}</p>
 			</header>
-			<div id="content">
-				<span id="translations">
-					{% if page.translations.en %}
-						<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
-					{% endif %}
-					{% if page.translations.it  %}
-						<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
-					{% endif %} ■ 
-				</span>
-				{{ content  | replace: "<img", "<amp-img"}}
+			<div id="wrapper">
+				<div id="content">
+					<span id="translations">
+						{% if page.translations.en %}
+							<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
+						{% endif %}
+						{% if page.translations.it  %}
+							<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
+						{% endif %} ■ 
+					</span>
+					{{ content  | replace: "<img", "<amp-img"}}
+				</div>
+				<footer>
+					<hr size="1"/>
+					Svoltastudenti e' un associazione bla bla bla
+					<br /><a href="/{{ page.category }}">Scopri di Piu'</a> • <a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
+				</footer>
 			</div>
-			<footer>
-				<hr size="1"/>
-				Svoltastudenti e' un associazione bla bla bla
-				<br /><a href="/{{ page.category }}">Scopri di Piu'</a> • <a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
-			</footer>
 		</article>
 	</body>
 </html>
