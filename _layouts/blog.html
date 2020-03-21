@@ -239,16 +239,18 @@
 				</footer>
 			</div>
 		</article>
-		<amp-consent id="myUserConsent" layout="nodisplay">
+		<amp-consent id="cookie" layout="nodisplay">
 		    <script type="application/json">
 			{
 			    "consentInstanceId": "consent896537",
 			    "consentRequired": true,
-			    "promptUI": "myConsentFlow"
+			    "promptUI": "cookie"
 			}
 		    </script>
 		    <div id="myConsentFlow" class="popupOverlay">
-			Prova
+			Informativa<br /><br />
+			Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie, consulta la <a href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy" target="_blank">cookie policy</a>.<br />
+			<button on="tap:consent-element.accept" role="button">Accept</button>
 		    </div>
 		</amp-consent>
 	</body>
