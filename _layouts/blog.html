@@ -206,8 +206,9 @@
 				}
 			</script>
 		</amp-animation>
-		<amp-position-observer on="scroll:backgroundAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay"></amp-position-observer>
-		<amp-img layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
+		<amp-img layout="fill" src="{{ page.images.th }}" id="background">
+					<amp-position-observer on="scroll:backgroundAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay"></amp-position-observer>
+		</amp-img>
 		<article>
 			<header>
 				<p>
