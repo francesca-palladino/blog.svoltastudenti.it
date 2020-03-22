@@ -74,10 +74,6 @@
 				position: relative;
 				scroll-behavior: smooth;
 			}
-
-			article header * {
-				position: relative;
-			}
 			
 			article {
 				position: relative;
@@ -91,20 +87,14 @@
 /* 				overflow-x: hidden; */
 			}
 			
-			article > * {
-				position: relative;
-			}
-			
 			#background {
-				position: absolute;
+				position: fixed;
 				top: 0;
 				left: 0;
 				right: 0;
 				bottom: 0;
 				height: 100vh;
 				width: 100%;
-/* 				content: "";
-				transform: translateZ(-2px) scale(2.1); */
 			}
 			
 			#background img {
@@ -217,8 +207,8 @@
 			</script>
 		</amp-animation>
 		<amp-position-observer on="scroll:backgroundAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay"></amp-position-observer>
+		<amp-img layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
 		<article>
-			<amp-img layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
 			<header>
 				<p>
 					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
