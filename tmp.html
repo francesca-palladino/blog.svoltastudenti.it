@@ -9,36 +9,6 @@
 		<script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
   </head>
   <body>
-    ggle Sidebar
-Documentation
-Components
-amp-position-observer
-Monitors the position of an element within the viewport as a user scrolls, and dispatches events that can be used with other AMP components.
-
-Required Scripts
-<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
-
-Supported Layouts
-nodisplay
-Examples
-Scroll to top
-Basics of scrollbound effects
-Overview
-The amp-position-observer component monitors the position of an element within the viewport as a user scrolls, and dispatches enter, exit and scroll:<Position In Viewport As a Percentage> events (Low Trust Level), which can be used to trigger actions (Only Low Trust Actions) on other components (e.g., amp-animation.
-
-The amp-position-observer component is only useful when used with other components and does not do anything on its own.
-
-What can I do with amp-position-observer?
-Currently, amp-animation and several video players in AMP are the only components that allow low-trust events to trigger their actions (e.g., starting an animation, seeking to a position within the animation, pausing a video, etc.).
-
-Scroll-bound animations
-The amp-animation component exposes a seekTo action that can be tied to the scroll event of amp-position-observer to implement scroll-bound animations.
-
-Example: Animation rotates as user scrolls
-Imagine an animation where the hour hand of a clock rotates as the user scrolls the page.
-
-Scrollbound animation demo
-
 <!-- An animation that rotates a clock hand 180 degrees. -->
 <!--
    Note that we are NOT setting `trigger=visibility`
