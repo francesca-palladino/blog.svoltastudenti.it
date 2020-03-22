@@ -100,14 +100,18 @@
 				bottom: 0;
 				height: 100vh;
 				width: 100%;
-				background-origin: padding-box;
+/* 				background-origin: padding-box;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-color: #FF6600;
-				background-image: url('{{ page.images.th }}');
+				background-image: url(''); */
 				content: "";
 				transform: translateZ(-2px) scale(2.1);
+			}
+			
+			#background img {
+				object-fit: cover;
 			}
 			
 			article #wrapper {
@@ -115,7 +119,7 @@
 				padding-left: 1vw;
 				padding-right: 1vw;
 				background-color: #EEEEEE;
-color: #333333;
+				color: #333333;
 			}
 			
 			article header {
@@ -206,7 +210,7 @@ color: #333333;
 	</style>
   	<body>
 		<article>
-			<div id="background"></div>
+			<amp-img layout="fill" src="{{ page.images.th }}" id="background"></div>
 			<header>
 				<p>
 					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
