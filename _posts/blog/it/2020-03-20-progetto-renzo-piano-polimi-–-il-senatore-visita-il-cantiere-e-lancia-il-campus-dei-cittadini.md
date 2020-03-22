@@ -4,8 +4,8 @@ category: it
 date: 2020-03-20T23:17:07.688Z
 published: 'false'
 title: >-
-  PROGETTO RENZO PIANO @POLIMI – IL SENATORE VISITA IL CANTIERE E LANCIA IL
-  CAMPUS DEI CITTADINI
+  Progetto Renzo Piano @PoliMI - Il Senatore Renzo Piano visita il cantiere e
+  lancia il Campus dei Cittadini
 info:
   tags:
     - Rappresentanza
@@ -24,11 +24,9 @@ images:
 
 ha affermato Piano
 
-
-
 Il primo Marzo scorso il Senatore Renzo Piano ha visitato il cantiere del progetto che porta il suo nome che darà al nostro ateneo nuovi ed innovativi spazi entro (relativamente) pochi mesi. Il Senatore ha poi tenuto una conferenza stampa insieme con il Rettore Ferruccio Resta, il vicepresidente di Regione Lombardia Fabrizio Sala, l’assessore comunale Pierfrancesco Maran e altri tecnici impegnati nel progetto.
 
-## RENZO PIANO, UNA VISIONE D’INSIEME DEL PROGETTO
+## Renzo Piano, una visione d'insieme del Progetto
 
 Nel suo intervento l’archistar ha affermato che in questo progetto vi è forte attenzione verso la **qualità** delle opere e verso i tempi di costruzione, elemento spesso raro nei progetti pubblici.
 
@@ -38,7 +36,7 @@ Questa politica del campus vivibile vuole rendere l’individuo parte integrante
 
 Il Trifoglio potrà diventare uno degli edifici più belli di Milano e l’aula magna che ospiterà sarà fantastica.
 
-## ALCUNI DETTAGLI DEL PROGETTO
+## Alcuni dettagli del Progetto
 
 5000 mq di edifici più 800 posti studio per gli studenti, 6 aule da 120 posti moderne e flessibili. Più il laboratorio modelli, sia tradizionali fatti di legno e metallo, sia digitali con spazio per stampanti 3D e mock-up. Il lab modelli al centro del campus comunica l’idea di formare il futuro architetto nella cultura del fare, dove accanto alla teoria c’è la pratica.
 
@@ -50,18 +48,18 @@ Il progetto prevede un sistema costruttivo unico per tutti gli edifici, con fond
 
 L’ambizione urbanistica del progetto è di ricucitura, di **“rammendo urbano”**, citando il Senatore Renzo Piano, dell’intero quartiere, ricongiungendo pezzi di verde: la piscina Romano e piazza Leonardo Da Vinci, realizzando inoltre un percorso verde lungo più di 1km.
 
-## INTERVENTO DEL RETTORE
+## Interventi del Rettore
 
 Il **Prof. Ferruccio Resta** ha voluto ricordare che il Politecnico sta disegnando cosa vuole essere domani, e che la competizione internazionale con altri atenei ci sta molto stimolando. Una delle politiche più efficaci è stata quella di ridurre i costi di funzionamento, trasformandoli in investimenti.
 
 L’intervento è continuato lanciando una grande campagna di **foundraising**, per coinvolgere*chi c’è a fianco*. Alumni e imprese, persone orgogliose di appartenere al Politenico di Milano, che vuole essere un luogo di tutti, un elemento della cittadinanza. Già la PoliMiRun partecipa a questa linea. Ma ci vogliono istituzioni robuste.
 
-## IL COMMENTO DELL’ASSESSORE MARAN
+## Il commento dell'assessore Maran
 
 L’assessora ha affermato che va rivisto il **rapporto tra università e città** nelle politiche cittadine e che questo è un ottimo esempio di come un progetto intelligente riesce a togliere i confini tra parte residenziale e università. L’università deve entrare nella quotidianità della città di Milano.
 
 Inoltre auspica che questo sia un segno per la città: il **verde** che piantiamo deve essere un segnale di azione importante verso città ambientalmente sane.
 
-## REGIONE LOMBARDIA
+## Regione Lombardia
 
 Il vice presidente Fabrizio Sala è apparso molto entusiasta del Politecnico di oggi, affermando che il clima che si respira è che siamo in un posto di **eccellenza mondiale**. ‘’Siamo orgogliosi del Politecnico. Le opere si realizzano solo con una forte spinta. E noi, come Regione Lombardia, vogliamo continuare con la scia di investimenti che stiamo mettendo in atto per le università lombarde. In Regione Lombardia non vediamo l’ora di accompagnare qui istituzione estere, di fargli vedere di cosa siamo capaci’’.
