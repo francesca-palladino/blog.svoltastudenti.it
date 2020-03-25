@@ -7,8 +7,53 @@
     <title>Svoltastudenti - Homepage</title>
     <link rel="stylesheet" href="/assets/style.css">
     <style>
+        .imageBackground {
+            background-origin:padding-box;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-color:#FF6600;
+        }
+        
+        #homepage-intro {
+            background-image: url('/assets/bg/jpg');
+        }
+        #homepage-intro:target {
+            
+        }
+        #homepage-associazione {
+            background-color: whitesmoke;
+        }
         #homepage-associazione:target {
-            opacity: 0.5;
+            backgroun-color: red;
+        }
+        
+        #homepage-rappresentanza {
+            background-color: green;
+        }
+        #homepage-rappresentanza:target {
+            
+        }
+        
+        #homepage-notizie {
+            background-color: pink;
+        }
+        #homepage-notizie:target {
+            
+        }
+        
+        #homepage-eventi {
+            background-color: orange;
+        }
+        #homepage-eventi:target {
+            
+        }
+        
+        #homepage-contatti {
+            
+        }
+        #homepage-contatti:target {
+            
         }
     </style>
 </head>
@@ -28,23 +73,22 @@
     </header>
 
     <main id="homepage">
-        <section id="homepage-intro" data-id="0">
+        <section id="homepage-intro" class="imageBackground">
             <img id='logo' src="/assets/logo.png" alt="logo">
-            <img id='sfondo' src="/assets/bg.jpg" alt="sfondo">
         </section>
-        <section id="homepage-associazione" data-id="1" style="background-color: whitesmoke" ;>
+        <section id="homepage-associazione">
             <a href="pages/associazione.html">Associazione</a>
         </section>
-        <section id="homepage-rappresentanza" data-id="2" style="background-color: green;">
+        <section id="homepage-rappresentanza">
             <a href="pages/rappresentanza.html">Rappresentanza</a>
         </section>
-        <section id="homepage-notizie" data-id="3" style="background-color: pink;">
+        <section id="homepage-notizie">
             <h1>Notizie</h1>
         </section>
-        <section id="homepage-eventi" data-id="4" style="background-color: orange;">
+        <section id="homepage-eventi">
             <h1>Eventi</h1>
         </section>
-        <section id="homepage-contatti" data-id="5">
+        <section id="homepage-contatti">
             <h1>Contatti</h1>
         </section>
     </main>
