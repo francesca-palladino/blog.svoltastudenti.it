@@ -22,12 +22,12 @@
                 if (window.scrollY > lastPos){
                     // We are at the end of the scroll, no need to reset it
                     console.log('prev');
-                    el = el.nextElementSibling;
+                    el = el.previousElementSibling;
                 }
                 if (window.scrollY < lastPos){
                     // We are at the end of the scroll, no need to reset it
                     console.log('next');
-                    el = el.previousElementSibling;
+                    el = el.nextElementSibling;
                 }
                 
                 if (el && (Date.now() > (lastTime + debounce))){
