@@ -21,6 +21,7 @@
                 }
                 
                 if (Date.now() > (lastTime + debounce)){
+                    // We are at the end of the scroll, no need to reset it
                     if (window.scrollY > lastPos){
                         el = el.nextElementSibling;
                     }
