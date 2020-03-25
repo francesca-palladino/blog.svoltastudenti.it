@@ -14,7 +14,6 @@
         
         document.addEventListener('DOMContentLoaded', _ => {
             document.addEventListener('scroll', _ => {
-                console.log('scroll');
                 let el = document.getElementById(window.location.hash.replace('#', ''));
                 if (!el){
                     el = default_el;
@@ -30,6 +29,7 @@
                 }
                 
                 if (el && (Date.now() > (lastTime + debounce))){
+                    console.log('SCROLLING');
                     el.scrollIntoView();
                     window.location.hash = `#${el.id}`;
                 }
