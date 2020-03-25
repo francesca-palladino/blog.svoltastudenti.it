@@ -32,7 +32,7 @@
                 
                 if (el && (Date.now() > (lastTime + debounce))){
                     console.log('SCROLLING');
-                    el.scrollIntoView();
+                    el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});
                     window.location.hash = `#${el.id}`;
                 }
                 else {
