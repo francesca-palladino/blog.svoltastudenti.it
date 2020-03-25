@@ -15,27 +15,26 @@
         document.addEventListener('DOMContentLoaded', _ => {
             document.addEventListener('scroll', _ => {
                 console.log('scroll');
+                let el = document.getElementById(window.location.hash.replace('#', ''));
+                if (!el){
+                    window.location.hash = `#${default_id}`;
+                }
+                
                 if (Date.now() > (lastTime + debounce)){
-                    let c = document.getElementById(window.location.hash.replace('#', ''));
-                    if (!c){
-                        window.location.hash = `#${default_id}`;
+                    if (window.scrollY > lastPos){
+                        el = el.nextElementSibling;
                     }
-                    else {
-                        let n = null;
-                        if (window.scrollY > lastPos){
-                            n = c.nextElementSibling;
-                        }
-                        if (window.scrollY < lastPos){
-                            n = c.previousElementSibling;
-                        }
-
-                        if (n){
-                            console.log(n);
-                            window.location.hash = `#${n.id}`;
-                            n.scrollIntoView();
-                        }
+                    if (window.scrollY < lastPos){
+                        el = el.previousElementSibling;
                     }
                 }
+                
+                if (n){
+                    console.log(n);
+                    window.location.hash = `#${n.id}`;
+                    console.log(n.scrollIntoView());
+                }
+                
                 lastPos = window.scrollY;
                 lastTime = Date.now();
             });
