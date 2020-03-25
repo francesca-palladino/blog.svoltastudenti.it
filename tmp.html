@@ -33,6 +33,7 @@
                 if (el && (Date.now() > (lastTime + debounce))){
                     console.log('SCROLLING');
                     console.log(el);
+                    console.log(typeof el);
                     el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});
                     window.location.hash = `#${el.id}`;
                 }
