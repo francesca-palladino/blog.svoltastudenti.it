@@ -7,7 +7,7 @@
     <title>Svoltastudenti - Homepage</title>
     <link rel="stylesheet" href="/assets/style.css">
     <script>
-        const default_id = 'homepage-intro';
+        const default_el = document.getElementById('homepage-intro');
         const debounce = 500;
         let lastPos = 0;
         let lastTime = Date.now();  // If the url contains a fragment we are alreasy scrolling at the beginning of the visit. If not no problem, we will just wait few ms
@@ -17,20 +17,25 @@
                 console.log('scroll');
                 let el = document.getElementById(window.location.hash.replace('#', ''));
                 if (!el){
-                    window.location.hash = `#${default_id}`;
+                    el = default_el;
                 }
                 
-                if (Date.now() > (lastTime + debounce)){
+                if (window.scrollY > lastPos){
                     // We are at the end of the scroll, no need to reset it
-                    if (window.scrollY > lastPos){
-                        el = el.nextElementSibling;
-                    }
-                    if (window.scrollY < lastPos){
-                        el = el.previousElementSibling;
-                    }
+                    el = el.nextElementSibling;
+                }
+                if (window.scrollY < lastPos){
+                    // We are at the end of the scroll, no need to reset it
+                    el = el.previousElementSibling;
+                }
+
+                
+                    // We are at the end of the scroll, no need to reset it
+                    
                 }
                 
-                if (el){
+                if (el && (Date.now() > (lastTime + debounce))){
+                    el.scrollIntoView();
                     window.location.hash = `#${el.id}`;
                 }
                 
