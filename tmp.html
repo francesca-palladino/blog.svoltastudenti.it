@@ -7,7 +7,7 @@
     <title>Svoltastudenti - Homepage</title>
     <link rel="stylesheet" href="/assets/style.css">
     <script>
-        const default = 'homepage-intro';
+        const default_id = 'homepage-intro';
         const debounce = 500;
         let lastPos = 0;
         let lastTime = 0;
@@ -18,7 +18,7 @@
                 if (Date.now() > (lastTime + debounce)){
                     let c = document.getElementById(window.location.hash.replace('#', ''));
                     if (!c){
-                        window.location.hash = `${default}`;
+                        window.location.hash = `${default_id}`;
                     }
                     else {
                         let n = null;
