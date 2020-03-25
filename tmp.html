@@ -18,7 +18,7 @@
                 if (Date.now() > (lastTime + debounce)){
                     let c = document.getElementById(window.location.hash.replace('#', ''));
                     if (!c){
-                        window.location.hash = `${default_id}`;
+                        window.location.hash = `#${default_id}`;
                     }
                     else {
                         let n = null;
@@ -30,7 +30,7 @@
                         }
 
                         if (n){
-                            window.location.hash = `${n.id}`;
+                            window.location.hash = `#${n.id}`;
                             n.scrollIntoView()
                         }
                     }
