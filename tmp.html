@@ -1,53 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
 
-<!doctype html>
-<html ⚡>
-	<head>
-  
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
-    
-		<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
-		<script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
-  </head>
-  <body>
-<!-- An animation that rotates a clock hand 180 degrees. -->
-<!--
-   Note that we are NOT setting `trigger=visibility`
-   since we will manually trigger the animation.
--->
-<amp-animation id="clockAnim" layout="nodisplay">
-  <script type="application/json">
-      {
-      "duration": "3s",
-      "fill": "both",
-      "direction": "alternate",
-      "animations": [
-        {
-          "selector": "#clock-scene .clock-hand",
-          "keyframes": [
-            { "transform": "rotate(-180deg)" },
-            { "transform": "rotate(0deg)" }
-          ]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svoltastudenti - Homepage</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        #section-associazione:target {
+            opacity: 0.5;
         }
-      ]
-    }
-  </script>
-</amp-animation>
+    </style>
+</head>
 
-<!-- The clock container -->
-<div id="clock-scene">
-  <!--
-    Use amp-position-observer to tie the movement of the clock scene within
-    the viewport to the timeline of the animation
-  -->
-  <amp-position-observer
-    intersection-ratios="1"
-    on="scroll:clockAnim.seekTo(percent=event.percent)"
-    layout="nodisplay"
-  >
-  </amp-position-observer>
-  <amp-img layout="responsive" width="2" height="1.5" src="./img/clock.jpg">
-    <div class="clock-hand"></div>
-  </amp-img>
-</div>
+<body>
+    <input id="menu" type="checkbox"></input>
+    <header for='menu'>
+        <ul>
+            <h1>giornale</h1>
+        </ul>
+        <ul>
+            <li><a href="pages/associazione.html">Associazione</a></li>
+            <li><a href="pages/rappresentanza.html">Rappresentanza</a></li>
+            <li><a href="#">Notizie</a></li>
+            <li><a href="#">Eventi</a></li>
+          </ul>
+    </header>
+
+    <main id="homepage">
+        <section id="homepage-intro" data-id="0">
+            <img id='logo' src="assets/logo.png" alt="logo">
+            <img id='sfondo' src="assets/bg.jpg" alt="sfondo">
+        </section>
+        <section id="homepage-associazione" data-id="1" style="background-color: whitesmoke" ;>
+            <a href="pages/associazione.html">Associazione</a>
+        </section>
+        <section id="homepage-rappresentanza" data-id="2" style="background-color: green;">
+            <a href="pages/rappresentanza.html">Rappresentanza</a>
+        </section>
+        <section id="homepage-notizie" data-id="3" style="background-color: pink;">
+            <h1>Notizie</h1>
+        </section>
+        <section id="homepage-eventi" data-id="4" style="background-color: orange;">
+            <h1>Eventi</h1>
+        </section>
+        <section id="homepage-contatti" data-id="5">
+            <h1>Contatti</h1>
+        </section>
+    </main>
+
+    <!-- <script src="scripts/index.js"></script> -->
 </body>
+
 </html>
