@@ -6,6 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svoltastudenti - Homepage</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <script>
+        const default = 'homepage-intro';
+        const debounce = 500;
+        let lastPos = 0;
+        let lastTime = 0;
+        
+        document.addEventListener('DOMContentLoaded', _ => {
+            document.addEventListener('scroll', _ => {
+                console.log('scroll');
+                if (Date.now() > (lastTime + debounce)){
+                    let c = document.getElementById(window.location.hash.replace('#', ''));
+                    if (!c){
+                        window.location.hash = `${default}`;
+                    }
+                    else {
+                        let n = null;
+                        if (window.scrollY > lastPos){
+                            n = curr.nextSibling;
+                        }
+                        if (window.scrollY < lastPos){
+                            n = curr.previousSibling;
+                        }
+
+                        if (n){
+                            window.location.hash = `${n.id}`;
+                        }
+                    }
+                }
+                lastPos = window.scrollY;
+                lastTime = Date.now();
+            }
+        });
+    </script>
     <style>
         .imageBackground {
             background-origin:padding-box;
