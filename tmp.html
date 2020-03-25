@@ -33,6 +33,9 @@
                     el.scrollIntoView();
                     window.location.hash = `#${el.id}`;
                 }
+                else {
+                    console.log('debounce');
+                }
                 
                 lastPos = window.scrollY;
                 lastTime = Date.now();
