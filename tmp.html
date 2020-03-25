@@ -28,11 +28,6 @@
                     // We are at the end of the scroll, no need to reset it
                     el = el.previousElementSibling;
                 }
-
-                
-                    // We are at the end of the scroll, no need to reset it
-                    
-                }
                 
                 if (el && (Date.now() > (lastTime + debounce))){
                     el.scrollIntoView();
