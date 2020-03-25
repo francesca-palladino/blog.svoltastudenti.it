@@ -7,3 +7,5 @@ url: "https://blog.svoltastudenti.it" # the base hostname & protocol for your si
 permalink: /:categories/:title
 future: true
 lang: [ 'it', 'en']
+sass:
+    sass_dir: _sass
