@@ -23,15 +23,16 @@
                     else {
                         let n = null;
                         if (window.scrollY > lastPos){
-                            n = c.nextSibling;
+                            n = c.nextElementSibling;
                         }
                         if (window.scrollY < lastPos){
-                            n = c.previousSibling;
+                            n = c.previousElementSibling;
                         }
 
                         if (n){
+                            console.log(n);
                             window.location.hash = `#${n.id}`;
-                            n.scrollIntoView()
+                            n.scrollIntoView();
                         }
                     }
                 }
