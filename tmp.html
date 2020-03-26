@@ -22,26 +22,24 @@
                 
                 if (window.scrollY > lastPos){
                     // We are at the end of the scroll, no need to reset it
-                    console.log('prev');
-                    console.log(el);
+//                     console.log('prev');
                     el = el.previousElementSibling;
                 }
                 if (window.scrollY < lastPos){
                     // We are at the end of the scroll, no need to reset it
-                    console.log('next');
-                    console.log(el);
+//                     console.log('next');
                     el = el.nextElementSibling;
                 }
                 
                 if (el && (Date.now() > (lastTime + debounce))){
-                    console.log('SCROLLING');
-                    console.log(el);
-                    console.log(typeof el);
+                    console.log(`${Date.now()} SCROLLING`);
+//                     console.log(el);
+//                     console.log(typeof el);
                     el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});
                     window.location.hash = `#${el.id}`;
                 }
                 else {
-                    console.log('debounce');
+                    console.log(`${Date.now()} debounce`);
                 }
                 
                 lastPos = window.scrollY;
