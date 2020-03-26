@@ -22,11 +22,13 @@
                 if (window.scrollY > lastPos){
                     // We are at the end of the scroll, no need to reset it
                     console.log('prev');
+                    console.log(el);
                     el = el.previousElementSibling;
                 }
                 if (window.scrollY < lastPos){
                     // We are at the end of the scroll, no need to reset it
                     console.log('next');
+                    console.log(el);
                     el = el.nextElementSibling;
                 }
                 
