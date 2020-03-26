@@ -35,7 +35,7 @@
                     console.log(`${Date.now()} SCROLLING`);
 //                     console.log(el);
 //                     console.log(typeof el);
-                    el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});
+                    document.getElementById(el.id).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});
                     window.location.hash = `#${el.id}`;
                 }
                 else {
