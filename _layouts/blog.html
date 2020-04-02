@@ -1,10 +1,15 @@
 <!doctype html>
-<html ⚡>
+<html {% if page.isAmp %} ⚡>
 	<head>
 		<meta charset="utf-8">
 		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
 		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+		{% if page.translations.it  %}
+			<link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
+		{% endif %}
+		{% if page.translations.en  %}
+			<link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.en | slugify}}" />
+		{% endif %}
 		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="{{ page.title }}" />
