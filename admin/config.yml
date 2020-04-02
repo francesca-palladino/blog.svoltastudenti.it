@@ -15,6 +15,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
       - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
       - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
@@ -48,6 +49,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
       - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
       - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
