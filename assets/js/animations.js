@@ -65,7 +65,6 @@ function bootstrapAnimation(){
     subscribeAnimationFrame();
 
     window.addEventListener('resize', _ => {
-        console.log('resize');
         buildAnimationList();
     });
 }
