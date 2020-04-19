@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+html,
+body {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+}
+
+header label {
+  z-index: 11;
+  width: 50px;
+  height: 50px;
+  color: red;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 95vw;
+  top: 50px;
+  background-color: white;
+  border-radius: 9999em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+header nav {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  background: white;
+  -webkit-clip-path: circle(25px at 95vw 50px);
+          clip-path: circle(25px at 95vw 50px);
+}
+
+header nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin: 20px;
+  margin-left: 5vw;
+  overflow: hidden;
+}
+
+header nav ul li a {
+  position: relative;
+  font-size: 4vw;
+  font-weight: bolder;
+  color: #ff6600;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav ul h1 {
+  text-align: center;
+  color: white;
+  margin: 50vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header input {
+  display: none;
+}
+
+header input:not(:checked) + nav {
+  -webkit-animation: slideOut 0.5s ease-out both;
+          animation: slideOut 0.5s ease-out both;
+  pointer-events: none;
+}
+
+header input:checked + nav {
+  -webkit-animation: slideIn 0.5s ease-in both;
+          animation: slideIn 0.5s ease-in both;
+}
+
+header input:checked + nav a {
+  -webkit-animation: FadeIn 0.5s ease-out;
+          animation: FadeIn 0.5s ease-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  color: #ff6600;
+}
+
+header input:checked + nav li {
+  -webkit-animation: FadeIn 0.5s ease-in-out;
+          animation: FadeIn 0.5s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+header input:checked + nav li:nth-child(1) a {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+header input:checked + nav li:nth-child(2) a {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+header input:checked + nav li:nth-child(3) a {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+header input:checked + nav li:nth-child(4) a {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+header input:checked + nav li:nth-child(5) a {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  1% {
+    -webkit-clip-path: circle(25px at 95vw 50px);
+            clip-path: circle(25px at 95vw 50px);
+  }
+  100% {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  1% {
+    -webkit-clip-path: circle(25px at 95vw 50px);
+            clip-path: circle(25px at 95vw 50px);
+  }
+  100% {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+  99% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-clip-path: circle(25px at 95vw 50px);
+            clip-path: circle(25px at 95vw 50px);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+  99% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-clip-path: circle(25px at 95vw 50px);
+            clip-path: circle(25px at 95vw 50px);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
