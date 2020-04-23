@@ -72,6 +72,10 @@ header nav {
           clip-path: circle(25px at 95vw 50px);
 }
 
+header nav > * {
+  flex: 50%;
+}
+
 @media (orientation: portrait) {
   header nav {
     flex-direction: column;
