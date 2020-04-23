@@ -51,6 +51,11 @@ label[for="menu-checkbox"] {
   background-color: black;
 }
 
+#menu-content {
+  display: flex;
+  flex-direction: row;
+}
+
 .menu-header {
   color: gray;
   font-size: 50px;
@@ -98,12 +103,12 @@ label[for="menu-checkbox"] {
           clip-path: circle(25px at 95vw 50px);
 } */
 
-header nav > * {
+#menu-content > * {
   flex: 50%;
 }
 
 @media (orientation: portrait) {
-  header nav {
+  #menu-content {
     flex-direction: column;
   }
 }
