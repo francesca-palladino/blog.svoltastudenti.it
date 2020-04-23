@@ -1,0 +1,24 @@
+<div id="faq">
+  <label for="faq1"><h2>Titolo</h2></label><input class="faq-trigger" type="checkbox" id="faq1" />
+  <p>
+    testo
+  </p>
+  <label for="faq2"><h2>Titolo</h2></label><input class="faq-trigger"type="checkbox" id="faq2" />
+  <p>
+    testo
+  </p>
+  <label for="faq3"><h2>Titolo</h2></label><input class="faq-trigger"type="checkbox" id="faq3" />
+  <p>
+    testo
+  </p>
+</div>
+<style>
+  #faq p {
+    height: 0;
+  }
+
+  #faq .faq-trigger:checked + p {
+    height: auto;
+    transition: all 1s;
+  }
+</style>
