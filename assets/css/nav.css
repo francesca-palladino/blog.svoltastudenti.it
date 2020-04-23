@@ -129,6 +129,16 @@ label[for="menu-checkbox"] {
 #menu-content > * {
   flex: 50%;
 }
+#menu-orange > .menu-data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#menu-orange > .menu-data > img {
+  width: 45%;
+  height: 45%;
+}
 
 @media (orientation: portrait) {
   #menu-content {
@@ -137,6 +147,10 @@ label[for="menu-checkbox"] {
   
   #menu-nav .menu-header {
     display: none;
+  }
+  
+  #menu-orange > .menu-data > img {
+    height: 90%;
   }
 }
 
