@@ -59,7 +59,7 @@ label[for="menu-checkbox"] {
   overflow: hidden;
 }
 
-.menu-content {
+#menu-content > * {
   display: flex;
   flex-direction: column;
 }
