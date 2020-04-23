@@ -14,11 +14,12 @@
 </div>
 <style>
   #faq p {
-    height: 0;
+    max-height: 10em;
+    transition: all 1s;
   }
 
   #faq .faq-trigger:checked + p {
-    height: auto;
-    transition: all 1s;
+    max-height: 0;
+    overflow: auto;
   }
 </style>
