@@ -136,13 +136,16 @@ header nav ul li a {
   display: none;
 }
 
+#menu {
+  animation: menu 0.5s ease-out forwards;
+}
+
 #menu-checkbox:not(:checked) + #menu {
-          animation: menu 0.5s ease-out both;
   pointer-events: none;
 }
 
 #menu-checkbox:checked + #menu {
-  animation: menu 0.5s ease-in reverse both;
+  animation-direction: reverse;
 }
 
 #menu-checkbox:checked + #menu a {
