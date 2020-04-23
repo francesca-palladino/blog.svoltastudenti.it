@@ -36,7 +36,7 @@ body {
 }
 
 #menu-checkbox:not(:checked) ~ #menu {
-  transition: clip-path 2s;
+  clip-path: circle(75% at right 50px top 50px);
 }
 
 label[for="menu-checkbox"] {
