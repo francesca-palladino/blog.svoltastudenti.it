@@ -142,9 +142,6 @@ header nav ul li a {
 
 #menu-checkbox:not(:checked) + #menu {
   pointer-events: none;
-}
-
-#menu-checkbox:checked ~ #menu {
   animation-direction: reverse;
 }
 
