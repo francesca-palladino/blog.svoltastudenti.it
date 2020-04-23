@@ -63,7 +63,6 @@ header nav {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  display: -ms-grid;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -103,13 +102,13 @@ header nav ul li a {
           box-sizing: border-box;
 }
 
-header nav ul h1 {
+/* header nav ul h1 {
   text-align: center;
   color: white;
   margin: 50vh;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
+} */
 
 header input {
   display: none;
