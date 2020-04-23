@@ -62,7 +62,23 @@ label[for="menu-checkbox"] {
 .menu-header {
   color: gray;
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 25px;
+}
+
+#menu-orange .menu-header {
+  text-align: right;
+}
+
+.menu-footer {
+  text-align: center;
+}
+
+.menu-footer > * {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: orange;
 }
 
 /* header label {
