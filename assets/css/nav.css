@@ -36,7 +36,7 @@ body {
 label[for="menu-checkbox"] {
   position: absolute;
   top: 50px;
-  right: 5vw;
+  right: 50px;
   cursor: pointer;
   height: 50px;
   width: 50px;
@@ -73,7 +73,7 @@ label[for="menu-checkbox"] {
           transform: translate(-50%, -50%);
   cursor: pointer;
 } */
-
+/* 
 #menu-nav {
   left: 0;
   right: 0;
@@ -89,7 +89,7 @@ label[for="menu-checkbox"] {
   background: white;
   -webkit-clip-path: circle(25px at 95vw 50px);
           clip-path: circle(25px at 95vw 50px);
-}
+} */
 
 header nav > * {
   flex: 50%;
