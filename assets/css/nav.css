@@ -59,10 +59,25 @@ label[for="menu-checkbox"] {
   overflow: hidden;
 }
 
+.menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-header {
   color: gray;
   font-size: 50px;
   margin-top: 25px;
+}
+
+.menu-header, .menu-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.menu-data {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 #menu-orange .menu-header {
