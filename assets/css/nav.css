@@ -29,15 +29,17 @@ body {
   position: fixed;
   display: flex;
   flex-direction: row;
+  z-index: 1;
   background: white;
   clip-path: circle(25px at right 50px top 50px);
 }
 
 label[for="menu-checkbox"] {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 25px;
+  right: 25px;
   cursor: pointer;
+  pointer-events: initial;
   height: 50px;
   width: 50px;
   border-radius: 25px;
