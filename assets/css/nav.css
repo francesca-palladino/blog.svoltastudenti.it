@@ -17,7 +17,7 @@ body {
   display: none;
 }
 
-header {
+#menu {
   left: 0;
   right: 0;
   top: 0;
@@ -28,9 +28,31 @@ header {
   width: 100vw;
   z-index: 10;
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  -webkit-clip-path: circle(25px at right 5vw 50px);
+          clip-path: circle(25px at right 5vw 50px);
 }
 
-header label {
+label[for="menu-checkbox"] {
+  position: fixed;
+  top: 50px;
+  right: 5vw;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.menu-header {
+  color: gray;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+/* header label {
   z-index: 11;
   width: 50px;
   height: 50px;
@@ -52,9 +74,9 @@ header label {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: pointer;
-}
+} */
 
-header nav {
+#menu-nav {
   left: 0;
   right: 0;
   top: 0;
@@ -110,22 +132,22 @@ header nav ul li a {
           transform: translate(-50%, -50%);
 } */
 
-header input {
+#menu-checkbox {
   display: none;
 }
 
-header input:not(:checked) + nav {
+#menu-checkbox:not(:checked) + #menu {
   -webkit-animation: slideOut 0.5s ease-out both;
           animation: slideOut 0.5s ease-out both;
   pointer-events: none;
 }
 
-header input:checked + nav {
+#menu-checkbox:checked + #menu {
   -webkit-animation: slideIn 0.5s ease-in both;
           animation: slideIn 0.5s ease-in both;
 }
 
-header input:checked + nav a {
+#menu-checkbox:checked + #menu a {
   -webkit-animation: FadeIn 0.5s ease-out;
           animation: FadeIn 0.5s ease-out;
   -webkit-animation-fill-mode: both;
@@ -133,34 +155,34 @@ header input:checked + nav a {
   color: #ff6600;
 }
 
-header input:checked + nav li {
+#menu-checkbox:checked + #menu li {
   -webkit-animation: FadeIn 0.5s ease-in-out;
           animation: FadeIn 0.5s ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
-header input:checked + nav li:nth-child(1) a {
+#menu-checkbox:checked + #menu li:nth-child(1) a {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
 
-header input:checked + nav li:nth-child(2) a {
+#menu-checkbox:checked + #menu li:nth-child(2) a {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-header input:checked + nav li:nth-child(3) a {
+#menu-checkbox:checked + #menu li:nth-child(3) a {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
 
-header input:checked + nav li:nth-child(4) a {
+#menu-checkbox:checked + #menu li:nth-child(4) a {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-header input:checked + nav li:nth-child(5) a {
+#menu-checkbox:checked + #menu li:nth-child(5) a {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s;
 }
