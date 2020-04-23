@@ -54,6 +54,9 @@ label[for="menu-checkbox"] {
 #menu-content {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .menu-header {
@@ -109,7 +112,11 @@ label[for="menu-checkbox"] {
 
 @media (orientation: portrait) {
   #menu-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  
+  #menu-nav .menu-header {
+    display: none;
   }
 }
 
