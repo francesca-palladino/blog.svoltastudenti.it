@@ -26,7 +26,6 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 10;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -42,7 +41,7 @@ label[for="menu-checkbox"] {
   height: 50px;
   width: 50px;
   border-radius: 25px;
-  background-color: white;
+  background-color: black;
 }
 
 .menu-header {
@@ -132,7 +131,9 @@ header nav ul li a {
 } */
 
 #menu-checkbox {
-  display: none;
+/*   display: none; */
+  position: fixed;
+  z-index: 1000;
 }
 
 #menu {
@@ -143,11 +144,11 @@ header nav ul li a {
   pointer-events: none;
 }
 
-#menu-checkbox:checked + #menu {
+#menu-checkbox:checked ~ #menu {
   animation-direction: reverse;
 }
 
-#menu-checkbox:checked + #menu a {
+#menu-checkbox:checked ~ #menu a {
   -webkit-animation: FadeIn 0.5s ease-out;
           animation: FadeIn 0.5s ease-out;
   -webkit-animation-fill-mode: both;
@@ -155,34 +156,34 @@ header nav ul li a {
   color: #ff6600;
 }
 
-#menu-checkbox:checked + #menu li {
+#menu-checkbox:checked ~ #menu li {
   -webkit-animation: FadeIn 0.5s ease-in-out;
           animation: FadeIn 0.5s ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
-#menu-checkbox:checked + #menu li:nth-child(1) a {
+#menu-checkbox:checked ~ #menu li:nth-child(1) a {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
 
-#menu-checkbox:checked + #menu li:nth-child(2) a {
+#menu-checkbox:checked ~ #menu li:nth-child(2) a {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-#menu-checkbox:checked + #menu li:nth-child(3) a {
+#menu-checkbox:checked ~ #menu li:nth-child(3) a {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
 
-#menu-checkbox:checked + #menu li:nth-child(4) a {
+#menu-checkbox:checked ~ #menu li:nth-child(4) a {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-#menu-checkbox:checked + #menu li:nth-child(5) a {
+#menu-checkbox:checked ~ #menu li:nth-child(5) a {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s;
 }
