@@ -32,7 +32,7 @@ body {
   z-index: 1;
   background: white;
   clip-path: circle(200% at right 50px top 50px);
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 #menu-checkbox:not(:checked) ~ #menu {
