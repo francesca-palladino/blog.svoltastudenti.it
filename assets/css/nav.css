@@ -137,14 +137,12 @@ header nav ul li a {
 }
 
 #menu-checkbox:not(:checked) + #menu {
-  -webkit-animation: slideOut 0.5s ease-out both;
-          animation: slideOut 0.5s ease-out both;
+          animation: menu 0.5s ease-out both;
   pointer-events: none;
 }
 
 #menu-checkbox:checked + #menu {
-  -webkit-animation: slideIn 0.5s ease-in both;
-          animation: slideIn 0.5s ease-in both;
+  animation: menu 0.5s ease-in reverse both;
 }
 
 #menu-checkbox:checked + #menu a {
@@ -185,6 +183,16 @@ header nav ul li a {
 #menu-checkbox:checked + #menu li:nth-child(5) a {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s;
+}
+
+@keyframes menu {
+  from {
+    clip-path: circle(25px at right 5vw 50px);
+  }
+  
+  to {
+    clip-path: circle(75%);
+  }
 }
 
 @keyframes slideIn {
