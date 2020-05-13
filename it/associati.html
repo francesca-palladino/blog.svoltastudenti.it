@@ -8,22 +8,22 @@
         overflow-x: auto;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
-      }
-      
-      #wrapper > #list {
-        width: 100%;
-        transform: translateZ(0px);
-        transition: transform 500ms;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
       }
       
-      #wrapper > #list:hover {
+      #wrapper > #list {
+        width: 100%;
+      }
+      
+      #wrapper > img:hover {
         transform: translateZ(-50px);
         padding-right: 100px;
       }
-      #wrapper > #list > img {
+      #wrapper > img {
+        transform: translateZ(0px);
+        transition: transform 500ms;
         height: 200px;
         width: 100;
         flex-grow: 0;
@@ -33,7 +33,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="list">
+<!--       <div id="list"> -->
         <img />
         <img />
         <img />
@@ -51,5 +51,5 @@
         <img />
         <img />
         <img />
-      </div>
+<!--       </div> -->
     </div>
