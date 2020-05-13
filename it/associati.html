@@ -3,18 +3,20 @@
     <style>
       #wrapper {
         width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        background-color: red;
+        overflow: hidden;
+        background-color: green;
         perspective: 50px;
       }
       
       #wrapper > #list {
+        width: 100%;
         transform: translateZ(0px);
         transition: transform 500ms;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
       
       #wrapper > #list:hover {
