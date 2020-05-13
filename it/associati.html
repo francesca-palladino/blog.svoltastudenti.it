@@ -2,17 +2,19 @@
   <head>
     <style>
       #wrapper {
-        width: 100%;
+        width: 90vw;
         background-color: blue;
-        perspective: 50px;
+        perspective: 10vw;
         overflow-x: auto;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
+        margin-left: auto;
+        margin-right: auto;
       }
       
       #wrapper > #list {
         width: 100%;
-        transform: translateZ(0px);
+        transform: translateZ(0vw);
         transition: transform 500ms;
         display: flex;
         flex-direction: row;
@@ -20,13 +22,16 @@
       }
       
       #wrapper:hover > #list {
-        transform: translateZ(-50px);
+        transform: translateZ(-10vw);
         padding-right: 100px;
       }
+      
       #wrapper > #list > img {
-        height: 200px;
-        width: 100;
+        height: 40vw;
+        width: 30vw;
         flex-grow: 0;
+        margin-left: 1vw;
+        margin-right: 1vw;
         flex-shrink: 0;
       }
     </style>
