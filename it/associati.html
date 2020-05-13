@@ -17,10 +17,6 @@
         width: 100%;
       }
       
-      #wrapper > img:hover {
-        transform: translateZ(-50px);
-        padding-right: 100px;
-      }
       #wrapper > img {
         transform: translateZ(0px);
         transition: transform 500ms;
@@ -28,6 +24,11 @@
         width: 100;
         flex-grow: 0;
         flex-shrink: 0;
+      }
+      
+      #wrapper:hover > img {
+        transform: translateZ(-50px);
+        padding-right: 100px;
       }
     </style>
   </head>
