@@ -3,9 +3,11 @@
     <style>
       #wrapper {
         width: 100%;
-        overflow: hidden;
-        background-color: green;
+        background-color: blue;
         perspective: 50px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
       }
       
       #wrapper > #list {
@@ -15,9 +17,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
       }
       
       #wrapper > #list:hover {
