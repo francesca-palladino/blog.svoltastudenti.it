@@ -39,6 +39,11 @@
   color: white;
 }
 
+p {
+  position: sticky;
+  top: 200px;
+}
+
 .backgroundImage {
   background-origin: padding-box;
   background-position: center;

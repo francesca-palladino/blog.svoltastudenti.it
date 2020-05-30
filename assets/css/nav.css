@@ -16,11 +16,70 @@ body {
   display: none;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-timing-function: cubic-bezier();
+          transition-timing-function: cubic-bezier();
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-#menu {
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header label {
+  z-index: 12;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 50px;
+  top: 75px;
+  background-color: white;
+  border-radius: 9999em;
+  border-width: medium;
+  border-style: solid;
+  color: #ff6600;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+header label img {
+  width: 50px;
+  height: 50px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+header #menu {
   left: 0;
   right: 0;
   top: 0;
@@ -30,85 +89,93 @@ h1 {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
   background: white;
-  clip-path: circle(200% at right 50px top 50px);
-  transition: all 1s;
-}
-
-#menu-checkbox:not(:checked) ~ #menu {
-  clip-path: circle(25px at right 50px top 50px);
-}
-
-label[for="menu-checkbox"] {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-  pointer-events: initial;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-  background-color: black;
-}
-
-#menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-clip-path: circle(25px at right 105px top 75px);
+          clip-path: circle(25px at right 105px top 75px);
+  -webkit-transition-property: -webkit-clip-path;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+  -webkit-transition-timing-function: cubic-bezier();
+          transition-timing-function: cubic-bezier();
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+header #menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
   height: 100%;
-  overflow: hidden;
 }
 
-#menu-content > * {
+header #menu nav h2 {
+  margin-top: 50px;
+  font-size: 3.5vw;
+}
+
+header #menu nav article {
+  margin-top: 75px;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.menu-header {
-  color: gray;
-  font-size: 50px;
-  margin-top: 25px;
+header #menu nav article li {
+  margin-left: 0;
 }
 
-.menu-header, .menu-footer {
-  flex-grow: 0;
-  flex-shrink: 0;
+header #orange {
+  background: #ff6600;
 }
 
-.menu-data {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-#menu-orange .menu-header {
+header #orange h2 {
   text-align: right;
+  margin-right: 50px;
+  color: white;
 }
 
-.menu-footer {
+header #orange article {
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.menu-footer > * {
-  height: 40px;
-  width: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 20px;
-  overflow: hidden;
-  background-color: orange;
+header #orange article div {
+  margin-left: 50px;
+  background: white;
+  width: 40%;
+  height: 35%;
+  border-radius: 1vw;
 }
 
-/* header label {
-  z-index: 11;
-  width: 50px;
-  height: 50px;
-  color: red;
-  position: absolute;
+header #orange footer {
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,129 +185,218 @@ label[for="menu-checkbox"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 95vw;
-  top: 50px;
-  background-color: white;
-  border-radius: 9999em;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  cursor: pointer;
-} */
-/* 
-#menu-nav {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
+  margin-top: 75px;
+}
+
+header #orange footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  position: fixed;
+}
+
+header #orange footer ul li a {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header #orange footer ul li a img {
+  height: 50px;
+  width: 50px;
   background: white;
-  -webkit-clip-path: circle(25px at 95vw 50px);
-          clip-path: circle(25px at 95vw 50px);
-} */
-
-#menu-content > * {
-  flex: 50%;
-}
-#menu-orange > .menu-data {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
-#menu-orange > .menu-data > img {
-  width: 45%;
-  height: 45%;
+header #orange footer ul li a span {
+  z-index: 15;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-@media (orientation: portrait) {
-  #menu-content {
-    flex-direction: column-reverse;
-  }
-  
-  #menu-nav .menu-header {
-    display: none;
-  }
-  
-  #menu-orange > .menu-data > img {
-    height: 90%;
-  }
+header #orange footer ul li a span:nth-child(1), header #orange footer ul li a span:nth-child(3) {
+  width: 100%;
+  height: 1%;
+  background: black;
 }
 
-header nav ul {
-  padding: 0;
-  list-style-type: none;
+header #orange footer ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
-header nav ul li {
-  margin: 20px;
-  margin-left: 5vw;
+header #orange footer ul li a:hover span:nth-child(1) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header #svolta h2 {
+  text-align: left;
+  margin-left: 50px;
+  color: #ff6600;
+}
+
+header #svolta article ul {
+  margin-left: 50px;
+}
+
+header #svolta article ul li {
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
-header nav ul li a {
+header #svolta article ul li a {
   position: relative;
-  font-size: 4vw;
-  font-weight: bolder;
+  font-size: 3rem;
+  font-weight: lighter;
   color: #ff6600;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-/* header nav ul h1 {
+header #svolta footer {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 75px;
+}
+
+header #svolta footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #svolta footer ul li a {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
   text-align: center;
-  color: white;
-  margin: 50vh;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-} */
-
-#menu-checkbox {
-  display: none;
-/*   position: fixed; */
-/*   z-index: 1000; */
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-/* #menu {
-  animation: menu 0.5s ease-out forwards;
-} */
+header #svolta footer ul li a img {
+  height: 50px;
+  width: 50px;
+  background: white;
+}
 
+header #svolta footer ul li a span {
+  z-index: 15;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 
-#menu-checkbox:checked ~ #menu a {
-  animation: FadeIn 0.5s ease-out;
-  animation-fill-mode: both;
+header #svolta footer ul li a span:nth-child(1), header #svolta footer ul li a span:nth-child(3) {
+  width: 100%;
+  height: 1%;
+  background: black;
+}
+
+header #svolta footer ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+header #svolta footer ul li a:hover span:nth-child(1) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header input {
+  display: none;
+}
+
+header input:checked ~ body {
+  overflow: hidden;
+}
+
+header input:checked ~ label img {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+header input:checked ~ #menu {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+header input:checked ~ #menu article a {
+  -webkit-animation: FadeIn 0.5s ease-out;
+          animation: FadeIn 0.5s ease-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   color: #ff6600;
 }
 
-#menu-checkbox:checked ~ #menu li {
-  animation: FadeIn 0.5s ease-in-out;
-  animation-fill-mode: both;
+header input:checked ~ #menu article li {
+  -webkit-animation: FadeIn 0.5s ease-in-out;
+          animation: FadeIn 0.5s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-#menu-checkbox:checked ~ #menu li:nth-child(1) a {
-  animation-delay: 0.25s;
+header input:checked ~ #menu article li:nth-child(1) a {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
-#menu-checkbox:checked ~ #menu li:nth-child(2) a {
-  animation-delay: 0.5s;
+header input:checked ~ #menu article li:nth-child(2) a {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
-#menu-checkbox:checked ~ #menu li:nth-child(3) a {
-  animation-delay: 0.75s;
+header input:checked ~ #menu article li:nth-child(3) a {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
-#menu-checkbox:checked ~ #menu li:nth-child(4) a {
-  animation-delay: 1s;
+header input:checked ~ #menu article li:nth-child(4) a {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-#menu-checkbox:checked ~ #menu li:nth-child(5) a {
-  animation-delay: 1.25s;
+header input:checked ~ #menu article li:nth-child(5) a {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+@-webkit-keyframes FadeIn {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0px;
+  }
 }
 
 @keyframes FadeIn {
@@ -249,6 +405,44 @@ header nav ul li a {
   }
   to {
     top: 0px;
+  }
+}
+
+@media (orientation: portrait) {
+  header label {
+    right: 25px;
+    top: 65px;
+  }
+  header #menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-clip-path: circle(25px at right 80px top 65px);
+            clip-path: circle(25px at right 80px top 65px);
+  }
+  header #menu nav {
+    width: 100%;
+    height: 50%;
+  }
+  header #menu nav h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+  header #menu nav article {
+    margin-top: 0px;
+    height: 50%;
+  }
+  header #menu nav article ul li {
+    margin-left: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  header #menu nav article ul li a {
+    font-size: 1.2rem;
+  }
+  header #menu nav footer {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=nav.css.map */
