@@ -1,3 +1,7 @@
+.pretix-widget {
+	font-family: 'Lato', sans-serif;
+}
+
 .pretix-widget-hidden {
 	display: none
 }
@@ -234,7 +238,8 @@
 }
 
 .pretix-widget .pretix-widget-item-row {
-	padding: 10px 0
+	padding: 10px 0;
+	border-bottom: 1px solid #AAAAAA;
 }
 
 .pretix-widget .pretix-widget-category {
