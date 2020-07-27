@@ -236,7 +236,7 @@
 			}
 			
 			article header {
-				height: 100vh;
+				height: 100vmin;
 			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -246,7 +246,8 @@
 	</style>
   	<body>
 		<article>
-			<amp-img class="img" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
+			<!--<amp-img class="img" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
+			<amp-img class="img" layout="fill" src="https://source.unsplash.com/random/1000x1000" id="background"></amp-img>
 			<header>
 				<p>
 					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
