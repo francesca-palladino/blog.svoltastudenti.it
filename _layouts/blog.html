@@ -227,16 +227,22 @@
 				z-index: -1;
 			}
 			
-			article #wrapper {
+			article header {
+				height: 100vmin;
+			}
+			
+			article #content {
 				background-color: white;
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
+				border-radius: 10px;
 				padding-left: 5vw;
 				padding-right: 5vw;
 			}
 			
-			article header {
-				height: 100vmin;
+			article footer {
+				background-color: #FF6600;
+				margin-top: 10px;
+				border-radius: 10px;
+				padding: 15px;
 			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -270,16 +276,14 @@
 					{% endif %}
 				</p>
 			</header>
-			<div id="wrapper">
-				<div id="content">
-					{{ content  | replace: "<img", "<amp-img"}}
-				</div>
-				<footer>
-					<hr size="1"/>
-					Svoltastudenti e' un associazione bla bla bla
-					<br /><a href="/{{ page.category }}">Scopri di Piu'</a> • <a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
-				</footer>
+			<div id="content">
+				{{ content  | replace: "<img", "<amp-img"}}
 			</div>
+			<footer>
+				<hr size="1"/>
+				Svoltastudenti e' un associazione bla bla bla
+				<br /><a href="/{{ page.category }}">Scopri di Piu'</a> • <a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
+			</footer>
 		</article>
 		<amp-consent id="cookie" layout="nodisplay">
 		    <script type="application/json">
