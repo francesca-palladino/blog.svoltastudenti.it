@@ -96,24 +96,20 @@
 			}
 			
 			#slideshow {
-				position: fixed;
 				width: 40vw;
-				flex-grow: 1;
+				flex-grow: 0;
 				flex-shrink: 0;
-				top: 5vh;
-				left: 5vw;
-				height: 90vh;
-				border-radius: 25px;
-				/*background-origin:padding-box;
-				background-position:center;
-				background-repeat:no-repeat;
-				background-size:contain;
-				background-color:gray;
-				background-image: url('https://source.unsplash.com/random/1000x1000');*/
+				padding-top: 5vh;
+				padding-bottom: 5vh;
+				padding-left: 5vw;
+				padding-right: 5vw;
+				background-color: green;
 			}
 			
 			#slideshow .slide {
 				position: relative;
+				overflow: hidden;
+				border-radius: 20px;
 			}
 			
 			#slideshow .slide .caption {
@@ -133,13 +129,12 @@
 			}
 			
 			article {
-				position: fixed;
-				top: 0;
-				right: 0vw;
 				width: 50vw;
 				height: 100vh;
 				overflow-x: hidden;
 				overflow-y: auto;
+				flex-grow: 0;
+				flex-shrink: 0;
 			}
 			
 			@media all and (orientation: portrait){
@@ -148,21 +143,17 @@
 					left: 20px;
 				}
 				
-				#cover {
+				#slideshow {
 					display: none;
 				}
 				
 				article {
 					padding-top: 80px;
 					width: 100vw;
-					right: 0;
 				}
 			}
 			
 			article #content {
-				border-radius: 10px;
-				padding-left: 5vw;
-				padding-right: 5vw;
 				padding-bottom: 30px;
 				padding-top: 10px;
 			}
@@ -175,19 +166,12 @@
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
-	<style>
-		
-	</style>
   	<body>
 		<div id="menu">
 			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
 		</div>
 		<div id="page">
-			<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
-			<!--<div id="tmp" style="height: 90vh; width: 90vw; position: fixed; background-color: green; z-index: 1000; top: 0; left: 0">
-				<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
-			</div>-->
-			<div id="slideshow" style="background-color: orange">
+			<div id="slideshow">
 				<amp-carousel layout="fill" type="slides">
 					<div class="slide">
 						<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
