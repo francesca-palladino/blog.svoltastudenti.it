@@ -95,59 +95,9 @@
 				z-index: 1;
 			}
 			
-			/*#menu {
-				opacity: 0.5;
-				height: 50px;
-				width: 300px;
-				display: flex;
-				flex-direction: row;
-				overflow: hidden;
-				position: fixed;
-				top: 6vh;
-				left: 6vw;
-				z-index: 1;
-			}
-			
-			#menu > amp-img {
-				background-color: #FF6600;
-				height: 50px;
-				width: 50px;
-				border-radius: 25px;
-				flex-grow: 0;
-				flex-shrink: 0;
-			}
-			
-			#menu > .wrapper {
-				display: flex;
-				flex-direction: column;
-				margin-left: 60px;
-			}
-			
-			#menu > .wrapper > #category {
-				font-size: 21px;
-				line-height: 23px;
-				height: 23px;
-				padding: 2px;
-				border-radius: 5px;
-				background-color: red;
-				color: white;
-				flex-grow: 0;
-				flex-shrink: 0;
-			}
-			
-			#menu > .wrapper > #info {
-				margin-top: 3px;
-				height: 20px;
-				font-size: 18px;
-				line-height: 20px;
-				color: white;
-				flex-grow: 0;
-				flex-shrink: 0;
-			}*/
-			
 			#cover {
 				position: fixed;
-				/*width: 40vw;*/
+				width: 40vw;
 				flex-grow: 1;
 				flex-shrink: 0;
 				top: 5vh;
@@ -216,14 +166,6 @@
   	<body>
 		<div id="menu">
 			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
-			<!--<div class="wrapper">
-				<div id="category">
-					Rappresentanza
-				</div>
-				<div id="info">
-					Alessandro de Iasio
-				</div>
-			</div>-->
 		</div>
 		<div id="page">
 			<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
@@ -231,7 +173,6 @@
 				<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
 			</div>-->
 			<div id="cover" style="background-color: orange">
-				<amp-img layout="fill" height="1000" width="300" src="https://source.unsplash.com/random/900x1200"></amp-img>
 				<amp-carousel layout="fill" type="slides">
 					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
 					<amp-img layout="fill" src="https://source.unsplash.com/random/600x1200"></amp-img>
@@ -263,7 +204,7 @@
 					</p>
 				</header>
 				<div id="content">
-					{{ content  | replace: "<img", "<amp-img"}}
+					{{ content }}
 				</div>
 				<div class="spacer"></div>
 				<footer>
