@@ -218,6 +218,12 @@
 				top: 0;
 				left: 0vw;
 				height: 100vh;
+				background-origin:padding-box;
+				background-position:center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-color:gray;
+				background-image: url('https://source.unsplash.com/random/1000x1000');
 			}
 			
 			article {
@@ -239,10 +245,11 @@
 				padding-top: 10px;
 			}
 			
-			article .spacer {
+			/*article .spacer {
 				height: 10px;
 				background-color: red;
-			}
+			}*/
+			
 			article footer {
 				background-color: #FF6600;
 				border-radius: 10px;
@@ -256,7 +263,7 @@
 	</style>
   	<body>
 		<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
-		<amp-img id="cover" layout="fill" src="https://source.unsplash.com/random/1000x1000" id="background"></amp-img>
+		<div id="cover"></div>
 		<article>
 			<header>
 				<p>
