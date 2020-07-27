@@ -65,6 +65,7 @@
 		</title>
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
 		<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
 		<style amp-custom>
 			html, body {
@@ -215,22 +216,27 @@
   	<body>
 		<div id="menu">
 			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
-			<div class="wrapper">
+			<!--<div class="wrapper">
 				<div id="category">
 					Rappresentanza
 				</div>
 				<div id="info">
 					Alessandro de Iasio
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<div id="page">
 			<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
 			<!--<div id="tmp" style="height: 90vh; width: 90vw; position: fixed; background-color: green; z-index: 1000; top: 0; left: 0">
 				<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
 			</div>-->
-			<div id="cover">
+			<div id="cover" style="background-color: orange">
 				<amp-img layout="fill" height="1000" width="300" src="https://source.unsplash.com/random/900x1200"></amp-img>
+				<amp-carousel layout="fill" type="slides">
+					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
+					<amp-img layout="fill" src="https://source.unsplash.com/random/600x1200"></amp-img>
+					<amp-img layout="fill" src="https://source.unsplash.com/random/300x1200"></amp-img>
+				</amp-carousel>
 			</div>
 
 			<article>
