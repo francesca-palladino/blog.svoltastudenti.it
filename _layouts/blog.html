@@ -95,7 +95,7 @@
 				z-index: 1;
 			}
 			
-			#cover {
+			#slideshow {
 				position: fixed;
 				width: 40vw;
 				flex-grow: 1;
@@ -112,7 +112,20 @@
 				background-image: url('https://source.unsplash.com/random/1000x1000');*/
 			}
 			
-			#cover > amp-img > img {
+			#slideshow .slide {
+				position: relative;
+			}
+			
+			#slideshow .slide .caption {
+				background-color: black;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				color: white;
+				padding: 10px;
+			}
+			
+			#slideshow amp-img > img {
 				object-fit: contain;
 				border-radius: 20px;
 			}
@@ -172,7 +185,7 @@
 			<!--<div id="tmp" style="height: 90vh; width: 90vw; position: fixed; background-color: green; z-index: 1000; top: 0; left: 0">
 				<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
 			</div>-->
-			<div id="cover" style="background-color: orange">
+			<div id="slideshow" style="background-color: orange">
 				<amp-carousel layout="fill" type="slides">
 					<div class="slide">
 						<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
