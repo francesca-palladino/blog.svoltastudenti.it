@@ -224,7 +224,12 @@
 				left: 0;
 				width: 100vmin;
 				height: 100vmin;
-				background-color: red;
+				background-origin:padding-box;
+				background-position:center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-color:gray;
+				background: url('https://source.unsplash.com/random/1000x1000');
 			}
 			
 			article header {
@@ -253,7 +258,7 @@
   	<body>
 		<article>
 			<!--<amp-img class="img" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
-			<amp-img class="img" layout="fill" src="https://source.unsplash.com/random/1000x1000" id="background"></amp-img>
+			<div class="img"></div>
 			<header>
 				<p>
 					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
