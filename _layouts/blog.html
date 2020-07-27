@@ -216,12 +216,13 @@
 				width: 100vmin;
 				margin-left: auto;
 				margin-right: auto;
-				background-origin:padding-box;
-				background-position:center;
-				background-repeat:no-repeat;
-				background-size:cover;
-				background-color:gray;
-				background: url('https://source.unsplash.com/random/1000x1000');
+				background-origin: padding-box;
+				background-position: top;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-attachment: fixed;
+				background-color: gray;
+				background-image: url(https://source.unsplash.com/random/1000x1000);
 			}
 			
 			/*article .img {
@@ -243,9 +244,12 @@
 				padding-right: 5vw;
 			}
 			
+			article .spacer {
+				height: 10px;
+				background-color: red;
+			}
 			article footer {
 				background-color: #FF6600;
-				margin-top: 10px;
 				border-radius: 10px;
 				padding: 15px;
 			}
@@ -284,6 +288,7 @@
 			<div id="content">
 				{{ content  | replace: "<img", "<amp-img"}}
 			</div>
+			<div class="spacer"></div>
 			<footer>
 				<a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
 			</footer>
