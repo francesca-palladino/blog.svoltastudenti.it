@@ -97,12 +97,14 @@
 			
 			#slideshow {
 				width: 40vw;
+				height: 90vh;
 				flex-grow: 0;
 				flex-shrink: 0;
-				padding-top: 5vh;
+/*				padding-top: 5vh;
 				padding-bottom: 5vh;
 				padding-left: 5vw;
-				padding-right: 5vw;
+				padding-right: 5vw;*/
+				position: relative;
 				background-color: green;
 			}
 			
@@ -112,7 +114,7 @@
 				border-radius: 20px;
 			}
 			
-			#slideshow .slide .caption {
+			/*#slideshow .slide .caption {
 				background-color: rgba(0, 0, 0, 0.5);
 				border-bottom-left-radius: 20px;
 				border-bottom-right-radius: 20px;
@@ -121,7 +123,7 @@
 				width: 100%;
 				color: white;
 				padding: 20px;
-			}
+			}*/
 			
 			#slideshow amp-img > img {
 				object-fit: contain;
@@ -175,31 +177,13 @@
 				<amp-carousel layout="fill" type="slides">
 					<div class="slide">
 						<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-						    <div class="caption">
-						      The Shetland Sheepdog, often known as the Sheltie, is a breed of herding dog. Less favored nicknames
-						      are the Toy Collie and the Miniature Collie. They are small dogs, and come in a variety of colors,
-						      such as sable, tri-color, and blue merle. They are very intelligent, vocal, excitable, energetic dogs
-						      who are always willing to please and work hard.
-						    </div>
 					</div>
 					<div class="slide">
 						<amp-img layout="fill" src="https://source.unsplash.com/random/600x1200"></amp-img>
-						<div class="caption">
-						      The Shetland Sheepdog, often known as the Sheltie, is a breed of herding dog. Less favored nicknames
-						      are the Toy Collie and the Miniature Collie. They are small dogs, and come in a variety of colors,
-						      such as sable, tri-color, and blue merle. They are very intelligent, vocal, excitable, energetic dogs
-						      who are always willing to please and work hard.
-						    </div>
 					</div>
 					<div class="slide">
 						<amp-img layout="fill" src="https://source.unsplash.com/random/300x1200"></amp-img>
-						<div class="caption">
-							      The Shetland Sheepdog, often known as the Sheltie, is a breed of herding dog. Less favored nicknames
-							      are the Toy Collie and the Miniature Collie. They are small dogs, and come in a variety of colors,
-							      such as sable, tri-color, and blue merle. They are very intelligent, vocal, excitable, energetic dogs
-							      who are always willing to please and work hard.
-							    </div>
-						</div>
+					</div>
 				</amp-carousel>
 			</div>
 
