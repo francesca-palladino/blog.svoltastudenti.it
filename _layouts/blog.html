@@ -134,12 +134,16 @@
 				left: 5vw;
 				height: 90vh;
 				border-radius: 25px;
-				background-origin:padding-box;
+				/*background-origin:padding-box;
 				background-position:center;
 				background-repeat:no-repeat;
 				background-size:contain;
 				background-color:gray;
-				background-image: url('https://source.unsplash.com/random/1000x1000');
+				background-image: url('https://source.unsplash.com/random/1000x1000');*/
+			}
+			
+			#cover > amp-img > img {
+				object-fit: contain;
 			}
 			
 			article {
@@ -193,7 +197,9 @@
 		<!--<div id="tmp" style="height: 90vh; width: 90vw; position: fixed; background-color: green; z-index: 1000; top: 0; left: 0">
 			<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
 		</div>-->
-		<div id="cover"></div>
+		<div id="cover">
+			<amp-img layout="fill" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
+		</div>
 		<div id="menu">
 			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
 			<div class="wrapper">
