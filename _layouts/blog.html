@@ -77,7 +77,7 @@
 				position: relative;
 			}
 
-			article header * {
+			/*article header * {
 				position: relative;
 			}
 			
@@ -210,6 +210,28 @@
 			
 			article footer a, article footer a:visited {
 				color: #FF6600;
+			}*/
+			article {
+				position: relative;
+				width: 100vmin;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			article .img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vmin;
+				height: 100vmin;
+			}
+			
+			article #wrapper {
+				background-color: white;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				padding-left: 5vw;
+				padding-right: 5vw
 			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -219,7 +241,7 @@
 	</style>
   	<body>
 		<article>
-			<amp-img layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
+			<amp-img class="img" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
 			<header>
 				<p>
 					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
