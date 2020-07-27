@@ -211,27 +211,24 @@
 			article footer a, article footer a:visited {
 				color: #FF6600;
 			}*/
-			article {
-				position: relative;
-				width: 100vmin;
-				margin-left: auto;
-				margin-right: auto;
-				background-origin: padding-box;
-				background-position: top;
-				background-repeat: no-repeat;
-				background-size: contain;
-				background-attachment: fixed;
-				background-color: gray;
-				background-image: url(https://source.unsplash.com/random/1000x1000);
-			}
 			
-			/*article .img {
-				position: absolute;
+			#cover {
+				position: fixed;
 				top: 0;
 				left: 0;
-				width: 100vmin;
-				height: 100vmin;
-			}*/
+				width: 50vw;
+				height: 100vh;
+			}
+			
+			article {
+				position: fixed;
+				top: 0;
+				right: 50vw;
+				width: 50vw;
+				height: 100vh;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
 			
 			article header {
 				height: 100vmin;
@@ -262,9 +259,8 @@
 		
 	</style>
   	<body>
+		<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>
 		<article>
-			<!--<amp-img class="img" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
-			<div class="img"></div>
 			<header>
 				<p>
 					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
