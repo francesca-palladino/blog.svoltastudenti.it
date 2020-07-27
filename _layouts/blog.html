@@ -78,6 +78,13 @@
 			}
 			
 			#menu {
+				height: 50px;
+				width: 300px;
+				display: flex;
+				flex-direction: row;
+			}
+			
+			#menu > amp-img {
 				background-color: #FF6600;
 				height: 50px;
 				width: 50px;
@@ -86,6 +93,30 @@
 				top: 6vh;
 				left: 6vw;
 				z-index: 1;
+				flex-grow: 0;
+				flex-shrink: 0;
+			}
+			
+			#menu > .wrapper {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			#menu > .wrapper > #category {
+				height: 30px;
+				padding: 5px;
+				border-radius: 5px;
+				background-color: red;
+				color: white;
+				flex-grow: 0;
+				flex-shrink: 0;
+			}
+			
+			#menu > .wrapper > #info {
+				height: 30px;
+				background-color: gray;
+				flex-grow: 0;
+				flex-shrink: 0;
 			}
 			
 			#cover {
@@ -152,7 +183,15 @@
   	<body>
 		<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
 		<div id="cover"></div>
-		<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
+		<div id="menu">
+			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
+			<div id="wrapper">
+				<div id="category">
+					Rappresentanza
+				</div>
+				<div id="info">
+					27 Agosto 2019
+				</div>
 		<article>
 			<header>
 				<p>
