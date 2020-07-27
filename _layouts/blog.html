@@ -77,6 +77,13 @@
 				position: relative;
 			}
 			
+			#page {
+				display: flex;
+				flex-direction: row;
+				height: 100%;
+				width: 100%;
+			}
+			
 			#menu {
 				height: 50px;
 				width: 50px;
@@ -139,7 +146,9 @@
 			
 			#cover {
 				position: fixed;
-				width: 40vw;
+				/*width: 40vw;*/
+				flex-grow: 1;
+				flex-shrink: 0;
 				top: 5vh;
 				left: 5vw;
 				height: 90vh;
@@ -204,13 +213,6 @@
 		
 	</style>
   	<body>
-		<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
-		<!--<div id="tmp" style="height: 90vh; width: 90vw; position: fixed; background-color: green; z-index: 1000; top: 0; left: 0">
-			<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
-		</div>-->
-		<div id="cover">
-			<amp-img layout="fill" height="1000" width="300" src="https://source.unsplash.com/random/900x1200"></amp-img>
-		</div>
 		<div id="menu">
 			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
 			<div class="wrapper">
@@ -222,37 +224,47 @@
 				</div>
 			</div>
 		</div>
-		<article>
-			<header>
-				<p>
-					{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
-				</p>
-				<h1>
-					{{ page.title }}
-				</h1>
-				<p id="translations">
-					{% if page.translations.it  %}
-						<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
-					{% endif %}
-					{% if page.category == "it" %}
-						ITA
-					{% endif %}
-					{% if page.translations.en %}
-						<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
-					{% endif %}
-					{% if page.category == "en" %}
-						ENG
-					{% endif %}
-				</p>
-			</header>
-			<div id="content">
-				{{ content  | replace: "<img", "<amp-img"}}
+		<div id="page">
+			<!--<amp-img id="cover" layout="fill" src="{{ page.images.th }}" id="background"></amp-img>-->
+			<!--<div id="tmp" style="height: 90vh; width: 90vw; position: fixed; background-color: green; z-index: 1000; top: 0; left: 0">
+				<amp-img layout="intrinsic" height="1000" width="300" src="https://source.unsplash.com/random/300x1000"></amp-img>
+			</div>-->
+			<div id="cover">
+				<amp-img layout="fill" height="1000" width="300" src="https://source.unsplash.com/random/900x1200"></amp-img>
 			</div>
-			<div class="spacer"></div>
-			<footer>
-				<a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
-			</footer>
-		</article>
+
+			<article>
+				<header>
+					<p>
+						{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
+					</p>
+					<h1>
+						{{ page.title }}
+					</h1>
+					<p id="translations">
+						{% if page.translations.it  %}
+							<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
+						{% endif %}
+						{% if page.category == "it" %}
+							ITA
+						{% endif %}
+						{% if page.translations.en %}
+							<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
+						{% endif %}
+						{% if page.category == "en" %}
+							ENG
+						{% endif %}
+					</p>
+				</header>
+				<div id="content">
+					{{ content  | replace: "<img", "<amp-img"}}
+				</div>
+				<div class="spacer"></div>
+				<footer>
+					<a href="https://www.iubenda.com/privacy-policy/27818292">Privacy Policy</a> • <a href="/{{ page.category }}/info">Contatti</a>
+				</footer>
+			</article>
+		</div>
 		<amp-consent id="cookie" layout="nodisplay">
 		    <script type="application/json">
 			{
