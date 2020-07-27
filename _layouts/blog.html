@@ -112,6 +112,22 @@
 				overflow-y: auto;
 			}
 			
+			@media all and (orientation: portrait){
+				#menu {
+					top: 20px;
+					left: 20px;
+				}
+				
+				#cover {
+					display: none;
+				}
+				
+				article {
+					width: 100vw;
+					right: 0;
+				}
+			}
+			
 			article #content {
 				background-color: white;
 				border-radius: 10px;
@@ -120,11 +136,6 @@
 				padding-bottom: 30px;
 				padding-top: 10px;
 			}
-			
-			/*article .spacer {
-				height: 10px;
-				background-color: red;
-			}*/
 			
 			article footer {
 				background-color: #FF6600;
