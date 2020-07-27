@@ -82,6 +82,7 @@
 				width: 300px;
 				display: flex;
 				flex-direction: row;
+				overflow: hidden;
 			}
 			
 			#menu > amp-img {
@@ -103,7 +104,7 @@
 			}
 			
 			#menu > .wrapper > #category {
-				height: 30px;
+				height: 20px;
 				padding: 5px;
 				border-radius: 5px;
 				background-color: red;
@@ -113,7 +114,10 @@
 			}
 			
 			#menu > .wrapper > #info {
-				height: 30px;
+				height: 20px;
+				font-size: 18px;
+				line-height: 20px;
+				color: white;
 				background-color: gray;
 				flex-grow: 0;
 				flex-shrink: 0;
@@ -185,13 +189,15 @@
 		<div id="cover"></div>
 		<div id="menu">
 			<amp-img id="menu" src="../assets/img/svolta-mini-neg.png" height="50" width="50" layout="fixed"></amp-img>
-			<div id="wrapper">
+			<div class="wrapper">
 				<div id="category">
 					Rappresentanza
 				</div>
 				<div id="info">
 					27 Agosto 2019
 				</div>
+			</div>
+		</div>
 		<article>
 			<header>
 				<p>
