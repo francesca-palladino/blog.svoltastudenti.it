@@ -81,6 +81,7 @@
 			#page {
 				display: flex;
 				flex-direction: row;
+				padding-top: 50px;
 				height: 100%;
 				width: 100%;
 			    justify-content: space-evenly;
@@ -88,7 +89,6 @@
 			}
 			
 			#header {
-				margin-top: 50px;
 				position: sticky;
 				top: 0;
 				width: 100%;
@@ -96,19 +96,10 @@
 				flex-direction: row;
 				justify-content: space-between;
 				height: 50px;
-				background-color: green;
+				background-color: white;
+				z-index: 1;
 			}
 
-			/*#menu {
-				height: 50px;
-				width: 50px;
-				overflow: hidden;
-				position: fixed;
-				top: 6vh;
-				left: 6vw;
-				z-index: 1;
-			}*/
-			
 			#slideshow {
 				width: 40vw;
 				height: 100vh;
@@ -117,29 +108,13 @@
 				top: 5vh;
 				flex-grow: 0;
 				flex-shrink: 0;
-/*				padding-top: 5vh;
-				padding-bottom: 5vh;
-				padding-left: 5vw;
-				padding-right: 5vw;*/
 				position: relative;
-/* 				background-color: green; */
 			}
 			
 			#slideshow .slide {
 				position: relative;
 				overflow: hidden;
 			}
-			
-			/*#slideshow .slide .caption {
-				background-color: rgba(0, 0, 0, 0.5);
-				border-bottom-left-radius: 20px;
-				border-bottom-right-radius: 20px;
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				color: white;
-				padding: 20px;
-			}*/
 			
 			#slideshow amp-img > img {
 				object-fit: contain;
@@ -149,19 +124,12 @@
 				padding-right: 10px;
 				padding-top: 5vh;
 				width: 50vw;
-				height: 100vh;
 				overflow-x: hidden;
-				overflow-y: auto;
 				flex-grow: 0;
 				flex-shrink: 0;
 			}
 			
 			@media all and (orientation: portrait){
-				#menu {
-					top: 20px;
-					left: 20px;
-				}
-				
 				#slideshow {
 					display: none;
 				}
@@ -187,7 +155,8 @@
 	</head>
   	<body>
 		<div id="header">
-			<amp-img id="menu" src="../assets/logo_gradiente.png" height="42" width="300" layout="fixed"></amp-img>
+			<amp-img id="menu" src="../assets/logo_gradiente.png" height="50" width="357" layout="fixed"></amp-img>
+			<amp-img id="menu" src="../assets/img/svolta-mini-pos.png" height="50" width="50" layout="fixed"></amp-img>
 		</div>
 		<div id="page">
 			<div id="slideshow">
