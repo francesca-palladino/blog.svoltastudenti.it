@@ -131,11 +131,6 @@
 				flex-shrink: 0;
 			}
 			
-			#slideshow .slide {
-				position: relative;
-				overflow: hidden;
-			}
-			
 			#slideshow amp-img > img {
 				object-fit: contain;
 			}
@@ -235,15 +230,7 @@
 		<div id="page">
 			<div id="slideshow">
 				<amp-carousel layout="fill" type="slides">
-					<div class="slide">
-						<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-					</div>
-					<div class="slide">
-						<amp-img layout="fill" src="https://source.unsplash.com/random/600x1200"></amp-img>
-					</div>
-					<div class="slide">
-						<amp-img layout="fill" src="https://source.unsplash.com/random/300x1200"></amp-img>
-					</div>
+					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
 				</amp-carousel>
 			</div>
 
@@ -255,7 +242,7 @@
 					
 				</header>
 				<div id="content">
-					{{ content | replace: "<img", '<amp-img layout="fixed-height" height="100"' | replace: '</img', '</amp-img>' }}
+					{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 					<p class="info">
 						{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
 					</p>
