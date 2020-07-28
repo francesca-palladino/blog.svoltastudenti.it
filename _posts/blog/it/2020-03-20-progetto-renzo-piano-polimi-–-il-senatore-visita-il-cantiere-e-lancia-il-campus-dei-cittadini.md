@@ -2,10 +2,9 @@
 layout: blog
 category: it
 date: 2020-03-20T23:17:07.688Z
-published: 'false'
-title: >-
-  Progetto Renzo Piano @PoliMI - Il Senatore Renzo Piano visita il cantiere e
-  lancia il Campus dei Cittadini
+published: "false"
+title: Progetto Renzo Piano @PoliMI - Il Senatore Renzo Piano visita il cantiere
+  e lancia il Campus dei Cittadini
 info:
   tags:
     - Rappresentanza
@@ -15,16 +14,18 @@ translations:
   en: Nuovo Inglese
 images:
   th: /assets/img/uploads/chris-henry-bhigvn49udk-unsplash-1-.jpg
-  social: ''
-  amp_1-1: ''
-  amp_4-3: ''
-  amp_16-9: ''
+  social: ""
+  amp_1-1: ""
+  amp_4-3: ""
+  amp_16-9: ""
 ---
 > ’I cantieri sono magia, sono sempre un gesto straordinario per il futuro. I cantieri portano insieme l’orgoglio di fare qualcosa per la società. Ogni cantiere è un’occasione di speranza
 
 ha affermato Piano
 
 Il primo Marzo scorso il Senatore Renzo Piano ha visitato il cantiere del progetto che porta il suo nome che darà al nostro ateneo nuovi ed innovativi spazi entro (relativamente) pochi mesi. Il Senatore ha poi tenuto una conferenza stampa insieme con il Rettore Ferruccio Resta, il vicepresidente di Regione Lombardia Fabrizio Sala, l’assessore comunale Pierfrancesco Maran e altri tecnici impegnati nel progetto.
+
+![alt](/assets/img/uploads/svolta-big-neg.png "title")
 
 ## Renzo Piano, una visione d'insieme del Progetto
 
