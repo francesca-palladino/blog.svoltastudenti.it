@@ -182,8 +182,10 @@
 			article #content .info {
 				font-style: italic;
 				margin: 0;
+				text-align: right;
 				font-weight: bold;
 			}
+			
 			@media all and (orientation: portrait){
 				#slideshow {
 					display: none;
@@ -250,7 +252,7 @@
 				<div id="content">
 					{{ content }}
 					<p class="info">
-						{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
+						{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
 					</p>
 				</div>
 			</article>
