@@ -74,7 +74,6 @@
 				font-family: 'Lato', sans-serif;
 				height: 100%;
 				width: 100%;
-				background-color: #EEEEEE;
 				position: relative;
 			}
 
@@ -214,7 +213,14 @@
   	<body>
 		<div id="header">
 			<amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img>
-			<amp-img id="menu" src="../assets/img/svolta-mini-pos.png" height="50" width="50" layout="fixed"></amp-img>
+			<div>
+				{% if page.translations.it  %}
+					<a href="{{site.url}}/it/{{page.translations.it | slugify}}"><amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img></a>
+				{% endif %}
+				{% if page.translations.en %}
+					<a href="{{site.url}}/en/{{page.translations.en | slugify}}"><amp-img id="menu" src="../assets/img/eng.png" height="50" width="50" layout="fixed"></amp-img></a>
+				{% endif %}
+			</div>
 		</div>
 		<div id="page">
 			<div id="slideshow">
@@ -236,23 +242,10 @@
 					<h1>
 						{{ page.title }}
 					</h1>
-					<!--<p id="translations">
-						{% if page.translations.it  %}
-							<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
-						{% endif %}
-						{% if page.category == "it" %}
-							ITA
-						{% endif %}
-						{% if page.translations.en %}
-							<a href="{{site.url}}/en/{{page.translations.en | slugify}}">ENG</a>
-						{% endif %}
-						{% if page.category == "en" %}
-							ENG
-						{% endif %}
-					</p>-->
+					
 				</header>
 				<div id="content">
-					{{ content }}
+					{{ content | replace "<img" "<amp-img layout=\"fixed-height\" height=\"150\"" | replace "</img" "</amp-img"}}
 					<p class="info">
 						{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
 					</p>
