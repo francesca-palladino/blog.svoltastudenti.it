@@ -158,6 +158,22 @@
 				font-weight: bold;
 			}
 			
+			@media all and (orientation: portrait){
+				#slideshow {
+					display: none;
+				}
+				
+				article {
+					padding-top: 80px;
+					width: 90%;
+					padding: 0;
+				}
+			}
+			
+			article #content {
+				padding-bottom: 30px;
+			}
+			
 			article #content b,
 			article #content strong {
 				color: #003399;
@@ -186,20 +202,10 @@
 				font-weight: bold;
 			}
 			
-			@media all and (orientation: portrait){
-				#slideshow {
-					display: none;
-				}
-				
-				article {
-					padding-top: 80px;
-					width: 90%;
-					padding: 0;
-				}
-			}
-			
-			article #content {
-				padding-bottom: 30px;
+			article #content amp-img img {
+				object-fit: contain;
+				border-top: 1px solid #FF6600;
+				border-bottom: 1px solid #FF6600;
 			}
 			
 			article footer {
