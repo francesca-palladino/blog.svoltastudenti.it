@@ -147,6 +147,18 @@
 				flex-shrink: 0;
 			}
 			
+			article > header h1 {
+				color: #FF6600;
+				margin: 0;
+				font-weight: bold;
+			}
+			
+			article > header p {
+				color: #003399;
+				margin: 0;
+				font-weight: bold;
+			}
+			
 			@media all and (orientation: portrait){
 				#slideshow {
 					display: none;
@@ -193,13 +205,13 @@
 
 			<article>
 				<header>
-					<p>
-						{{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
-					</p>
 					<h1>
 						{{ page.title }}
 					</h1>
-					<p id="translations">
+					<p>
+						Categoria - {{ page.info.author }} - {{ page.date | date: "%-d %B %Y" }}
+					</p>
+					<!--<p id="translations">
 						{% if page.translations.it  %}
 							<a href="{{site.url}}/it/{{page.translations.it | slugify}}">ITA</a>
 						{% endif %}
@@ -212,7 +224,7 @@
 						{% if page.category == "en" %}
 							ENG
 						{% endif %}
-					</p>
+					</p>-->
 				</header>
 				<div id="content">
 					{{ content }}
