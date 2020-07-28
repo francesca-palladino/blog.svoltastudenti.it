@@ -140,11 +140,16 @@
 			
 			article {
 				padding-right: 10px;
-				padding-top: 5vh;
 				width: 50vw;
 				overflow-x: hidden;
 				flex-grow: 0;
 				flex-shrink: 0;
+			}
+			
+			article > header {
+				margin-bottom: 10px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #003399;
 			}
 			
 			article > header h1 {
@@ -154,9 +159,17 @@
 			}
 			
 			article > header p {
-				color: #003399;
+				font-style: italic;
 				margin: 0;
 				font-weight: bold;
+			}
+			
+			article #content b {
+				color: #003399;
+			}
+			
+			article #content blockquote {
+				border-left: 5px solid #003399;
 			}
 			
 			@media all and (orientation: portrait){
@@ -172,7 +185,6 @@
 			
 			article #content {
 				padding-bottom: 30px;
-				padding-top: 10px;
 			}
 			
 			article footer {
