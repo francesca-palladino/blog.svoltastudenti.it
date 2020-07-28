@@ -30,7 +30,7 @@ collections:
         name: "translations"
         widget: "object"
         fields:
-          - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: "title", valueField: "title"}
+          - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Immagini"
         name: "images"
         widget: "object"
@@ -64,7 +64,7 @@ collections:
         name: "translations"
         widget: "object"
         fields:
-          - {label: "Traduzione Italiana", name: "it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: "title", valueField: "title"}
+          - {label: "Traduzione Italiana", name: "it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Immagini"
         name: "images"
         widget: "object"
@@ -90,7 +90,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: "0"}
+          - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: 0}
           - {label: "Categoria", name: "tags", widget: "select", options: ["Attivita'", "Conferenza", "Evento", "Viaggio", "Workshop"]}
           - {label: "Descrizione Breve", name: "desc", widget: "text" }
           - {label: "Pretix", name: "pretix", widget: "string"}
@@ -98,7 +98,7 @@ collections:
         name: "translations"
         widget: "object"
         fields:
-          - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "events-en", searchFields: ["title"], displayFields: "title", valueField: "title"}
+          - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Immagini"
         name: "images"
         widget: "object"
@@ -124,7 +124,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: "0"}
+          - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: 0}
           - {label: "Categoria", name: "tags", widget: "select", options: ["Activity", "Conference", "Event", "Travel", "Workshop"]}
           - {label: "Descrizione Breve", name: "desc", widget: "text" }
           - {label: "Pretix", name: "pretix", widget: "string"}
@@ -132,7 +132,7 @@ collections:
         name: "translations"
         widget: "object"
         fields:
-          - {label: "Traduzione Italiana", name: "it", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: "title", valueField: "title"}
+          - {label: "Traduzione Italiana", name: "it", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Immagini"
         name: "images"
         widget: "object"
