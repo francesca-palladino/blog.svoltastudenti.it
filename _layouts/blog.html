@@ -245,7 +245,7 @@
 					
 				</header>
 				<div id="content">
-					{{ content | replace: "<img" "<amp-img layout=\"fixed-height\" height=\"150\"" | replace: "</img" "</amp-img"}}
+					{{ content | replace: '<img' '<amp-img layout=\"fixed-height\" height=\"150\"' | replace: '</img' '</amp-img'}}
 					<p class="info">
 						{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
 					</p>
