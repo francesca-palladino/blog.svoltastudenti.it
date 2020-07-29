@@ -100,7 +100,7 @@
    				padding: 10px;
 				background-color: black;
 				position: relative;
-				margin-top: 300px;
+				margin-top: 700px;
 				z-index: 2;
 			}
 
@@ -114,6 +114,10 @@
 			
 			#footer a:hover {
 				text-decoration: underline;
+			}
+			
+			#page2 {
+				margin-top: 150px;
 			}
 			
 			#article {
@@ -282,7 +286,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
   	<body>
-		<div class="page">
+		<div id="page1">
 			<div id="header">
 				<a href="{{site.url}}/{{page.category}}"><amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img></a>
 				<div>
@@ -313,7 +317,7 @@
 				</article>
 			</div>
 		</div>
-		<div class="page">
+		<div id="page2">
 			<div id="rel-title">
 				Related
 			</div>
