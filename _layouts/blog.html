@@ -140,6 +140,7 @@
 				height: 100vh;
 				width: 100%;
 				background-color: red;
+				position: relative;
 			}
 			
 			article {
@@ -258,9 +259,9 @@
 		<div id="related">
 			<amp-carousel class="carousel-component" layout="fill" type="carousel">
 				<amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay"></amp-position-observer>
-				<amp-img src="https://source.unsplash.com/random/1000x1400" width="1000" height="1400" alt="a sample image"></amp-img>
-				<amp-img src="https://source.unsplash.com/random/1000x1400" width="1000" height="1400" alt="a sample image"></amp-img>
-				<amp-img src="https://source.unsplash.com/random/1000x1400" width="1000" height="1400" alt="a sample image"></amp-img>
+				<amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="intrinsic"></amp-img>
+				<amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="intrinsic"></amp-img>
+				<amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="intrinsic"></amp-img>
 			</amp-carousel>
 			<amp-animation id="carouselTransition" layout="nodisplay">
 				<script type="application/json">
