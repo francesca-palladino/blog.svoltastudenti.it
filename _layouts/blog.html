@@ -121,7 +121,7 @@
 			}
 
 
-			#slideshow {
+			#th {
 				width: 40vw;
 				height: 70vh;
 				position: sticky;
@@ -131,7 +131,7 @@
 				margin-bottom: 20px;
 			}
 			
-			#slideshow amp-img > img,
+			#th amp-img > img,
 			#related amp-img > img {
 				object-fit: contain;
 			}
@@ -140,7 +140,8 @@
 				height: 100vh;
 				width: 100%;
 				background-color: red;
-				position: relative;
+				position: sticky;
+				top: 0;
 			}
 			
 			article {
@@ -224,7 +225,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
   	<body>
-		<div id="page">
+		<div class="page">
 			<div id="header">
 				<a href="{{site.url}}/{{page.category}}"><amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img></a>
 				<div>
@@ -237,7 +238,7 @@
 				</div>
 			</div>
 			<div id="article">
-				<div id="slideshow">
+				<div id="th">
 					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
 				</div>
 				<article>
@@ -256,15 +257,17 @@
 				</article>
 			</div>
 		</div>
-		<div id="related">
-			<amp-carousel class="carousel-component" layout="fill" type="slides" controls loop autoplay delay="3000">
-				<a href="https://1"><amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="fill"></amp-img></a>
-				<a href="https://2"><amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="fill"></amp-img></a>
-				<a href="https://3"><amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="fill"></amp-img></a>
-			</amp-carousel>
-		</div>
-		<div id="footer">
-			<a href="/{{page.category}}/legal">Legal</a>
+		<div class="page">
+			<div id="related">
+				<amp-carousel class="carousel-component" layout="fill" type="slides" controls loop autoplay delay="3000">
+					<a href="https://1"><amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="fill"></amp-img></a>
+					<a href="https://2"><amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="fill"></amp-img></a>
+					<a href="https://3"><amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="fill"></amp-img></a>
+				</amp-carousel>
+			</div>
+			<div id="footer">
+				<a href="/{{page.category}}/legal">Legal</a>
+			</div>
 		</div>
 		<amp-consent id="cookie" layout="nodisplay">
 		    <script type="application/json">
