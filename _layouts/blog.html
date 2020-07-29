@@ -66,7 +66,6 @@
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 		<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
-		<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 		<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
 
 		<style amp-custom>
@@ -256,29 +255,12 @@
 				</article>
 			</div>
 		</div>
-		<div id="related">			
-			<amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay"></amp-position-observer>
+		<div id="related">
 			<amp-carousel class="carousel-component" layout="fill" type="slides" controls loop autoplay delay="3000">
 				<amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="fill"></amp-img>
 				<amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="fill"></amp-img>
 				<amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="fill"></amp-img>
 			</amp-carousel>
-			<amp-animation id="carouselTransition" layout="nodisplay">
-				<script type="application/json">
-					{
-						"duration": "5000ms",
-						"fill": "both",
-						"easing": "ease-in",
-						"delay": "2000ms",
-						"animations": [{
-							"selector": ".carousel-component",
-							"keyframes": [{
-								"transform": "translateX(-60%)"
-							}]
-						}]
-					}
-				</script>
-			</amp-animation>
 		</div>
 		<div id="footer">
 			<a href="/{{page.category}}/legal">Legal</a>
