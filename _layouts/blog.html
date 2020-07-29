@@ -101,6 +101,7 @@
 				background-color: black;
 				position: relative;
 				margin-top: 300px;
+				z-index: 2;
 			}
 
 			#footer a {
@@ -140,11 +141,22 @@
 				object-fit: contain;
 			}
 			
+			#rel-title {
+				height: 15vh;
+				color: #FF6600;
+				font-size: 10vh;
+				text-align: center;
+				position: sticky;
+				top: 0;
+				z-index: 1;
+			}
+			
 			#related {
 				height: 100vh;
 				width: 70%;
 				position: sticky;
 				top: 0;
+				z-index: 0;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-around;
@@ -209,7 +221,7 @@
 
 				#related > amp-carousel {
 					display: initial;
-					height: 80vh;
+					height: 60vh;
 					width: 100%;
 				}
 				
@@ -290,7 +302,6 @@
 						<h1>
 							{{ page.title }}
 						</h1>
-
 					</header>
 					<div id="content">
 						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
@@ -301,8 +312,10 @@
 				</article>
 			</div>
 		</div>
-		<br /><br /><br /><br /><hr /><br /><br /><br /><br /><hr />
 		<div class="page">
+			<div id="rel-title">
+				Related
+			</div>
 			<div id="related">
 				<amp-carousel class="carousel-component" type="slides" controls loop autoplay delay="3000">
 					<a href="https://1"><amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="fill"></amp-img></a>
