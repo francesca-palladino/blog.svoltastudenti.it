@@ -257,19 +257,19 @@
 			</div>
 		</div>
 		<div id="related">
-			<amp-carousel class="carousel-component" layout="fill" type="carousel">
+			<amp-carousel class="carousel-component" layout="fill" type="slides" controls loop autoplay delay="3000">
 				<amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay"></amp-position-observer>
-				<amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="intrinsic"></amp-img>
-				<amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="intrinsic"></amp-img>
-				<amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="intrinsic"></amp-img>
+				<amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="fill"></amp-img>
+				<amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="fill"></amp-img>
+				<amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="fill"></amp-img>
 			</amp-carousel>
 			<amp-animation id="carouselTransition" layout="nodisplay">
 				<script type="application/json">
 					{
-						"duration": "500ms",
+						"duration": "5000ms",
 						"fill": "both",
 						"easing": "ease-in",
-						"delay": "200ms",
+						"delay": "2000ms",
 						"animations": [{
 							"selector": ".carousel-component",
 							"keyframes": [{
