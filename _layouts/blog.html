@@ -101,6 +101,7 @@
 				width: 100%;
 				background-color: black;
 				position: relative;
+				margin-top: 300px;
 			}
 
 			#footer a {
@@ -144,9 +145,19 @@
 			#related {
 				height: 100vh;
 				width: 100%;
-				background-color: red;
+				background: rgb(255,102,0);
+				background: radial-gradient(circle, rgba(255,102,0,1) 0%, rgba(255,102,0,1) 33%, rgba(255,255,255,1) 100%);
 				position: sticky;
 				top: 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			#related > amp-carousel {
+				height: 80vh;
+				width: 100%;
 			}
 			
 			article {
@@ -264,7 +275,7 @@
 		</div>
 		<div class="page">
 			<div id="related">
-				<amp-carousel class="carousel-component" layout="fill" type="slides" controls loop autoplay delay="3000">
+				<amp-carousel class="carousel-component" type="slides" controls loop autoplay delay="3000">
 					<a href="https://1"><amp-img src="https://source.unsplash.com/random/1000x1400?1" width="1000" height="1400" layout="fill"></amp-img></a>
 					<a href="https://2"><amp-img src="https://source.unsplash.com/random/1000x1400?2" width="1000" height="1400" layout="fill"></amp-img></a>
 					<a href="https://3"><amp-img src="https://source.unsplash.com/random/1000x1400?3" width="1000" height="1400" layout="fill"></amp-img></a>
