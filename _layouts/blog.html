@@ -76,16 +76,13 @@
 				position: relative;
 			}
 
-			#header, #footer {
-				position: fixed;
-				width: 100%;
+			#header {
+				position: sticky;
 				display: flex;
+				width: 100%;
 				flex-direction: row;
 				justify-content: space-between;
 				z-index: 1;
-			}
-			
-			#header {
 				top: 0;
 				height: 50px;
 				background-color: white;
@@ -93,6 +90,7 @@
 			}
 			
 			#footer {
+				position: fixed;
 				bottom: 0;
 				height: 20px;
    				padding: 5px;
@@ -110,7 +108,7 @@
 				text-decoration: underline;
 			}
 			
-			#page {
+			#article {
 				display: flex;
 				flex-direction: row;
 				padding-top: 100px;
@@ -221,35 +219,37 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
   	<body>
-		<div id="header">
-			<a href="{{site.url}}/{{page.category}}"><amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img></a>
-			<div>
-				{% if page.translations.it  %}
-					<a href="{{site.url}}/it/{{page.translations.it | slugify}}"><amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img></a>
-				{% endif %}
-				{% if page.translations.en %}
-					<a href="{{site.url}}/en/{{page.translations.en | slugify}}"><amp-img id="menu" src="../assets/img/eng.png" height="50" width="50" layout="fixed"></amp-img></a>
-				{% endif %}
-			</div>
-		</div>
 		<div id="page">
-			<div id="slideshow">
-				<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-			</div>
-			<article>
-				<header>
-					<h1>
-						{{ page.title }}
-					</h1>
-					
-				</header>
-				<div id="content">
-					{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
-					<p class="info">
-						{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
-					</p>
+			<div id="header">
+				<a href="{{site.url}}/{{page.category}}"><amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img></a>
+				<div>
+					{% if page.translations.it  %}
+						<a href="{{site.url}}/it/{{page.translations.it | slugify}}"><amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img></a>
+					{% endif %}
+					{% if page.translations.en %}
+						<a href="{{site.url}}/en/{{page.translations.en | slugify}}"><amp-img id="menu" src="../assets/img/eng.png" height="50" width="50" layout="fixed"></amp-img></a>
+					{% endif %}
 				</div>
-			</article>
+			</div>
+			<div id="article">
+				<div id="slideshow">
+					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
+				</div>
+				<article>
+					<header>
+						<h1>
+							{{ page.title }}
+						</h1>
+
+					</header>
+					<div id="content">
+						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
+						<p class="info">
+							{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
+						</p>
+					</div>
+				</article>
+			</div>
 		</div>
 		<div id="related">
 			
