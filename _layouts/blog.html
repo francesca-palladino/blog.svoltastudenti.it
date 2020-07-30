@@ -185,6 +185,30 @@
 				display: none;
 			}
 			
+			#menu {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: yellow;
+				color: black;
+				overflow: hidden;
+				transition: left 1s;
+				font-size: x-large;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			#menu-checkbox {
+				display: none;
+			}
+			
+			#menu-checkbox:checked ~ #menu {
+				left: -100vw;
+				transition: left 1s;
+			}
+			
 			article {
 				padding-right: 10px;
 				width: 50vw;
@@ -286,12 +310,30 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
   	<body>
+		<input type="checkbox" id="menu-checkbox"></input>
+		<div id="menu">
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+			MENU<br />
+		</div>
 		<div id="page1">
 			<div id="header">
+				<label for="menu-checkbox">
+					<amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img>
+				</label>
 				<a href="{{site.url}}/it/{{page.translations.it | slugify}}">
-					 <amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img>
+					<amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img>
 				</a>
-				<amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img>
 				<div>
 					{% if page.translations.it  %}
 						<a href="{{site.url}}/it/{{page.translations.it | slugify}}"><amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img></a>
