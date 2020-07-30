@@ -288,9 +288,9 @@
   	<body>
 		<div id="page1">
 			<div id="header">
-				<div>
-					<amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img>
-				</div>
+				<a href="{{site.url}}/it/{{page.translations.it | slugify}}>
+					 <amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img>
+				</a>
 				<amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img>
 				<div>
 					{% if page.translations.it  %}
