@@ -83,7 +83,7 @@
 				width: 100%;
 				flex-direction: row;
 				justify-content: flex-start;
-				z-index: 1;
+				z-index: 2;
 				top: 0;
 				height: 50px;
 				background-color: white;
@@ -260,17 +260,19 @@
 			#menu {
 				position: fixed;
 				top: 0;
-				left: -100vw;
+				left: -200vw;
 				height: 100%;
 				width: 100%;
 				background-color: white;
 				color: #FF6600;
-				overflow: hidden;
+				overflow-x: hidden;
+				overflow-y: auto;
 				transition: left 1s;
 				font-size: xx-large;
 				font-weight: bold;
 				text-align: center;
-				z-index: 2;
+				z-index: 1;
+				padding-top: 50px;
 			}
 			
 			#menu ul,
@@ -284,6 +286,7 @@
 				font-size: x-large;
 				font-size: xx-large;
 				font-weight: bold;
+				color: #FF6600;
 				text-decoration: none;
 			}
 
@@ -307,6 +310,10 @@
 			#menu-checkbox:checked ~ #menu {
 				left: 0;
 				transition: left 1s;
+			}
+
+			#menu-checkbox:checked ~ #header {
+				box-shadow: none;
 			}
 
 			#lang-icon-it,
@@ -525,7 +532,7 @@
 					<a href="">Contatti</a>
 				</li>
 			</ul>
-			<ul id="nav">
+			<ul id="projects">
 				<li>
 					<a href="">FAQ</a>
 				</li>
