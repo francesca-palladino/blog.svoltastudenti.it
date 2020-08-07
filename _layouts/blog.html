@@ -296,11 +296,17 @@
 			}
 
 			@media all and (orientation: landscape){
+				article #article-wrapper {
+					display: flex;
+    				flex-direction: row;
+				}
+
 				article #article-wrapper #th {
 					display: block;
 					height: calc(100vh - 200px);
 					width: 40%;
-					left: 5%;
+					margin-left: 5%;
+					margin-right: 5%;
 					position: sticky;
 					top: 100px;
 				}
@@ -308,11 +314,9 @@
 				article #article-wrapper #th img {
 					object-fit: contain;
 				}
-				
+
 				article #article-wrapper > #content-wrapper {
 					width: 50%;
-					position: absolute;
-					right: 0%;
 				}
 
 /*				html {
