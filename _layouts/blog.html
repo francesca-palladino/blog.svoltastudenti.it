@@ -83,7 +83,7 @@
 				width: 100%;
 				flex-direction: row;
 				justify-content: space-between;
-				/*z-index: 1;*/
+				z-index: 1;
 				top: 0;
 				height: 50px;
 				background-color: white;
@@ -111,7 +111,7 @@
 				width: 200px;
 				background-image: url('/assets/img/svolta-big-pos.png');
 			}
-
+/*
 			.page {
 				position: relative;
 			}
@@ -280,8 +280,42 @@
 				#related > a >  amp-img {
 					display: none;
 				}
-			}
+			}*/
 			
+			article #wrapper {
+				width: 100%;
+				position: relative;
+			}
+
+			article #wrapper #th {
+				display: none;
+			}
+
+			article #wrapper > * {
+				width: 100%;
+			}
+
+			@media all and (orientation: portrait){
+				article #wrapper #th {
+					height: calc(100vh - 200px);
+					width: 40%;
+					left: 5%;
+					position: sticky;
+					top: 100px;
+				}
+
+				article #wrapper > header,
+				article #wrapper > content, {
+					width: 50%;
+					position: absolute;
+					right: 0%;
+				}
+			}
+
+
+
+
+
 			article #content {
 				padding-bottom: 30px;
 			}
@@ -323,11 +357,11 @@
 				object-fit: contain;
 			}
 			
-			article footer {
+			/*article footer {
 				background-color: #FF6600;
 				border-radius: 10px;
 				padding: 15px;
-			}
+			}*/
 
 			.backgroundImage {
 				background-origin: padding-box;
@@ -369,15 +403,17 @@
 		</div>
 			
 		<article>
-			<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-			<header>
-				<h1>
-					{{ page.title }}
-				</h1>
-				<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
-			</header>
-			<div id="content">
-				{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
+			<div id="wrapper">
+				<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
+				<header>
+					<h1>
+						{{ page.title }}
+					</h1>
+					<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
+				</header>
+				<div id="content">
+					{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
+				</div>
 			</div>
 			<footer>
 				<section>
