@@ -66,7 +66,6 @@
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 		<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
-		<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
 
 		<style amp-custom>
 			html, body {
@@ -84,7 +83,7 @@
 				width: 100%;
 				flex-direction: row;
 				justify-content: space-between;
-				z-index: 1;
+				/*z-index: 1;*/
 				top: 0;
 				height: 50px;
 				background-color: white;
@@ -94,9 +93,26 @@
 			#header > * {
 				flex-grow: 0;
 				flex-shrink: 0;
-				min-width: 50px;
+				height: 50px;
+				background-size: contain;
 			}
 			
+			#header > #menu-icon {
+				width: 50px;
+				background-image: url('/assets/img/menu.png');
+			}
+
+			#header > #store-icon {
+				width: 50px;
+				background-image: url('/assets/img/store.png');
+			}
+
+			#header > #logo {
+				width: 200px;
+				background-image: url('/assets/img/svolta-big-pos.png');
+			}
+
+
 			.page {
 				position: relative;
 			}
@@ -313,6 +329,13 @@
 				border-radius: 10px;
 				padding: 15px;
 			}
+
+			.backgroundImage {
+				background-origin: padding-box;
+				background-position: center;
+				background-repeat:no-repeat;
+				background-color: gray;
+			}
 		</style>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
@@ -333,24 +356,14 @@
 			MENU<br />
 			MENU<br />
 		</div>
+		<div id="header">
+			<label for="menu-checkbox" id="menu-icon"></label>
+			<a href="{{site.url}}/it/" id="logo"></a>
+			<a href="{{site.url}}/it/store" id="store-icon"></a>
+		</div>
 		<div id="page1">
-			<div id="header">
-				<label for="menu-checkbox">
-					<amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img>
-				</label>
-				<a href="{{site.url}}/it/{{page.translations.it | slugify}}">
-					<amp-img id="menu" src="../assets/img/svolta-big-neg.png" height="50" width="280" layout="fixed"></amp-img>
-				</a>
-				<div>
-					{% if page.translations.it  %}
-						<a href="{{site.url}}/it/{{page.translations.it | slugify}}"><amp-img id="menu" src="../assets/img/ita.png" height="50" width="50" layout="fixed"></amp-img></a>
-					{% endif %}
-					{% if page.translations.en %}
-						<a href="{{site.url}}/en/{{page.translations.en | slugify}}"><amp-img id="menu" src="../assets/img/eng.png" height="50" width="50" layout="fixed"></amp-img></a>
-					{% endif %}
-				</div>
-			</div>
-			<div id="article">
+			
+			<article id="article">
 				<div id="th">
 					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
 				</div>
@@ -359,12 +372,12 @@
 						<h1>
 							{{ page.title }}
 						</h1>
+						<p class="info">
+							{{ page.date | date: "%-d %B %Y" }}
+						</p>
 					</header>
 					<div id="content">
 						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
-						<p class="info">
-							{{ page.date | date: "%-d %B %Y" }}, {{ page.info.author }}
-						</p>
 					</div>
 				</article>
 			</div>
