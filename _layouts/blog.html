@@ -102,31 +102,14 @@
 				background-image: url('/assets/img/menu.png');
 			}
 
-			#header > #store-icon {
+			#header > #lang-icon {
 				width: 50px;
-				background-image: url('/assets/img/store.png');
+				background-image: url('/assets/img/lang.png');
 			}
 
 			#header > #logo {
 				width: 200px;
 				background-image: url('/assets/img/svolta-big-pos.png');
-			}
-
-			#lang-icon-it,
-			#lang-icon-en {
-				height: 50px;
-				width: 50px;
-				position: fixed;
-				bottom: 0;
-				left: 0;
-			}
-
-			#lang-icon-it {
-				background-image: url('/assets/img/lang-it.png');
-			}
-
-			#lang-icon-en {
-				background-image: url('/assets/img/lang-en.png');
 			}
 
 			.page {
@@ -374,8 +357,6 @@
 		<div id="header">
 			<label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
 			<a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
-			<a href="{{site.url}}/it/store" id="store-icon" class="backgroundImage"></a>
-		</div>
 			<a href="
 				{% if page.translations.it  %}
 					{{site.url}}/it/{{page.translations.it | slugify}}
@@ -385,6 +366,8 @@
 					#
 				{% endif %}
 			" id="lang-icon" class="backgroundImage"></a>
+		</div>
+			
 		<div id="page1">
 			
 			<article>
