@@ -263,8 +263,8 @@
 				left: -100vw;
 				height: 100%;
 				width: 100%;
-				background-color: yellow;
-				color: black;
+				background-color: white;
+				color: #FF6600;
 				overflow: hidden;
 				transition: left 1s;
 				font-size: xx-large;
@@ -273,6 +273,33 @@
 				z-index: 2;
 			}
 			
+			#menu ul,
+			#menu li {
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+
+			#menu #nav a {
+				font-size: x-large;
+				font-size: xx-large;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			#menu #nav a:hover {
+				text-decoration: initial;
+			}
+
+			#menu #projects a {
+				background-color: #FF6600;
+				padding: 5px;
+				margin: 5px;
+				display: inline-block;
+				color: white;
+				text-decoration: none;
+			}
+
 			#menu-checkbox {
 				display: none;
 			}
@@ -378,7 +405,7 @@
 			footer a:hover {
 				text-decoration: initial;
 			}
-			
+
 			@media all and (orientation: landscape){
 				article #article-wrapper {
 					display: flex;
@@ -478,19 +505,37 @@
   	<body>
 		<input type="checkbox" id="menu-checkbox"></input>
 		<div id="menu">
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
-			MENU<br />
+			<ul id="nav">
+				<li>
+					<a href="">Home</a>
+				</li>
+				<li>
+					<a href="">Rappresentanza</a>
+				</li>
+				<li>
+					<a href="">Associazione</a>
+				</li>
+				<li>
+					<a href="">Eventi</a>
+				</li>
+				<li>
+					<a href="">Notizie</a>
+				</li>
+				<li>
+					<a href="">Contatti</a>
+				</li>
+			</ul>
+			<ul id="nav">
+				<li>
+					<a href="">FAQ</a>
+				</li>
+				<li>
+					<a href="">LM</a>
+				</li>
+				<li>
+					<a href="">Orange</a>
+				</li>
+			</ul>
 		</div>
 		<div id="header">
 			<label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
