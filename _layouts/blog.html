@@ -316,7 +316,7 @@
 
 			article #authors ,
 			article #authors li,
-			article #related,
+			article #related ul,
 			article #related li {
 				padding: 0;
 				margin: 0;
@@ -344,6 +344,15 @@
 
 			article #related {
 				text-align: center;
+			}
+
+			article #related h1 {
+			    font-size: 15vw;
+			    text-align: center;
+			    color: #FF6600;
+			    font-weight: bold;
+			    padding: 0;
+			    margin: 0;
 			}
 			
 			article #related li {
@@ -560,11 +569,11 @@
 				</div>
 			</div>
 			<aside>
-				<section>
+				<section id="related">
 					<h1>
 						Correlati
 					</h1>
-					<ul id="related">
+					<ul>
 						<li>
 							<a href="/{{ page.lang }}/blog/a">
 								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
