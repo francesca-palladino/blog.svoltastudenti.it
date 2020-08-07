@@ -289,8 +289,6 @@
 
 			article #article-wrapper #th {
 				display: none;
-				background-image: url('https://source.unsplash.com/random/900x1200');
-				background-size: contain;
 			}
 
 			article #article-wrapper > * {
@@ -299,7 +297,7 @@
 
 			@media all and (orientation: landscape){
 				article #article-wrapper #th {
-					display: initial;
+					display: block;
 					height: calc(100vh - 200px);
 					width: 40%;
 					left: 5%;
@@ -410,7 +408,7 @@
 			
 		<article>
 			<div id="article-wrapper">
-				<div id="th" class="backgroundImage"></div>
+				<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
 				<div id="content-wrapper">
 					<header>
 						<h1>
