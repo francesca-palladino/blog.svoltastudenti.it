@@ -111,151 +111,6 @@
 				width: 200px;
 				background-image: url('/assets/img/svolta-big-pos.png');
 			}
-/*
-			.page {
-				position: relative;
-			}
-			
-			#footer {
-				height: 200px;
-   				padding: 10px;
-				background-color: black;
-				position: relative;
-				margin-top: 700px;
-				z-index: 2;
-			}
-
-			#footer a {
-				color: white;
-				font-size: 16px;
-				line-height: 20px; 
-				text-decoration: none;
-				background-color: white;
-			}
-			
-			#footer a:hover {
-				text-decoration: underline;
-			}
-			
-			#page2 {
-				margin-top: 150px;
-			}
-			
-			#article {
-				display: flex;
-				flex-direction: row;
-				padding-top: 50px;
-				height: 100%;
-				width: 100%;
-				justify-content: space-evenly;
-				align-items: flex-start;
-			}
-
-			#th {
-				width: 40vw;
-				height: 70vh;
-				position: sticky;
-				top: 100px;
-				flex-grow: 0;
-				flex-shrink: 0;
-				margin-bottom: 20px;
-			}
-			
-			#th amp-img > img,
-			#related amp-img > img {
-				object-fit: contain;
-			}
-			
-			#rel-title {
-				height: 12vh;
-				color: #FF6600;
-				font-size: 10vh;
-				text-align: center;
-				top: 0;
-				z-index: 1;
-				position: sticky;
-				top: 18vh;
-			}
-			
-			#related {
-				height: 60vh;
-				width: 70%;
-				position: sticky;
-				top: 30vh;
-				z-index: 0;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-				align-items: center;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			#related > a,
-			#related > a > amp-img {
-				display: initial;
-				width: 20vw;
-				height: 60vh;
-			}
-			
-			#related > a {	
-				position: relative;
-			}
-			
-			#related > amp-carousel {
-				display: none;
-			}
-			
-			article {
-				padding-right: 10px;
-				width: 50vw;
-				overflow-x: hidden;
-				flex-grow: 0;
-				flex-shrink: 0;
-			}
-			
-			article > header {
-				margin-bottom: 10px;
-				padding-bottom: 20px;
-			}
-			
-			article > header h1 {
-				color: #FF6600;
-				margin: 0;
-				font-weight: bold;
-			}
-			
-			@media all and (orientation: portrait){
-				#th {
-					display: none;
-				}
-				
-				article {
-					padding-top: 80px;
-					width: 90%;
-					padding: 0;
-				}
-				
-				#related {
-					display: flex;
-					flex-direction: row;
-					justify-content: center;
-					align-items: center;
-					margin: initial;
-					width: 100%;
-				}
-
-				#related > amp-carousel {
-					display: initial;
-					height: 60vh;
-					width: 100%;
-				}
-				
-				#related > a,
-				#related > a >  amp-img {
-					display: none;
-				}
-			}*/
 			
 			#menu {
 				position: fixed;
@@ -297,7 +152,7 @@
 			#menu #projects li {
 				display: inline-block;
 			}
-			
+
 			#menu #projects a {
 				font-size: medium;
 				background-color: #FF6600;
@@ -327,6 +182,7 @@
 				position: fixed;
 				bottom: 0;
 				right: 0;
+    			z-index: 1;
 			}
 
 			#lang-icon-it {
@@ -406,6 +262,8 @@
 				font-size: 18px;
 				line-height: 50px;
 				text-align: center;
+				position: relative;
+				z-index: 2;
 			}
 
 			#footer a {
