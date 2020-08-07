@@ -314,27 +314,36 @@
 				padding-right: 5%;
 			}
 
-			article #authors ul,
-			article #authors li {
+			article #authors ,
+			article #authors li,
+			article #related,
+			article #related li {
 				padding: 0;
 				margin: 0;
 				list-style-type: none;
 			}
 
-			article #authors li {
+			article #authors li,
+			article #related li {
 				display: inline-block;
 			}
 
 			article #authors li a {
-				height: 100px;
-				width: 100px;
+				height: 76px;
+				width: 76px;
 				margin-left: 5px;
 				margin-right: 5px;
 				overflow: hidden;
 			}
 
 			article #authors li a img {
-				border-radius: 50px;
+				border-radius: 38px;
+				overflow: hidden;
+			}
+
+			article #related li a {
+				height: 40vw;
+				width: 40vw;
 				overflow: hidden;
 			}
 
@@ -362,6 +371,12 @@
 					width: 50%;
 					padding-left: 2vw;
 					padding-right: 2vw;
+				}
+
+				article #related li a {
+					height: 20vw;
+					width: 20vw;
+					overflow: hidden;
 				}
 
 /*				html {
@@ -477,111 +492,96 @@
 					<div id="content">
 						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 					</div>
-					<ul id="authors">
-						<li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li>
-						<li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li><li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li><li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li><li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li><li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li><li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li><li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fixed" height="100" width="100" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li>
-					</ul>
+					<footer>
+						<ul id="authors">
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+							<li>
+								<a href="/{{ page.lang }}/users/a">
+									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+								</a>
+							</li>
+						</ul>
+					</footer>
 				</div>
 			</div>
-			<footer>
-				<section>
-					<h1>
-						A Chi Rivolgersi
-					</h1>
-					
-				</section>
+			<aside>
 				<section>
 					<h1>
 						Correlati
 					</h1>
-					<p>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-						a<br/>
-					</p>
+					<ul id="related">
+						<li>
+							<a href="/{{ page.lang }}/blog/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/blog/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/blog/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/blog/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							</a>
+						</li>
+					</ul>
 				</section>
-			</footer>
+			</aside>
 		</article>
 		<!--<div id="page2">
 			<div id="rel-title">
