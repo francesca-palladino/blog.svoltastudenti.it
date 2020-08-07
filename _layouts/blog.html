@@ -282,6 +282,23 @@
 				transition: left 1s;
 			}
 
+			#lang-icon-it,
+			#lang-icon-en {
+				height: 50px;
+				width: 50px;
+				position: fixed;
+				bottom: 0;
+				right: 0;
+			}
+
+			#lang-icon-it {
+				background-image: url('/assets/img/lang-it.png');
+			}
+
+			#lang-icon-en {
+				background-image: url('/assets/img/lang-en.png');
+			}
+
 			article #article-wrapper {
 				width: 90%;
 				position: relative;
@@ -417,7 +434,12 @@
 				{% endif %}
 			" id="lang-icon" class="backgroundImage"></a> -->
 		</div>
-			
+		{% if page.translations.it  %}
+			<a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
+		{% endif %}
+		{% if page.translations.en %}
+			<a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
+		{% endif %}
 		<article>
 			<div id="article-wrapper">
 				<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
