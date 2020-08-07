@@ -376,12 +376,15 @@
 			<a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
 			<a href="{{site.url}}/it/store" id="store-icon" class="backgroundImage"></a>
 		</div>
-		{% if page.translations.it  %}
-			<a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
-		{% endif %}
-		{% if page.translations.en %}
-			<a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
-		{% endif %}
+			<a href="
+				{% if page.translations.it  %}
+					{{site.url}}/it/{{page.translations.it | slugify}}
+				{% elsif page.translations.en %}
+					{{site.url}}/en/{{page.translations.en | slugify}}
+				{% else %}
+					#
+				{% endif %}
+			" id="lang-icon" class="backgroundImage"></a>
 		<div id="page1">
 			
 			<article>
