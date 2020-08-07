@@ -314,6 +314,26 @@
 				padding-right: 5%;
 			}
 
+			article footer #authors ul,
+			article footer #authors li {
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+
+			article footer #authors li {
+				display: inline-block;
+			}
+			
+			article footer #authors li a {
+				height: 50px;
+				width: 50px;
+				margin-left: 5px;
+				margin-right: 5px;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+
 			@media all and (orientation: landscape){
 				article #article-wrapper {
 					display: flex;
@@ -458,6 +478,28 @@
 			<footer>
 				<section>
 					<h1>
+						A Chi Rivolgersi
+					</h1>
+					<ul id="authors">
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fill" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
 						Correlati
 					</h1>
 					<p>
@@ -514,11 +556,6 @@
 						a<br/>
 						a<br/>
 					</p>
-				</section>
-				<section>
-					<h1>
-						A Chi Rivolgersi
-					</h1>
 				</section>
 			</footer>
 		</article>
