@@ -282,21 +282,21 @@
 				}
 			}*/
 			
-			article #wrapper {
+			article #article-wrapper {
 				width: 100%;
 				position: relative;
 			}
 
-			article #wrapper #th {
+			article #article-wrapper #th {
 				display: none;
 			}
 
-			article #wrapper > * {
+			article #article-wrapper > * {
 				width: 100%;
 			}
 
 			@media all and (orientation: landscape){
-				article #wrapper #th {
+				article #article-wrapper #th {
 					display: initial;
 					height: calc(100vh - 200px);
 					width: 40%;
@@ -305,8 +305,7 @@
 					top: 100px;
 				}
 
-				article #wrapper > header,
-				article #wrapper > #content {
+				article #article-wrapper > #content-wrapper {
 					width: 50%;
 					position: absolute;
 					right: 0%;
@@ -410,14 +409,16 @@
 		<article>
 			<div id="wrapper">
 				<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-				<header>
-					<h1>
-						{{ page.title }}
-					</h1>
-					<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
-				</header>
-				<div id="content">
-					{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
+				<div id="content-wrapper">
+					<header>
+						<h1>
+							{{ page.title }}
+						</h1>
+						<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
+					</header>
+					<div id="content">
+						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
+					</div>
 				</div>
 			</div>
 			<footer>
