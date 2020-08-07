@@ -368,28 +368,31 @@
 			" id="lang-icon" class="backgroundImage"></a>
 		</div>
 			
-		<div id="page1">
-			
-			<article>
-				<div id="th">
-					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-				</div>
-				<div id="article">
-					<header>
-						<h1>
-							{{ page.title }}
-						</h1>
-						<p class="info">
-							{{ page.date | date: "%-d %B %Y" }}
-						</p>
-					</header>
-					<div id="content">
-						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
-					</div>
-				</article>
+		<article>
+			<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
+			<header>
+				<h1>
+					{{ page.title }}
+				</h1>
+				<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
+			</header>
+			<div id="content">
+				{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 			</div>
-		</div>
-		<div id="page2">
+			<footer>
+				<section>
+					<h1>
+						Correlati
+					</h1>
+				</section>
+				<section>
+					<h1>
+						A Chi Rivolgersi
+					</h1>
+				</section>
+			</footer>
+		</article>
+		<!--<div id="page2">
 			<div id="rel-title">
 				Related
 			</div>
@@ -406,7 +409,7 @@
 			<div id="footer">
 				<a href="/{{page.category}}/legal">Legal</a>
 			</div>
-		</div>
+		</div>-->
 		<amp-consent id="cookie" layout="nodisplay">
 		    <script type="application/json">
 			{
