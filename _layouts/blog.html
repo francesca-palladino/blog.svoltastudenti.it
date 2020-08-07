@@ -154,32 +154,32 @@
 			justify-content: space-between;
 			z-index: 2;
 			top: 0;
-			height: 50px;
+			height: 60px;
 			background-color: white;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 		}
 
-		#header>* {
+		#header > * {
 			flex-grow: 0;
 			flex-shrink: 0;
-			height: 50px;
+			height: 60px;
 			background-size: contain;
 		}
 
-		#header>#menu-icon {
-			width: 50px;
+		#header > #menu-icon {
+			width: 60px;
 			background-image: url('/assets/img/menu.png');
 		}
 
-		#header>#lang-icon {
-			width: 50px;
+		#header > #lang-icon {
+			width: 60px;
 			background-image: url('/assets/img/lang.png');
 		}
 
-		#header>#logo {
+		#header > #logo {
+			position: absolute;
+			left: 11.2%;
 			width: 200px;
-			left: 50%;
-			transform: translate(-50%, 0%);
 			background-image: url('/assets/img/svolta-big-pos.png');
 		}
 
@@ -356,9 +356,9 @@
 		}
 
 		@media all and (orientation: landscape) {
-			#header>#menu-icon {
-				margin-left: 5%;
-				padding-left: 8.2%;
+			#header > #menu-icon {
+				position: absolute;
+				left: 11.2%;
 			}
 
 			article #article-wrapper {
@@ -368,12 +368,12 @@
 
 			article #article-wrapper #th {
 				display: block;
-				height: calc(100vh - 150px);
-				width: 40%;
-				margin-left: 5%;
-				margin-right: 5%;
+				height: calc(120vh - 150px);
+				width: 36%;
+				margin-left: 7%;
+				margin-right: 7%;
 				position: sticky;
-				top: 100px;
+				top: 110px;
 			}
 
 			article #article-wrapper #th img {
@@ -391,10 +391,6 @@
 				width: 20vw;
 				overflow: hidden;
 			}
-
-			/*				html {
-					background-color: red;
-				}*/
 		}
 
 		article #content {
@@ -437,12 +433,6 @@
 		article #content amp-img img {
 			object-fit: contain;
 		}
-
-		/*article footer {
-				background-color: #FF6600;
-				border-radius: 10px;
-				padding: 15px;
-			}*/
 
 		.backgroundImage {
 			background-origin: padding-box;
