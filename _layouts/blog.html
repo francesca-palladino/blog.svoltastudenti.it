@@ -314,18 +314,18 @@
 				padding-right: 5%;
 			}
 
-			article footer #authors ul,
-			article footer #authors li {
+			article #authors ul,
+			article #authors li {
 				padding: 0;
 				margin: 0;
 				list-style-type: none;
 			}
 
-			article footer #authors li {
+			article #authors li {
 				display: inline-block;
 			}
-			
-			article footer #authors li a {
+
+			article #authors li a {
 				height: 50px;
 				width: 50px;
 				margin-left: 5px;
@@ -473,6 +473,38 @@
 					<div id="content">
 						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 					</div>
+					<ul id="authors">
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fixed" height="50" width="50" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fixed" height="50" width="50" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fixed" height="50" width="50" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fixed" height="50" width="50" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fixed" height="50" width="50" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.lang }}/users/a">
+								<amp-img layout="fixed" height="50" width="50" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<footer>
@@ -480,23 +512,7 @@
 					<h1>
 						A Chi Rivolgersi
 					</h1>
-					<ul id="authors">
-						<li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li>
-						<li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li>
-						<li>
-							<a href="/{{ page.lang }}/users/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/50x50" alt="Nome 1"></amp-img>
-							</a>
-						</li>
-					</ul>
+					
 				</section>
 				<section>
 					<h1>
