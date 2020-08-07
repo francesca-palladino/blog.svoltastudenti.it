@@ -185,20 +185,17 @@
 
 		#menu {
 			position: fixed;
-			top: 0;
-			left: -200vw;
+			top: -100vh;
 			height: 100%;
 			width: 100%;
 			background-color: white;
 			color: #FF6600;
 			overflow-x: hidden;
 			overflow-y: auto;
-			transition: left 1s;
+			transition: top 1s;
 			font-size: xx-large;
 			font-weight: bold;
-			text-align: center;
 			z-index: 1;
-			padding-top: 50px;
 		}
 
 		#menu ul,
@@ -206,6 +203,15 @@
 			padding: 0;
 			margin: 0;
 			list-style-type: none;
+		}
+
+		#menu #nav {
+			padding-top: 100px;
+		}
+
+		#menu #nav,
+		#menu #projects {
+			padding-left: 10%;
 		}
 
 		#menu #nav a {
@@ -238,8 +244,8 @@
 		}
 
 		#menu-checkbox:checked~#menu {
-			left: 0;
-			transition: left 1s;
+			top: 0vh;
+			transition: top 1s;
 		}
 
 		#menu-checkbox:checked~#header {
@@ -350,7 +356,10 @@
 		}
 
 		@media all and (orientation: landscape) {
-			#header>#menu-icon {}
+			#header>#menu-icon {
+				margin-left: 5%;
+				padding-left: 8.2%;
+			}
 
 			article #article-wrapper {
 				display: flex;
