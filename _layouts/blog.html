@@ -1,539 +1,624 @@
 <!doctype html>
 <html ⚡>
-	<head>
-		<meta charset="utf-8">
-		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
-		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-		{% if page.translations.it  %}
-			<link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
-		{% endif %}
-		{% if page.translations.en  %}
-			<link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.en | slugify}}" />
-		{% endif %}
-		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="{{ page.title }}" />
-		<meta property="og:description" content="{{ page.info.desc }}" />
-		<meta property="og:image" content="{{ page.images.social }}" />
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@svoltastudenti">
-		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:description" content="{{ page.info.desc }}">
-		<meta name="twitter:image" content="{{ page.images.social }}">
-		
-		<script type="application/ld+json">
-		    {
-		      "@context": "https://schema.org",
-		      "@type": "Article",
-		      "author": {
-			"name": "{{ page.info.author }}"
-		      },
-		      "datePublished": "{{ page.date }}",
-		      "headline": "{{ page.title }}",
-		      "image": [
-			"{{ page.images.amp_1-1 }}",
-			"{{ page.images.amp_4-3 }}",
-			"{{ page.images.amp_16-9 }}"
-		      ],
-		      "description": " {{ page.info.desc }} ",
-		      "publisher": {
-			"@type": "Organization",
-			"logo": {
-			  "@type": "ImageObject",
-			  "url": "https://svoltastudenti.it/wp-content/uploads/logo_largo_bianco.png",
-			  "width": "3484",
-			  "height": "477"
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	{% if page.translations.it  %}
+	<link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
+	{% endif %}
+	{% if page.translations.en  %}
+	<link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.en | slugify}}" />
+	{% endif %}
+	<meta property="og:url"
+		content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description" content="{{ page.info.desc }}" />
+	<meta property="og:image" content="{{ page.images.social }}" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@svoltastudenti">
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:description" content="{{ page.info.desc }}">
+	<meta name="twitter:image" content="{{ page.images.social }}">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"author": {
+				"name": "{{ page.info.author }}"
 			},
-			"name": "Svoltastudenti"
-		      }
-		    }
-		</script>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="theme-color" content="#FF6600">
-		<meta name="msapplication-navbutton-color" content="#FF6600">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="application-name" content="Svoltastudenti">
-		<meta name="apple-mobile-web-app-title" content="Svoltastudenti">
-		<meta name="description" content="{{ page.info.desc }}">
-		<meta name="author" content="{{ page.info.author }}">
-		
-		<title>
-			{{ page.title }} | Svoltastudenti
-		</title>
-		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
-		<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
+			"datePublished": "{{ page.date }}",
+			"headline": "{{ page.title }}",
+			"image": [
+				"{{ page.images.amp_1-1 }}",
+				"{{ page.images.amp_4-3 }}",
+				"{{ page.images.amp_16-9 }}"
+			],
+			"description": " {{ page.info.desc }} ",
+			"publisher": {
+				"@type": "Organization",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://svoltastudenti.it/wp-content/uploads/logo_largo_bianco.png",
+					"width": "3484",
+					"height": "477"
+				},
+				"name": "Svoltastudenti"
+			}
+		}
+	</script>
 
-		<style amp-custom>
-			html, body {
-				padding: 0;
-				margin: 0;
-				font-family: 'Lato', sans-serif;
-				height: 100%;
-				width: 100%;
-				position: relative;
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#FF6600">
+	<meta name="msapplication-navbutton-color" content="#FF6600">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="application-name" content="Svoltastudenti">
+	<meta name="apple-mobile-web-app-title" content="Svoltastudenti">
+	<meta name="description" content="{{ page.info.desc }}">
+	<meta name="author" content="{{ page.info.author }}">
+
+	<title>
+		{{ page.title }} | Svoltastudenti
+	</title>
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
 			}
 
-			#header {
-				position: sticky;
-				display: flex;
-				width: 100%;
-				flex-direction: row;
-				justify-content: flex-start;
-				z-index: 2;
-				top: 0;
-				height: 50px;
-				background-color: white;
-				box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
+			to {
+				visibility: visible
 			}
-			
-			#header > * {
-				flex-grow: 0;
-				flex-shrink: 0;
-				height: 50px;
-				background-size: contain;
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
 			}
-			
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
+
+	<style amp-custom>
+		html,
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: 'Lato', sans-serif;
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+
+		#header {
+			position: sticky;
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			z-index: 2;
+			top: 0;
+			height: 50px;
+			background-color: white;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+		}
+
+		#header>* {
+			flex-grow: 0;
+			flex-shrink: 0;
+			height: 50px;
+			background-size: contain;
+		}
+
+		#header>#menu-icon {
+			width: 50px;
+			background-image: url('/assets/img/menu.png');
+		}
+
+		#header>#lang-icon {
+			width: 50px;
+			background-image: url('/assets/img/lang.png');
+		}
+
+		#header>#logo {
+			width: 200px;
+			left: 50%;
+			transform: translate(-50%, 0%);
+			background-image: url('/assets/img/svolta-big-pos.png');
+		}
+
+		#menu {
+			position: fixed;
+			top: 0;
+			left: -200vw;
+			height: 100%;
+			width: 100%;
+			background-color: white;
+			color: #FF6600;
+			overflow-x: hidden;
+			overflow-y: auto;
+			transition: left 1s;
+			font-size: xx-large;
+			font-weight: bold;
+			text-align: center;
+			z-index: 1;
+			padding-top: 50px;
+		}
+
+		#menu ul,
+		#menu li {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+		}
+
+		#menu #nav a {
+			font-size: x-large;
+			font-size: xx-large;
+			font-weight: bold;
+			color: #FF6600;
+			text-decoration: none;
+		}
+
+		#menu #nav a:hover {
+			text-decoration: initial;
+		}
+
+		#menu #projects li {
+			display: inline-block;
+		}
+
+		#menu #projects a {
+			font-size: medium;
+			background-color: #FF6600;
+			padding: 5px;
+			margin: 5px;
+			color: white;
+			text-decoration: none;
+		}
+
+		#menu-checkbox {
+			display: none;
+		}
+
+		#menu-checkbox:checked~#menu {
+			left: 0;
+			transition: left 1s;
+		}
+
+		#menu-checkbox:checked~#header {
+			box-shadow: none;
+		}
+
+		#lang-icon-it,
+		#lang-icon-en {
+			height: 50px;
+			width: 50px;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		#lang-icon-it {
+			background-image: url('/assets/img/lang-it.png');
+		}
+
+		#lang-icon-en {
+			background-image: url('/assets/img/lang-en.png');
+		}
+
+		article #article-wrapper {
+			position: relative;
+			width: 90%;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		article #article-wrapper #th {
+			display: none;
+		}
+
+		article #article-wrapper>#content-wrapper {
+			width: 100%;
+			padding: 0;
+		}
+
+		article #authors,
+		article #authors li,
+		article #related ul,
+		article #related li {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+		}
+
+		article #authors li,
+		article #related li {
+			display: inline-block;
+		}
+
+		article #authors li {
+			height: 76px;
+			width: 76px;
+			margin-left: 5px;
+			margin-right: 5px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		article #authors li a img {
+			border-radius: 38px;
+			overflow: hidden;
+		}
+
+		article #related {
+			text-align: center;
+		}
+
+		article #related h1 {
+			font-size: 15vw;
+			text-align: center;
+			color: #FF6600;
+			font-weight: bold;
+			padding: 0;
+			margin: 0;
+		}
+
+		article #related li {
+			height: 40vw;
+			width: 40vw;
+			overflow: hidden;
+			position: relative;
+		}
+
+		#footer {
+			background-color: #FF6600;
+			color: white;
+			font-size: 18px;
+			line-height: 50px;
+			text-align: center;
+			position: relative;
+			z-index: 2;
+		}
+
+		#footer a {
+			color: white;
+			text-decoration: none;
+		}
+
+		footer a:hover {
+			text-decoration: initial;
+		}
+
+		@media all and (orientation: landscape) {
 			#header > #menu-icon {
-				width: 50px;
-				background-image: url('/assets/img/menu.png');
-			}
-
-			#header > #lang-icon {
-				width: 50px;
-				background-image: url('/assets/img/lang.png');
-			}
-
-			#header > #logo {
-				width: 200px;
-				background-image: url('/assets/img/svolta-big-pos.png');
-			}
-			
-			#menu {
-				position: fixed;
-				top: 0;
-				left: -200vw;
-				height: 100%;
-				width: 100%;
-				background-color: white;
-				color: #FF6600;
-				overflow-x: hidden;
-				overflow-y: auto;
-				transition: left 1s;
-				font-size: xx-large;
-				font-weight: bold;
-				text-align: center;
-				z-index: 1;
-				padding-top: 50px;
-			}
-			
-			#menu ul,
-			#menu li {
-				padding: 0;
-				margin: 0;
-				list-style-type: none;
-			}
-
-			#menu #nav a {
-				font-size: x-large;
-				font-size: xx-large;
-				font-weight: bold;
-				color: #FF6600;
-				text-decoration: none;
-			}
-
-			#menu #nav a:hover {
-				text-decoration: initial;
-			}
-
-			#menu #projects li {
-				display: inline-block;
-			}
-
-			#menu #projects a {
-				font-size: medium;
-				background-color: #FF6600;
-				padding: 5px;
-				margin: 5px;
-				color: white;
-				text-decoration: none;
-			}
-
-			#menu-checkbox {
-				display: none;
-			}
-			
-			#menu-checkbox:checked ~ #menu {
-				left: 0;
-				transition: left 1s;
-			}
-
-			#menu-checkbox:checked ~ #header {
-				box-shadow: none;
-			}
-
-			#lang-icon-it,
-			#lang-icon-en {
-				height: 50px;
-				width: 50px;
-				position: fixed;
-				bottom: 0;
-				right: 0;
-    			z-index: 1;
-			}
-
-			#lang-icon-it {
-				background-image: url('/assets/img/lang-it.png');
-			}
-
-			#lang-icon-en {
-				background-image: url('/assets/img/lang-en.png');
 			}
 
 			article #article-wrapper {
-				position: relative;
-				width: 90%;
-				padding-left: 5%;
-				padding-right: 5%;
+				display: flex;
+				flex-direction: row;
 			}
 
 			article #article-wrapper #th {
-				display: none;
+				display: block;
+				height: calc(100vh - 150px);
+				width: 40%;
+				margin-left: 5%;
+				margin-right: 5%;
+				position: sticky;
+				top: 100px;
 			}
 
-			article #article-wrapper > #content-wrapper {
-				width: 100%;
-				padding: 0;
-			}
-
-			article #authors ,
-			article #authors li,
-			article #related ul,
-			article #related li {
-				padding: 0;
-				margin: 0;
-				list-style-type: none;
-			}
-
-			article #authors li,
-			article #related li {
-				display: inline-block;
-			}
-
-			article #authors li {
-				height: 76px;
-				width: 76px;
-				margin-left: 5px;
-				margin-right: 5px;
-				overflow: hidden;
-				position: relative;
-			}
-
-			article #authors li a img {
-				border-radius: 38px;
-				overflow: hidden;
-			}
-
-			article #related {
-				text-align: center;
-			}
-
-			article #related h1 {
-			    font-size: 15vw;
-			    text-align: center;
-			    color: #FF6600;
-			    font-weight: bold;
-			    padding: 0;
-			    margin: 0;
-			}
-			
-			article #related li {
-				height: 40vw;
-				width: 40vw;
-				overflow: hidden;
-				position: relative;
-			}
-
-			#footer {
-				background-color: #FF6600;
-				color: white;
-				font-size: 18px;
-				line-height: 50px;
-				text-align: center;
-				position: relative;
-				z-index: 2;
-			}
-
-			#footer a {
-				color: white;
-				text-decoration: none;
-			}
-
-			footer a:hover {
-				text-decoration: initial;
-			}
-
-			@media all and (orientation: landscape){
-				article #article-wrapper {
-					display: flex;
-					flex-direction: row;
-				}
-
-				article #article-wrapper #th {
-					display: block;
-					height: calc(100vh - 150px);
-					width: 40%;
-					margin-left: 5%;
-					margin-right: 5%;
-					position: sticky;
-					top: 100px;
-				}
-
-				article #article-wrapper #th img {
-					object-fit: contain;
-				}
-
-				article #article-wrapper > #content-wrapper {
-					width: 50%;
-					padding-left: 2vw;
-					padding-right: 2vw;
-				}
-
-				article #related li {
-					height: 20vw;
-					width: 20vw;
-					overflow: hidden;
-				}
-
-/*				html {
-					background-color: red;
-				}*/
-			}
-
-
-
-
-
-			article #content {
-				padding-bottom: 30px;
-			}
-			
-			article #content b,
-			article #content strong {
-				color: #003399;
-			}
-			
-			article #content h2,
-			article #content h3,
-			article #content h4,
-			article #content h5,
-			article #content h6,
-			article #content h7 {
-				color: #FF6600;
-				font-size: 100%;
-			}
-			
-			article #content blockquote {
-				border-left: 5px solid #003399;
-				padding-left: 5px;
-			}
-			
-			
-			article #content .info {
-				font-style: italic;
-				margin: 0;
-				text-align: right;
-				font-weight: bold;
-			}
-			
-			article #content amp-img {
-				border-top: 1px solid #FF6600;
-				border-bottom: 1px solid #FF6600;
-			}
-			
-			article #content amp-img img {
+			article #article-wrapper #th img {
 				object-fit: contain;
 			}
-			
-			/*article footer {
+
+			article #article-wrapper>#content-wrapper {
+				width: 50%;
+				padding-left: 2vw;
+				padding-right: 2vw;
+			}
+
+			article #related li {
+				height: 20vw;
+				width: 20vw;
+				overflow: hidden;
+			}
+
+			/*				html {
+					background-color: red;
+				}*/
+		}
+
+
+
+
+
+		article #content {
+			padding-bottom: 30px;
+		}
+
+		article #content b,
+		article #content strong {
+			color: #003399;
+		}
+
+		article #content h2,
+		article #content h3,
+		article #content h4,
+		article #content h5,
+		article #content h6,
+		article #content h7 {
+			color: #FF6600;
+			font-size: 100%;
+		}
+
+		article #content blockquote {
+			border-left: 5px solid #003399;
+			padding-left: 5px;
+		}
+
+
+		article #content .info {
+			font-style: italic;
+			margin: 0;
+			text-align: right;
+			font-weight: bold;
+		}
+
+		article #content amp-img {
+			border-top: 1px solid #FF6600;
+			border-bottom: 1px solid #FF6600;
+		}
+
+		article #content amp-img img {
+			object-fit: contain;
+		}
+
+		/*article footer {
 				background-color: #FF6600;
 				border-radius: 10px;
 				padding: 15px;
 			}*/
 
-			.backgroundImage {
-				background-origin: padding-box;
-				background-position: center;
-				background-repeat:no-repeat;
-			}
-		</style>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-	</head>
-  	<body>
-		<input type="checkbox" id="menu-checkbox"></input>
-		<div id="menu">
-			<ul id="nav">
-				<li>
-					<a href="">Home</a>
-				</li>
-				<li>
-					<a href="">Rappresentanza</a>
-				</li>
-				<li>
-					<a href="">Associazione</a>
-				</li>
-				<li>
-					<a href="">Eventi</a>
-				</li>
-				<li>
-					<a href="">Notizie</a>
-				</li>
-				<li>
-					<a href="">Contatti</a>
-				</li>
-			</ul>
-			<ul id="projects">
-				<li>
-					<a href="">FAQ</a>
-				</li>
-				<li>
-					<a href="">LM</a>
-				</li>
-				<li>
-					<a href="">Orange</a>
-				</li>
-			</ul>
-		</div>
-		<div id="header">
-			<label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
-			<a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
-			<!-- <a href="
-				{% if page.translations.it  %}
-					{{site.url}}/it/{{page.translations.it | slugify}}
-				{% elsif page.translations.en %}
-					{{site.url}}/en/{{page.translations.en | slugify}}
-				{% else %}
-					#
-				{% endif %}
-			" id="lang-icon" class="backgroundImage"></a> -->
-		</div>
-		{% if page.translations.it  %}
-			<a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
-		{% endif %}
-		{% if page.translations.en %}
-			<a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
-		{% endif %}
-		<article>
-			<div id="article-wrapper">
-				<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-				<div id="content-wrapper">
-					<header>
-						<h1>
-							{{ page.title }}
-						</h1>
-						<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
-					</header>
-					<div id="content">
-						{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
-					</div>
-					<footer>
-						<ul id="authors">
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-							<li>
-								<a href="/{{ page.category }}/users/a">
-									<amp-img layout="fixed" height="76" width="76" src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-								</a>
-							</li>
-						</ul>
-					</footer>
-				</div>
-			</div>
-			<aside>
-				<section id="related">
+		.backgroundImage {
+			background-origin: padding-box;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<input type="checkbox" id="menu-checkbox"></input>
+	<div id="menu">
+		<ul id="nav">
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="">Rappresentanza</a>
+			</li>
+			<li>
+				<a href="">Associazione</a>
+			</li>
+			<li>
+				<a href="">Eventi</a>
+			</li>
+			<li>
+				<a href="">Notizie</a>
+			</li>
+			<li>
+				<a href="">Contatti</a>
+			</li>
+		</ul>
+		<ul id="projects">
+			<li>
+				<a href="">FAQ</a>
+			</li>
+			<li>
+				<a href="">LM</a>
+			</li>
+			<li>
+				<a href="">Orange</a>
+			</li>
+		</ul>
+	</div>
+	<div id="header">
+		<label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
+		<a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
+		<div></div>
+	</div>
+	{% if page.translations.it  %}
+	<a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
+	{% endif %}
+	{% if page.translations.en %}
+	<a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
+	{% endif %}
+	<article>
+		<div id="article-wrapper">
+			<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
+			<div id="content-wrapper">
+				<header>
 					<h1>
-						Correlati
+						{{ page.title }}
 					</h1>
-					<ul>
+					<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
+				</header>
+				<div id="content">
+					{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
+				</div>
+				<footer>
+					<ul id="authors">
 						<li>
-							<a href="/{{ page.category }}/blog/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
 							</a>
 						</li>
 						<li>
-							<a href="/{{ page.category }}/blog/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
 							</a>
 						</li>
 						<li>
-							<a href="/{{ page.category }}/blog/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
 							</a>
 						</li>
 						<li>
-							<a href="/{{ page.category }}/blog/a">
-								<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1"></amp-img>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
+							</a>
+						</li>
+						<li>
+							<a href="/{{ page.category }}/users/a">
+								<amp-img layout="fixed" height="76" width="76"
+									src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
 							</a>
 						</li>
 					</ul>
-				</section>
-			</aside>
-		</article>
-		<div id="footer">
-			 © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a> 
+				</footer>
+			</div>
 		</div>
-		<!--<div id="page2">
+		<aside>
+			<section id="related">
+				<h1>
+					Correlati
+				</h1>
+				<ul>
+					<li>
+						<a href="/{{ page.category }}/blog/a">
+							<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
+							</amp-img>
+						</a>
+					</li>
+					<li>
+						<a href="/{{ page.category }}/blog/a">
+							<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
+							</amp-img>
+						</a>
+					</li>
+					<li>
+						<a href="/{{ page.category }}/blog/a">
+							<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
+							</amp-img>
+						</a>
+					</li>
+					<li>
+						<a href="/{{ page.category }}/blog/a">
+							<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
+							</amp-img>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</aside>
+	</article>
+	<div id="footer">
+		© <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
+			href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
+			href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
+	</div>
+	<!--<div id="page2">
 			<div id="rel-title">
 				Related
 			</div>
@@ -551,19 +636,23 @@
 				<a href="/{{page.category}}/legal">Legal</a>
 			</div>
 		</div>-->
-		<amp-consent id="cookie" layout="nodisplay">
-		    <script type="application/json">
+	<amp-consent id="cookie" layout="nodisplay">
+		<script type="application/json">
 			{
-			    "consentInstanceId": "consent896537",
-			    "consentRequired": true,
-			    "promptUI": "cookie-content"
+				"consentInstanceId": "consent896537",
+				"consentRequired": true,
+				"promptUI": "cookie-content"
 			}
-		    </script>
-		    <div id="cookie-content" class="popupOverlay">
+		</script>
+		<div id="cookie-content" class="popupOverlay">
 			Informativa<br /><br />
-			Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie, consulta la <a href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy" target="_blank">cookie policy</a>.<br />
+			Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed
+			utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad
+			alcuni cookie, consulta la <a href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy"
+				target="_blank">cookie policy</a>.<br />
 			<button on="tap:cookie.accept" role="button">Accept</button>
-		    </div>
-		</amp-consent>
-	</body>
+		</div>
+	</amp-consent>
+</body>
+
 </html>
