@@ -112,6 +112,22 @@
 				background-image: url('/assets/img/svolta-big-pos.png');
 			}
 
+			#lang-icon-it,
+			#lang-icon-en {
+				height: 50px;
+				width: 50px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+
+			#lang-icon-it {
+				background-image: url('/assets/img/lang-it.png');
+			}
+
+			#lang-icon-en {
+				background-image: url('/assets/img/lang-en.png');
+			}
 
 			.page {
 				position: relative;
@@ -148,8 +164,8 @@
 				padding-top: 50px;
 				height: 100%;
 				width: 100%;
-			    	justify-content: space-evenly;
-			    	align-items: flex-start;
+				justify-content: space-evenly;
+				align-items: flex-start;
 			}
 
 			#th {
@@ -357,13 +373,19 @@
 			MENU<br />
 		</div>
 		<div id="header">
-			<label for="menu-checkbox" id="menu-icon"></label>
-			<a href="{{site.url}}/it/" id="logo"></a>
-			<a href="{{site.url}}/it/store" id="store-icon"></a>
+			<label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
+			<a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
+			<a href="{{site.url}}/it/store" id="store-icon" class="backgroundImage"></a>
 		</div>
+		{% if page.translations.it  %}
+			<a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
+		{% endif %}
+		{% if page.translations.en %}
+			<a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
+		{% endif %}
 		<div id="page1">
 			
-			<article id="article">
+			<article>
 				<div id="th">
 					<amp-img layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
 				</div>
