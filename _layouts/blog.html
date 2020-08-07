@@ -82,7 +82,7 @@
 				display: flex;
 				width: 100%;
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: flex-start;
 				z-index: 1;
 				top: 0;
 				height: 50px;
@@ -408,7 +408,7 @@
 		<div id="header">
 			<label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
 			<a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
-			<a href="
+			<!-- <a href="
 				{% if page.translations.it  %}
 					{{site.url}}/it/{{page.translations.it | slugify}}
 				{% elsif page.translations.en %}
@@ -416,7 +416,7 @@
 				{% else %}
 					#
 				{% endif %}
-			" id="lang-icon" class="backgroundImage"></a>
+			" id="lang-icon" class="backgroundImage"></a> -->
 		</div>
 			
 		<article>
