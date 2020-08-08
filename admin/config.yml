@@ -18,7 +18,7 @@ collections:
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
       - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
-      - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
       - label: "Info"
         name: "info"
         widget: "object"
@@ -52,7 +52,7 @@ collections:
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
       - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
-      - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
       - label: "Info"
         name: "info"
         widget: "object"
