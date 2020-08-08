@@ -66,6 +66,15 @@ collections:
         searchFields: ["title"]
         displayFields: ["title"]
         valueField: "title"
+      - label: "Correlati"
+        name: "it"
+        widget: "relation"
+        required: false
+        collection: "blog-en"
+        multiple: true
+        searchFields: ["title"]
+        displayFields: ["title"]
+        valueField: "title"
       - label: "Miniatura Articolo"
         name: "th"
         widget: "image"
