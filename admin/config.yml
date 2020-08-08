@@ -26,11 +26,14 @@ collections:
           - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
           - {label: "Autore", name: "author", widget: "string" }
           - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
-      - label: "Traduzioni"
-        name: "translations"
-        widget: "object"
-        fields:
-          - {label: "Articolo in Inglese", name: "en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - label: "Articolo in Inglese"
+        name: "en"
+        widget: "relation"
+        required: false
+        collection: "blog-en"
+        searchFields: ["title"]
+        displayFields: ["title"]
+        valueField: "title"
       - label: "Miniatura Articolo"
         name: "th"
         widget: "image"
@@ -55,11 +58,14 @@ collections:
           - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
           - {label: "Autore", name: "author", widget: "string" }
           - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
-      - label: "Traduzioni"
-        name: "translations"
-        widget: "object"
-        fields:
-          - {label: "Articolo in Italiano", name: "it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - label: "Articolo in Italiano"
+        name: "it"
+        widget: "relation"
+        required: false
+        collection: "blog-it"
+        searchFields: ["title"]
+        displayFields: ["title"]
+        valueField: "title"
       - label: "Miniatura Articolo"
         name: "th"
         widget: "image"
