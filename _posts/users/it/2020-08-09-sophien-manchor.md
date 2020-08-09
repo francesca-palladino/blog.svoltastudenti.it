@@ -3,6 +3,7 @@ layout: users
 category: it
 isAmp: "true"
 title: Sophien Manchor
+translations.en: Sophien Manchor
 th: /assets/img/uploads/svolta-big-neg.png
 socials:
   mail: sophien.manchor
