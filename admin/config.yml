@@ -23,6 +23,7 @@ collections:
       - {label: "Articolo in Inglese", name: "translations.en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
       - {label: "Correlati (max 4)", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
@@ -41,6 +42,7 @@ collections:
       - {label: "Articolo in Inglese", name: "translations.it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
       - {label: "Correlati (max 4)", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "events-it" # Used in routes, e.g., /admin/collections/blog
