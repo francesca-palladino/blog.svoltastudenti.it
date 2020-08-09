@@ -105,15 +105,26 @@ collections:
       - {label: "Evento in Inglese", name: "translations.en", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Copertina", name: "th", widget: "image", required: true}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
-      - label: "Descrizione"
+      - label: "Programma"
         name: "days"
         widget: "object"
         fields:
-          - {label: "Giorno 1", name: "day1", widget: "markdown" }
-          - {label: "Giorno 2", name: "day2", widget: "markdown" }
-          - {label: "Giorno 3", name: "day3", widget: "markdown" }
-          - {label: "Giorno 4", name: "day4", widget: "markdown" }
-          - {label: "Giorno 5", name: "day5", widget: "markdown" }
+          - {label: "Giorno 1", name: "day1", widget: "markdown", required: false}
+          - {label: "Giorno 2", name: "day2", widget: "markdown", required: false }
+          - {label: "Giorno 3", name: "day3", widget: "markdown", required: false }
+          - {label: "Giorno 4", name: "day4", widget: "markdown", required: false }
+          - {label: "Giorno 5", name: "day5", widget: "markdown", required: false }
+      - label: "Descrizione"
+        name: "info"
+        widget: "object"
+        fields:
+          - {label: "Dove", name: "where", widget: "markdown", required: false}
+          - {label: "Quando", name: "when", widget: "markdown" }
+          - {label: "Costo", name: "cost", widget: "markdown" }
+          - {label: "Iscrizione", name: "reservation", widget: "markdown" }
+          - {label: "Cosa Portare", name: "requirements", widget: "markdown", required: false }
+          - {label: "Informazioni", name: "info", widget: "markdown" }
+          - {label: "Note", name: "notes", widget: "markdown", required: false }
       - {label: "Prezzo", name: "price", widget: "number", type: "float", min: 0, step: 0.01}
   - name: "events-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
