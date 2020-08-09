@@ -16,15 +16,15 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
-      - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
-      - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
+      - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: false}
       - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
+      - {label: "Testo", name: "body", widget: "markdown"}
       - {label: "Articolo in Inglese", name: "translations.en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
       - {label: "Correlati", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "events-it" # Used in routes, e.g., /admin/collections/blog
     label: "Eventi (it)" # Used in the UI
     folder: "_posts/events/it" # The path to the folder where the documents are stored
