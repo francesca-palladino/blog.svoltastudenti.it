@@ -126,6 +126,7 @@ collections:
           - {label: "Note", name: "notes", widget: "markdown", required: false }
       - {label: "Prezzo", name: "price", widget: "number", valueType: "int", min: 0, step: 1}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pretix ID)", name: "pretix", widget: "string"}
   - name: "events-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
     folder: "_posts/blog/en" # The path to the folder where the documents are stored
