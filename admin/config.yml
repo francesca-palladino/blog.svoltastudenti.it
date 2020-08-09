@@ -11,7 +11,7 @@ collections:
     label: "Blog (it)" # Used in the UI
     folder: "_posts/blog/it" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "/blog/{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
@@ -30,7 +30,7 @@ collections:
     label: "Blog (en)" # Used in the UI
     folder: "_posts/blog/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "/blog/{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
@@ -49,7 +49,7 @@ collections:
     label: "Utenti (it)" # Used in the UI
     folder: "_posts/users/it" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "/users/{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "users"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
@@ -71,7 +71,7 @@ collections:
     label: "Utenti (en)" # Used in the UI
     folder: "_posts/users/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "/users/{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "users"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
