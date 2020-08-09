@@ -62,9 +62,9 @@ collections:
         name: "socials"
         widget: "object"
         fields:
-          - {label: "Facebook Id", name: "fb", widget: "string"}
-          - {label: "Telegram Id", name: "tg", widget: "string"}
-          - {label: "Svolta Id", name: "mail", widget: "string"}
+          - {label: "Facebook Id", name: "fb", widget: "string", required: false}
+          - {label: "Telegram Id", name: "tg", widget: "string", required: false}
+          - {label: "Svolta Id", name: "mail", widget: "string", required: false}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "users-en" # Used in routes, e.g., /admin/collections/blog
@@ -84,9 +84,9 @@ collections:
         name: "socials"
         widget: "object"
         fields:
-          - {label: "Facebook Id", name: "fb", widget: "string"}
-          - {label: "Telegram Id", name: "tg", widget: "string"}
-          - {label: "Svolta Id", name: "mail", widget: "string"}
+          - {label: "Facebook Id", name: "fb", widget: "string", required: false}
+          - {label: "Telegram Id", name: "tg", widget: "string", required: false}
+          - {label: "Svolta Id", name: "mail", widget: "string", required: false}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "events-it" # Used in routes, e.g., /admin/collections/blog
