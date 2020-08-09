@@ -23,7 +23,7 @@ collections:
       - {label: "Articolo in Inglese", name: "translations.en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
       - {label: "Correlati", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
+      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "events-it" # Used in routes, e.g., /admin/collections/blog
     label: "Eventi (it)" # Used in the UI
