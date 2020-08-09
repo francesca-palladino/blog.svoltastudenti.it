@@ -102,7 +102,7 @@ collections:
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Categoria", name: "tags", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
       - {label: "Descrizione", name: "body", widget: "markdown" }
-      - {label: "Evento in Inglese", name: "translations.en", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Evento in Inglese", name: "translations.en", widget: "relation", required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Copertina", name: "th", widget: "image", required: true}
       - label: "Programma"
         name: "days"
@@ -126,23 +126,42 @@ collections:
           - {label: "Note", name: "notes", widget: "markdown", required: false }
       - {label: "Prezzo", name: "price", widget: "number", valueType: "int", min: 0, step: 1}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
-      - {label: "Pretix ID)", name: "pretix", widget: "string"}
+      - {label: "Pretix ID", name: "pretix", widget: "string"}
   - name: "events-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog (en)" # Used in the UI
-    folder: "_posts/blog/en" # The path to the folder where the documents are stored
+    label: "Eventi (en)" # Used in the UI
+    folder: "_posts/events/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "events"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
-      - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: false}
-      - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
-      - {label: "Testo", name: "body", widget: "markdown"}
-      - {label: "Articolo in Inglese", name: "translations.it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Categoria", name: "tags", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
+      - {label: "Descrizione", name: "body", widget: "markdown" }
+      - {label: "Evento in Inglese", name: "translations.it", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Copertina", name: "th", widget: "image", required: true}
+      - label: "Programma"
+        name: "days"
+        widget: "object"
+        fields:
+          - {label: "Giorno 1", name: "day1", widget: "markdown", required: false}
+          - {label: "Giorno 2", name: "day2", widget: "markdown", required: false }
+          - {label: "Giorno 3", name: "day3", widget: "markdown", required: false }
+          - {label: "Giorno 4", name: "day4", widget: "markdown", required: false }
+          - {label: "Giorno 5", name: "day5", widget: "markdown", required: false }
+      - label: "Descrizione"
+        name: "info"
+        widget: "object"
+        fields:
+          - {label: "Dove", name: "where", widget: "markdown", required: false}
+          - {label: "Quando", name: "when", widget: "markdown" }
+          - {label: "Costo", name: "cost", widget: "markdown" }
+          - {label: "Iscrizione", name: "reservation", widget: "markdown" }
+          - {label: "Cosa Portare", name: "requirements", widget: "markdown", required: false }
+          - {label: "Informazioni", name: "info", widget: "markdown" }
+          - {label: "Note", name: "notes", widget: "markdown", required: false }
+      - {label: "Prezzo", name: "price", widget: "number", valueType: "int", min: 0, step: 1}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
-      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
+      - {label: "Pretix ID", name: "pretix", widget: "string"}
