@@ -19,25 +19,11 @@ collections:
       - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
-      - label: "Info"
-        name: "info"
-        widget: "object"
-        fields:
-          - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
-          - {label: "Autore", name: "author", widget: "string" }
-          - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
-      - label: "Articolo in Inglese"
-        name: "en"
-        widget: "relation"
-        required: false
-        collection: "blog-en"
-        searchFields: ["title"]
-        displayFields: ["title"]
-        valueField: "title"
-      - label: "Miniatura Articolo"
-        name: "th"
-        widget: "image"
-        required: true
+      - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: true}
+      - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
+      - {label: "Articolo in Inglese", name: "translations.en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
+      - {label: "Correlati", name: "related", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Testo", name: "body", widget: "markdown"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
