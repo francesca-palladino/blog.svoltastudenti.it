@@ -95,65 +95,42 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "events"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
-      - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
-      - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
-      - label: "Info"
-        name: "info"
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Categoria", name: "tags", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
+      - {label: "Descrizione", name: "body", widget: "markdown" }
+      - {label: "Evento in Inglese", name: "translations.en", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Copertina", name: "th", widget: "image", required: true}
+      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - label: "Descrizione"
+        name: "days"
         widget: "object"
         fields:
-          - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: 0}
-          - {label: "Categoria", name: "tags", widget: "select", options: ["Attivita'", "Conferenza", "Evento", "Viaggio", "Workshop"]}
-          - {label: "Descrizione Breve", name: "desc", widget: "text" }
-          - {label: "Pretix", name: "pretix", widget: "string"}
-      - label: "Traduzioni"
-        name: "translations"
-        widget: "object"
-        fields:
-          - {label: "Traduzione Inglese", name: "en", widget: "relation", required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - label: "Immagini"
-        name: "images"
-        widget: "object"
-        fields:
-          - {label: "Copertina Sito", name: "th", widget: "image", default: "", required: false}
-          - {label: "Social", name: "social", widget: "image", default: "", required: false}
-          - {label: "Ricerca 1:1 (Min 1200px Wide)", name: "amp_1-1", widget: "image", default: "", required: false}
-          - {label: "Ricerca 4:3 (Min 1200px Wide)", name: "amp_4-3", widget: "image", default: "", required: false}
-          - {label: "Ricerca 16:9 (Min 1200px Wide)", name: "amp_16-9", widget: "image", default: "", required: false}
-      - {label: "Testo", name: "body", widget: "markdown"}
+          - {label: "Giorno 1", name: "day1", widget: "markdown" }
+          - {label: "Giorno 2", name: "day2", widget: "markdown" }
+          - {label: "Giorno 3", name: "day3", widget: "markdown" }
+          - {label: "Giorno 4", name: "day4", widget: "markdown" }
+          - {label: "Giorno 5", name: "day5", widget: "markdown" }
+      - {label: "Prezzo", name: "price", widget: "number", type: "float", min: 0, step: 0.01}
   - name: "events-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Eventi (en)" # Used in the UI
-    folder: "_posts/events/en" # The path to the folder where the documents are stored
+    label: "Blog (en)" # Used in the UI
+    folder: "_posts/blog/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
-      - {label: "Data di Pubblicazione", name: "date", widget: "datetime"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: "false"}
-      - {label: "Titolo (max 100 caratteri)", name: "title", widget: "string"}
-      - label: "Info"
-        name: "info"
-        widget: "object"
-        fields:
-          - {label: "Prezzo", name: "price", widget: "number", valueType: "float", min: 0}
-          - {label: "Categoria", name: "tags", widget: "select", options: ["Activity", "Conference", "Event", "Travel", "Workshop"]}
-          - {label: "Descrizione Breve", name: "desc", widget: "text" }
-          - {label: "Pretix", name: "pretix", widget: "string"}
-      - label: "Traduzioni"
-        name: "translations"
-        widget: "object"
-        fields:
-          - {label: "Traduzione Italiana", name: "it", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - label: "Immagini"
-        name: "images"
-        widget: "object"
-        fields:
-          - {label: "Copertina Sito", name: "th", widget: "image", default: "", required: false}
-          - {label: "Social", name: "social", widget: "image", default: "", required: false}
-          - {label: "Ricerca 1:1 (Min 1200px Wide)", name: "amp_1-1", widget: "image", default: "", required: false}
-          - {label: "Ricerca 4:3 (Min 1200px Wide)", name: "amp_4-3", widget: "image", default: "", required: false}
-          - {label: "Ricerca 16:9 (Min 1200px Wide)", name: "amp_16-9", widget: "image", default: "", required: false}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: false}
+      - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
       - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Articolo in Inglese", name: "translations.it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
+      - {label: "Correlati (max 4)", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
