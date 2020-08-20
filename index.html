@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+
+		#content {
+			scroll-behavior: smooth;
+			position: fixed;
+			height: 100vh;
+			overflow-x: hidden;
+			overflow-y: auto;
+			top: 0;
+			width: 100%;
+		    scroll-snap-type: mandatory;
+    		scroll-snap-points-y: repeat(100vh);
+    		scroll-snap-type: y mandatory;
+		}
+
+		#content section {
+			padding: 1rem;
+			height: 100vh;
+			scroll-snap-align: start;
+			text-align: center;
+			position: relative;
+		}
+
+		#content section .title {
+			font-size: xx-large;
+		}
+
+		#content section .btn {
+			font-size: large;
+			padding: 20px;
+			background-color: #FF6600;
+		}
+/*e quale e' il problema se copi il link di linktree?*/
+/*esatto*/
+		#bar {
+			position: fixed;
+			right: 0;
+			top: 0;
+			padding-right: 20px;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: right;
+		}
+
+		#bar ul {
+			background-color: white;
+		}
+		.backgroundImage {
+			background-origin:padding-box;
+			background-position:center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-color:gray;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<a name="a"></a>
+		<section class="backgroundImage" style="background-image: url('https://source.unsplash.com/random/?1">
+			<div class="title">Titolo di Prova</div>
+			<div class="btn">Iscriviti</div>
+		</section>
+		<a name="b"></a>
+		<section class="backgroundImage" style="background-image: url('https://source.unsplash.com/random/?2">
+			b
+		</section>
+		<a name="c"></a>
+		<section class="backgroundImage" style="background-image: url('https://source.unsplash.com/random/?3">
+			c
+		</section>
+		<a name="d"></a>
+		<section class="backgroundImage" style="background-image: url('https://source.unsplash.com/random/?4">
+			d
+		</section>
+		<a name="e"></a>
+		<section class="backgroundImage" style="background-image: url('https://source.unsplash.com/random/?5">
+			e
+		</section>
+		<a name="f"></a>
+		<section class="backgroundImage" style="background-image: url('https://source.unsplash.com/random/6">
+			f
+		</section>
+	</div>
+	<div id="bar">
+		<ul>
+			<li>
+				<a href="#a">a</a>
+			</li>
+			<li>
+				<a href="#b">b</a>
+			</li>
+			<li>
+				<a href="#c">c</a>
+			</li>
+			<li>
+				<a href="#d">d</a>
+			</li>
+			<li>
+				<a href="#e">e</a>
+			</li>
+			<li>
+				<a href="#f">f</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
