@@ -1,19 +1,527 @@
 <!doctype html>
-<html lang="{{ page.category }}">
-  {% include head.html %}
+<html ⚡>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.translations.it  %}
+  <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
+  {% endif %}
+  {% if page.translations.en  %}
+  <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.en | slugify}}" />
+  {% endif %}
+  <meta property="og:url"
+    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.info.desc }}" />
+  <meta property="og:image" content="{{ page.images.social }}" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@svoltastudenti">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.info.desc }}">
+  <meta name="twitter:image" content="{{ page.images.social }}">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "name": "{{ page.info.author }}"
+      },
+      "datePublished": "{{ page.date }}",
+      "headline": "{{ page.title }}",
+      "image": [
+        "{{ page.images.amp_1-1 }}",
+        "{{ page.images.amp_4-3 }}",
+        "{{ page.images.amp_16-9 }}"
+      ],
+      "description": " {{ page.info.desc }} ",
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://svoltastudenti.it/wp-content/uploads/logo_largo_bianco.png",
+          "width": "3484",
+          "height": "477"
+        },
+        "name": "Svoltastudenti"
+      }
+    }
+  </script>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#FF6600">
+  <meta name="msapplication-navbutton-color" content="#FF6600">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="application-name" content="Svoltastudenti">
+  <meta name="apple-mobile-web-app-title" content="Svoltastudenti">
+  <meta name="description" content="{{ page.info.desc }}">
+  <meta name="author" content="{{ page.info.author }}">
+
+  <title>
+    {{ page.title }} | Svoltastudenti
+  </title>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
+
+  <style amp-custom>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+
+    #header {
+      position: sticky;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      z-index: 2;
+      top: 0;
+      height: 60px;
+      background-color: white;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #header > * {
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 60px;
+      background-size: contain;
+    }
+
+    #header > #menu-icon {
+      width: 60px;
+      background-image: url('/assets/img/menu.png');
+      position: absolute;
+        left: 5%;
+    }
+
+    #header > #lang-icon {
+      width: 60px;
+      background-image: url('/assets/img/lang.png');
+    }
+
+    #header > #logo {
+      max-width: 50vw;
+      width: 200px;
+      background-image: url('/assets/img/svolta-big-pos.png');
+    }
+
+    #menu {
+      position: fixed;
+      top: -100vh;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      color: #FF6600;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition: top 1s;
+      font-size: xx-large;
+      font-weight: bold;
+      z-index: 1;
+    }
+
+    #menu ul,
+    #menu li {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    #menu #nav {
+      padding-top: 100px;
+    }
+
+    #menu #nav,
+    #menu #projects {
+      padding-left: 10%;
+    }
+
+    #menu #nav a {
+      font-size: x-large;
+      font-size: xx-large;
+      font-weight: bold;
+      color: #FF6600;
+      text-decoration: none;
+    }
+
+    #menu #nav a:hover {
+      text-decoration: initial;
+    }
+
+    #menu #projects li {
+      display: inline-block;
+    }
+
+    #menu #projects a {
+      font-size: medium;
+      background-color: #FF6600;
+      padding: 5px;
+      margin: 5px;
+      color: white;
+      text-decoration: none;
+    }
+
+    #menu-checkbox {
+      display: none;
+    }
+
+    #menu-checkbox:checked~#menu {
+      top: 0vh;
+      transition: top 1s;
+    }
+
+    #menu-checkbox:checked~#header {
+      box-shadow: none;
+    }
+
+    #lang-icon-it,
+    #lang-icon-en {
+      height: 50px;
+      width: 50px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    #lang-icon-it {
+      background-image: url('/assets/img/lang-it.png');
+    }
+
+    #lang-icon-en {
+      background-image: url('/assets/img/lang-en.png');
+    }
+
+    article {
+      min-height: 100vh;
+    }
+
+    article #article-wrapper {
+      position: relative;
+      width: 90%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    article #article-wrapper #th {
+      display: none;
+    }
+
+    article #article-wrapper>#content-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+
+    article #authors,
+    article #authors li,
+    article #related ul,
+    article #related li {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    article #authors li,
+    article #related li {
+      display: inline-block;
+    }
+
+    article #authors li {
+      height: 76px;
+      width: 76px;
+      margin-right: 15px;
+      margin-top: 15px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    article #authors li a img {
+      border-radius: 38px;
+      overflow: hidden;
+    }
+
+    article #related {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    article #related h1 {
+      padding: 0;
+      margin: 0;
+          margin-top: 50px;
+      font-size: 4vw;
+      text-align: center;
+      color: #FF6600;
+      font-weight: bold;
+    }
+
+    article #related li {
+      margin-top: 30px;
+      height: 40vw;
+      width: 40vw;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #footer {
+      background-color: #FF6600;
+      color: white;
+      font-size: 18px;
+      line-height: 50px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    #footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: initial;
+    }
+
+    @media all and (orientation: landscape) {
+      #header > #menu-icon {
+        position: absolute;
+        left: 11.2%;
+      }
+
+      article #article-wrapper {
+        display: flex;
+        flex-direction: row;
+      }
+
+      article #article-wrapper #th {
+        display: block;
+        height: calc(100vh - 160px);
+        width: 36%;
+        margin-left: 7%;
+        margin-right: 7%;
+        position: sticky;
+        top: 110px;
+      }
+
+      article #article-wrapper #th img {
+        object-fit: contain;
+      }
+
+      article #article-wrapper>#content-wrapper {
+        width: 50%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+      }
+
+      article #related li {
+        height: 20vw;
+        width: 20vw;
+        overflow: hidden;
+        margin-left: 1vw;
+        margin-right: 1vw;
+      }
+    }
+
+    article #content {
+      padding-bottom: 30px;
+    }
+
+    article #content b,
+    article #content strong {
+      color: #003399;
+    }
+
+    article #content h2,
+    article #content h3,
+    article #content h4,
+    article #content h5,
+    article #content h6,
+    article #content h7 {
+      color: #FF6600;
+      font-size: 100%;
+    }
+
+    article #content blockquote {
+      border-left: 5px solid #003399;
+      padding-left: 5px;
+    }
+
+
+    article #content .info {
+      font-style: italic;
+      margin: 0;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    article #content amp-img {
+      border-top: 1px solid #FF6600;
+      border-bottom: 1px solid #FF6600;
+    }
+
+    article #content amp-img img {
+      object-fit: contain;
+    }
+
+    .backgroundImage {
+      background-origin: padding-box;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  </head>
   <body>
-  	<!--<input type="checkbox" id="site-cover-checkbox" style="display: none">
-  	<div class="site-wrapper">
-  		{% include header.html %}
-	    <main class="site-content">-->
-	      {{ content }}
-	   <!-- </main>
-	    {% include footer.html %}
-	</div>
-  	<div class="site-cover">
-  		{% include header.html %}
-	    {% include nav.html %}
-	    {% include footer.html %}
-  	</div> -->
-  </body>
+    <input type="checkbox" id="menu-checkbox"></input>
+    <div id="menu">
+      <ul id="nav">
+        <li>
+          <a href="">Home --- ahahaha</a>
+        </li>
+        <li>
+          <a href="">Rappresentanza</a>
+        </li>
+        <li>
+          <a href="">Associazione</a>
+        </li>
+        <li>
+          <a href="">Eventi</a>
+        </li>
+        <li>
+          <a href="">Notizie</a>
+        </li>
+        <li>
+          <a href="">Contatti</a>
+        </li>
+      </ul>
+      <ul id="projects">
+        <li>
+          <a href="">FAQ</a>
+        </li>
+        <li>
+          <a href="">LM</a>
+        </li>
+        <li>
+          <a href="">Orange</a>
+        </li>
+      </ul>
+    </div>
+    <div id="header">
+      <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
+      <a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
+    </div>
+    {% if page.translations.it  %}
+    <a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
+    {% endif %}
+    {% if page.translations.en %}
+    <a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
+    {% endif %}
+
+  <article>
+    {{ content }}
+  </article>
+  <div id="footer">
+    © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
+      href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
+      href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
+  </div>
+  <amp-consent id="cookie" layout="nodisplay">
+    <script type="application/json">
+      {
+        "consentInstanceId": "consent896537",
+        "consentRequired": true,
+        "promptUI": "cookie-content"
+      }
+    </script>
+    <div id="cookie-content" class="popupOverlay">
+      Informativa<br /><br />
+      Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed
+      utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad
+      alcuni cookie, consulta la <a href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy"
+        target="_blank">cookie policy</a>.<br />
+      <button on="tap:cookie.accept" role="button">Accept</button>
+    </div>
+  </amp-consent>
+</body>
+
 </html>
