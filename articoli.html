@@ -16,7 +16,7 @@ layout: default
     #articleList {
       position: relative;
     }
-    
+
     #articleList #wrapper {
       display: flex;
       flex-direction: column;
@@ -34,7 +34,7 @@ layout: default
       line-height: 50px;
       height: 50px;
       overflow: hidden;
-      z-index: 1;
+      z-index: 0;
     }
     
     #articleList #list-checkbox:checked ~ #list {
@@ -50,7 +50,7 @@ layout: default
       justify-content: stretch;
       align-items: flex-start;
       background-color: gray;
-      z-index: 0;
+      z-index: -1;
     }
 
     #articleList .th {
