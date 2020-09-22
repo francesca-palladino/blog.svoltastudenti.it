@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 		* {
 			box-sizing: border-box;
 		}
 
-		html, body {
+		html,
+		body {
 			padding: 0;
 			margin: 0;
+		}
+
+		#bar ul {
+			padding-left: 0px;
+		}
+
+		#bar ul li {
+			list-style-type: none;
 		}
 
 		#content {
@@ -20,9 +32,9 @@
 			overflow-y: auto;
 			top: 0;
 			width: 100%;
-		    scroll-snap-type: mandatory;
-    		scroll-snap-points-y: repeat(100vh);
-    		scroll-snap-type: y mandatory;
+			scroll-snap-type: mandatory;
+			scroll-snap-points-y: repeat(100vh);
+			scroll-snap-type: y mandatory;
 		}
 
 		#content section {
@@ -40,14 +52,34 @@
 		}
 
 		#content section .title {
-			font-size: xx-large;
+			z-index: 3;
+			color: white;
+			font-size: 5vw;
+			font-family: 'Montserrat', sans-serif;
+			padding-top: 20vh;
 		}
 
 		#content section .btn {
+			z-index: 3;
+			color: white;
 			font-size: large;
 			padding: 20px;
 			background-color: #FF6600;
 		}
+
+		#content section .overlay {
+			left: 0;
+			top: 0;
+			height: 100vh;
+			width: 100vw;
+			position: absolute;
+			padding: 0%;
+			margin: 0;
+			z-index: 2;
+			background-color: black;
+			opacity: 0.5;
+		}
+
 		#bar {
 			position: fixed;
 			right: 0;
@@ -63,20 +95,29 @@
 		#bar ul {
 			background-color: white;
 		}
+
 		.backgroundImage {
-			background-origin:padding-box;
-			background-position:center;
-			background-repeat:no-repeat;
-			background-size:cover;
-			background-color:gray;
+			background-origin: padding-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: black;
+		}
+
+		@media only screen and (max-width: 800px) {
+			#content section .title {
+				font-size: 7vw;
+			}
 		}
 	</style>
 </head>
+
 <body>
 	<div id="content">
 		<a name="a"></a>
 		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
-			<div class="title">Titolo di Prova</div>
+			<div class="overlay"></div>
+			<div class="title">SVOLTASTUDENTI</div>
 			<div class="btn">Iscriviti</div>
 		</section>
 		<a name="b"></a>
@@ -123,4 +164,5 @@
 		</ul>
 	</div>
 </body>
+
 </html>
