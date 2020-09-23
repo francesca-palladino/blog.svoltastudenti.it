@@ -111,6 +111,14 @@
 			background-color: black;
 		}
 
+		.bullet {
+			background-color: white;
+		}
+
+		.bullet.animActive {
+			background-color: red !important;
+		}
+
 		@media only screen and (max-width: 800px) {
 			#content section .title {
 				font-size: 7vw;
@@ -133,7 +141,7 @@
 			}
 		}
 
-		/* @keyframes bullet1 {
+		@keyframes bullet1 {
 			from {
 				transform: scale(1);
 			}
@@ -141,87 +149,126 @@
 			to {
 				transform: scale(1.5);
 			}
-		} */
+		}
 	</style>
 </head>
 
 <body>
 	<div id="content">
 		<a name="homepage"></a>
-		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
-			<div class="overlay"></div>
-			<div class="anim title" data-delay="0.5s">SVOLTASTUDENTI</div>
-			<div class="anim btn" data-delay="1s">Iscriviti</div>
+		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)" data-animId="slide1">
+			<div class="overlay">1</div>
+			<div class="anim title" data-animTarget="slide1" data-animDelay="0.5s">SVOLTASTUDENTI</div>
+			<div class="anim btn" data-animTarget="slide1" data-animDelay="1s">Iscriviti</div>
 		</section>
 		<a name="b"></a>
-		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
-			<div class="overlay"></div>
-			<div class="anim title" data-delay="0.5s">SVOLTASTUDENTI</div>
-			<div class="anim btn" data-delay="1s">Iscriviti</div>
+		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)" data-animId="slide2">
+			<div class="overlay">2</div>
+			<div class="anim title" data-animTarget="slide2" data-animDelay="0.5s">SVOLTASTUDENTI</div>
+			<div class="anim btn" data-animTarget="slide2" data-animDelay="1s">Iscriviti</div>
 		</section>
 		<a name="c"></a>
-		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
-			<div class="overlay"></div>
-			<div class="anim title" data-delay="0.5s">SVOLTASTUDENTI</div>
-			<div class="anim btn" data-delay="1s">Iscriviti</div>
+		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)" data-animId="slide3">
+			<div class="overlay">3</div>
+			<div class="anim title" data-animTarget="slide3" data-animDelay="0.5s">SVOLTASTUDENTI</div>
+			<div class="anim btn" data-animTarget="slide3" data-animDelay="1s">Iscriviti</div>
 		</section>
 		<a name="d"></a>
-		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
-			<div class="overlay"></div>
-			<div class="anim title" data-delay="0.5s">SVOLTASTUDENTI</div>
-			<div class="anim btn" data-delay="1s">Iscriviti</div>
+		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)" data-animId="slide4">
+			<div class="overlay">4</div>
+			<div class="anim title" data-animTarget="slide4" data-animDelay="0.5s">SVOLTASTUDENTI</div>
+			<div class="anim btn" data-animTarget="slide4" data-animDelay="1s">Iscriviti</div>
 		</section>
 		<a name="e"></a>
-		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
-			<div class="overlay"></div>
-			<div class="anim title" data-delay="0.5s">SVOLTASTUDENTI</div>
-			<div class="anim btn" data-delay="1s">Iscriviti</div>
+		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)" data-animId="slide5">
+			<div class="overlay">5</div>
+			<div class="anim title" data-animTarget="slide5" data-animDelay="0.5s">SVOLTASTUDENTI</div>
+			<div class="anim btn" data-animTarget="slide5" data-animDelay="1s">Iscriviti</div>
 		</section>
 		<a name="f"></a>
-		<section class="backgroundImage" style="background-image: url(assets/img/home1.jpeg)">
+		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)" data-animId="slide6">
 			<div class="overlay"></div>
-			<div class="anim title" data-delay="0.5s">SVOLTASTUDENTI</div>
-			<div class="anim btn" data-delay="1s">Iscriviti</div>
+			<div class="anim title" data-animTarget="slide6" data-animDelay="0.5s">SVOLTASTUDENTI</div>
+			<div class="anim btn" data-animTarget="slide6" data-animDelay="1s">Iscriviti</div>
 		</section>
 	</div>
 	<div id="bar">
 		<ul>
 			<li>
-				<a href="#homepage" class="bullet"></a>
+				<a href="#homepage" class="bullet" data-animTarget="slide1"></a>
 			</li>
 			<li>
-				<a href="#b" class="bullet"></a>
+				<a href="#b" class="bullet" data-animTarget="slide2"></a>
 			</li>
 			<li>
-				<a href="#c" class="bullet"></a>
+				<a href="#c" class="bullet" data-animTarget="slide3"></a>
 			</li>
 			<li>
-				<a href="#d" class="bullet"></a>
+				<a href="#d" class="bullet" data-animTarget="slide4"></a>
 			</li>
 			<li>
-				<a href="#e" class="bullet"></a>
+				<a href="#e" class="bullet" data-animTarget="slide5"></a>
 			</li>
 			<li>
-				<a href="#f" class="bullet"></a>
+				<a href="#f" class="bullet" data-animTarget="slide6"></a>
 			</li>
 		</ul>
 	</div>
 
 	<script>
-		const images = document.querySelectorAll('.anim');
+		// const images = document.querySelectorAll('.anim');
 
-		observer = new IntersectionObserver((entries) => {
-			entries.forEach(entry => {
-				if (entry.intersectionRatio > 0) {
-					entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
-				} else {
-					entry.target.style.animation = 'none';
+		// observer = new IntersectionObserver((entries) => {
+		// 	entries.forEach(entry => {
+		// 		if (entry.intersectionRatio > 0) {
+		// 			entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
+		// 		} else {
+		// 			entry.target.style.animation = 'none';
+		// 		}
+		// 	})
+		// })
+
+		// images.forEach(image => {
+		// 	observer.observe(image)
+		// })
+
+
+		let options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: (_ => {
+				let toReturn = [];
+				let numSteps = 100;
+
+				for (let i=1.0; i<=numSteps; i++) {
+					toReturn.push(i/numSteps);
 				}
-			})
-		})
 
-		images.forEach(image => {
-			observer.observe(image)
+				toReturn.push(0);
+				return toReturn;
+			})()
+		};
+
+		observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.target.dataset.animid){
+					let targets = document.querySelectorAll(`*[data-animtarget="${entry.target.dataset.animid}"]`);
+					targets.forEach(item => {
+						if (entry.intersectionRatio > 0.1) {
+							item.classList.add('animActive');
+						}
+						else if (entry.intersectionRatio < 0.9) {
+							item.classList.remove('animActive');
+						}
+					})
+					
+				}
+			});
+		},  options);
+
+		document.querySelectorAll('.animTrigger').forEach(item => {
+			// console.log(item);
+			observer.observe(item);
 		})
 	</script>
 </body>
