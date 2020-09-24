@@ -155,30 +155,29 @@
       z-index: 2;
       top: 0;
       height: 60px;
-      background-color: white;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0);
     }
 
-    #header > * {
+    #header>* {
       flex-grow: 0;
       flex-shrink: 0;
       height: 60px;
       background-size: contain;
     }
 
-    #header > #menu-icon {
+    #header>#menu-icon {
       width: 60px;
       background-image: url('/assets/img/menu.png');
       position: absolute;
-        left: 5%;
+      left: 5%;
     }
 
-    #header > #lang-icon {
+    #header>#lang-icon {
       width: 60px;
       background-image: url('/assets/img/lang.png');
     }
 
-    #header > #logo {
+    #header>#logo {
       max-width: 50vw;
       width: 200px;
       background-image: url('/assets/img/svolta-big-pos.png');
@@ -186,23 +185,73 @@
 
     #menu {
       position: fixed;
-      top: -100vh;
+      top: 0;
+      left: 0;
       height: 100%;
       width: 100%;
-      background-color: white;
-      color: #FF6600;
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
       overflow-x: hidden;
       overflow-y: auto;
-      transition: top 1s;
-      font-size: xx-large;
-      font-weight: bold;
       z-index: 1;
+      opacity: 0;
+      animation-fill-mode: both;
+    }
+
+    #menu-checkbox {
+      display: none;
+    }
+
+    #menu-checkbox:checked~#menu {
+      animation-name: menu1;
+      animation-duration: 1s;
+    }
+
+    #menu-checkbox:not(:checked)~#menu {
+      animation-name: menu0;
+      animation-duration: 1s;
+    }
+
+    #menu-checkbox:checked~#header {
+      box-shadow: none;
+    }
+
+    @keyframes menu0 {
+      0% {
+        opacity: 1;
+      }
+
+      99% {
+        display: block;
+        opacity: 0;
+      }
+
+      100% {
+        display: none;
+      }
+    }
+
+    @keyframes menu1 {
+      0% {
+        display: none;
+      }
+
+      1% {
+        display: block;
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
     #menu ul,
     #menu li {
       padding: 0;
-      margin: 0;
+      margin-top: 20px;
+      margin-left: 10px;
       list-style-type: none;
     }
 
@@ -215,12 +264,13 @@
       padding-left: 10%;
     }
 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
     #menu #nav a {
-      font-size: x-large;
-      font-size: xx-large;
-      font-weight: bold;
-      color: #FF6600;
+      font-size: 30px;
+      color: white;
       text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
     }
 
     #menu #nav a:hover {
@@ -238,19 +288,6 @@
       margin: 5px;
       color: white;
       text-decoration: none;
-    }
-
-    #menu-checkbox {
-      display: none;
-    }
-
-    #menu-checkbox:checked~#menu {
-      top: 0vh;
-      transition: top 1s;
-    }
-
-    #menu-checkbox:checked~#header {
-      box-shadow: none;
     }
 
     #lang-icon-it,
@@ -327,7 +364,7 @@
     article #related h1 {
       padding: 0;
       margin: 0;
-          margin-top: 50px;
+      margin-top: 50px;
       font-size: 4vw;
       text-align: center;
       color: #FF6600;
@@ -362,7 +399,7 @@
     }
 
     @media all and (orientation: landscape) {
-      #header > #menu-icon {
+      #header>#menu-icon {
         position: absolute;
         left: 11.2%;
       }
@@ -447,55 +484,66 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    #beshtia {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+      background-image: url("../assets/img/home1.jpeg");
+    }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-  </head>
-  <body>
-    <input type="checkbox" id="menu-checkbox"></input>
-    <div id="menu">
-      <ul id="nav">
-        <li>
-          <a href="{{site.url}}/{{page.category}}/">Home</a>
-        </li>
-        <li>
-          <a href="{{site.url}}/{{page.category}}/">Rappresentanza</a>
-        </li>
-        <li>
-          <a href="{{site.url}}/{{page.category}}/">Associazione</a>
-        </li>
-        <li>
-          <a href="{{site.url}}/{{page.category}}/store">Eventi</a>
-        </li>
-        <li>
-          <a href="{{site.url}}/{{page.category}}/news">Notizie</a>
-        </li>
-        <li>
-          <a href="">Contatti</a>
-        </li>
-      </ul>
-      <ul id="projects">
-        <li>
-          <a href="">FAQ</a>
-        </li>
-        <li>
-          <a href="">LM</a>
-        </li>
-        <li>
-          <a href="">Orange</a>
-        </li>
-      </ul>
-    </div>
-    <div id="header">
-      <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
-      <a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
-    </div>
-    {% if page.translations.it  %}
-    <a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
-    {% endif %}
-    {% if page.translations.en %}
-    <a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
-    {% endif %}
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <input type="checkbox" id="menu-checkbox"></input>
+  <div id="menu">
+    <ul id="nav">
+      <li>
+        <a href="{{site.url}}/{{page.category}}/">Home</a>
+      </li>
+      <li>
+        <a href="{{site.url}}/{{page.category}}/">Rappresentanza</a>
+      </li>
+      <li>
+        <a href="{{site.url}}/{{page.category}}/">Associazione</a>
+      </li>
+      <li>
+        <a href="{{site.url}}/{{page.category}}/store">Eventi</a>
+      </li>
+      <li>
+        <a href="{{site.url}}/{{page.category}}/news">Notizie</a>
+      </li>
+      <li>
+        <a href="">Contatti</a>
+      </li>
+    </ul>
+    <ul id="projects">
+      <li>
+        <a href="">FAQ</a>
+      </li>
+      <li>
+        <a href="">LM</a>
+      </li>
+      <li>
+        <a href="">Orange</a>
+      </li>
+    </ul>
+  </div>
+  <div id="header">
+    <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
+    <a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
+  </div>
+  {% if page.translations.it  %}
+  <a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
+  {% endif %}
+  {% if page.translations.en %}
+  <a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
+  {% endif %}
 
   <article>
     {{ content }}
@@ -522,5 +570,11 @@
       <button on="tap:cookie.accept" role="button">Accept</button>
     </div>
   </amp-consent>
+
+
+  <div id="beshtia">
+
+  </div>
 </body>
+
 </html>
