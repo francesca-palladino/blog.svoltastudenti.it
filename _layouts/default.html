@@ -197,6 +197,8 @@
       z-index: 1;
       opacity: 0;
       animation-fill-mode: both;
+      display: flex;
+      flex-direction: column;
     }
 
     #menu-checkbox {
@@ -250,21 +252,32 @@
     #menu ul,
     #menu li {
       padding: 0;
-      margin-top: 20px;
-      margin-left: 10px;
+      margin-top: 0;
       list-style-type: none;
     }
 
     #menu #nav {
       padding-top: 100px;
+      left: 0;
+    }
+
+    #menu #projects {
+      left: 50%;
     }
 
     #menu #nav,
     #menu #projects {
-      padding-left: 10%;
+      margin: 0;
+      top: 0;
+      height: 50%;
+      width: 100%;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    #menu #nav li {
+      padding-left: 10vw;
+    }
 
     #menu #nav a {
       font-size: 30px;
@@ -278,14 +291,15 @@
     }
 
     #menu #projects li {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     #menu #projects a {
       font-size: medium;
       background-color: #FF6600;
-      padding: 5px;
-      margin: 5px;
+      margin: 20px;
       color: white;
       text-decoration: none;
     }
@@ -404,6 +418,16 @@
         left: 11.2%;
       }
 
+      #menu {
+        flex-direction: row;
+      }
+
+      #menu #nav,
+      #menu #projects {
+        height: 100%;
+        width: 50%;
+      }
+
       article #article-wrapper {
         display: flex;
         flex-direction: row;
@@ -485,7 +509,7 @@
       background-repeat: no-repeat;
     }
 
-    #beshtia {
+    /* #beshtia {
       position: fixed;
       height: 100vh;
       width: 100vw;
@@ -494,7 +518,7 @@
       margin: 0;
       padding: 0;
       background-image: url("../assets/img/home1.jpeg");
-    }
+    } */
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
@@ -572,9 +596,9 @@
   </amp-consent>
 
 
-  <div id="beshtia">
+  <!-- <div id="beshtia">
 
-  </div>
+  </div> -->
 </body>
 
 </html>
