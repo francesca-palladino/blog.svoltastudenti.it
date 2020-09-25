@@ -9,7 +9,7 @@ noBrand: "true"
 
 	#vscroll-content section {
 		padding: 1rem;
-		height: calc(100vh - 1rem);
+		height: calc(100vh - 2rem);
 		scroll-snap-align: start;
 		text-align: center;
 		position: relative;
@@ -51,6 +51,7 @@ noBrand: "true"
 	}
 
 	#vscroll-content section:before {
+		content: "";
 		background-origin: padding-box;
     	background-position: center;
     	background-repeat: no-repeat;
@@ -121,28 +122,24 @@ noBrand: "true"
 		}
 	}
 
-	.slide1 {
+	.slide1, .slide2., .slide3 {
 		background-image: url(assets/img/home1.jpeg);
 	}
 </style>
 <div id="vscroll-wrapper">
 	<div id="vscroll-content">
 		<a name="homepage"></a>
-		<section class="backgroundImage animTrigger slide1" data-animId="slide1">
+		<section class="animTrigger slide1" data-animId="slide1">
 			<div class="title" data-animTarget="slide1">SVOLTASTUDENTI</div>
 			<div class="btn" data-animTarget="slide1">Iscriviti</div>
 		</section>
 		<a name="b"></a>
-		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)"
-			data-animId="slide2">
-			<div class="overlay"></div>
+		<section class="animTrigger slide2" data-animId="slide2">
 			<div class="title" data-animTarget="slide2">SVOLTASTUDENTI</div>
 			<div class="btn" data-animTarget="slide2">Iscriviti</div>
 		</section>
 		<a name="c"></a>
-		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)"
-			data-animId="slide3">
-			<div class="overlay"></div>
+		<section class="animTrigger slide3"	data-animId="slide3">
 			<div class="title" data-animTarget="slide3">SVOLTASTUDENTI</div>
 			<div class="btn" data-animTarget="slide3">Iscriviti</div>
 		</section>
