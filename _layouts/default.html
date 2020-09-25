@@ -574,7 +574,7 @@
   </div>
   <div id="header">
     <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
-    <a href="{{site.url}}/it/" id="logo" class="backgroundImage"></a>
+    {% unless page.noBrand == "true" %}<a href="{{site.url}}/it/" id="logo" class="backgroundImage">{% endunless %}</a>
   </div>
   {% if page.translations.it  %}
   <a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
@@ -586,11 +586,13 @@
   <article>
     {{ content }}
   </article>
-  <div id="footer">
-    © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
-      href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
-      href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
-  </div>
+  {% unless page.noBrand == "true" %}
+    <div id="footer">
+      © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
+        href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
+        href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
+    </div>
+  {% endunless %}
   <amp-consent id="cookie" layout="nodisplay">
     <script type="application/json">
       {

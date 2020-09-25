@@ -16,6 +16,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "false"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
       - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: false}
       - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
@@ -35,6 +36,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "false"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
       - {label: "Categoria", name: "tags", widget: "select", options: ["Architettura Urbanistica Ingegneria delle Costruzioni", "Associazione", "Consiglio degli Studenti", "Consiglio di Amministrazione", "Consiglio Nazionale degli Studenti Universitari", "Design", "Ingegneria Civile, Ambientale e Territoriale", "Ingegneria Industriale e dell’Informazione", "Rappresentanza", "Senato Accademico"], multiple: false}
       - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
@@ -54,6 +56,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "users"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "false"}
       - {label: "Nome e Cognome", name: "title", widget: "string"}
       - {label: "Bio", name: "body", widget: "markdown" }
       - {label: "Utente in Inglese", name: "translations.en", widget: "relation", required: false, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
@@ -76,6 +79,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "users"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "false"}
       - {label: "Nome e Cognome", name: "title", widget: "string"}
       - {label: "Bio", name: "body", widget: "markdown" }
       - {label: "Utente in Italiano", name: "translations.it", widget: "relation", required: false, collection: "users-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
@@ -98,6 +102,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "events"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "false"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Categoria", name: "tags", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
@@ -136,6 +141,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "events"}
       - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
       - {label: "Amp", name: "isAmp", widget: "hidden", default: "true"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "false"}
       - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Categoria", name: "tags", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
