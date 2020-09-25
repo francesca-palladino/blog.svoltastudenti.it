@@ -204,7 +204,6 @@
       height: 100%;
       width: 100%;
       background: rgba(0, 0, 0, 0.5);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
       backdrop-filter: saturate(180%) blur(20px);
       overflow-x: hidden;
       overflow-y: auto;
@@ -522,20 +521,9 @@
       background-position: center;
       background-repeat: no-repeat;
     }
-
-    /* #beshtia {
-      position: fixed;
-      height: 100vh;
-      width: 100vw;
-      left: 0;
-      top: 0;
-      margin: 0;
-      padding: 0;
-      background-image: url("../assets/img/home1.jpeg");
-    } */
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -584,7 +572,7 @@
   <a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
   {% endif %}
 
-  <article id="content">
+  <article>
     {{ content }}
   </article>
   {% unless page.noBrand == "true" %}
@@ -611,11 +599,6 @@
       <button on="tap:cookie.accept" role="button">Accept</button>
     </div>
   </amp-consent>
-
-
-  <!-- <div id="beshtia">
-
-  </div> -->
 </body>
 
 </html>
