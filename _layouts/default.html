@@ -153,6 +153,7 @@
       height: 100%;
       width: 100%;
       position: relative;
+		  scroll-behavior: smooth;
     }
     
 		* {
@@ -583,7 +584,7 @@
   <a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
   {% endif %}
 
-  <article>
+  <article id="content">
     {{ content }}
   </article>
   {% unless page.noBrand == "true" %}
