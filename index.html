@@ -50,7 +50,19 @@ noBrand: "true"
 		transform: translateY(-100px);
 	}
 
-	#vscroll-content section .overlay {
+	#vscroll-content section:before {
+		background-origin: padding-box;
+    	background-position: center;
+    	background-repeat: no-repeat;
+		background-size: cover;
+		background-color: black;
+		filter: brightness(50%);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	/* #vscroll-content section .overlay {
 		left: 0;
 		top: 0;
 		height: 100vh;
@@ -61,12 +73,7 @@ noBrand: "true"
 		z-index: 2;
 		background-color: black;
 		opacity: 0.5;
-	}
-
-	#vscroll-content .backgroundImage {
-		background-size: cover;
-		background-color: black;
-	}
+	} */
 
 	#vscroll-bar {
 		position: fixed;
@@ -113,13 +120,15 @@ noBrand: "true"
 			font-size: 7vw;
 		}
 	}
+
+	.slide1 {
+		background-image: url(assets/img/home1.jpeg);
+	}
 </style>
 <div id="vscroll-wrapper">
 	<div id="vscroll-content">
 		<a name="homepage"></a>
-		<section class="backgroundImage animTrigger" style="background-image: url(assets/img/home1.jpeg)"
-			data-animId="slide1">
-			<div class="overlay"></div>
+		<section class="backgroundImage animTrigger slide1" data-animId="slide1">
 			<div class="title" data-animTarget="slide1">SVOLTASTUDENTI</div>
 			<div class="btn" data-animTarget="slide1">Iscriviti</div>
 		</section>
