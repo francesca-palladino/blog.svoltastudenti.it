@@ -1,45 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TuxTu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            html, body {
-                top: 0;
-                left: 0;
-                margin: 0;
-            }
-            section {
-                top: 0;
-                left: 0;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                height: 100vh;
-                width: 100vw;
-                background: orange;
-            }
 
-            section h1 {
-                top: 10vh;
-                left: 50%;
-                position: absolute;
-                text-align: center;
-                color: white;
-                transform: translate(-50%, -50%);
-            }
-        </style>
-    </head>
-    <body>
-        <section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TuxTu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            top: 0;
+            left: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        header,
+        main,
+        section,
+        nav {
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            height: 70px;
+            width: 100%;
+            background: white;
+            z-index: 1;
+        }
+
+        nav {
+            background: green;
+            position: fixed;
+            height: 60vh;
+            width: 250px;
+            margin-left: 5vw;
+            margin-top: 20vh;
+            z-index: 2;
+            border-radius: 20px;
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+
+        section {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            background: orange;
+            transition: background 1s;
+            scroll-snap-align: center;
+        }
+
+        section.active {
+            background: black;
+        }
+
+        section h1 {
+            top: 10vh;
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            color: white;
+            transform: translate(-50%, -50%);
+        }
+
+        @media screen {}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>ciao</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#lista-aperta" class="anim">Lista Aperta</a></li>
+            <li><a href="#terna-sinistrorsa" class="anim">Terna Sinistrorsa</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+            <li><a href="#svoltastudenti" class="anim">Svoltastudenti</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="svoltastudenti" class="anim">
+            <div class="overlay"></div>
             <h1>SVOLTASTUDENTI</h1>
-
         </section>
-        <section>
+
+        <section id="lista-aperta" class="anim">
+            <div class="overlay"></div>
             <h1>LISTA APERTA</h1>
         </section>
-        <script src="" async defer></script>
-    </body>
+
+        <section id="terna-sinistrorsa" class="anim">
+            <div class="overlay"></div>
+            <h1>TERNA SINISTRORSA</h1>
+        </section>
+    </main>
+
+    <script>
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        }
+
+        let callback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        }
+
+        let observer = new IntersectionObserver(callback, options);
+        document.querySelectorAll('.anim')
+            .forEach(box => {
+                observer.observe(box)
+            });
+    </script>
+</body>
+
 </html>
