@@ -10,8 +10,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-        h1, h2, nav ul li a {
+        h1,
+        h2,
+        nav ul li a {
             font-family: 'Montserrat', sans-serif;
+        }
+
+        section h1.animActive {
+            opacity: 1;
         }
 
         html,
@@ -37,8 +43,15 @@
             position: fixed;
             height: 70px;
             width: 100%;
-            background: white;
-            z-index: 1;
+            z-index: 3;
+        }
+
+        header img {
+            top: 20px;
+            left: 50%;
+            position: fixed;
+            transform: translate(-50%, 0);
+            height: 60px;
         }
 
         nav {
@@ -92,23 +105,43 @@
             position: relative;
             height: 100vh;
             width: 100vw;
-            background: orange;
             scroll-snap-align: center;
+            background-color: black;
+        }
+
+        section img {
+            height: 100%;
+            width: 100%;
+            background-origin: padding-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(50%);
         }
 
         section h1 {
             top: 10vh;
-            left: 50%;
+            left: 30%;
             position: absolute;
             text-align: center;
+            opacity: 0;
             color: white;
-            transform: translate(-50%, -50%);
+            /* transform: translate(-50%, -50%); */
             font-weight: 700;
+            font-size: 3vw;
+            z-index: 2;
+            transition: opacity 1s;
         }
 
         @media (orientation: portrait) {
             nav {
                 display: none;
+            }
+
+            section h1 {
+                top: 15vh;
+                left: 10%;
+                font-size: 5vw;
             }
         }
     </style>
@@ -116,7 +149,7 @@
 
 <body>
     <header>
-        <h2>ciao</h2>
+        <img src="/assets/img/TuxTu-logo.png" alt="TuxTu-logo">
     </header>
 
     <nav>
@@ -144,17 +177,15 @@
 
     <main>
         <section id="svoltastudenti" class="animTrigger n1" data-animId='n1'>
-            <div class="overlay"></div>
             <h1 data-animtarget='n1'>SVOLTASTUDENTI</h1>
+            <img src="/assets/img/home1.jpeg" alt="">
         </section>
 
         <section id="lista-aperta" class="animTrigger n2" data-animId='n2'>
-            <div class="overlay"></div>
             <h1 data-animtarget='n2'>LISTA APERTA</h1>
         </section>
 
         <section id="terna-sinistrorsa" class="animTrigger n3" data-animId='n3'>
-            <div class="overlay"></div>
             <h1 data-animtarget='n3'>TERNA SINISTRORSA</h1>
         </section>
     </main>
