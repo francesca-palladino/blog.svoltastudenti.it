@@ -6,12 +6,12 @@
   <link rel="icon" href="/assets/img/favicon.png" type="image/png">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% case page.categpry %}
-    {% when "it" %}
-      <meta http-equiv="content-language" content="it-it">
-    {% when "en" %}
-      <meta http-equiv="content-language" content="en-us">
-    {% else %}
-      <!-- Hopefully Google will detect our lang automagically ;) -->
+  {% when "it" %}
+  <meta http-equiv="content-language" content="it-it">
+  {% when "en" %}
+  <meta http-equiv="content-language" content="en-us">
+  {% else %}
+  <!-- Hopefully Google will detect our lang automagically ;) -->
   {% endcase %}
   {% if page.translations.it  %}
   <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
@@ -74,75 +74,75 @@
     {{ page.title }} | Svoltastudenti
   </title>
   {% if page.isAmp == "true" %}
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
     <style amp-boilerplate>
       body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
       }
-
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-    </style><noscript>
-      <style amp-boilerplate>
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none
-        }
-      </style>
-    </noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
+    </style>
+  </noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
   {% endif %}
   <style amp-custom>
     html,
@@ -153,14 +153,14 @@
       height: 100%;
       width: 100%;
       position: relative;
-		  scroll-behavior: smooth;
+      scroll-behavior: smooth;
       overflow-x: hidden;
-		  scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
     }
-    
-		* {
-			box-sizing: border-box;
-		}
+
+    * {
+      box-sizing: border-box;
+    }
 
     #header {
       position: sticky;
@@ -300,12 +300,28 @@
     #menu #nav a {
       font-size: 30px;
       color: white;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
     }
 
     #menu #nav a:hover {
       text-decoration: initial;
+    }
+
+    #menu-checkbox:checked~#menu #nav a {
+      animation: text 2s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes text {
+      from {
+        opacity: 0;
+        letter-spacing: 8px;
+        margin-top: -40px;
+      }
+
+      to{
+        opacity: 1;
+        margin-top: 0px;
+      }
     }
 
     #menu #projects li {
@@ -581,11 +597,11 @@
     {{ content }}
   </article>
   {% unless page.noBrand == "true" %}
-    <div id="footer">
-      © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
-        href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
-        href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
-    </div>
+  <div id="footer">
+    © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
+      href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
+      href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
+  </div>
   {% endunless %}
   <amp-consent id="cookie" layout="nodisplay">
     <script type="application/json">
