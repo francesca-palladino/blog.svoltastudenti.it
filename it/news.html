@@ -14,6 +14,10 @@ category: it
       margin: 0;
     }
 
+    .th {
+      background: green;
+    }
+
     #articleList {
       position: relative;
     }
@@ -59,7 +63,6 @@ category: it
       width: 240px;
       height: 150px;
       margin: 5px;
-      background-color: #FF6600;
       flex-grow: 1;
       transform: scale(1);
       display: initial;
@@ -146,33 +149,11 @@ category: it
         </ul>
       </div>
       <div id="data">
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
-        <div class="th" data-cat="a"></div>
-        <div class="th" data-cat="b"></div>
-        <div class="th" data-cat="c"></div>
+        {% for post in site.categories.it %}
+          {% if post.layout == "blog" %}
+            <div class="th" data-cat="{{ post.tags[0] }}">{{ post.title }}</div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
