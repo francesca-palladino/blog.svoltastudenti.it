@@ -251,9 +251,12 @@
     #menu #nav li a {
       font-size: 30px;
       color: white;
+      opacity: 0;
       transition: opacity 0.5s;
       letter-spacing: 8px;
-      transition: letter-spacing 1s linear 2s
+      transition: letter-spacing 2s linear 2s;
+      margin-top: 50px;
+      transition: margin-top 1s linear 1s;
     }
 
     #menu #nav li a:hover {
@@ -266,7 +269,9 @@
     }
 
     #menu-checkbox:checked~#menu li a {
+      opacity: 1;
       letter-spacing: 0px;
+      margin-top: 0px;
       color: green;
     }
 
