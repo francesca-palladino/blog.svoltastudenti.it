@@ -145,11 +145,12 @@
   <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-latest.js"></script>
   {% endif %}
   <style amp-custom>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
     html,
     body {
       padding: 0;
       margin: 0;
-      font-family: 'Lato', sans-serif;
       height: 100%;
       width: 100%;
       position: relative;
@@ -210,61 +211,15 @@
       backdrop-filter: saturate(180%) blur(20px);
       overflow-x: hidden;
       overflow-y: auto;
-      z-index: 1;
+      z-index: 5;
       opacity: 0;
-      animation-fill-mode: both;
       display: flex;
       flex-direction: column;
+      transition: all 1s;
     }
 
     #menu-checkbox {
       display: none;
-    }
-
-    #menu-checkbox:checked~#menu {
-      animation-name: menu1;
-      animation-duration: 1s;
-    }
-
-    #menu-checkbox:not(:checked)~#menu {
-      animation-name: menu0;
-      animation-duration: 1s;
-    }
-
-    #menu-checkbox:checked~#header {
-      box-shadow: none;
-    }
-
-    @keyframes menu0 {
-      0% {
-        opacity: 1;
-      }
-
-      99% {
-        display: block;
-        opacity: 0;
-      }
-
-      100% {
-        display: none;
-        pointer-events: none;
-      }
-    }
-
-    @keyframes menu1 {
-      0% {
-        display: none;
-      }
-
-      1% {
-        display: block;
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-        pointer-events: initial;
-      }
     }
 
     #menu ul,
@@ -291,37 +246,22 @@
       width: 100%;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
     #menu #nav li {
       padding-left: 10vw;
     }
 
-    #menu #nav a {
+    #menu #nav li a {
       font-size: 30px;
       color: white;
+      transition: all 2s;
     }
 
-    #menu #nav a:hover {
-      text-decoration: initial;
+    #menu #nav li a:hover {
+      color: red;
     }
 
-    #menu-checkbox:checked~#menu #nav a {
-      animation: text 2s;
-      animation-fill-mode: both;
-    }
-
-    @keyframes text {
-      from {
-        opacity: 0;
-        letter-spacing: 8px;
-        margin-top: -40px;
-      }
-
-      to{
-        opacity: 1;
-        margin-top: 0px;
-      }
+    #menu-checkbox:checked~#menu {
+      opacity: 1;
     }
 
     #menu #projects li {
@@ -543,12 +483,13 @@
       background-repeat: no-repeat;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> -->
+
 </head>
 
 <body>
+
   <input type="checkbox" id="menu-checkbox"></input>
+
   <div id="menu">
     <ul id="nav">
       <li>
@@ -570,6 +511,7 @@
         <a href="">Contatti</a>
       </li>
     </ul>
+
     <ul id="projects">
       <li>
         <a href="">FAQ</a>
@@ -582,6 +524,7 @@
       </li>
     </ul>
   </div>
+
   <div id="header">
     <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
     {% unless page.noBrand == "true" %}<a href="{{site.url}}/it/" id="logo" class="backgroundImage">{% endunless %}</a>
