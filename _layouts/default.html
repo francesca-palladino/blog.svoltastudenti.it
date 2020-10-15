@@ -183,6 +183,7 @@
     }
 
     #header>#menu-icon {
+      z-index: 6;
       width: 60px;
       background-image: url('/assets/img/menu.png');
       position: absolute;
@@ -204,18 +205,19 @@
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 100%;
+      height: 100vh;
+      width: 100vw;
       background: rgba(0, 0, 0, 0.5);
       -webkit-backdrop-filter: saturate(180%) blur(20px);
       backdrop-filter: saturate(180%) blur(20px);
       overflow-x: hidden;
       overflow-y: auto;
       z-index: 5;
-      opacity: 0;
       display: flex;
       flex-direction: column;
       transition: all 1s;
+      pointer-events: none;
+      opacity: 0;
     }
 
     #menu-checkbox {
@@ -229,21 +231,17 @@
       list-style-type: none;
     }
 
-    #menu #nav {
-      padding-top: 100px;
-      left: 0;
-    }
-
-    #menu #projects {
-      left: 50%;
-    }
-
     #menu #nav,
     #menu #projects {
       margin: 0;
       top: 0;
       height: 50%;
       width: 100%;
+    }
+
+    #menu #nav {
+      padding-top: 100px;
+      left: 0;
     }
 
     #menu #nav li {
@@ -253,7 +251,9 @@
     #menu #nav li a {
       font-size: 30px;
       color: white;
-      transition: all 2s;
+      transition: opacity 0.5s;
+      letter-spacing: 8px;
+      transition: letter-spacing 1s linear 2s
     }
 
     #menu #nav li a:hover {
@@ -261,7 +261,17 @@
     }
 
     #menu-checkbox:checked~#menu {
+      pointer-events: all;
       opacity: 1;
+    }
+
+    #menu-checkbox:checked~#menu li a {
+      letter-spacing: 0px;
+      color: green;
+    }
+
+    #menu #projects {
+      left: 50%;
     }
 
     #menu #projects li {
@@ -490,7 +500,7 @@
 
   <input type="checkbox" id="menu-checkbox"></input>
 
-  <div id="menu">
+  <div id="menu" for="menu-checkbox">
     <ul id="nav">
       <li>
         <a href="{{site.url}}/{{page.category}}/">Home</a>
