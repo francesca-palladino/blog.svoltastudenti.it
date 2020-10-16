@@ -107,13 +107,6 @@
       background-size: contain;
     }
 
-    #header>#menu-icon {
-      width: 60px;
-      background-image: url('/assets/img/menu.png');
-      position: absolute;
-      left: 5%;
-    }
-
     #header>#lang-icon {
       width: 60px;
       background-image: url('/assets/img/lang.png');
@@ -125,7 +118,56 @@
       background-image: url('/assets/img/svolta-big-pos.png');
     }
 
+    #header #menu-icon {
+      position: fixed;
+      top: 5%;
+      left: 92.5%;
+      transform: translate(-100%, 0);
+      margin: 0;
+      padding: 0;
+    }
 
+    .ham {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 1s;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 1s, stroke-dashoffset 1s;
+      stroke: white;
+      stroke-width: 5.5;
+      stroke-linecap: round;
+    }
+
+    .ham4 .top {
+      stroke-dasharray: 40 121;
+    }
+
+    .ham4 .bottom {
+      stroke-dasharray: 40 121;
+    }
+
+    .ham4.active .top {
+      stroke-dashoffset: -68px;
+    }
+
+    .ham4.active .bottom {
+      stroke-dashoffset: -68px;
+    }
 
 
     #menu-checkbox {
@@ -317,11 +359,6 @@
     }
 
     @media all and (orientation: landscape) {
-      #header>#menu-icon {
-        position: absolute;
-        left: 11.2%;
-      }
-
       article #article-wrapper {
         display: flex;
         flex-direction: row;
@@ -566,7 +603,14 @@
   </div>
 
   <div id="header">
-    <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
+    <label for="menu-checkbox" id="menu-icon">
+      <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+        <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+        <path class="line middle" d="m 70,50 h -40" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+      </svg>
+    </label>
   </div>
 
 
@@ -582,14 +626,21 @@
       }
 
       #vscroll-content section .title {
-        color: white;
-        font-size: 5vw;
+        text-align: right;
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: 1.5px white;
+        font-size: 7vw;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
-        padding-top: 30vh;
-        padding-left: 15vw;
+        padding-top: 35vh;
+        padding-right: 20vw;
         opacity: 0;
         transition: all 1s;
+      }
+
+      #vscroll-content section .title:hover {
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 2vw;
       }
 
       #vscroll-content section .title.animActive {
@@ -598,11 +649,12 @@
       }
 
       #vscroll-content section .subtitle {
+        text-align: right;
         color: white;
-        font-size: 2vw;
+        font-size: 2.5vw;
         font-weight: 400;
         font-family: 'Montserrat', sans-serif;
-        padding-left: 15.1vw;
+        padding-right: 20.1vw;
         opacity: 0;
         transition: all 1s;
       }
@@ -616,11 +668,11 @@
         text-align: center;
         color: white;
         font-size: large;
-        padding: 20px;
+        padding: 30px;
         background-color: #FF6600;
         border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 20vw;
+        margin-top: 5vh;
+        margin-left: 60vw;
         width: 15vw;
         opacity: 0;
         transition: all 1s;
