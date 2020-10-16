@@ -334,15 +334,24 @@
 
     #menu #social {
       position: fixed;
-      top: 90vh;
+      top: 85%;
       left: 12vw;
+    }
+
+    #menu #social li{
+      display: inline;
+    }
+
+    #menu #social a {
+      text-decoration: none;
       color: white;
       font-weight: normal;
       opacity: 0;
+      margin-right: 2vw;
       transition: all 1s 0s;
     }
 
-    #menu-checkbox:checked~#menu #social {
+    #menu-checkbox:checked~#menu #social a {
       opacity: 1;
       transition: all 1s .5s;
     }
@@ -592,14 +601,20 @@
           </svg>LM</a>
       </li>
       <li>
-        <a href="">
-          <svg>
+        <a href=""><svg>
             <rect></rect>
-          </svg>Orange</a>
-      </li>
+          </svg>Orange</a></li>
     </ul>
     <div id="social">
-      <h6>ciao</h6>
+      <ul>
+        <li><a href="">POLICY</a></li>
+        <li><a href="">TERMINI</a></li>
+        <li><a href="">NON SO</a></li>
+        <li><a href="">SOCIAL1</a></li>
+        <li><a href="">SOCIAL2</a></li>
+        <li><a href="">SOCIAL3</a></li>
+        <li><a href="">SOCIAL4</a></li>
+      </ul>
     </div>
   </div>
 
