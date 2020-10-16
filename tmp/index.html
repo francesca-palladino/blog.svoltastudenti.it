@@ -112,10 +112,11 @@
       background-image: url('/assets/img/lang.png');
     }
 
-    #header>#logo {
-      max-width: 50vw;
-      width: 200px;
-      background-image: url('/assets/img/svolta-big-pos.png');
+    #header #logo {
+      position: fixed;
+      top: 7%;
+      height: auto;
+      width: 20vw;
     }
 
     #header #menu-icon {
@@ -603,6 +604,7 @@
   </div>
 
   <div id="header">
+    <img id="logo" src="./assets/logonuovo.png" alt="logo">
     <label for="menu-checkbox" id="menu-icon">
       <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
         <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
@@ -632,16 +634,16 @@
         font-size: 7vw;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
-        padding-top: 35vh;
+        padding-top: 37vh;
         padding-right: 20vw;
         opacity: 0;
         transition: all 1s;
       }
 
-      #vscroll-content section .title:hover {
+      /* #vscroll-content section .title:hover {
         color: rgba(255, 255, 255, 1);
         letter-spacing: 2vw;
-      }
+      } */
 
       #vscroll-content section .title.animActive {
         opacity: 1;
@@ -692,25 +694,13 @@
         background-size: cover;
         background-color: black;
         filter: brightness(50%);
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
       }
-
-      /* #vscroll-content section .overlay {
-		left: 0;
-		top: 0;
-		height: 100vh;
-		width: 100vw;
-		position: absolute;
-		padding: 0;
-		margin: 0;
-		z-index: 2;
-		background-color: black;
-		opacity: 0.5;
-	} */
 
       #vscroll-bar {
         position: fixed;
