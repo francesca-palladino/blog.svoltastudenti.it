@@ -171,3 +171,20 @@ collections:
       - {label: "Prezzo", name: "price", widget: "number", valueType: "int", min: 0, step: 1}
       - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
       - {label: "Pretix ID", name: "pretix", widget: "string"}
+  - name: "home-it" # Used in routes, e.g., /admin/collections/blog
+    label: "Home (it)" # Used in the UI
+    folder: "_posts/home/it" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "false"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Immagine Background", name: "bg", widget: "image", required: true}
+      - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
+      - {label: "Link Bottone", name: "btn_link", widget: "string"}
+      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
