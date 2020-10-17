@@ -14,7 +14,7 @@ noBrand: "true"
       <section class="animTrigger home-{{ post.title | slugify }}" data-animId="home-{{ post.title | slugify }}">
         <div class="title" data-animTarget="home-{{ post.title | slugify }}">{{ post.title }}</div>
         <div class="subtitle" data-animTarget="home-{{ post.title | slugify }}">{{ post.body | markdownify }}</div>
-        <a href="{{ post.btn_link }}" class="btn" data-animTarget="home-{{ post.title | slugify }}">{{ post.btn_text}}</div>
+        <a href="{{ post.btn_link }}" class="btn" data-animTarget="home-{{ post.title | slugify }}">{{ post.btn_text}}</a>
       </section>
     {% endif %}
   {% endfor %}
