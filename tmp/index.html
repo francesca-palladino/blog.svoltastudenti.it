@@ -257,7 +257,7 @@
 
 
     #menu #projects {
-      padding-top: 30vh;
+      padding-top: 20vh;
     }
 
     #menu #projects li {
@@ -277,6 +277,7 @@
     }
 
     #menu #projects a {
+      text-align: center;
       position: relative;
       font-size: 2vw;
       margin: 2vh;
@@ -296,6 +297,12 @@
       text-decoration: line-through;
       text-decoration-thickness: 10;
       background-color: white;
+      margin-bottom: 20vh;
+    }
+
+    #menu #projects a p {
+      font-size: 1vw;
+      text-align: left;
     }
 
     a svg,
@@ -306,7 +313,7 @@
       top: 0%;
       left: 0%;
       height: 8vh;
-      width: 15vw;
+      width: 20vw;
       fill: transparent;
     }
 
@@ -338,7 +345,7 @@
       left: 12vw;
     }
 
-    #menu #social li{
+    #menu #social li {
       display: inline;
     }
 
@@ -592,7 +599,9 @@
         <a href="">
           <svg>
             <rect></rect>
-          </svg>FAQ</a>
+          </svg>FAQ
+          <p>While I agree most of these examples probably shouldn’t be used in practice, I think the “Push Toggle”
+            examples are actually a perfect use case for this technique. </p></a>
       </li>
       <li>
         <a href="">
@@ -644,19 +653,20 @@
 
       #vscroll-content section .title {
         text-align: right;
-        color: rgba(255, 255, 255, 0);
-        -webkit-text-stroke: 1.5px white;
+        color: rgba(255, 255, 255, 1);
         font-size: 7vw;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
-        padding-top: 37vh;
+        padding-top: 40vh;
         padding-right: 20vw;
         opacity: 0;
         transition: all 1s;
       }
 
       /* #vscroll-content section .title:hover {
-        color: rgba(255, 255, 255, 1);
+                -webkit-text-stroke: 1.5px white;
+
+        color: rgba(255, 255, 255, 0);
         letter-spacing: 2vw;
       } */
 
@@ -666,6 +676,7 @@
       }
 
       #vscroll-content section .subtitle {
+        font-style: italic;
         text-align: right;
         color: white;
         font-size: 2.5vw;
@@ -688,7 +699,7 @@
         padding: 30px;
         background-color: #FF6600;
         border-radius: 20px;
-        margin-top: 5vh;
+        margin-top: 4vh;
         margin-left: 60vw;
         width: 15vw;
         opacity: 0;
@@ -708,7 +719,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-color: black;
-        filter: brightness(50%);
+        filter: brightness(70%);
         box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
         position: absolute;
         top: 0;
