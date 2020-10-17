@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="/assets/img/favicon.png" type="image/png">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% case page.categpry %}
+  {% case page.category %}
   {% when "it" %}
   <meta http-equiv="content-language" content="it-it">
   {% when "en" %}
@@ -808,22 +808,22 @@
   <div id="menu" for="menu-checkbox">
     <ul id="nav">
       <li>
-        <a href="http://localhost:4000//">Home</a>
+        <a href="{{site.url}}/{{ page.category }}/">Home</a>
       </li>
       <li>
-        <a href="http://localhost:4000//">Rappresentanza</a>
+        <a href="{{site.url}}/{{ page.category }}/">Rappresentanza</a>
       </li>
       <li>
-        <a href="http://localhost:4000//">Associazione</a>
+        <a href="{{site.url}}/{{ page.category }}/">Associazione</a>
       </li>
       <li>
-        <a href="http://localhost:4000//store">Eventi</a>
+        <a href="{{site.url}}/{{ page.category }}/store">Eventi</a>
       </li>
       <li>
-        <a href="http://localhost:4000//news">Notizie</a>
+        <a href="{{site.url}}/{{ page.category }}/news">Notizie</a>
       </li>
       <li>
-        <a href="">Contatti</a>
+        <a href="{{site.url}}/{{ page.category }}/info">Contatti</a>
       </li>
     </ul>
 
