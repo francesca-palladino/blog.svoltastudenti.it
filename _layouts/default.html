@@ -146,6 +146,7 @@
   {% endif %}
   <style amp-custom>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
     html,
     body {
@@ -171,7 +172,7 @@
       justify-content: center;
       z-index: 6;
       top: 0;
-      /* {% unless page.noBrand == "true" %} height: 60px; {% endunless %} */
+      /*  */
       background: rgba(0, 0, 0, 0);
     }
 
@@ -182,22 +183,72 @@
       background-size: contain;
     }
 
-    #header>#menu-icon {
-      width: 60px;
-      background-image: url('/assets/img/menu.png');
-      position: absolute;
-      left: 5%;
-    }
-
     #header>#lang-icon {
       width: 60px;
       background-image: url('/assets/img/lang.png');
     }
 
-    #header>#logo {
-      max-width: 50vw;
-      width: 200px;
-      background-image: url('/assets/img/svolta-big-pos.png');
+    #header #logo {
+      position: fixed;
+      top: 7%;
+      height: auto;
+      width: 20vw;
+    }
+
+    #header #menu-icon {
+      position: fixed;
+      top: 5%;
+      left: 92.5%;
+      transform: translate(-100%, 0);
+      margin: 0;
+      padding: 0;
+    }
+
+    .ham {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 1s;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 1s, stroke-dashoffset 1s;
+      stroke: white;
+      stroke-width: 5.5;
+      stroke-linecap: round;
+    }
+
+    .ham4 .top {
+      stroke-dasharray: 40 121;
+    }
+
+    .ham4 .bottom {
+      stroke-dasharray: 40 121;
+    }
+
+    .ham4.active .top {
+      stroke-dashoffset: -68px;
+    }
+
+    .ham4.active .bottom {
+      stroke-dashoffset: -68px;
+    }
+
+
+    #menu-checkbox {
+      display: none;
     }
 
     #menu {
@@ -206,21 +257,33 @@
       left: 0;
       height: 100vh;
       width: 100vw;
-      background: rgba(0, 0, 0, 0.5);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      backdrop-filter: saturate(180%) blur(20px);
-      overflow-x: hidden;
-      overflow-y: auto;
+      overflow: hidden;
       z-index: 5;
       display: flex;
-      flex-direction: column;
-      transition: opacity 1s;
+      flex-direction: row;
+      font-family: 'Montserrat', sans-serif;
       pointer-events: none;
-      opacity: 0;
+      background-color: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      transition: all 1s .5s;
     }
 
-    #menu-checkbox {
-      display: none;
+    #menu-checkbox:checked~#menu {
+      pointer-events: all;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      -webkit-transition: backdrop-filter 1s;
+      transition: all 1s;
+    }
+
+    #menu #nav,
+    #menu #projects {
+      margin: 0;
+      top: 0;
+      height: 100%;
+      width: 50%;
     }
 
     #menu ul,
@@ -230,87 +293,165 @@
       list-style-type: none;
     }
 
-    #menu #nav,
-    #menu #projects {
-      margin: 0;
-      top: 0;
-      height: 50%;
-      width: 100%;
-    }
-
     #menu #nav {
-      padding-top: 100px;
-      left: 0;
+      padding-top: 12vh;
     }
 
     #menu #nav li {
-      padding-left: 10vw;
+      padding-left: 12vw;
+      margin-top: 0;
+      transition: margin-top 1s ease 0s;
+    }
+
+    #menu-checkbox:checked~#menu #nav li {
+      margin-top: 2vh;
+      transition: margin-top 1s ease .5s;
     }
 
     #menu #nav li a {
-      font-size: 30px;
+      padding-left: 0;
+      font-size: 3.7vw;
+      font-weight: 700;
+      text-decoration: none;
       color: white;
       opacity: 0;
-      transition: opacity 0.5s;
-      letter-spacing: 8px;
-      transition: letter-spacing 2s linear 2s;
-      margin-top: 50px;
-      transition: margin-top 1s linear 1s;
+      transition: opacity 1s 0s;
     }
 
-    #menu #nav li a:hover {
-      color: red;
+    #menu-checkbox:checked~#menu #nav li a {
+      opacity: .8;
+      transition: opacity .5s .5s, font-size .5s, padding-left .5s;
     }
 
-    #menu-checkbox:checked~#menu {
-      pointer-events: all;
+    #menu-checkbox:checked~#menu #nav li a:hover,
+    #menu-checkbox:checked~#menu #nav li a:active {
+      padding-left: 2vw;
       opacity: 1;
+      font-size: 4.2vw;
+      -webkit-text-stroke: 0px;
     }
 
-    #menu-checkbox:checked~#menu li a {
-      opacity: 1;
-      letter-spacing: 0px;
-      margin-top: 0px;
-      color: green;
-    }
 
     #menu #projects {
-      top: 0%;
-      left: 50%;
+      padding-top: 20vh;
     }
 
     #menu #projects li {
-      top: 40%;
       display: flex;
       justify-content: center;
-      align-items: center;
-      transform: translate(0, -50%);
+      opacity: 0;
+      margin-left: 15vw;
+      margin-right: 15vw;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      transition: opacity 1s;
+    }
+
+    #menu-checkbox:checked~#menu #projects li {
+      opacity: .7;
+      transition: opacity 1s 1s;
     }
 
     #menu #projects a {
-      font-size: medium;
-      background-color: #FF6600;
-      margin: 20px;
+      text-align: center;
+      position: relative;
+      font-size: 2vw;
+      margin: 2vh;
       color: white;
       text-decoration: none;
+      opacity: 0;
+      transition: opacity 1s 0s;
     }
 
-    @media all and (orientation: landscape) {
-      #header>#menu-icon {
-        position: absolute;
-        left: 11.2%;
-      }
+    #menu-checkbox:checked~#menu #projects a {
+      opacity: 1;
+      transition: opacity 1s .5s;
+    }
 
+    #menu-checkbox:checked~#menu #projects a:hover {
+      color: #FF6600;
+      text-decoration: line-through;
+      text-decoration-thickness: 10;
+      background-color: white;
+      margin-bottom: 20vh;
+    }
+
+    #menu #projects a p {
+      font-size: 1vw;
+      text-align: left;
+    }
+
+    a svg,
+    a svg rect {
+      z-index: 5;
+      margin-left: 50%;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 8vh;
+      width: 20vw;
+      fill: transparent;
+    }
+
+    a svg {
+      transform: translate(-50%, -15%);
+    }
+
+    a svg rect {
+      opacity: .8;
+      stroke: white;
+      stroke-width: 2;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      transition: all 2s ease 0s;
+    }
+
+    #menu-checkbox:checked~#menu a svg rect {
+      stroke-dashoffset: 0;
+      transition: all 2s ease 1s;
+    }
+
+    #menu-checkbox:checked~#menu a svg rect:hover {
+      opacity: 1;
+    }
+
+    #menu #social {
+      position: fixed;
+      top: 85%;
+      left: 12vw;
+    }
+
+    #menu #social li {
+      display: inline;
+    }
+
+    #menu #social a {
+      text-decoration: none;
+      color: white;
+      font-weight: normal;
+      opacity: 0;
+      margin-right: 2vw;
+      transition: all 1s 0s;
+    }
+
+    #menu-checkbox:checked~#menu #social a {
+      opacity: 1;
+      transition: all 1s .5s;
+    }
+
+    @media all and (orientation: portrait) {
       #menu {
-        flex-direction: row;
+        flex-direction: column;
       }
 
       #menu #nav,
       #menu #projects {
-        height: 100%;
-        width: 50%;
+        height: 50%;
+        width: 100%;
       }
+    }
 
+    @media all and (orientation: landscape) {
       article #article-wrapper {
         display: flex;
         flex-direction: row;
@@ -499,6 +640,163 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    #vscroll-content section {
+        padding: 1rem;
+        height: 100vh;
+        scroll-snap-align: start;
+        position: relative;
+        display: block;
+      }
+
+      #vscroll-content section .title {
+        text-align: right;
+        color: rgba(255, 255, 255, 1);
+        font-size: 7vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 40vh;
+        padding-right: 20vw;
+        opacity: 0;
+        transition: all 1s;
+      }
+
+      /* #vscroll-content section .title:hover {
+                -webkit-text-stroke: 1.5px white;
+
+        color: rgba(255, 255, 255, 0);
+        letter-spacing: 2vw;
+      } */
+
+      #vscroll-content section .title.animActive {
+        opacity: 1;
+        transform: translateY(-100px);
+      }
+
+      #vscroll-content section .subtitle {
+        font-style: italic;
+        text-align: right;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        padding-right: 20.1vw;
+        opacity: 0;
+        transition: all 1s;
+      }
+
+      #vscroll-content section .subtitle.animActive {
+        opacity: 1;
+        transform: translateY(-100px);
+      }
+
+      #vscroll-content section .btn {
+        text-align: center;
+        color: white;
+        font-size: large;
+        padding: 30px;
+        background-color: #FF6600;
+        border-radius: 20px;
+        margin-top: 4vh;
+        margin-left: 60vw;
+        width: 15vw;
+        opacity: 0;
+        transition: all 1s;
+        transition-delay: 0.5s;
+      }
+
+      #vscroll-content section .btn.animActive {
+        opacity: 1;
+        transform: translateY(-100px);
+      }
+
+      #vscroll-content section:before {
+        content: "";
+        background-origin: padding-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        filter: brightness(70%);
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #vscroll-bar {
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-right: 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: right;
+      }
+
+      #vscroll-bar ul {
+        padding-left: 0px;
+      }
+
+      #vscroll-bar ul li {
+        list-style-type: none;
+      }
+
+      #vscroll-bar ul li a {
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: solid 2px white;
+        color: white;
+        background-color: rgba(255, 255, 255, 0);
+        margin: 10px 8vw 10px 0;
+        opacity: 0.5;
+        transition: all 0.5s;
+      }
+
+      #vscroll-bar ul li a.animActive {
+        background-color: rgba(255, 255, 255, 1);
+        margin: 25px 8vw 25px 0;
+        transform: scale(2);
+        opacity: 1;
+      }
+
+      #vscroll-bar ul li a:hover {
+        background-color: rgba(255, 255, 255, .75);
+        transform: scale(1.5);
+      }
+
+      #vscroll-bar ul li a.animActive:hover {
+        background-color: #FF6600;
+        transform: scale(2.5);
+      }
+
+      @media only screen and (max-width: 800px) {
+        #vscroll-content section .title {
+          font-size: 7vw;
+        }
+      }
+
+      .slide1:before,
+      .slide2:before,
+      .slide3:before,
+      .slide4:before,
+      .slide5:before,
+      .slide6:before {
+        background-image: url(assets/img/home1.jpeg);
+      }
+
+      #projects a p {
+        display: none;
+      }
+      #projects a:hover p {
+        display: block;
+      }
   </style>
 
 </head>
@@ -510,19 +808,19 @@
   <div id="menu" for="menu-checkbox">
     <ul id="nav">
       <li>
-        <a href="{{site.url}}/{{page.category}}/">Home</a>
+        <a href="http://localhost:4000//">Home</a>
       </li>
       <li>
-        <a href="{{site.url}}/{{page.category}}/">Rappresentanza</a>
+        <a href="http://localhost:4000//">Rappresentanza</a>
       </li>
       <li>
-        <a href="{{site.url}}/{{page.category}}/">Associazione</a>
+        <a href="http://localhost:4000//">Associazione</a>
       </li>
       <li>
-        <a href="{{site.url}}/{{page.category}}/store">Eventi</a>
+        <a href="http://localhost:4000//store">Eventi</a>
       </li>
       <li>
-        <a href="{{site.url}}/{{page.category}}/news">Notizie</a>
+        <a href="http://localhost:4000//news">Notizie</a>
       </li>
       <li>
         <a href="">Contatti</a>
@@ -531,27 +829,48 @@
 
     <ul id="projects">
       <li>
-        <a href="">FAQ</a>
+        <a href="">
+          <svg>
+            <rect></rect>
+          </svg>FAQ
+          <p>While I agree most of these examples probably shouldn’t be used in practice, I think the “Push Toggle”
+            examples are actually a perfect use case for this technique. </p></a>
       </li>
       <li>
-        <a href="">LM</a>
+        <a href="">
+          <svg>
+            <rect></rect>
+          </svg>LM</a>
       </li>
       <li>
-        <a href="">Orange</a>
-      </li>
+        <a href=""><svg>
+            <rect></rect>
+          </svg>Orange</a></li>
     </ul>
+    <div id="social">
+      <ul>
+        <li><a href="">POLICY</a></li>
+        <li><a href="">TERMINI</a></li>
+        <li><a href="">NON SO</a></li>
+        <li><a href="">SOCIAL1</a></li>
+        <li><a href="">SOCIAL2</a></li>
+        <li><a href="">SOCIAL3</a></li>
+        <li><a href="">SOCIAL4</a></li>
+      </ul>
+    </div>
   </div>
 
   <div id="header">
-    <label for="menu-checkbox" id="menu-icon" class="backgroundImage"></label>
-    {% unless page.noBrand == "true" %}<a href="{{site.url}}/it/" id="logo" class="backgroundImage">{% endunless %}</a>
+    <img id="logo" src="./assets/logonuovo.png" alt="logo">
+    <label for="menu-checkbox" id="menu-icon">
+      <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+        <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+        <path class="line middle" d="m 70,50 h -40" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+      </svg>
+    </label>
   </div>
-  {% if page.translations.it  %}
-  <a href="{{site.url}}/it/{{page.translations.it | slugify}}" id="lang-icon-it" class="backgroundImage"></a>
-  {% endif %}
-  {% if page.translations.en %}
-  <a href="{{site.url}}/en/{{page.translations.en | slugify}}" id="lang-icon-en" class="backgroundImage"></a>
-  {% endif %}
 
   <article>
     {{ content }}

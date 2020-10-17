@@ -5,6 +5,11 @@ noBrand: "true"
 <div id="vscroll-content">
   {% for post in site.categories.it %}
     {% if post.layout == "home" %}
+      <style>
+        #vscroll-content .home-{{ post.title | slugify }}:before {
+          background-image: url('{{ post.bg }}');
+        }
+      </style>
       <a name="home-{{ post.title | slugify }}"></a>
       <section class="animTrigger home-{{ post.title | slugify }}" data-animId="home-{{ post.title | slugify }}">
         <div class="title" data-animTarget="home-{{ post.title | slugify }}">{{ post.title }}</div>
