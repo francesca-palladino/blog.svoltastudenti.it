@@ -5,11 +5,13 @@ category: it
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <style>
-    html, body {
+    html,
+    body {
       padding: 0;
       margin: 0;
     }
@@ -41,9 +43,9 @@ category: it
       overflow: hidden;
       z-index: 0;
     }
-    
-    #articleList #list-checkbox:checked ~ #list {
-        height: 100%;
+
+    #articleList #list-checkbox:checked~#list {
+      height: 100%;
     }
 
     #articleList #data {
@@ -70,7 +72,7 @@ category: it
       transition: height 1s, width 1s, opacity 1s;
     }
 
-    @media all and (min-width: 720px) and (orientation: landscape){
+    @media all and (min-width: 720px) and (orientation: landscape) {
       #articleList #wrapper {
         flex-direction: row;
       }
@@ -84,49 +86,55 @@ category: it
         padding-top: initial;
         max-width: 1200px;
       }
-        
+
       #articleList #list {
-          position: initial;
-          height: initial;
+        position: initial;
+        height: initial;
       }
     }
 
-    #articleList .th[data-cat="a"]{
-	   background-color: red;
+    #articleList .th[data-cat="a"] {
+      background-color: red;
     }
-      
-    #articleList #catFilter-a:checked ~ #list label[for="catFilter-a"] {
-        background-color: red;
+
+    #articleList #catFilter-a:checked~#list label[for="catFilter-a"] {
+      background-color: red;
     }
-    #articleList #catFilter-a:checked ~ #data *[data-cat="a"] {
-       display: none
+
+    #articleList #catFilter-a:checked~#data *[data-cat="a"] {
+      display: none
     }
-    
-    #articleList .th[data-cat="b"]{
-	   background-color: yellow;
+
+    #articleList .th[data-cat="b"] {
+      background-color: yellow;
     }
-    #articleList #catFilter-b:checked ~ #list label[for="catFilter-b"] {
-        background-color: red;
+
+    #articleList #catFilter-b:checked~#list label[for="catFilter-b"] {
+      background-color: red;
     }
-    #articleList #catFilter-b:checked ~ #data *[data-cat="b"] {
-       display: none
+
+    #articleList #catFilter-b:checked~#data *[data-cat="b"] {
+      display: none
     }
-      
-    #articleList .th[data-cat="c"]{
-        background-color: green;
+
+    #articleList .th[data-cat="c"] {
+      background-color: green;
     }
-    #articleList #catFilter-c:checked ~ #list label[for="catFilter-c"] {
-        background-color: red;
+
+    #articleList #catFilter-c:checked~#list label[for="catFilter-c"] {
+      background-color: red;
     }
-    #articleList #catFilter-c:checked ~ #data *[data-cat="c"] {
-       display: none
+
+    #articleList #catFilter-c:checked~#data *[data-cat="c"] {
+      display: none
     }
-      
+
     #articleList #wrapper input[type="checkbox"] {
-        display: none;
+      display: none;
     }
   </style>
 </head>
+
 <body>
   <div id="articleList">
     <div id="wrapper">
@@ -137,25 +145,26 @@ category: it
       <div id="list">
         <label for="list-checkbox">Categorie</label>
         <ul>
-        	<li>
-        	  <label for="catFilter-a">Categoria a</label>
+          <li>
+            <label for="catFilter-a">Categoria a</label>
           </li>
-        	<li>
-        	  <label for="catFilter-b">Categoria b</label>
+          <li>
+            <label for="catFilter-b">Categoria b</label>
           </li>
-        	<li>
-        	  <label for="catFilter-c">Categoria c</label>
+          <li>
+            <label for="catFilter-c">Categoria c</label>
           </li>
         </ul>
       </div>
       <div id="data">
         {% for post in site.categories.it %}
-          {% if post.layout == "blog" %}
-            <div class="th" data-cat="{{ post.tags[0] }}">{{ post.title }}</div>
-          {% endif %}
+        {% if post.layout == "blog" %}
+        <div class="th" data-cat="{{ post.tags[0] }}">{{ post.title }}</div>
+        {% endif %}
         {% endfor %}
       </div>
     </div>
   </div>
 </body>
+
 </html>
