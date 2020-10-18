@@ -1,8 +1,6 @@
 backend:
-  name: git-gateway
-  accept_roles: #optional - accepts all users if left out
-    - admin
-    - editor
+  name: github
+  repo: cripty2001/blog.svoltastudenti.it
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
