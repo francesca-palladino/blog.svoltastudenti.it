@@ -3,168 +3,176 @@ layout: default
 category: it
 ---
 
-<!DOCTYPE html>
-<html>
+<style>
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
 
-<head>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
-  <style>
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-    }
+  .th {
+    background: green;
+  }
 
-    .th {
-      background: green;
-    }
+  #articleList {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-    #articleList {
-      position: relative;
-    }
+  #articleList #wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
 
+  #articleList #list {
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 48px;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  #articleList #list-checkbox:checked~#list {
+    height: 100%;
+  }
+
+  #articleList #data {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+    background-color: gray;
+    z-index: -1;
+  }
+
+  #articleList .th {
+    min-width: 240px;
+    width: 240px;
+    height: 150px;
+    margin: 5px;
+    flex-grow: 1;
+    transform: scale(1);
+    display: initial;
+    opacity: 1;
+    transition: height 1s, width 1s, opacity 1s;
+  }
+
+  @media all and (min-width: 720px) and (orientation: landscape) {
     #articleList #wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: center;
+      flex-direction: row;
     }
 
     #articleList #list {
-      width: 100%;
-      background-color: green;
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 48px;
-      line-height: 50px;
-      height: 50px;
-      overflow: hidden;
-      z-index: 0;
-    }
-
-    #articleList #list-checkbox:checked~#list {
-      height: 100%;
+      max-width: 320px;
+      margin-right: 10px;
     }
 
     #articleList #data {
-      padding-top: 50px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: stretch;
-      align-items: flex-start;
-      background-color: gray;
-      z-index: -1;
+      padding-top: initial;
+      max-width: 1200px;
     }
 
-    #articleList .th {
-      min-width: 240px;
-      width: 240px;
-      height: 150px;
-      margin: 5px;
-      flex-grow: 1;
-      transform: scale(1);
-      display: initial;
-      opacity: 1;
-      transition: height 1s, width 1s, opacity 1s;
+    #articleList #list {
+      position: initial;
+      height: initial;
     }
+  }
 
-    @media all and (min-width: 720px) and (orientation: landscape) {
-      #articleList #wrapper {
-        flex-direction: row;
-      }
+  #articleList .th[data-cat="a"],
+  #articleList .th[data-cat="b"],
+  #articleList .th[data-cat="c"],
+  #articleList .th[data-cat="d"],
+  #articleList .th[data-cat="e"],
+  #articleList .th[data-cat="f"],
+  #articleList .th[data-cat="g"],
+  #articleList .th[data-cat="h"] {
+    background-color: red;
+  }
 
-      #articleList #list {
-        max-width: 320px;
-        margin-right: 10px;
-      }
+  #articleList #catFilter-a:checked~#list label[for="catFilter-a"],
+  #articleList #catFilter-b:checked~#list label[for="catFilter-b"],
+  #articleList #catFilter-c:checked~#list label[for="catFilter-c"],
+  #articleList #catFilter-d:checked~#list label[for="catFilter-d"],
+  #articleList #catFilter-e:checked~#list label[for="catFilter-e"],
+  #articleList #catFilter-f:checked~#list label[for="catFilter-f"],
+  #articleList #catFilter-g:checked~#list label[for="catFilter-g"],
+  #articleList #catFilter-h:checked~#list label[for="catFilter-h"] {
+    background-color: red;
+  }
 
-      #articleList #data {
-        padding-top: initial;
-        max-width: 1200px;
-      }
+  #articleList #catFilter-a:checked~#data *[data-cat="a"],
+  #articleList #catFilter-b:checked~#data *[data-cat="b"],
+  #articleList #catFilter-c:checked~#data *[data-cat="c"],
+  #articleList #catFilter-d:checked~#data *[data-cat="d"],
+  #articleList #catFilter-e:checked~#data *[data-cat="e"],
+  #articleList #catFilter-f:checked~#data *[data-cat="f"],
+  #articleList #catFilter-g:checked~#data *[data-cat="g"],
+  #articleList #catFilter-h:checked~#data *[data-cat="h"] {
+    display: none
+  }
 
-      #articleList #list {
-        position: initial;
-        height: initial;
-      }
-    }
+  #articleList #wrapper input[type="checkbox"] {
+    display: none;
+  }
+</style>
+<div id="articleList">
+  <div id="wrapper">
+    <input type="checkbox" id="catFilter-a" />
+    <input type="checkbox" id="catFilter-b" />
+    <input type="checkbox" id="catFilter-c" />
+    <input type="checkbox" id="catFilter-d" />
+    <input type="checkbox" id="catFilter-e" />
+    <input type="checkbox" id="catFilter-f" />
+    <input type="checkbox" id="catFilter-g" />
+    <input type="checkbox" id="catFilter-h" />
 
-    #articleList .th[data-cat="a"] {
-      background-color: red;
-    }
-
-    #articleList #catFilter-a:checked~#list label[for="catFilter-a"] {
-      background-color: red;
-    }
-
-    #articleList #catFilter-a:checked~#data *[data-cat="a"] {
-      display: none
-    }
-
-    #articleList .th[data-cat="b"] {
-      background-color: yellow;
-    }
-
-    #articleList #catFilter-b:checked~#list label[for="catFilter-b"] {
-      background-color: red;
-    }
-
-    #articleList #catFilter-b:checked~#data *[data-cat="b"] {
-      display: none
-    }
-
-    #articleList .th[data-cat="c"] {
-      background-color: green;
-    }
-
-    #articleList #catFilter-c:checked~#list label[for="catFilter-c"] {
-      background-color: red;
-    }
-
-    #articleList #catFilter-c:checked~#data *[data-cat="c"] {
-      display: none
-    }
-
-    #articleList #wrapper input[type="checkbox"] {
-      display: none;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="articleList">
-    <div id="wrapper">
-      <input type="checkbox" id="catFilter-a" />
-      <input type="checkbox" id="catFilter-b" />
-      <input type="checkbox" id="catFilter-c" />
-      <input type="checkbox" id="list-checkbox" />
-      <div id="list">
-        <label for="list-checkbox">Categorie</label>
-        <ul>
-          <li>
-            <label for="catFilter-a">Categoria a</label>
-          </li>
-          <li>
-            <label for="catFilter-b">Categoria b</label>
-          </li>
-          <li>
-            <label for="catFilter-c">Categoria c</label>
-          </li>
-        </ul>
-      </div>
-      <div id="data">
-        {% for post in site.categories.it %}
-        {% if post.layout == "blog" %}
-        <div class="th" data-cat="{{ post.tags[0] }}">{{ post.title }}</div>
-        {% endif %}
-        {% endfor %}
-      </div>
+    <input type="checkbox" id="list-checkbox" />
+    <div id="list">
+      <label for="list-checkbox">Categorie</label>
+      <ul>
+        <li>
+          <label for="catFilter-a">Categoria a</label>
+        </li>
+        <li>
+          <label for="catFilter-b">Categoria b</label>
+        </li>
+        <li>
+          <label for="catFilter-c">Categoria c</label>
+        </li>
+        <li>
+          <label for="catFilter-d">Categoria d</label>
+        </li>
+        <li>
+          <label for="catFilter-e">Categoria e</label>
+        </li>
+        <li>
+          <label for="catFilter-f">Categoria f</label>
+        </li>
+        <li>
+          <label for="catFilter-g">Categoria g</label>
+        </li>
+        <li>
+          <label for="catFilter-h">Categoria h</label>
+        </li>
+      </ul>
+    </div>
+    <div id="data">
+      {% for post in site.categories.it %}
+      {% if post.layout == "blog" %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="th" data-cat="{{ post.tags[0] }}"><img
+          src="{{ post.th }}" />{{ post.title }}</a>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
-</body>
-
-</html>
+</div>

@@ -147,6 +147,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+    :root {
+      --orange: #FF6600;
+      --light-off: rgba(255, 255, 255, 0);
+      --light-half: rgba(255, 255, 255, .5);
+      --light-on: rgba(255, 255, 255, 1);
+      --dark-off: rgba(0, 0, 0, 0);
+      --dark-half: rgba(0, 0, 0, .5);
+      --dark-on: rgba(0, 0, 0, 1);
+    }
+
     html,
     body {
       padding: 0;
@@ -157,6 +167,16 @@
       scroll-behavior: smooth;
       font-family: 'Roboto', sans-serif;
     }
+
+    html {
+      overflow-y: auto;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+    }
+
+    /* #menu-checkbox:checked~html {
+      overflow-y: hidden;
+    } */
 
     * {
       box-sizing: border-box;
@@ -188,14 +208,39 @@
 
     #header #logo {
       position: fixed;
-      top: 7%;
+      top: 5%;
       height: auto;
       width: 20vw;
+      z-index: 21;
+      /* background-color: white; */
+      /* padding: 1.5em 2em 1em 2em; */
+      /* border-radius: 1.5em; */
+    }
+
+    #header #logoBG {
+      z-index: 20;
+      width: 100%;
+      height: 15%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      transition: all 1s;
+      background-color: var(--light-half);
+    }
+
+    #menu-checkbox:checked~#header #logoBG {
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
     }
 
     #header #menu-icon {
+      z-index: 21;
       position: fixed;
-      top: 5%;
+      top: 3%;
       left: 92.5%;
       transform: translate(-100%, 0);
       margin: 0;
@@ -235,7 +280,7 @@
     .hamBottom {
       fill: none;
       transition: stroke-dasharray 1s, stroke-dashoffset 1s;
-      stroke: white;
+      stroke: #FF6600;
       stroke-width: 5.5;
       stroke-linecap: round;
     }
@@ -283,7 +328,7 @@
 
     #menu-checkbox:checked~#menu {
       pointer-events: all;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: var(--light-half);
       backdrop-filter: blur(30px);
       -webkit-backdrop-filter: blur(30px);
       -webkit-transition: backdrop-filter 1s;
@@ -325,20 +370,19 @@
       font-size: 3.7vw;
       font-weight: 700;
       text-decoration: none;
-      color: white;
+      color: var(--orange);
       opacity: 0;
       transition: opacity 1s 0s;
     }
 
     #menu-checkbox:checked~#menu #nav li a {
-      opacity: .8;
+      opacity: 1;
       transition: opacity .5s .5s, font-size .5s, padding-left .5s;
     }
 
     #menu-checkbox:checked~#menu #nav li a:hover,
     #menu-checkbox:checked~#menu #nav li a:active {
       padding-left: 2vw;
-      opacity: 1;
       font-size: 4.2vw;
       -webkit-text-stroke: 0px;
     }
@@ -369,7 +413,7 @@
       position: relative;
       font-size: 2vw;
       margin: 2vh;
-      color: white;
+      color: var(--orange);
       text-decoration: none;
       opacity: 0;
       transition: opacity 1s 0s;
@@ -381,10 +425,10 @@
     }
 
     #menu-checkbox:checked~#menu #projects a:hover {
-      color: #FF6600;
+      color: var(--light-on);
       text-decoration: line-through;
       text-decoration-thickness: 10;
-      background-color: white;
+      background-color: var(--orange);
       margin-bottom: 20vh;
     }
 
@@ -411,7 +455,7 @@
 
     a svg rect {
       opacity: .8;
-      stroke: white;
+      stroke: var(--orange);
       stroke-width: 2;
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
@@ -483,6 +527,12 @@
 
     article {
       min-height: 100vh;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    article h1 {
+      hyphens: none;
     }
 
     article #article-wrapper {
@@ -499,6 +549,11 @@
     article #article-wrapper>#content-wrapper {
       width: 100%;
       padding: 0;
+    }
+
+    article #content-wrapper {
+      position: relative;
+      margin-top: 15vh;
     }
 
     article #authors,
@@ -530,26 +585,44 @@
     }
 
     article #related {
+      margin: auto;
       text-align: center;
       padding-bottom: 50px;
+      margin-bottom: 50px;
+      /* backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      background-color: rgba(255, 102, 0, .5); */
     }
 
     article #related h1 {
       padding: 0;
       margin: 0;
-      margin-top: 50px;
-      font-size: 4vw;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      font-size: 3vw;
       text-align: center;
-      color: #FF6600;
+      color: var(--orange);
       font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    article #related ul {
+      margin: auto;
+      background-color: var(--orange);
+      width: 70vw;
+      border-radius: 50px;
     }
 
     article #related li {
-      margin-top: 30px;
-      height: 40vw;
-      width: 40vw;
+      margin: 1em .5em;
       overflow: hidden;
       position: relative;
+    }
+
+    article #related img {
+      border-radius: 30px;
+      height: 5vw;
+      width: 5vw;
     }
 
     #footer {
@@ -573,6 +646,7 @@
 
     article #content {
       padding-bottom: 30px;
+      font-size: 18px;
     }
 
     article #content b,
@@ -616,11 +690,6 @@
       background-origin: padding-box;
       background-position: center;
       background-repeat: no-repeat;
-    }
-
-    #vscroll-content {
-      overflow-x: hidden;
-      scroll-snap-type: y proximity;
     }
 
     #vscroll-content section {
@@ -808,11 +877,9 @@
       }
 
       article #related li {
-        height: 20vw;
-        width: 20vw;
+        height: 15vw;
+        width: 15vw;
         overflow: hidden;
-        margin-left: 1vw;
-        margin-right: 1vw;
       }
     }
   </style>
@@ -826,7 +893,7 @@
   <div id="menu" for="menu-checkbox">
     <ul id="nav">
       <li>
-        <a href="{{site.url}}/{{ page.category }}/">Home</a>
+        <a href="{{site.url}}/{{ page.category }}/">Homefffe </a>
       </li>
       <li>
         <a href="{{site.url}}/{{ page.category }}/">Rappresentanza</a>
@@ -879,7 +946,8 @@
   </div>
 
   <div id="header">
-    <img id="logo" src="./assets/logonuovo.png" alt="logo">
+    <img id="logo" src="/assets/logonuovo2.png" alt="logo">
+    <div id="logoBG"></div>
     <label id="menu-icon" for="menu-checkbox">
       <svg class="ham" viewBox="0 0 100 100" width="80">
         <path class="hamTop" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
