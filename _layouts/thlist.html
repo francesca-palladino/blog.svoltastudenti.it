@@ -1,0 +1,123 @@
+---
+layout: default
+---
+{% assign posts = site.posts | where: "category", page.thlist_lang | where: "layout", page.thlist_layout %}
+{% assign tags = posts | map: page.thlist_tag | compact | uniq | sort_natural %}
+<style>
+  .thList {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .thList .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .thList .list {
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 48px;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .thList #thList-checkbox:checked~#list {
+    height: 100%;
+  }
+
+  .thList .data {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+    background-color: gray;
+    z-index: -1;
+  }
+
+  .thList .th {
+    min-width: 240px;
+    width: 240px;
+    height: 150px;
+    margin: 5px;
+    flex-grow: 1;
+    transform: scale(1);
+    display: initial;
+    opacity: 1;
+    transition: height 1s, width 1s, opacity 1s;
+    background: green;
+  }
+
+  @media all and (min-width: 720px) and (orientation: landscape) {
+    .thList .wrapper {
+      flex-direction: row;
+    }
+
+    .thList .list {
+      max-width: 320px;
+      margin-right: 10px;
+    }
+
+    .thList .data {
+      padding-top: initial;
+      max-width: 1200px;
+    }
+
+    .thList .list {
+      position: initial;
+      height: initial;
+    }
+  }
+
+  .thList .wrapper input[type="checkbox"] {
+    display: none;
+  }
+
+  {% for tag in tags %}
+    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .thList .data *[data-cat="{{ tag | slugify }}"] {
+      display: none;
+    }
+
+    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .thList .list label[for="thList-catFilter-{{ tag | slugify }}"] {
+      background-color: red;
+    }
+
+    .thList .th[data-cat="{{ tag | slugify }}"]{
+      background-color: red
+    }
+  {% endfor %}
+</style>
+<div class="thList">
+  <div class="wrapper">
+    {% for tag in tags %}
+      <input type="checkbox" id="thList-thList-catFilter-{{ tag | slugify }}" />
+    {% endfor %}
+    <input type="checkbox" id="thList-checkbox" />
+    <div class="list">
+      <label for="thList-checkbox">Categorie</label>
+      <ul>
+        {% for tag in tags %}
+          <li>
+            <label for="thList-catFilter-{{ tag | slugify }}">{{ tag }}</label>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="data">
+      {% for post in posts %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="th" data-cat="{{ post.tag | slugify }}"><img
+          src="{{ post.th }}" />{{ post.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

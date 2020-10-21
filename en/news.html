@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: thlist
 category: en
+thlist_lang: en
+thlist_layout: blog
+thlist_tag: tag
 ---
-{% assign posts = site.posts | where: "category", "en" | where: "layout", "blog" %}
-{% for post in posts %}
-	<a href="{{ post.url }}">
-		{{ post.title }}
-	</a><br/>
-{% endfor %}
