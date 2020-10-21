@@ -3,6 +3,8 @@ layout: default
 category: it
 ---
 
+{% assign posts = site.posts | where: "category", "it" | where: "layout", "blog" %}
+{% assign tags = posts | map: 'tag' | compact | uniq | sort_natural %}
 <style>
   html,
   body {
@@ -88,58 +90,24 @@ category: it
     }
   }
 
-  #articleList .th[data-cat="a"],
-  #articleList .th[data-cat="b"],
-  #articleList .th[data-cat="c"],
-  #articleList .th[data-cat="d"],
-  #articleList .th[data-cat="e"],
-  #articleList .th[data-cat="f"],
-  #articleList .th[data-cat="g"],
-  #articleList .th[data-cat="h"] {
-    background-color: red;
-  }
-
-  #articleList #catFilter-a:checked~#list label[for="catFilter-a"],
-  #articleList #catFilter-b:checked~#list label[for="catFilter-b"],
-  #articleList #catFilter-c:checked~#list label[for="catFilter-c"],
-  #articleList #catFilter-d:checked~#list label[for="catFilter-d"],
-  #articleList #catFilter-e:checked~#list label[for="catFilter-e"],
-  #articleList #catFilter-f:checked~#list label[for="catFilter-f"],
-  #articleList #catFilter-g:checked~#list label[for="catFilter-g"],
-  #articleList #catFilter-h:checked~#list label[for="catFilter-h"] {
-    background-color: red;
-  }
-
-  #articleList #catFilter-a:checked~#data *[data-cat="a"],
-  #articleList #catFilter-b:checked~#data *[data-cat="b"],
-  #articleList #catFilter-c:checked~#data *[data-cat="c"],
-  #articleList #catFilter-d:checked~#data *[data-cat="d"],
-  #articleList #catFilter-e:checked~#data *[data-cat="e"],
-  #articleList #catFilter-f:checked~#data *[data-cat="f"],
-  #articleList #catFilter-g:checked~#data *[data-cat="g"],
-  #articleList #catFilter-h:checked~#data *[data-cat="h"] {
-    display: none
-  }
-
   #articleList #wrapper input[type="checkbox"] {
     display: none;
   }
-</style>
-{% assign posts = site.posts | where: "category", "it" | where: "layout", "blog" %}
-{% assign tags = posts | map 'tag' | uniq | sort_natural %}
-<!-- {% for item in posts %}
-  {% unless tags contains posts.tag %}
-    {% capture tags %}{{ tags }}|{{ post.tag }}{% endcapture %}
-  {% endunless %}
-{% endfor %}
-{% assign newtags  = tags | split: '|' %} -->
 
-<!-- {% for post in posts %}
-	<a href="{{ post.url }}">
-		{{ post.title }}
-	</a><br/>
-{% endfor %} -->
-<!-- {{ tags }}<hr />{{ newtags }} -->
+  {% for tag in tags %}
+    #articleList #catFilter-{{ tag | slugify }}:checked ~ #data *[data-cat="{{ tag | slugify }}"] {
+      display: none;
+    }
+
+    #articleList #catFilter-{{ tag | slugify }}:checked ~ #list label[for="catFilter-{{ tag | slugify }}"] {
+      background-color: red;
+    }
+
+    #articleList .th[data-cat="{{ tag | slugify }}"]{
+      background-color: red
+    }
+  {% endfor %}
+</style>
 <div id="articleList">
   <div id="wrapper">
     {% for tag in tags %}
@@ -151,7 +119,7 @@ category: it
       <ul>
         {% for tag in tags %}
           <li>
-            <label for="catFilter-{{ tag | slugify }}">- {{ tag }} ? </label>
+            <label for="catFilter-{{ tag | slugify }}">{{ tag }}</label>
           </li>
         {% endfor %}
       </ul>
