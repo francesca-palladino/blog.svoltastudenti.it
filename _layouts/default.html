@@ -892,7 +892,7 @@
 
   <div id="menu" for="menu-checkbox">
     <ul id="nav">
-      {% if page.translations.it  %}
+      {% if page.category == "it"  %}
         <li>
           <a href="{{site.url}}/it/">Home</a>
         </li>
@@ -912,7 +912,7 @@
           <a href="{{site.url}}/it/contatti">Contatti/Legal</a>
         </li>
       {% endif %}
-      {% if page.translations.en  %}
+      {% if if page.category == "en"  %}
         <li>
           <a href="{{site.url}}/en/">Home</a>
         </li>
