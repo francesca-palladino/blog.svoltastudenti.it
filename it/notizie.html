@@ -132,7 +132,7 @@ category: it
     {% capture tags %}{{ tags }}|{{ posts.tag }}{% endcapture %}
   {% endunless %}
 {% endfor %}
-{{ tags | split: '|' | sort | join: ', ' }}
+{{ tags | split: '|' | sort }}
 
 {% for post in posts %}
 	<a href="{{ post.url }}">
