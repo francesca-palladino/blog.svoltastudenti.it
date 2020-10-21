@@ -129,10 +129,10 @@ category: it
 {% assign tags = array[1] %}
 {% for item in posts %}
   {% unless tags contains posts.tag %}
-    {% capture tags %}{{ tags }}|{{ posts.tag }}{% endcapture %}
+    {% capture tags %}{{ tags }}|{{ post.tag }}{% endcapture %}
   {% endunless %}
 {% endfor %}
-{{ tags | split: '|' | sort }}
+{% assign newtags  = tags | split: '|' | sort %}
 
 {% for post in posts %}
 	<a href="{{ post.url }}">
