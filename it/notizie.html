@@ -126,13 +126,14 @@ category: it
   }
 </style>
 {% assign posts = site.posts | where: "category", "it" | where: "layout", "blog" %}
-{% assign tags = array[1] %}
+{% assign tags = '' %}
 {% for item in posts %}
   {% unless tags contains posts.tag %}
-    {% capture tags %}{{ tags }}|{{ post.tag }}{% endcapture %}
+    <!-- {% capture tags %}{{ tags }}|{{ post.tag }}{% endcapture %} -->
+    {{ tags }}|{{ post.tag }}
   {% endunless %}
 {% endfor %}
-{% assign newtags  = tags | split: '|' | sort %}
+{% assign newtags  = tags | split: '|' %}
 
 <!-- {% for post in posts %}
 	<a href="{{ post.url }}">
