@@ -58,7 +58,7 @@ collections:
       - {label: "Nome e Cognome", name: "title", widget: "string"}
       - {label: "Bio", name: "body", widget: "markdown" }
       - {label: "Utente in Inglese", name: "translations.en", widget: "relation", required: false, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Immagine", name: "th", widget: "image", required: true}
+      - {label: "Immagine", name: "article_th", widget: "image", required: true}
       - label: "Profili"
         name: "socials"
         widget: "object"
@@ -81,7 +81,7 @@ collections:
       - {label: "Nome e Cognome", name: "title", widget: "string"}
       - {label: "Bio", name: "body", widget: "markdown" }
       - {label: "Utente in Italiano", name: "translations.it", widget: "relation", required: false, collection: "users-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Immagine", name: "th", widget: "image", required: true}
+      - {label: "Immagine", name: "article_th", widget: "image", required: true}
       - label: "Profili"
         name: "socials"
         widget: "object"

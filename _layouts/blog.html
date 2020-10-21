@@ -12,15 +12,16 @@ layout: article
 </div>
 <footer>
 	<ul id="authors">
-		{% for author in page.authors %}
+    {% for author_name in page.authors %}
+      {% assign author = site.posts | where: "category", page.category | where: "layout", "users" | where: "title", author_name %}
 			<li>
         {% if page.category == "it"  %}
-          <a href="/it/utenti/{{ author.title | slugify }}">
+          <a href="/it/utenti/{{ author[0].title | slugify }}">
         {% endif %}
         {% if page.category == "en"  %}
-          <a href="/en/users/{{ author.title | slugify }}">
+          <a href="/en/users/{{ author[0].title | slugify }}">
         {% endif %}
-          <amp-img layout="fixed" height="76" width="76" src="{{ author.th }}" alt="{{ author.title }}"></amp-img>
+          <amp-img layout="fixed" height="76" width="76" src="{{ author[0].article_th }}" alt="{{ author_name }}"></amp-img>
         </a>
       </li>
     {% endfor %}
