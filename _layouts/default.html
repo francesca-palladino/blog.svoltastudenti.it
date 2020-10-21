@@ -230,6 +230,8 @@
       -webkit-backdrop-filter: blur(30px);
       transition: all 1s;
       background-color: var(--light-half);
+      /* height: 20%; */
+      /* -webkit-mask: linear-gradient(to top, transparent, white 50%); */
     }
 
     #menu-checkbox:checked~#header #logoBG {
@@ -328,7 +330,7 @@
 
     #menu-checkbox:checked~#menu {
       pointer-events: all;
-      background-color: var(--light-half);
+      background-color: rgba(255, 255, 255, .75);
       backdrop-filter: blur(30px);
       -webkit-backdrop-filter: blur(30px);
       -webkit-transition: backdrop-filter 1s;
