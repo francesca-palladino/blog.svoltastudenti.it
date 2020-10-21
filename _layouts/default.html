@@ -249,7 +249,7 @@
       padding: 0;
     }
 
-    #vacca {
+    /* #vacca {
       position: fixed;
       top: 50%;
       left: 50%;
@@ -257,7 +257,7 @@
       background-color: green;
       width: 100px;
       height: 100px;
-    }
+    } */
 
     #menu-checkbox:checked~#vacca {
       background-color: red;
@@ -694,155 +694,7 @@
       background-repeat: no-repeat;
     }
 
-    #vscroll-content section {
-      height: 100vh;
-      width: 100vw;
-      scroll-snap-align: start;
-      position: relative;
-      display: block;
-    }
-
-    #vscroll-content section .title {
-      text-align: right;
-      color: rgba(255, 255, 255, 1);
-      font-size: 7vw;
-      font-weight: 700;
-      font-family: 'Montserrat', sans-serif;
-      padding-top: 40vh;
-      padding-right: 20vw;
-      opacity: 0;
-      transition: all 1s;
-    }
-
-    /* #vscroll-content section .title:hover {
-              -webkit-text-stroke: 1.5px white;
-
-      color: rgba(255, 255, 255, 0);
-      letter-spacing: 2vw;
-    } */
-
-    #vscroll-content section .title.animActive {
-      opacity: 1;
-      transform: translateY(-100px);
-    }
-
-    #vscroll-content section .subtitle {
-      font-style: italic;
-      text-align: right;
-      color: white;
-      font-size: 2.5vw;
-      font-weight: 400;
-      font-family: 'Montserrat', sans-serif;
-      padding-right: 20.1vw;
-      opacity: 0;
-      transition: all 1s;
-    }
-
-    #vscroll-content section .subtitle.animActive {
-      opacity: 1;
-      transform: translateY(-100px);
-    }
-
-    #vscroll-content section .btn {
-      text-align: center;
-      color: white;
-      font-size: large;
-      padding: 30px;
-      background-color: #FF6600;
-      border-radius: 20px;
-      margin-top: 4vh;
-      margin-left: 60vw;
-      width: 15vw;
-      opacity: 0;
-      transition: all 1s;
-      transition-delay: 0.5s;
-    }
-
-    #vscroll-content section .btn.animActive {
-      opacity: 1;
-      transform: translateY(-100px);
-    }
-
-    #vscroll-content section:before {
-      content: "";
-      background-origin: padding-box;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-color: black;
-      filter: brightness(70%);
-      box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-    #vscroll-bar {
-      position: fixed;
-      right: 0;
-      top: 0;
-      padding-right: 20px;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: right;
-    }
-
-    #vscroll-bar ul {
-      padding-left: 0px;
-    }
-
-    #vscroll-bar ul li {
-      list-style-type: none;
-    }
-
-    #vscroll-bar ul li a {
-      display: block;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      border: solid 2px white;
-      color: white;
-      background-color: rgba(255, 255, 255, 0);
-      margin: 10px 8vw 10px 0;
-      opacity: 0.5;
-      transition: all 0.5s;
-    }
-
-    #vscroll-bar ul li a.animActive {
-      background-color: rgba(255, 255, 255, 1);
-      margin: 25px 8vw 25px 0;
-      transform: scale(2);
-      opacity: 1;
-    }
-
-    #vscroll-bar ul li a:hover {
-      background-color: rgba(255, 255, 255, .75);
-      transform: scale(1.5);
-    }
-
-    #vscroll-bar ul li a.animActive:hover {
-      background-color: #FF6600;
-      transform: scale(2.5);
-    }
-
-    @media only screen and (max-width: 800px) {
-      #vscroll-content section .title {
-        font-size: 7vw;
-      }
-    }
-
-    .slide1:before,
-    .slide2:before,
-    .slide3:before,
-    .slide4:before,
-    .slide5:before,
-    .slide6:before {
-      background-image: url(assets/img/home1.jpeg);
-    }
+    
 
     #projects a p {
       display: none;
