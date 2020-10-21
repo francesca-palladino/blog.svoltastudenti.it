@@ -4,8 +4,8 @@ noBrand: "true"
 category: it
 ---
 <div id="vscroll-content">
-  {% for post in site.categories.it %}
-    {% if post.layout == "home" %}
+	{% assign posts = site.posts | where: "category", "it" | where: "layout", "home" %}
+	{% for post in posts %}
       <style>
         #vscroll-content .{{ post.title | slugify }}:before {
           background-image: url('{{ post.bg }}');
@@ -17,17 +17,14 @@ category: it
         <div class="subtitle" data-animTarget="{{ post.title | slugify }}">{{ post.body | markdownify }}</div>
         <a href="{{ post.btn_link }}" class="btn" data-animTarget="{{ post.title | slugify }}">{{ post.btn_text}}</a>
       </section>
-    {% endif %}
   {% endfor %}
 </div>
 <div id="vscroll-bar">
 	<ul>
-    {% for post in site.categories.it %}
-      {% if post.layout == "home" %}
-        <li>
-          <a href="#{{ post.title | slugify }}" class="bullet" data-animTarget="{{ post.title | slugify }}"></a>
-        </li>
-      {% endif %}
+    {% for post in posts %}
+	<li>
+		<a href="#{{ post.title | slugify }}" class="bullet" data-animTarget="{{ post.title | slugify }}"></a>
+	</li>
     {% endfor %}
 	</ul>
 </div>

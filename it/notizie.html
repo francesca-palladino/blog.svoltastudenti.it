@@ -125,53 +125,40 @@ category: it
     display: none;
   }
 </style>
+{% assign posts = site.posts | where: "category", "it" | where: "layout", "blog" %}
+{% assign tags = array[1] %}
+{% for item in posts %}
+  {% unless tags contains posts.tag %}
+    {% capture tags %}{{ tags }}|{{ posts.tag }}{% endcapture %}
+  {% endunless %}
+{% endfor %}
+{{ tags | split: '|' | sort | join: ', ' }}
+
+{% for post in posts %}
+	<a href="{{ post.url }}">
+		{{ post.title }}
+	</a><br/>
+{% endfor %}
 <div id="articleList">
   <div id="wrapper">
-    <input type="checkbox" id="catFilter-a" />
-    <input type="checkbox" id="catFilter-b" />
-    <input type="checkbox" id="catFilter-c" />
-    <input type="checkbox" id="catFilter-d" />
-    <input type="checkbox" id="catFilter-e" />
-    <input type="checkbox" id="catFilter-f" />
-    <input type="checkbox" id="catFilter-g" />
-    <input type="checkbox" id="catFilter-h" />
-
+    {% for tag in tags %}
+      <input type="checkbox" id="catFilter-{{ tag | slugify }}" />
+    {% endfor %}
     <input type="checkbox" id="list-checkbox" />
     <div id="list">
       <label for="list-checkbox">Categorie</label>
       <ul>
-        <li>
-          <label for="catFilter-a">Categoria a</label>
-        </li>
-        <li>
-          <label for="catFilter-b">Categoria b</label>
-        </li>
-        <li>
-          <label for="catFilter-c">Categoria c</label>
-        </li>
-        <li>
-          <label for="catFilter-d">Categoria d</label>
-        </li>
-        <li>
-          <label for="catFilter-e">Categoria e</label>
-        </li>
-        <li>
-          <label for="catFilter-f">Categoria f</label>
-        </li>
-        <li>
-          <label for="catFilter-g">Categoria g</label>
-        </li>
-        <li>
-          <label for="catFilter-h">Categoria h</label>
-        </li>
+        {% for tag in tags %}
+          <li>
+            <label for="catFilter-{{ tag | slugify }}">{{ tag }}</label>
+          </li>
+        {% endfor %}
       </ul>
     </div>
     <div id="data">
-      {% for post in site.categories.it %}
-      {% if post.layout == "blog" %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="th" data-cat="{{ post.tags[0] }}"><img
+      {% for post in posts %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="th" data-cat="{{ post.tag | slugify }}"><img
           src="{{ post.th }}" />{{ post.title }}</a>
-      {% endif %}
       {% endfor %}
     </div>
   </div>

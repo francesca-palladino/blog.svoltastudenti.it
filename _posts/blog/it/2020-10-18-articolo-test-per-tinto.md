@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: Articolo test per tinto
-tags: Associazione
+tag: Associazione
 desc: blablabla
 th: /assets/img/uploads/3-1.png
 related:

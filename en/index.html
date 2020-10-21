@@ -4,30 +4,27 @@ noBrand: "true"
 category: en
 ---
 <div id="vscroll-content">
-  {% for post in site.categories.en %}
-    {% if post.layout == "home" %}
-      <style>
-        #vscroll-content .{{ post.title | slugify }}:before {
-          background-image: url('{{ post.bg }}');
-        }
-      </style>
-      <a name="{{ post.title | slugify }}"></a>
+  {% assign posts = site.posts | where: "category", "en" | where: "layout", "home" %}
+  {% for post in posts %}
+    <style>
+      #vscroll-content .{{ post.title | slugify }}:before {
+        background-image: url('{{ post.bg }}');
+      }
+    </style>
+    <a name="{{ post.title | slugify }}"></a>
       <section class="animTrigger {{ post.title | slugify }}" data-animId="{{ post.title | slugify }}">
         <div class="title" data-animTarget="{{ post.title | slugify }}">{{ post.title }}</div>
         <div class="subtitle" data-animTarget="{{ post.title | slugify }}">{{ post.body | markdownify }}</div>
         <a href="{{ post.btn_link }}" class="btn" data-animTarget="{{ post.title | slugify }}">{{ post.btn_text}}</a>
       </section>
-    {% endif %}
   {% endfor %}
 </div>
 <div id="vscroll-bar">
 	<ul>
-    {% for post in site.categories.en %}
-      {% if post.layout == "home" %}
-        <li>
-          <a href="#{{ post.title | slugify }}" class="bullet" data-animTarget="{{ post.title | slugify }}"></a>
-        </li>
-      {% endif %}
+    {% for post in posts %}
+      <li>
+        <a href="#{{ post.title | slugify }}" class="bullet" data-animTarget="{{ post.title | slugify }}"></a>
+      </li>
     {% endfor %}
 	</ul>
 </div>
