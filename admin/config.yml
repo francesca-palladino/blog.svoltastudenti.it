@@ -20,10 +20,10 @@ collections:
       - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
       - {label: "Testo", name: "body", widget: "markdown"}
       - {label: "Articolo in Inglese", name: "translations.en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Miniatura Articolo", name: "article_th", widget: "image", required: true}
+      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog (en)" # Used in the UI
@@ -40,10 +40,10 @@ collections:
       - {label: "Riassunto (max 200 caratteri)", name: "desc", widget: "text" }
       - {label: "Testo", name: "body", widget: "markdown"}
       - {label: "Articolo in Inglese", name: "translations.it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Miniatura Articolo", name: "th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "related", widget: "relation", multiple: true, required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
+      - {label: "Miniatura Articolo", name: "article_th", widget: "image", required: true}
+      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "users-it" # Used in routes, e.g., /admin/collections/blog
     label: "Utenti (it)" # Used in the UI
@@ -66,7 +66,7 @@ collections:
           - {label: "Facebook Id", name: "fb", widget: "string", required: false}
           - {label: "Telegram Id", name: "tg", widget: "string", required: false}
           - {label: "Svolta Id", name: "mail", widget: "string"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "users-en" # Used in routes, e.g., /admin/collections/blog
     label: "Utenti (en)" # Used in the UI
@@ -89,7 +89,7 @@ collections:
           - {label: "Facebook Id", name: "fb", widget: "string", required: false}
           - {label: "Telegram Id", name: "tg", widget: "string", required: false}
           - {label: "Svolta Id", name: "mail", widget: "string"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "events-it" # Used in routes, e.g., /admin/collections/blog
     label: "Eventi (it)" # Used in the UI
@@ -106,7 +106,8 @@ collections:
       - {label: "Categoria", name: "tag", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
       - {label: "Descrizione", name: "body", widget: "markdown" }
       - {label: "Evento in Inglese", name: "translations.en", widget: "relation", required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Copertina", name: "th", widget: "image", required: true}
+      - {label: "Miniatura Evento", name: "article_th", widget: "image", required: true}
+      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Programma"
         name: "days"
         widget: "object"
@@ -128,7 +129,7 @@ collections:
           - {label: "Informazioni", name: "info", widget: "markdown" }
           - {label: "Note", name: "notes", widget: "markdown", required: false }
       - {label: "Prezzo", name: "price", widget: "number", valueType: "int", min: 0, step: 1}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Pretix ID", name: "pretix", widget: "string"}
   - name: "events-en" # Used in routes, e.g., /admin/collections/blog
     label: "Eventi (en)" # Used in the UI
@@ -145,7 +146,8 @@ collections:
       - {label: "Categoria", name: "tag", widget: "select", options: ["Viaggio", "Attivita'", "Conferenza", "Workshop", "Evento"], multiple: false}
       - {label: "Descrizione", name: "body", widget: "markdown" }
       - {label: "Evento in Inglese", name: "translations.it", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
-      - {label: "Copertina", name: "th", widget: "image", required: true}
+      - {label: "Miniatura Articolo", name: "article_th", widget: "image", required: true}
+      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Programma"
         name: "days"
         widget: "object"
@@ -167,7 +169,7 @@ collections:
           - {label: "Informazioni", name: "info", widget: "markdown" }
           - {label: "Note", name: "notes", widget: "markdown", required: false }
       - {label: "Prezzo", name: "price", widget: "number", valueType: "int", min: 0, step: 1}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Pretix ID", name: "pretix", widget: "string"}
   - name: "home-it" # Used in routes, e.g., /admin/collections/blog
     label: "Home (it)" # Used in the UI
@@ -184,7 +186,7 @@ collections:
       - {label: "Immagine Background", name: "bg", widget: "image", required: true}
       - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
       - {label: "Link Bottone", name: "btn_link", widget: "string"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
   - name: "home-en" # Used in routes, e.g., /admin/collections/blog
     label: "Home (en)" # Used in the UI
@@ -201,5 +203,5 @@ collections:
       - {label: "Immagine Background", name: "bg", widget: "image", required: true}
       - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
       - {label: "Link Bottone", name: "btn_link", widget: "string"}
-      - {label: "Pubblicato", name: "published", widget: "boolean", default: false}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
