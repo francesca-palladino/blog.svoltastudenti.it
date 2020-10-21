@@ -892,24 +892,46 @@
 
   <div id="menu" for="menu-checkbox">
     <ul id="nav">
-      <li>
-        <a href="{{site.url}}/{{ page.category }}/">Homefffe </a>
-      </li>
-      <li>
-        <a href="{{site.url}}/{{ page.category }}/">Rappresentanza</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/{{ page.category }}/">Associazione</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/{{ page.category }}/store">Eventi</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/{{ page.category }}/news">Notizie</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/{{ page.category }}/info">Contatti</a>
-      </li>
+      {% if page.translations.it  %}
+        <li>
+          <a href="{{site.url}}/it/">Home</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/it/rappresentanza">Rappresentanza</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/it/associazione">Associazione</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/it/eventi">Eventi</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/it/notizie">Notizie</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/it/contatti">Contatti/Legal</a>
+        </li>
+      {% endif %}
+      {% if page.translations.en  %}
+        <li>
+          <a href="{{site.url}}/en/">Home</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/en/association">Association</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/en/representatives">Representatives</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/en/events">Events</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/en/news">News</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/en/contacts">Contacts/Legal</a>
+        </li>
+      {% endif %}
     </ul>
 
     <ul id="projects">
@@ -917,26 +939,33 @@
         <a href="">
           <svg>
             <rect></rect>
-          </svg>FAQ
-          <p>While I agree most of these examples probably shouldn’t be used in practice, I think the “Push Toggle”
-            examples are actually a perfect use case for this technique. </p></a>
+          </svg>
+          FAQ
+          <p>
+            While I agree most of these examples probably shouldn’t be used in practice, I think the “Push Toggle”
+            examples are actually a perfect use case for this technique.
+          </p>
+        </a>
       </li>
       <li>
         <a href="">
           <svg>
             <rect></rect>
-          </svg>LM</a>
+          </svg>
+          LM
+        </a>
       </li>
       <li>
-        <a href=""><svg>
+        <a href="">
+          <svg>
             <rect></rect>
-          </svg>Orange</a></li>
+          </svg>
+          Orange
+        </a>
+      </li>
     </ul>
     <div id="social">
       <ul>
-        <li><a href="">POLICY</a></li>
-        <li><a href="">TERMINI</a></li>
-        <li><a href="">NON SO</a></li>
         <li><a href="">SOCIAL1</a></li>
         <li><a href="">SOCIAL2</a></li>
         <li><a href="">SOCIAL3</a></li>
