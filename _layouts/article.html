@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="article">
+	<amp-img id="th" layout="fill" src="{{ page.article_th }}"></amp-img>
+	<div id="content-wrapper">
+		{{ content }}
+	</div>
+</div>
+<aside>
+	<section id="related">
+		<h1>
+			Correlati
+		</h1>
+		<ul>
+			{% for related in page.article_related %}
+				<li>
+					<a href="{{ related.url | prepend: site.baseurl }}">
+						<amp-img layout="fill" src="{{ related.th }}" alt="{{ related.title }}"></amp-img>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
+</aside>

@@ -249,20 +249,6 @@
       padding: 0;
     }
 
-    /* #vacca {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      z-index: 10;
-      background-color: green;
-      width: 100px;
-      height: 100px;
-    } */
-
-    #menu-checkbox:checked~#vacca {
-      background-color: red;
-    }
-
     .ham {
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
@@ -537,18 +523,18 @@
       hyphens: none;
     }
 
-    article #article-wrapper {
+    article .article {
       position: relative;
       width: 90%;
       padding-left: 5%;
       padding-right: 5%;
     }
 
-    article #article-wrapper #th {
+    article .article #th {
       display: none;
     }
 
-    article #article-wrapper>#content-wrapper {
+    article .article>#content-wrapper {
       width: 100%;
       padding: 0;
     }
@@ -705,12 +691,12 @@
     }
 
     @media all and (orientation: landscape) {
-      article #article-wrapper {
+      article .article {
         display: flex;
         flex-direction: row;
       }
 
-      article #article-wrapper #th {
+      article .article #th {
         display: block;
         height: calc(100vh - 160px);
         width: 36%;
@@ -720,11 +706,11 @@
         top: 110px;
       }
 
-      article #article-wrapper #th img {
+      article .article #th img {
         object-fit: contain;
       }
 
-      article #article-wrapper>#content-wrapper {
+      article .article>#content-wrapper {
         width: 50%;
         padding-left: 2vw;
         padding-right: 2vw;
@@ -847,7 +833,6 @@
           d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
       </svg>
     </label>
-    <!-- <div id="vacca" for="menu-checkbox"></div> -->
   </div>
 
   <article>

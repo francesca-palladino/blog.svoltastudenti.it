@@ -1,121 +1,28 @@
 ---
-layout: default
+layout: article
 ---
-
-<div id="article-wrapper">
-	<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/900x1200"></amp-img>
-	<div id="content-wrapper">
-		<header>
-			<h1>
-				{{ page.title }}
-			</h1>
-			<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
-		</header>
-		<div id="content">
-			{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
-		</div>
-		<footer>
-			<ul id="authors">
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-				<li>
-					<a href="/{{ page.category }}/users/a">
-						<amp-img layout="fixed" height="76" width="76"
-							src="https://source.unsplash.com/random/76x76" alt="Nome 1"></amp-img>
-					</a>
-				</li>
-			</ul>
-		</footer>
-	</div>
+<header>
+	<h1>
+		{{ page.title }}
+	</h1>
+	<time pubdate datetime="{{ page.date }}" id="pubdate">{{ page.date | date: "%-d %B %Y" }}</time>
+</header>
+<div id="content">
+	{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 </div>
-<aside>
-	<section id="related">
-		<h1>
-			Correlati
-		</h1>
-		<ul>
+<footer>
+	<ul id="authors">
+		{% for author in page.authors %}
 			<li>
-				<a href="/{{ page.category }}/blog/a">
-					<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
-					</amp-img>
-				</a>
-			</li>
-			<li>
-				<a href="/{{ page.category }}/blog/a">
-					<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
-					</amp-img>
-				</a>
-			</li>
-			<li>
-				<a href="/{{ page.category }}/blog/a">
-					<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
-					</amp-img>
-				</a>
-			</li>
-			<li>
-				<a href="/{{ page.category }}/blog/a">
-					<amp-img layout="fill" src="https://source.unsplash.com/random/1000x1000" alt="art 1">
-					</amp-img>
-				</a>
-			</li>
-		</ul>
-	</section>
-</aside>
+        {% if page.category == "it"  %}
+          <a href="/it/utenti/{{ author.title | slugify }}">
+        {% endif %}
+        {% if page.category == "en"  %}
+          <a href="/en/users/{{ author.title | slugify }}">
+        {% endif %}
+          <amp-img layout="fixed" height="76" width="76" src="{{ author.th }}" alt="{{ author.title }}"></amp-img>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</footer>

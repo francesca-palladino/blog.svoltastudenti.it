@@ -19,17 +19,17 @@ layout: default
   .thList .list {
     width: 100%;
     background-color: green;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     font-size: 48px;
     line-height: 50px;
     height: 50px;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
   }
 
-  .thList #thList-checkbox:checked~#list {
+  .thList #thList-checkbox:checked ~ .list {
     height: 100%;
   }
 
@@ -42,7 +42,6 @@ layout: default
     justify-content: stretch;
     align-items: flex-start;
     background-color: gray;
-    z-index: -1;
   }
 
   .thList .th {
@@ -56,6 +55,10 @@ layout: default
     opacity: 1;
     transition: height 1s, width 1s, opacity 1s;
     background: green;
+    background-origin:padding-box;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
   }
 
   @media all and (min-width: 720px) and (orientation: landscape) {
@@ -84,11 +87,11 @@ layout: default
   }
 
   {% for tag in tags %}
-    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .thList .data *[data-cat="{{ tag | slugify }}"] {
+    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .data *[data-cat="{{ tag | slugify }}"] {
       display: none;
     }
 
-    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .thList .list label[for="thList-catFilter-{{ tag | slugify }}"] {
+    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .list label[for="thList-catFilter-{{ tag | slugify }}"] {
       background-color: red;
     }
 
@@ -97,10 +100,11 @@ layout: default
     }
   {% endfor %}
 </style>
+<div  style="height: 600px; background-color: yellow"></div>
 <div class="thList">
   <div class="wrapper">
     {% for tag in tags %}
-      <input type="checkbox" id="thList-thList-catFilter-{{ tag | slugify }}" />
+      <input type="checkbox" id="thList-catFilter-{{ tag | slugify }}" />
     {% endfor %}
     <input type="checkbox" id="thList-checkbox" />
     <div class="list">
@@ -115,8 +119,9 @@ layout: default
     </div>
     <div class="data">
       {% for post in posts %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="th" data-cat="{{ post.tag | slugify }}"><img
-          src="{{ post.th }}" />{{ post.title }}</a>
+        <a style="background-image: url('{{ post.article_th }}');" class="th" href="{{ post.url | prepend: site.baseurl }}"  data-cat="{{ post.tag | slugify }}">
+          {{ post.title }}
+        </a>
       {% endfor %}
     </div>
   </div>
