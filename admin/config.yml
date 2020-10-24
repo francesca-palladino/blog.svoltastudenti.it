@@ -59,6 +59,13 @@ collections:
       - {label: "Bio", name: "body", widget: "markdown" }
       - {label: "Utente in Inglese", name: "translations.en", widget: "relation", required: false, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Immagine", name: "article_th", widget: "image", required: true}
+      - label: "Stato"
+        name: "status"
+        widget: "object"
+        fields:
+          - {label: "Attivo", name: "active", widget: "boolean", required: true}
+          - {label: "Data Entrata", name: "start_date", widget: "datetime", required: true}
+          - {label: "Data Uscita", name: "end_date", widget: "datetime", required: false}
       - label: "Profili"
         name: "socials"
         widget: "object"
@@ -82,6 +89,13 @@ collections:
       - {label: "Bio", name: "body", widget: "markdown" }
       - {label: "Utente in Italiano", name: "translations.it", widget: "relation", required: false, collection: "users-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Immagine", name: "article_th", widget: "image", required: true}
+      - label: "Stato"
+        name: "status"
+        widget: "object"
+        fields:
+          - {label: "Attivo", name: "active", widget: "boolean", required: true}
+          - {label: "Data Entrata", name: "start_date", widget: "datetime", required: true}
+          - {label: "Data Uscita", name: "end_date", widget: "datetime", required: false}
       - label: "Profili"
         name: "socials"
         widget: "object"

@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza/Elezioni Studentesche
-date: '2008-04-10'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
+tag: Rappresentanza/Elezioni Studentesche
+desc: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
+article_th: /assets/img/article_placeholder.png
 authors:
   - Roberto Maffei
-title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
-fb_title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2008-04-10T00:00:00.000Z
 ---
 
 _La storia, a volte, copia la fantasia dell’uomo. JLBorges_
