@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: Education! Education! Education!
-tag: Internazionalizzazione
+tag: Rappresentanza
 desc: Education! Education! Education!
 article_th: /assets/img/uploads/article_placeholder.png
 authors:

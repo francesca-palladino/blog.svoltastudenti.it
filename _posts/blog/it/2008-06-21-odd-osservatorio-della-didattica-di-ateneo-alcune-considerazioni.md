@@ -3,9 +3,9 @@ layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"
-title: "ODD: osservatorio della didattica di ateneo. Alcune considerazioni."
+title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
 tag: Rappresentanza
-desc: "ODD: osservatorio della didattica di ateneo. Alcune considerazioni."
+desc: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Roberto Maffei

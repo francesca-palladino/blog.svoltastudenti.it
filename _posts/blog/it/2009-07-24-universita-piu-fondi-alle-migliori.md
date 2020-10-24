@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: 'Università, più fondi alle migliori'
-tag: Meritocrazia
+tag: Rappresentanza
 desc: 'Università, più fondi alle migliori'
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
