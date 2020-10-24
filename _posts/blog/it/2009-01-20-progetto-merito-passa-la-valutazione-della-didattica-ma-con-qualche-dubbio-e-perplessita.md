@@ -1,28 +1,5 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Senato Accademico
-  - Rappresentanza
-  - Meritocrazia
-date: '2009-01-20'
-authors:
-  - Antonio Mazzitelli
-title: >-
-  Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
-  perplessità
-fb_title: >-
-  Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
-  perplessità
-
-image: 
-lang: it
-place: Milano
-
-
-
-layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"

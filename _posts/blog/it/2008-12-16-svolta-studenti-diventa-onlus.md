@@ -1,22 +1,5 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Associazione
-date: '2008-12-16'
-authors:
-  - Svoltastudenti
-title: Svolta Studenti diventa ONLUS
-fb_title: Svolta Studenti diventa ONLUS
-
-image: 
-lang: it
-place: Milano
-
-
-
-layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"
