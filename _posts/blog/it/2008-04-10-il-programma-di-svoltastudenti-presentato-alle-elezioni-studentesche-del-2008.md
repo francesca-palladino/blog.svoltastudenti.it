@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
-tag: Rappresentanza/Elezioni Studentesche
+tag: Rappresentanza
 desc: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
 article_th: /assets/img/article_placeholder.png
 authors:
