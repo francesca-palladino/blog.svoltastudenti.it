@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Consiglio di Amministrazione
-  - Meritocrazia
-date: '2010-11-30'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Riforma Gelmini, ecco cosa cambia'
+tag: Rappresentanza
+desc: 'Riforma Gelmini, ecco cosa cambia'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Giovanni Sala
-title: 'Riforma Gelmini, ecco cosa cambia'
-fb_title: 'Riforma Gelmini, ecco cosa cambia'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-11-30T00:00:00.000Z
 ---
 
 Lotta agli sprechi e a parentopoli; stop ai rettori a vita; autonomia delle università coniugata con una forte responsabilità finanziaria, scientifica, didattica; soldi solo in base alla qualità (gli atenei gestiti male ne riceveranno meno) e fine dei finanziamenti a pioggia; reclutamento e governance secondo criteri meritocratici e di trasparenza.

@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Progetto Piano
-  - ViVi.Polimi e spazi studio
-date: '2012-12-24'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: REGALI DI NATALE - Situazione spazi e orari nei Poli territoriali
+tag: Rappresentanza
+desc: REGALI DI NATALE - Situazione spazi e orari nei Poli territoriali
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: REGALI DI NATALE - Situazione spazi e orari nei Poli territoriali
-fb_title: REGALI DI NATALE - Situazione spazi e orari nei Poli territoriali
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2012-12-24T00:00:00.000Z
 ---
 
 A seguito di una nostra richiesta inviata ai prorettori di tutti i Poli lo scorso 13 novembre, in cui abbiamo sottolineato la necessità di aumentare il numero delle aule studio ed estendere l'apertura degli orari negli spazi già presenti, sono arrivate le risposte con gli stati di fatto e le novità in programma. Ecco un quadro complessivo dei poli di Piacenza, Cremona, Lecco e Como.

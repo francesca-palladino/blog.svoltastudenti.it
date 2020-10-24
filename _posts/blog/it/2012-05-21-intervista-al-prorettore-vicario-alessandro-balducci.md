@@ -1,19 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Internazionalizzazione e mobilità
-date: '2012-05-21'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Intervista al Prorettore Vicario Alessandro Balducci
+tag: Rappresentanza
+desc: Intervista al Prorettore Vicario Alessandro Balducci
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Intervista al Prorettore Vicario Alessandro Balducci
-fb_title: Intervista al Prorettore Vicario Alessandro Balducci
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2012-05-21T00:00:00.000Z
 ---
 
 Ultimamente nel nostro ateneo "the topic" è la decisione del Senato Accademico di avere, a partire dall' A.A. 2014/2015, tutte le lauree magistrali in lingua inglese.

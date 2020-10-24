@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Consiglio di Amministrazione
-  - Meritocrazia
-date: '2010-11-19'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Tutti in piazza a difendere lo status quo?
+tag: Rappresentanza
+desc: Tutti in piazza a difendere lo status quo?
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Giovanni Sala
-title: Tutti in piazza a difendere lo status quo?
-fb_title: Tutti in piazza a difendere lo status quo?
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-11-19T00:00:00.000Z
 ---
 
 Una riforma da salvare, nonostante tutto, ecco perché...

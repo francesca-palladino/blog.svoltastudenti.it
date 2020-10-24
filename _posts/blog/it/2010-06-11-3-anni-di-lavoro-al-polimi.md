@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2010-06-11'
-authors:
-  - Svoltastudenti
+category: it
+isAmp: "true"
+noBrand: "false"
 title: 3 Anni di LAVORO al PoliMI
-fb_title: 3 Anni di LAVORO al PoliMI
-
-image: 
-lang: it
-place: Milano
+tag: Rappresentanza
+desc: 3 Anni di LAVORO al PoliMI
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Antonio Mazzitelli
+published: true
+date: 2010-06-11T00:00:00.000Z
 ---
 
 **11-giugno 2010**

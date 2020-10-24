@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2010-03-17'
-authors:
-  - Antonio Mazzitelli
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   L’università oltre le lezioni, la realtà in Olanda, ancora un miraggio al
   Politecnico.
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   L’università oltre le lezioni, la realtà in Olanda, ancora un miraggio al
   Politecnico.
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Antonio Mazzitelli
+published: true
+date: 2010-03-17T00:00:00.000Z
 ---
 
 Nella mia esperienza all’estero presso l’università di Eindhoven ho avuto il piacere toccare con mano la vita studentesca che si respira in Olanda.

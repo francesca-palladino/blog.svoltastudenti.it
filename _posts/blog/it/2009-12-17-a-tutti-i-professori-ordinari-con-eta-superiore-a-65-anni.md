@@ -1,24 +1,5 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Budget
-date: '2009-12-17'
-authors:
-  - Antonio Mazzitelli
-title: A tutti i professori ordinari con età superiore a 65 anni.
-fb_title: A tutti i professori ordinari con età superiore a 65 anni.
-
-image: 
-lang: it
-place: Milano
-
-
-
-layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"

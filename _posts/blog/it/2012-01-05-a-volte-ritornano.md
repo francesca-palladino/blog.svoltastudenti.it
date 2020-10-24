@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato accademico
-  - Progetto Piano ViVi.Polimi e Spazi Studio
-date: '2012-01-05'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: A volte ritornano..
+tag: Rappresentanza
+desc: A volte ritornano..
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: A volte ritornano..
-fb_title: A volte ritornano..
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2012-01-05T00:00:00.000Z
 ---
 
 Questo, non è il titolo del famoso film dell'orrore tratto dai racconti di Stephen King ma, è il riassunto di quanto succederà, dopo numerose richieste, a metà febbraio, nella famosa aula studio "acquario", ebbene si, torneranno i tanti richiesti tornelli ed insieme a loro si spera che torni anche la tanto agognata calma per cui questo luogo era conosciuto in passato.

@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2010-03-30'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Due proposte concrete: internazionalizzazione e stage'
+tag: Rappresentanza
+desc: 'Due proposte concrete: internazionalizzazione e stage'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Due proposte concrete: internazionalizzazione e stage'
-fb_title: 'Due proposte concrete: internazionalizzazione e stage'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-03-30T00:00:00.000Z
 ---
 
 Sourcing, Selezione e Monitoraggio Università Internazional Partner del Politecnico

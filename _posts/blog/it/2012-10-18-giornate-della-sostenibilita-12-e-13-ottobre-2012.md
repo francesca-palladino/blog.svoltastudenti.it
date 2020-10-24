@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2012-10-18'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Giornate Della Sostenibilità 12 e 13 Ottobre 2012
+tag: Rappresentanza
+desc: Giornate Della Sostenibilità 12 e 13 Ottobre 2012
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Giornate Della Sostenibilità 12 e 13 Ottobre 2012
-fb_title: Giornate Della Sostenibilità 12 e 13 Ottobre 2012
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2012-10-18T00:00:00.000Z
 ---
 
 Politecnico di Milano e Università degli Studi di Milano organizzano due giornate dedicate alla sostenibilità e aprono le porte delle rispettive sedi di Città Studi.

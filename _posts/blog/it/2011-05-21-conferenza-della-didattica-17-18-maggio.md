@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - calendario accademico prove in itinere e programmazione didattica
-date: '2011-05-21'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Conferenza della didattica 17-18 maggio
+tag: Rappresentanza
+desc: Conferenza della didattica 17-18 maggio
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Conferenza della didattica 17-18 maggio
-fb_title: Conferenza della didattica 17-18 maggio
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2011-05-21T00:00:00.000Z
 ---
 
 Si è svolta oggi la prima giornata della conferenza d'ateneo dedicata alla didattica. I temi centrali di oggi sono stati:

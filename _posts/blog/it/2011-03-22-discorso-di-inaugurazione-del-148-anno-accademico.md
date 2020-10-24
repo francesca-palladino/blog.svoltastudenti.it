@@ -1,19 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio degli studenti
-date: '2011-03-22'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Discorso di Inaugurazione del 148° Anno Accademico
+tag: Rappresentanza
+desc: Discorso di Inaugurazione del 148° Anno Accademico
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Marco Lucio Cerquaglia
-title: Discorso di Inaugurazione del 148° Anno Accademico
-fb_title: Discorso di Inaugurazione del 148° Anno Accademico
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2011-03-22T00:00:00.000Z
 ---
 
 Buongiorno a tutti.

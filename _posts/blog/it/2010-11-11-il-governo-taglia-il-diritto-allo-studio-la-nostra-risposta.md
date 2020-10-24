@@ -1,22 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Consiglio di Amministrazione
-  - Diritto allo Studio
-  - Budget
-date: '2010-11-11'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Il Governo taglia il Diritto allo studio: la nostra risposta.'
+tag: Rappresentanza
+desc: 'Il Governo taglia il Diritto allo studio: la nostra risposta.'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Giovanni Sala
-title: 'Il Governo taglia il Diritto allo studio: la nostra risposta.'
-fb_title: 'Il Governo taglia il Diritto allo studio: la nostra risposta.'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-11-11T00:00:00.000Z
 ---
 
 ### Cosa è successo

@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Consiglio di Amministrazione
-  - Diritto allo Studio
-date: '2010-12-11'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Diritto allo Studio: l''importanza della Rappresentanza'
+tag: Rappresentanza
+desc: 'Diritto allo Studio: l''importanza della Rappresentanza'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Nicolo Mariotti
-title: 'Diritto allo Studio: l''importanza della Rappresentanza'
-fb_title: 'Diritto allo Studio: l''importanza della Rappresentanza'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-12-11T00:00:00.000Z
 ---
 
 Il 2010 ha visto una riduzione molto consistente del finanziamento statale al Diritto allo Studio (DSU). Questa riduzione ha avuto effetti importanti nel nostro Ateneo. In particolare, è stato possibile con i fondi disponibili assegnare la borsa di studio a 1700 studenti, a fronte dei 2730 risultati idonei. La situazione delineata era quindi particolarmente delicata per i restanti 1030 studenti risultati idonei, i quali rischiavano di avere grosse difficoltà nella prosecuzione della propria carriera.

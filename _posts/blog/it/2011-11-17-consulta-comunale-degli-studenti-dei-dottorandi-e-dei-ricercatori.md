@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato accademico
-  - Residenze
-  - Partecipazione e Servizi agli Studenti
-date: '2011-11-17'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'CONSULTA COMUNALE DEGLI STUDENTI, DEI DOTTORANDI E DEI RICERCATORI'
+tag: Rappresentanza
+desc: 'CONSULTA COMUNALE DEGLI STUDENTI, DEI DOTTORANDI E DEI RICERCATORI'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: 'CONSULTA COMUNALE DEGLI STUDENTI, DEI DOTTORANDI E DEI RICERCATORI'
-fb_title: 'CONSULTA COMUNALE DEGLI STUDENTI, DEI DOTTORANDI E DEI RICERCATORI'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2011-11-17T00:00:00.000Z
 ---
 
 Oggi, 5 Novembre 2011, presso la sede del comune di Milano Palazzo Marino, si è riunita la consulta comunale degli studenti, dei dottorandi e dei ricercatori. A questa ha preso parte una delegazione di quattro rappresentanti ( due studenti, un ricercatore e un dottorando) per ciascuna università di Milano, e si è svolta alla presenza del Sindaco Giuliano Pisapia, del Presidente della Commissione Consiliare Filippo Barberis,che ha proposto e gestito questa iniziativa, dell’Assessore alle Politiche per il lavoro, Sviluppo economico, Università e ricerca Cristina Tajani, del Presidente del Consiglio Comunale Basilio Rizzo e dei membri della Commissione Consiliare Politiche per il lavoro, Sviluppo economico, Università e ricerca. Ovviamente anche il nostro Politecnico è stato invitato a prendere parte alla riunione, presentando un documento che riportasse dati, bisogni e nuove proposte:

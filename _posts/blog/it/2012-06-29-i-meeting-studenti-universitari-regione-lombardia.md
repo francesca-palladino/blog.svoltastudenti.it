@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2012-06-29'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
+tag: TODO
+desc: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
-fb_title: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2012-06-29T00:00:00.000Z
 ---
 
 L'8 e il 9 Giugno il nostro vicepresidente del consiglio degli studenti ha partecipato al I° Meeting degli studenti universitari della regione Lombardia tenutosi a Cremona.

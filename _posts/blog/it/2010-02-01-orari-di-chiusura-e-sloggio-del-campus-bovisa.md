@@ -1,24 +1,5 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2010-02-01'
-authors:
-  - Antonio Mazzitelli
-title: Orari di Chiusura (e sloggio) del Campus Bovisa
-fb_title: Orari di Chiusura (e sloggio) del Campus Bovisa
-
-image: 
-lang: it
-place: Milano
-
-
-
-layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"

@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio di Amministrazione
-  - Internazionalizzazione e Mobilità
-date: '2011-11-29'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: In Erasmus Ci Vanno Tutti!!
+tag: Rappresentanza
+desc: In Erasmus Ci Vanno Tutti!!
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: In Erasmus Ci Vanno Tutti!!
-fb_title: In Erasmus Ci Vanno Tutti!!
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2011-11-29T00:00:00.000Z
 ---
 
 Ciao ragazzi, il bando é quasi iniziato, ebbene sí, la possibilitá di vivere l'esperienza piú entusiasmante che l'università ti mette a disposizione, il Jolly della conoscenza di una nuova lingua da poter sfruttare nella tua futura carriera lavorativa é pronto per essere giocato. Il "Progetto Erasmus 2012/13" is ready to go.

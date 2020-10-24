@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Consiglio di Amministrazione
-  - Meritocrazia
-date: '2010-11-22'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Il posto del Professore è il tabù da sfatare.
+tag: Rappresentanza
+desc: Il posto del Professore è il tabù da sfatare.
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Giovanni Sala
-title: Il posto del Professore è il tabù da sfatare.
-fb_title: Il posto del Professore è il tabù da sfatare.
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-11-22T00:00:00.000Z
 ---
 
 Una buona analisi di Andrea Ichino sul sole24ore.

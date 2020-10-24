@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Meritocrazia
-date: '2011-10-10'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Progetto "Sportello" - La proposta di SvoltaStudenti
+tag: Rappresentanza
+desc: Progetto "Sportello" - La proposta di SvoltaStudenti
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Progetto "Sportello" - La proposta di SvoltaStudenti
-fb_title: Progetto "Sportello" - La proposta di SvoltaStudenti
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2011-10-10T00:00:00.000Z
 ---
 
 INTRODUZIONE

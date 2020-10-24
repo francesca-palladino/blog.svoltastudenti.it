@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2012-06-24'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: SvoltaStudenti per il terremoto
+tag: Rappresentanza
+desc: SvoltaStudenti per il terremoto
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: SvoltaStudenti per il terremoto
-fb_title: SvoltaStudenti per il terremoto
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2012-06-24T00:00:00.000Z
 ---
 
 > « Voi darete all'Italia Ingegneri, Architetti »

@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato accademico
-  - Meritocrazia
-date: '2012-02-24'
-authors:
-  - Fabio Frassini
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   E-Government made in MIUR: consultazione pubblica sul tema del valore legale
   del titolo di studio
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   E-Government made in MIUR: consultazione pubblica sul tema del valore legale
   del titolo di studio
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Fabio Frassini
+published: true
+date: 2012-02-24T00:00:00.000Z
 ---
 
 Il 27 gennaio 2012, al termine del Consiglio dei Ministri, il Presidente del Consiglio Mario Monti ha annunciato di voler sottoporre a **consultazione pubblica il tema del valore legale del titolo di studio**, affidandone la gestione al Ministero dell’istruzione, dell’università e della ricerca.
