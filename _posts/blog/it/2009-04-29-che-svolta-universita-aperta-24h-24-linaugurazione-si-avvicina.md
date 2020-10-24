@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
-tag: Partecipazione e Servizi agli Studenti
+tag: Rappresentanza
 desc: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
 article_th: /assets/img/uploads/article_placeholder.png
 authors:

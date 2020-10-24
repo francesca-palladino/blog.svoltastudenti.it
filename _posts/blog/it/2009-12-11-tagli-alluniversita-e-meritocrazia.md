@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Senato Accademico
-  - Rappresentanza
-  - Meritocrazia
-date: '2009-12-11'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Tagli all'Università e Meritocrazia
+tag: Meritocrazia
+desc: Tagli all'Università e Meritocrazia
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: Tagli all'Università e Meritocrazia
-fb_title: Tagli all'Università e Meritocrazia
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-12-11T00:00:00.000Z
 ---
 
 Un taglio alle risorse investite in conoscenza è, soprattutto nell'opinione di uno studente, sempre a priori inaccettabile.

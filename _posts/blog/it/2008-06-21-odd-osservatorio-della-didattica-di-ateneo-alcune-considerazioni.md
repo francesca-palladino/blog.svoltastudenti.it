@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
-tag: Roberto Maffei
+tag: Rappresentanza
 desc: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
 article_th: /assets/img/uploads/article_placeholder.png
 authors:

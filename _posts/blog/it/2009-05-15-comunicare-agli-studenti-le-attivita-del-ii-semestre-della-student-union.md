@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: 'Comunicare agli studenti: le attività del II semestre della Student Union'
-tag: Partecipazione e Servizi agli Studenti
+tag: Rappresentanza
 desc: 'Comunicare agli studenti: le attività del II semestre della Student Union'
 article_th: /assets/img/uploads/article_placeholder.png
 authors:

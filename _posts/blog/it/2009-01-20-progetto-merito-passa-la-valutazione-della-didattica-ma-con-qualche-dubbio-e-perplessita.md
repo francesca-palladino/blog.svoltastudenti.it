@@ -6,7 +6,7 @@ noBrand: "false"
 title: >-
   Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
   perplessità
-tag: Meritocrazia
+tag: Rappresentanza
 desc: >-
   Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
   perplessità

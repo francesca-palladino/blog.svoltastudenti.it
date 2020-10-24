@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio degli Studenti
-  - Partecipazione e Servizi agli Studenti
-date: '2009-09-09'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: in vigore la Carta dei Diritti e Doveri degli Studenti
+tag: Partecipazione e Servizi agli Studenti
+desc: in vigore la Carta dei Diritti e Doveri degli Studenti
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: in vigore la Carta dei Diritti e Doveri degli Studenti
-fb_title: in vigore la Carta dei Diritti e Doveri degli Studenti
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-09-09T00:00:00.000Z
 ---
 
 Dopo l'approvazione da parte degli organi accademici (ed un intenso lavoro da parte dei rappresentanti) è finalmente entrata in vigore la Carta dei Diritti e Doveri degli Studenti.

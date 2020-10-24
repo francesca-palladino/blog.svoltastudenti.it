@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-  - Partecipazione e Servizi agli Studenti
-date: '2009-12-27'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Università italiane: l''analisi di Vision e le nuove idee'
+tag: Rappresentanza
+desc: 'Università italiane: l''analisi di Vision e le nuove idee'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Università italiane: l''analisi di Vision e le nuove idee'
-fb_title: 'Università italiane: l''analisi di Vision e le nuove idee'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-12-27T00:00:00.000Z
 ---
 
 Recentemente pubblicato, anche sul sito del Politecnico, l'interessante risultato dell'analisi dei sistemi universitari di alcuni dei più sviluppati paesi al mondo (USA, UK, Francia, Germania, Spagna) a confronto col sistema italiano.
