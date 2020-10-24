@@ -6,7 +6,7 @@ noBrand: "false"
 title: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
 tag: Rappresentanza
 desc: Il programma di Svoltastudenti presentato alle elezioni studentesche del 2008
-article_th: /assets/img/article_placeholder.png
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Roberto Maffei
 published: true
