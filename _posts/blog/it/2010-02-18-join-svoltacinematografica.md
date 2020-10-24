@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Associazione
-date: '2010-02-18'
-authors:
-  - Svoltastudenti
+category: it
+isAmp: "true"
+noBrand: "false"
 title: Join SvoltaCinematografica!
-fb_title: Join SvoltaCinematografica!
-
-image: 
-lang: it
-place: Milano
+tag: Associazione
+desc: Join SvoltaCinematografica!
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Antonio Mazzitelli
+published: true
+date: 2010-02-18T00:00:00.000Z
 ---
 
 SvoltaCinematografica è un gruppo attivo da diversi anni al Politecnico di Milano sotto l'egida di Svoltastudenti.

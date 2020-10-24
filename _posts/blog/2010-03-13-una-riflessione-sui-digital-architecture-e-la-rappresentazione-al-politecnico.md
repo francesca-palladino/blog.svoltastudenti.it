@@ -1,19 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Architettura Urbanistica e Ingegneria delle Costruzioni
-  - Prove in itinere e programmazione Didattica
-date: '2010-03-13'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Una riflessione sui Digital Architecture e la rappresentazione al Politecnico
+tag: Architettura Urbanistica Ingegneria delle Costruzioni
+desc: Una riflessione sui Digital Architecture e la rappresentazione al Politecnico
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: Una riflessione sui Digital Architecture e la rappresentazione al Politecnico
-fb_title: Una riflessione sui Digital Architecture e la rappresentazione al Politecnico
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-03-13T00:00:00.000Z
 ---
 
 L'incredibile successo del corso di 3ds max è l'ennesima conferma del disagio che vivono gli studenti del politecnico nei confronti di una mancato insegamento dei metodi più avanzati di rappresentazione.

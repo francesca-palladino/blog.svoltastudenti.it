@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2010-02-18'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Proposte di potenziamento dei programmi Erasmus
+tag: Rappresentanza
+desc: Proposte di potenziamento dei programmi Erasmus
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: Proposte di potenziamento dei programmi Erasmus
-fb_title: Proposte di potenziamento dei programmi Erasmus
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-02-18T00:00:00.000Z
 ---
 
 Lunedì mattina 8 febbraio 2010, si discuterà finalmente in giunta OCD delle proposte di miglioramento dell'internazionalizzazione verso università importanti.

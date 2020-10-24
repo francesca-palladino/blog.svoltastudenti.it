@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2010-01-20'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Università aperta 24h/24 e anche la domenica!
+tag: Rappresentanza
+desc: Università aperta 24h/24 e anche la domenica!
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: Università aperta 24h/24 e anche la domenica!
-fb_title: Università aperta 24h/24 e anche la domenica!
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-01-20T00:00:00.000Z
 ---
 
 Dal 24 gennaio la biblioteca di Architettura Leonardo sarà aperta anche la domenica! Dalle 14 alle 20 si potrà studiare e consultare i libri della biblioteca!

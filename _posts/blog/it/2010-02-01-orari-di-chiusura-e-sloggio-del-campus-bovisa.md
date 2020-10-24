@@ -15,6 +15,21 @@ fb_title: Orari di Chiusura (e sloggio) del Campus Bovisa
 image: 
 lang: it
 place: Milano
+
+
+
+layout: blog
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Orari di Chiusura (e sloggio) del Campus Bovisa
+tag: Rappresentanza
+desc: Orari di Chiusura (e sloggio) del Campus Bovisa
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Antonio Mazzitelli
+published: true
+date: 2010-02-01T00:00:00.000Z
 ---
 
 Le strutture sono aperte fino alle ore 21.00 ....

@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Senato Accademico
-  - Rappresentanza
-  - Meritocrazia
-date: '2010-01-13'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
+tag: Rappresentanza
+desc: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
-fb_title: 'Lettera aperta alle Istituzioni ed agli Studenti - Milano, 3 Novembre 2008'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-01-13T00:00:00.000Z
 ---
 
 Gli studenti non possono che essere attenti e preoccupati dalle vicende che investono l’Università con particolare riferimento al nostro ateneo, il Politecnico di Milano. Scriviamo questa lettera aperta perché vorremmo invitare tutti a identificare questo difficile momento come un’importante opportunità di rinnovamento e miglioramento del sistema universitario italiano.

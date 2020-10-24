@@ -1,19 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Senato Accademico
-  - Rappresentanza
-date: '2010-01-04'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: inaugurazione anno accademico
+tag: Rappresentanza
+desc: inaugurazione anno accademico
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: inaugurazione anno accademico
-fb_title: inaugurazione anno accademico
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-01-04T00:00:00.000Z
 ---
 
 Grande stupore mi ha portato l'intervento di ieri del nostro rettore che ha difeso a spada tratta la nostra università e la sua dignità, mai il politecnico si era spinto tanto in la, ma questa volta vista la situazione si è agito.

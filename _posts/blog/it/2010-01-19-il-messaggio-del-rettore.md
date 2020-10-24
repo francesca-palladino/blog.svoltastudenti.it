@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Senato Accademico
-  - Rappresentanza
-  - Meritocrazia
-date: '2010-01-19'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: il messaggio del rettore
+tag: Rappresentanza
+desc: il messaggio del rettore
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: il messaggio del rettore
-fb_title: il messaggio del rettore
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2010-01-19T00:00:00.000Z
 ---
 
 Volevo scrivere qualcosa riguardo al messaggio mandato dal rettore a tutti gli studenti, esso è sicuramente d'accordo con l'idea di svolta studenti riguardo ai tagli alle università.
