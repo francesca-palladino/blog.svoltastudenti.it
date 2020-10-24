@@ -15,18 +15,18 @@ layout: article
     {% for author_name in page.authors %}
       {% assign author = site.posts | where: "category", page.category | where: "layout", "users" | where: "title", author_name %}
 			<li>
-        {% if page.category == "it"  %}
-          <a href="/it/utenti/{{ author[0].title | slugify }}">
-        {% endif %}
-        {% if page.category == "en"  %}
-          <a href="/en/users/{{ author[0].title | slugify }}">
-        {% endif %}
         {% if author[0] %}
-          <amp-img layout="fixed" height="76" width="76" src="{{ author[0].article_th }}" alt="{{ author_name }}"></amp-img>
-        {% else %}
           <span>{{ author_name }}</span>
+        {% else %}
+          {% if page.category == "it"  %}
+            <a href="/it/utenti/{{ author[0].title | slugify }}">
+          {% endif %}
+          {% if page.category == "en"  %}
+            <a href="/en/users/{{ author[0].title | slugify }}">
+          {% endif %}
+            <amp-img layout="fixed" height="76" width="76" src="{{ author[0].article_th }}" alt="{{ author_name }}"></amp-img>
+          </a>
         {% endif %}
-        </a>
       </li>
     {% endfor %}
   </ul>
