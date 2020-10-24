@@ -1,22 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2008-12-15'
-authors:
-  - Roberto Maffei
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   Svoltastudenti si racconta: tutto ciò che è stato fatto nei primi sei mesi di
   rappresentanza.
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   Svoltastudenti si racconta: tutto ciò che è stato fatto nei primi sei mesi di
   rappresentanza.
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Roberto Maffei
+published: true
+date: 2008-12-15T00:00:00.000Z
 ---
 
 10-11 giugno 2008

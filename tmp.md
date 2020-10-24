@@ -9,7 +9,7 @@ noBrand: "false"
 title: TODO
 tag: TODO
 desc: TODO
-article_th: /assets/img/article_placeholder.png
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - TODO
 published: true

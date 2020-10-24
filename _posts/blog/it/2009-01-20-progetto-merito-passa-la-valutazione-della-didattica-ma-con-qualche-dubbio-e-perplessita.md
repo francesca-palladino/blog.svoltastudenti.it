@@ -19,6 +19,25 @@ fb_title: >-
 image: 
 lang: it
 place: Milano
+
+
+
+layout: blog
+category: it
+isAmp: "true"
+noBrand: "false"
+title: >-
+  Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
+  perplessità
+tag: Meritocrazia
+desc: >-
+  Progetto Merito: passa la valutazione della didattica, ma con qualche dubbio e
+  perplessità
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Antonio Mazzitelli
+published: true
+date: 2009-01-20T00:00:00.000Z
 ---
 
 Nel Senato Accademico di Gennaio è stato approvato, dopo una lunga discussione che si protraeva da Ottobre, il Progetto Merito, una delle proposte avanzate dal Rettore tra le Linee di Sviluppo dell'Ateneo per evidenziare e premiare il Merito dei docenti del Politecnico.

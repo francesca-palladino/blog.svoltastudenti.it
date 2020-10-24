@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2008-06-21'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
+tag: Roberto Maffei
+desc: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Roberto Maffei
-title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
-fb_title: 'ODD: osservatorio della didattica di ateneo. Alcune considerazioni.'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2008-06-21T00:00:00.000Z
 ---
 
  La valutazione ed il controllo della qualità della didattica sono fondamentali per garantire agli studenti e a tutto l’ateneo l’eccellenza nell’offerta formativa a cui il Politecnico di Milano mira.

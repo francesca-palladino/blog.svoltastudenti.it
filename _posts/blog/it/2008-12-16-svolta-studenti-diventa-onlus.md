@@ -13,6 +13,21 @@ fb_title: Svolta Studenti diventa ONLUS
 image: 
 lang: it
 place: Milano
+
+
+
+layout: blog
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Svolta Studenti diventa ONLUS
+tag: Associazione
+desc: Svolta Studenti diventa ONLUS
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Roberto Maffei
+published: true
+date: 2008-12-16T00:00:00.000Z
 ---
 
 Per estendere le capacità di azione del gruppo e consolidare il network di chi si sta operando per migliorare i servizi rivolti agli studenti.
