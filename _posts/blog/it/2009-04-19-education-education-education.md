@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2009-04-19'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Education! Education! Education!
+tag: Internazionalizzazione
+desc: Education! Education! Education!
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: Education! Education! Education!
-fb_title: Education! Education! Education!
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-04-19T00:00:00.000Z
 ---
 
 da Corriere.it - un articolo di Roger Abravanel

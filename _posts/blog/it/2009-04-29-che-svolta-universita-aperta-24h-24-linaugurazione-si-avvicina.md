@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2009-04-29'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
+tag: Partecipazione e Servizi agli Studenti
+desc: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
-fb_title: 'Che Svolta: Università aperta 24h/24, l''inaugurazione si avvicina.'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-04-29T00:00:00.000Z
 ---
 
 E' prevista per maggio 2009 l'apertura notturna dell'università, come è già abitudine in tutte le migliori università d'europa.

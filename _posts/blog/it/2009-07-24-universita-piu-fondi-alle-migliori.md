@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Meritocrazia
-date: '2009-07-24'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Università, più fondi alle migliori'
+tag: Meritocrazia
+desc: 'Università, più fondi alle migliori'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Università, più fondi alle migliori'
-fb_title: 'Università, più fondi alle migliori'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-07-24T00:00:00.000Z
 ---
 
 L’Università di Trento, i Politecnici di Milano e di Torino sono i tre migliori atenei italiani.

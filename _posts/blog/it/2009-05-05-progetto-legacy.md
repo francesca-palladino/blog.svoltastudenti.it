@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Associazione
-date: '2009-05-05'
-authors:
-  - Svoltastudenti
+category: it
+isAmp: "true"
+noBrand: "false"
 title: Progetto LEGACY
-fb_title: Progetto LEGACY
-
-image: 
-lang: it
-place: Milano
+tag: Associazione
+desc: Progetto LEGACY
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Antonio Mazzitelli
+published: true
+date: 2009-05-05T00:00:00.000Z
 ---
 
 Hai seguito interessanti workshop gratuiti e hai dovuto fare a gara per prendere un posto perchè 160 non erano abbastanza?Hai partecipato ad uno dei nostri viaggi e ti sei divertito come non mai riproponendoti di partecipare a tutti i viaggi organizzati da svolta?

@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2009-05-24'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Terremoto in Abruzzo: riflettere sugli errori'
+tag: Rappresentanza
+desc: 'Terremoto in Abruzzo: riflettere sugli errori'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Terremoto in Abruzzo: riflettere sugli errori'
-fb_title: 'Terremoto in Abruzzo: riflettere sugli errori'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-05-24T00:00:00.000Z
 ---
 
 E' drammatico l'aggiornamento continuo circa il numero di vittime del terremoto in Abruzzo ed è ancora più forte l'amarezza proprio ora che giunge la notizia dell'estrazione di un ultimo corpo, quello di uno studente, dalle macerie della Casa dello Studente.

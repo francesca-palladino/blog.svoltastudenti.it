@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2009-04-11'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Università aperta 24h/24 - La risposta del polimi
+tag: Rappresentanza
+desc: Università aperta 24h/24 - La risposta del polimi
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: Università aperta 24h/24 - La risposta del polimi
-fb_title: Università aperta 24h/24 - La risposta del polimi
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-04-11T00:00:00.000Z
 ---
 
 Ecco la risposta del Politecnico alla nostra proposta di apertura serale della biblioteca di Architettura. L'idea ci sembra molto interessante ma andrà vagliata con il preside di facoltà Palermo, data la triste avventura dei lavori del patio.

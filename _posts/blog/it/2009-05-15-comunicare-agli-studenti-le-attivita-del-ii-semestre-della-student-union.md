@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2009-05-15'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Comunicare agli studenti: le attività del II semestre della Student Union'
+tag: Partecipazione e Servizi agli Studenti
+desc: 'Comunicare agli studenti: le attività del II semestre della Student Union'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Antonio Mazzitelli
-title: 'Comunicare agli studenti: le attività del II semestre della Student Union'
-fb_title: 'Comunicare agli studenti: le attività del II semestre della Student Union'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2009-05-15T00:00:00.000Z
 ---
 
 Ho sempre sostenuto l'importanza di valorizzare la comunicazione tra studenti e associazioni attive al Politecnico, di rappresentanza e non. Studentipolitecnico ormai da oltre un anno, grazie alla brillante idea di alcuni rappresentanti della Terna Sinistrorsa, si è mosso in questa direzione.
