@@ -6,8 +6,8 @@ noBrand: "false"
 title: Roberto Maffei
 article_th: /assets/img/uploads/article_placeholder.png
 status:
-  start_date: 2020-10-24T20:46:51.112Z
-  end_date: 2020-10-24T20:46:51.123Z
+  start_date: 2008-01-01T00:00:00.000Z
+  end_date: 2008-01-01T00:00:00.000Z
   active: false
 socials:
   mail: roberto.maffei
