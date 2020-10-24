@@ -93,7 +93,7 @@ collections:
         name: "status"
         widget: "object"
         fields:
-          - {label: "Attivo", name: "active", widget: "boolean", required: true}
+          - {label: "Attivo", name: "active", widget: "boolean", required: false}
           - {label: "Data Entrata", name: "start_date", widget: "datetime", required: true}
           - {label: "Data Uscita", name: "end_date", widget: "datetime", required: false}
       - label: "Profili"
