@@ -21,7 +21,11 @@ layout: article
         {% if page.category == "en"  %}
           <a href="/en/users/{{ author[0].title | slugify }}">
         {% endif %}
+        {% if author %}
           <amp-img layout="fixed" height="76" width="76" src="{{ author[0].article_th }}" alt="{{ author_name }}"></amp-img>
+        {% else %}
+          <span>{{ author_name }}</span>
+        {% endif %}
         </a>
       </li>
     {% endfor %}
