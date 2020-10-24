@@ -3,14 +3,14 @@ layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"
-title: TODO
-tag: TODO
-desc: TODO
+title: A tutti i professori ordinari con età superiore a 65 anni.
+tag: Rappresentanza
+desc: A tutti i professori ordinari con età superiore a 65 anni.
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - TODO
+  - Antonio Mazzitelli
 published: true
-date: TODOT00:00:00.000Z
+date: 2009-12-17T00:00:00.000Z
 ---
 
 Carissimi, 
