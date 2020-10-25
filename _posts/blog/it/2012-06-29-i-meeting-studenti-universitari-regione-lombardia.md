@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
-tag: TODO
+tag: Rappresentanza
 desc: I° MEETING STUDENTI UNIVERSITARI REGIONE LOMBARDIA
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
