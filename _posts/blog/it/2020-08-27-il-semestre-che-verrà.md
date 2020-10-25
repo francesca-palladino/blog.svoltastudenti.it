@@ -13,7 +13,7 @@ authors:
   - Carlo Giovani
   - Marco Airoldi
 published: true
-date: 2020-10-25T16:02:46.862Z
+date: 2020-08-27T16:02:46.862Z
 ---
 Si avvicina l’inizio del primo semestre del nuovo anno accademico e, dopo mesi di incertezza legata alla situazione emergenziale desideriamo in questo breve testo fare il punto della situazione su quanto definito fino ad ora.
 
