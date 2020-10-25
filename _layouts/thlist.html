@@ -51,7 +51,7 @@ layout: default
     margin: 5px;
     flex-grow: 1;
     transform: scale(1);
-    display: none;
+    display: initial;
     opacity: 1;
     transition: height 1s, width 1s, opacity 1s;
     background: green;
@@ -87,8 +87,8 @@ layout: default
   }
 
   {% for tag in tags %}
-    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .data *[data-cat="{{ tag | slugify }}"] {
-      display: initial;
+    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .data :not(*[data-cat="{{ tag | slugify }}"]) {
+      display: none;
     }
 
     .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .list label[for="thList-catFilter-{{ tag | slugify }}"] {
@@ -104,7 +104,7 @@ layout: default
 <div class="thList">
   <div class="wrapper">
     {% for tag in tags %}
-      <input type="checkbox" checked id="thList-catFilter-{{ tag | slugify }}" />
+      <input type="checkbox" id="thList-catFilter-{{ tag | slugify }}" />
     {% endfor %}
     <input type="checkbox" id="thList-checkbox" />
     <div class="list">
