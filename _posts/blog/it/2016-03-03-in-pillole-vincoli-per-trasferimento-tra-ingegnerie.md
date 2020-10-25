@@ -8,7 +8,7 @@ tag: Rappresentanza
 desc: 'In pillole: vincoli per trasferimento tra ingegnerie'
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Ennio VIsconti
+  - Ennio Visconti
   - Federico Gatti
 published: true
 date: 2016-03-03T00:00:00.000Z
