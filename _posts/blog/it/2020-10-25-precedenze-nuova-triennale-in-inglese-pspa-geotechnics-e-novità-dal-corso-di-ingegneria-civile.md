@@ -16,6 +16,7 @@ authors:
   - Eleonora Pietrobelli
   - Ermano Micheli
   - Matteo Parpanesi
+  - Carlo Giovani
 published: true
 date: 2020-10-25T15:13:57.064Z
 ---
