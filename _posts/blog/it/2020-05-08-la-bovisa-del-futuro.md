@@ -8,11 +8,9 @@ tag: Rappresentanza
 desc: La Bovisa del futuro
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Alessio Rocca
-  - Marco Airoldi
-  - Tecla Trifilo
+  - Carlo Giovani
 published: true
-date: 2020-10-25T15:37:39.849Z
+date: 2020-05-08T15:37:39.849Z
 ---
 Gli organi di Governo del Politecnico di Milano nelle riunioni di aprile hanno approvato un grande progetto: **“LA GOCCIA E IL DISTRETTO DI BOVISA – PROGETTO DI RIQUALIFICAZIONE de IL PARCO DEI GASOMETRI”, trovate in conclusione dell’articolo qualche immagine.**
 
