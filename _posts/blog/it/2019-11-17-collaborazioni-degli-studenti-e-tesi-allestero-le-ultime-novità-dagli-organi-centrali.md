@@ -13,7 +13,7 @@ desc: >-
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Alessio Rocca
-  - Tecla Trifilò
+  - Tecla Trifilo
   - Marco Airoldi
 published: true
 date: 2019-09-27T13:42:09.179Z
