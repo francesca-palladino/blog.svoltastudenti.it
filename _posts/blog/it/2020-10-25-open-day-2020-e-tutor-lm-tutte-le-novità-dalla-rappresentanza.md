@@ -8,7 +8,9 @@ tag: Rappresentanza
 desc: "Open day 2020 e tutor LM: tutte le novità dalla rappresentanza"
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Roberto Maffei
+  - Alessio Rocca
+  - Marco Airoldi
+  - Tecla Trifilo
 published: true
 date: 2020-10-25T14:58:15.662Z
 ---
