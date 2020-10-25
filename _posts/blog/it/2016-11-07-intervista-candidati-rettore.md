@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: Intervista candidati Rettore
-tag: Ennio Visconti
+tag: Rappresentanza
 desc: Intervista candidati Rettore
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
