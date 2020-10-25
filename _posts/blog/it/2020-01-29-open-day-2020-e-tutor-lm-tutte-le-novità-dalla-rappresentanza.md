@@ -12,7 +12,7 @@ authors:
   - Marco Airoldi
   - Tecla Trifilo
 published: true
-date: 2020-10-25T14:58:15.662Z
+date: 2020-01-29T14:58:15.662Z
 ---
 Le ultime novità dalla rappresentanza, l’Open day del Politecnico di Milano quest’anno verrà organizzato nel Campus Leonardo.
 
