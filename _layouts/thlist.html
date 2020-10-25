@@ -104,7 +104,7 @@ layout: default
 <div class="thList">
   <div class="wrapper">
     {% for tag in tags %}
-      <input type="checkbox" id="thList-catFilter-{{ tag | slugify }}" />
+      <input type="checkbox" checked id="thList-catFilter-{{ tag | slugify }}" />
     {% endfor %}
     <input type="checkbox" id="thList-checkbox" />
     <div class="list">
