@@ -3,14 +3,14 @@ layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"
-title: TODO
+title: Quesito presentato alla Carrozza
 tag: Rappresentanza
-desc: TODO
+desc: Quesito presentato alla Carrozza
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
 published: true
-date: TODOT00:00:00.000Z
+date: 2013-12-11T00:00:00.000Z
 ---
 
 La **Commissione Internazionalizzazione**, presieduta dal nostro **Vincenzo Giannico**, ha approvato il quesito da noi presentato, sul **Regio Decreto del 1933**, successivamente sottoscritto all'unanimità da tutto il CNSU: l'interrogazione chiede direttamente al **Ministro Carrozza **quali azioni intende mettere in atto affinché si risolva la **evidente antinomia** tra il DR del 33 e le ampiamente note necessità e prerogative d'internazionalizzazione del sistema universitario italiano, più volte richiamate nel l 240/2010, dal Processo di Bologna e dall'Unione Europea.
