@@ -10,7 +10,12 @@ desc: Precedenze, nuova triennale in inglese, PSPA Geotechnics e novità dal
   corso di Ingegneria Civile
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Alessio Rocca
+  - Antonino Sgroi
+  - Butrint Haxhiu
+  - Dario Santo
+  - Eleonora Pietrobelli
+  - Ermano Micheli
+  - Matteo Parpanesi
 published: true
 date: 2020-10-25T15:13:57.064Z
 ---
