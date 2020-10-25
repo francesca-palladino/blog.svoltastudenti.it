@@ -16,12 +16,7 @@ layout: article
       {% assign author = site.posts | where: "category", page.category | where: "layout", "users" | where: "title", author_name %}
 			<li>
         {% if author[0] %}
-          {% if page.category == "it"  %}
-            <a href="/it/utenti/{{ author[0].title | slugify }}">
-          {% endif %}
-          {% if page.category == "en"  %}
-            <a href="/en/users/{{ author[0].title | slugify }}">
-          {% endif %}
+          <a href="/{{ page.category }}/{{ author[0].title | slugify }}">
             <amp-img layout="fixed" height="76" width="76" src="{{ author[0].article_th }}" alt="{{ author_name }}"></amp-img>
           </a>
         {% else %}
