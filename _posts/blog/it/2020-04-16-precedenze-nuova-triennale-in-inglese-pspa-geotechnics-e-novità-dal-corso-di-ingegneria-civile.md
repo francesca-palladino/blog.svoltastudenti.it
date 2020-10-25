@@ -18,7 +18,7 @@ authors:
   - Matteo Parpanesi
   - Carlo Giovani
 published: true
-date: 2020-10-25T15:13:57.064Z
+date: 2020-04-16T15:13:57.064Z
 ---
 Il Consiglio di Corso di Studi ha lavorato parecchio dal suo insediamento e vorremmo raccontarvi cosa è stato fatto.
 
