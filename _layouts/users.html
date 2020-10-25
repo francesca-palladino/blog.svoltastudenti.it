@@ -10,4 +10,6 @@ layout: article
 <div id="content">
 	{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 </div>
-<footer></footer>
+<footer>
+	<a href="mailto:{{ page.socials.mail }}@svoltastudenti.it">{{ page.socials.mail }}@svoltastudenti.it</a>
+</footer>
