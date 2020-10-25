@@ -8,7 +8,13 @@ tag: Rappresentanza
 desc: Modifiche alla soglia di accesso a Aeronautical e Space Engineering
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Roberto Maffei
+  - Alessandro Mantani
+  - Annachiara Frezza
+  - Lorenzo Dionigi
+  - Riccardo Del Torre
+  - Riccardo Losito
+  - Riccardo Manta
+  - Sofia Ferrabue
 published: true
 date: 2020-04-22T14:26:21.221Z
 ---
