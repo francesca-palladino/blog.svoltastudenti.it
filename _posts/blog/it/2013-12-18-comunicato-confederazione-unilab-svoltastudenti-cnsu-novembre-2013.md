@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio Nazionale degli Studenti Universitari
-  - Internazionalizzazione
-  - Diritto allo Studio Universitario
-date: '2013-12-18'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU novembre 2013
+tag: Rappresentanza
+desc: Comunicato Confederazione - Unilab SvoltaStudenti CNSU novembre 2013
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU novembre 2013
-fb_title: Comunicato Confederazione - Unilab SvoltaStudenti CNSU novembre 2013
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-18T00:00:00.000Z
 ---
 
 Si è conclusa oggi la due giorni intensa del **CNSU **di novembre.

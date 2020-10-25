@@ -1,23 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Internazionalizzazione e mobilità
-date: '2013-11-23'
-authors:
-  - Alessandro Conti
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   TU DELFT AVVIATA A DIVENTARE UNIVERSITA’ INTERNAZIONALE. Incontro con il
   Rettore
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   TU DELFT AVVIATA A DIVENTARE UNIVERSITA’ INTERNAZIONALE. Incontro con il
   Rettore
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Alessandro Conti
+published: true
+date: 2013-11-23T00:00:00.000Z
 ---
 
 Sono **Alessandro Conti**, studente al secondo anno di **LM in Ing. Civile** e da tre mesi in Erasmus alla **TU Delft**, Olanda. Vi scrivo per raccontarvi di un’esperienza molto interessante e insolita che mi ha visto protagonista.

@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2013-03-12'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Beep Polimi, Miglioriamolo Insieme! - La Parola agli Studenti.'
+tag: Rappresentanza
+desc: 'Beep Polimi, Miglioriamolo Insieme! - La Parola agli Studenti.'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: 'Beep Polimi, Miglioriamolo Insieme! - La Parola agli Studenti.'
-fb_title: 'Beep Polimi, Miglioriamolo Insieme! - La Parola agli Studenti.'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-03-12T00:00:00.000Z
 ---
 
 E' passato oramai un po' di tempo da quando è stata introdotta la nuova piattaforma di supporto alla didattica **BEEP**. Sicuramente ha segnato un momento importante per la nostro Ateneo ed in particolare per l'ICT che governa e gestisce i nostri documenti, il materiale didattico e che vuole sviluppare sempre più quel rapporto, seppur virtuale, tra studente e docente. I presupposti sono molti, gli sforzi anche, ma i risultati, purtroppo, sono discutibili. Ecco perchè noi di **Svoltastudenti**, forti di numerose segnalazioni arrivate in seguito dall'entrata in vigore di **BEEP**, abbiamo pensato di creare un sondaggio, che facesse un pò di luce sui risultati finora apportati da **BEEP** e che ne traesse in qualche modo dei consigli, pareri e migliorie da chi, prima di tutti **BEEP** lo vive ogni giorno, **Noi Studenti**. 

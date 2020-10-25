@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2014-03-18'
-authors:
-  - Vincenzo Giannico
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   Dai tavoli di coordinamento del progetto Città Studi Campus Sostenibile PoliMi
   e UniMi
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   Dai tavoli di coordinamento del progetto Città Studi Campus Sostenibile PoliMi
   e UniMi
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Vincenzo Giannico
+published: true
+date: 2014-03-18T00:00:00.000Z
 ---
 
 Si sono svolti in data 19 Febbraio e 18 Marzo due tavoli di coordinamento del progetto **CSCS - Città Studi Campus Sostenibile Politecnico di Milano e Università degli Studi di Milano**, in cui la rappresentanza è invitata a partecipare per divulgare e promuovere le attività presso gli studenti. Il progetto si articola come "un laboratorio per la città di Milano" con iniziative di progettazione e divulgazione di pratiche di sostenibilità ambientale. I ricercatori, gli studenti, e gli abitanti del quartiere sono invitati a partecipare ai 4 tavoli tematizzati: **People, Energy, Environment, Accessibility, City**. Ai tavoli di coordinamenti sono presenti i referenti interni dei due Atenei coinvolti e i referenti dei progetti specifici sviluppati nei tavoli.

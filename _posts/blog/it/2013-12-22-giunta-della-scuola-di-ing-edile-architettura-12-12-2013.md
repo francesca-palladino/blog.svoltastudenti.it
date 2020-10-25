@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Architettura urbanistica ed ing. costru.
-  - Calendario accademico Prove in Itinire e Programmazione Didattica
-date: '2013-12-22'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Giunta della scuola di ing. Edile-Architettura - 12/12/2013
+tag: Rappresentanza
+desc: Giunta della scuola di ing. Edile-Architettura - 12/12/2013
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Cesare De Mezza
-title: Giunta della scuola di ing. Edile-Architettura - 12/12/2013
-fb_title: Giunta della scuola di ing. Edile-Architettura - 12/12/2013
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-22T00:00:00.000Z
 ---
 
 Durante l'ultima giunta della scuola di Ing. Edile-Architettura sono emerse **importanti novità** relative al processo di riassetto dell'**area ICAR**.

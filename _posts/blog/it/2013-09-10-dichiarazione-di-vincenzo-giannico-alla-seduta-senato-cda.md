@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione e Mobilità
-date: '2013-09-10'
-authors:
-  - Vincenzo Giannico
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   Dichiarazione di Vincenzo Giannico alla seduta Senato-CdA in merito al ricorso
   al Consiglio di Stato sulle LM in inglese
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   Dichiarazione di Vincenzo Giannico alla seduta Senato-CdA in merito al ricorso
   al Consiglio di Stato sulle LM in inglese
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Vincenzo Giannico
+published: true
+date: 2013-09-10T00:00:00.000Z
 ---
 
 Magnifico Rettore,  

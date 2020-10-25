@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Budget
-  - ' Calendario accademico Prove in Itinire e Programmazione Didattica'
-date: '2014-03-05'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: News dagli organi centrali del mese di Febbraio - Consulta della didattica
+tag: Rappresentanza
+desc: News dagli organi centrali del mese di Febbraio - Consulta della didattica
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: News dagli organi centrali del mese di Febbraio - Consulta della didattica
-fb_title: News dagli organi centrali del mese di Febbraio - Consulta della didattica
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2014-03-05T00:00:00.000Z
 ---
 
 Nell'ultima consulta della didattica gli aspetti rilevanti si sono focalizzati sulla formulazione dei manifesti e Regolamenti Didattici per il 2014-15, sui **test d'ingresso** per la scuola di **Design** e sull'attuazione delle linee strategiche d'Ateneo relativamente alla**politica della formazione** ( quest'ultimo punto dell'odg proposto e presentato dal nostro rappresentante in Senato Accademico,**Vincenzo Giannico**)

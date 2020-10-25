@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Budget
-  - ' Partecipazione e Servizi agli Studenti'
-date: '2013-12-31'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Emendamento al Piano Triennale 2014-2016: E-book!'
+tag: Rappresentanza
+desc: 'Emendamento al Piano Triennale 2014-2016: E-book!'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: 'Emendamento al Piano Triennale 2014-2016: E-book!'
-fb_title: 'Emendamento al Piano Triennale 2014-2016: E-book!'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-31T00:00:00.000Z
 ---
 
 Un altro importante emendamento promosso da **SvoltaStudenti** è stato accolto nell’ultima seduta del **Senato Accademico**.

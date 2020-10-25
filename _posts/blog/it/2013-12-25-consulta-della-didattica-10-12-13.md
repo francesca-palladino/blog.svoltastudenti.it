@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2013-12-25'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Consulta della didattica 10-12-13
+tag: Rappresentanza
+desc: Consulta della didattica 10-12-13
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Consulta della didattica 10-12-13
-fb_title: Consulta della didattica 10-12-13
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-25T00:00:00.000Z
 ---
 
 Si è svolta in data 10 dicembre la seduta ordinaria della Consulta della Didattica, molti sono stati gli argomenti ed ampia la discussione. In particolare le tematiche di rilevo sono state:

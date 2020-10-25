@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio Nazionale degli Studenti Universitari
-  - Internazionalizzazione
-date: '2014-04-27'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Comunicato stampa Unilab SvoltaStudenti 16-07-2014
+tag: Rappresentanza
+desc: Comunicato stampa Unilab SvoltaStudenti 16-07-2014
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Comunicato stampa Unilab SvoltaStudenti 16-07-2014
-fb_title: Comunicato stampa Unilab SvoltaStudenti 16-07-2014
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2014-04-27T00:00:00.000Z
 ---
 
 Oggi pomeriggio, durante la seduta riservata alle interrogazioni parlamentari della **Camera dei Deputati**, l’On. **Ministro Giannini** ha risposto ad un quesito sull’**Internazionalizzazione** e sulla questione del Politecnico di Milano, lo stesso presentato più volte da **Unilab SvoltaStudenti** in sede di **Consiglio Nazionale degli Studenti Universitari.**

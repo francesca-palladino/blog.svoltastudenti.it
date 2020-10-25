@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Partecipazione e Servizi agli Studenti
-date: '2014-03-22'
-authors:
-  - Vincenzo Giannico
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   Il Polimi fruga nelle tasche degli studenti (ma in maniera Smart): Sviluppo
   App Polimi
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   Il Polimi fruga nelle tasche degli studenti (ma in maniera Smart): Sviluppo
   App Polimi
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Vincenzo Giannico
+published: true
+date: 2014-03-22T00:00:00.000Z
 ---
 
 Nella giornata di mercoledì 12 marzo si è riunita una _**commissione tecnologia**_ composta da responsabili dell'area informatica, sviluppatori e alcuni rappresentanti degli studenti. Si tratta di commissione che avrà il compito nei prossimi mesi di riunirsi in maniera cadenzata per discutere di diversi temi riguardanti i servizi tecnologici al politecnico.

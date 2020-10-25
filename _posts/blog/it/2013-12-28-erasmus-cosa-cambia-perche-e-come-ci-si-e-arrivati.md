@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2013-12-28'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Erasmus: cosa cambia, perché e come ci si è arrivati'
+tag: Rappresentanza
+desc: 'Erasmus: cosa cambia, perché e come ci si è arrivati'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: 'Erasmus: cosa cambia, perché e come ci si è arrivati'
-fb_title: 'Erasmus: cosa cambia, perché e come ci si è arrivati'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-28T00:00:00.000Z
 ---
 
 Nell’ultimo Senato Accademico è stato approvato il regolamento sulle Linee guida per la gestione della mobilità internazionale degli studenti ed il Bando mobilità internazionale A.A. 2014/15, a seguito di una lunghissima discussione intercorsa nei vari organi d’ateneo. Per una maggiore comprensione del travagliato percorso ricordiamo l’emendamento presentato nel [Senato Accademico di Novembre](http://www.svoltastudenti.it/blogs/antonio-vincenzo-giannico/senato-accademico-abbiamo-parlato-diritto-allo-studio-linee-guida-della-mobilita-internazionale), in opposizione alla volontà dell’ateneo di limitare l’esperienza di mobilità internazionale, obbligando gli studenti ad acquisire CFU pari a 60, con esclusione dei CFU conseguiti con la prova finale; e la proposta di mediazione discussa nell’ultima [Consulta della Didattica](http://www.svoltastudenti.it/blogs/redazione/consulta-della-didattica-10-12-13) che ha trasposto la problematica da un piano didattico ad un piano prettamente burocratico-legale.

@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione
-date: '2014-03-30'
-authors:
-  - Vincenzo Giannico
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   Rinvio della sentenza per l'internazionalizzazione al Polimi: il Consiglio di
   Stato ritiene necessario documentarsi!
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   Rinvio della sentenza per l'internazionalizzazione al Polimi: il Consiglio di
   Stato ritiene necessario documentarsi!
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Vincenzo Giannico
+published: true
+date: 2014-03-30T00:00:00.000Z
 ---
 
 Il Consiglio di Stato ha ritenuto necessaria, nella seduta dell'11 marzo 2014 ([consultabile qui](http://www.giustizia-amministrativa.it/DocumentiGA/Consiglio%20di%20Stato/Sezione%206/2013/201305151/Provvedimenti/201401779_18.XML)), ulteriore documentazione, ha quindi rimandato l'ulteriore trattazione dell'appello al 25 novembre 2014.

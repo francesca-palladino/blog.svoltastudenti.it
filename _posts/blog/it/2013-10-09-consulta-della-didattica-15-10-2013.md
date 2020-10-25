@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Calendario accademico Prove in Itinire e Programmazione Didattica
-date: '2013-10-09'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Consulta della Didattica 15-10-2013
+tag: Rappresentanza
+desc: Consulta della Didattica 15-10-2013
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Consulta della Didattica 15-10-2013
-fb_title: Consulta della Didattica 15-10-2013
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-10-09T00:00:00.000Z
 ---
 
 In data 15 Ottobre si è svolta la Consulta della Didattica in cui si è discusso principalmente di nuove tecnologie per la didattica, valutazione della didattica, tesi INVALSI, linee guida per la gestione della mobilità internazionale, Diploma Supplement . Per quanto riguarda le modalità didattiche innovative, la Prof.ssa Sciuto ha relazionato sulla situazione attuale e gli sviluppi futuri: è stato aperto un canale ITunesU dove sono in corso caricamenti di contenuti mutlimediali (lezioni, conferenze ecc); la piattaforma BEEP ha assorbito totalmente Corsi Online facendo registrare circa 50000 Utenti; è in corso il rilascio (a dicembre) della versione Mobile ottimizzata di BEEP; si avrà la possibilità di collegare le pagine Facebook con BEEP; inoltre è in corso una prima sperimentazione di un corso MOOC (Massive Online Open Course), tipo Coursera per intenderci, che vede la realizzazione di un corso sulle soft skills.

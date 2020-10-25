@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Architettura urbanistica ed ing. costru.
-  - Calendario accademico Prove in Itinire e Programmazione Didattica
-date: '2013-10-16'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: RESOCONTO GIUNTA DELLA SCUOLA DI ING. EDILE-ARCHITETTURA – OTTOBRE 2013
+tag: Rappresentanza
+desc: RESOCONTO GIUNTA DELLA SCUOLA DI ING. EDILE-ARCHITETTURA – OTTOBRE 2013
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Cesare De Mezza
-title: RESOCONTO GIUNTA DELLA SCUOLA DI ING. EDILE-ARCHITETTURA – OTTOBRE 2013
-fb_title: RESOCONTO GIUNTA DELLA SCUOLA DI ING. EDILE-ARCHITETTURA – OTTOBRE 2013
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-10-16T00:00:00.000Z
 ---
 
 Dopo la maxi-giunta delle scuola del settore costruzioni la situazione all’interno della scuola di ing. edile-architettura è profondamente mutata.

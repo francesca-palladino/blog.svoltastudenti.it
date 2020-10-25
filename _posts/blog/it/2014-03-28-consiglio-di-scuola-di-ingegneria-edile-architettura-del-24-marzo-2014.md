@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Architettura urbanistica ed ing. costru.
-  - Calendario accademico Prove in Itinire e Programmazione Didattica
-date: '2014-03-28'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Consiglio di Scuola di Ingegneria Edile - Architettura del 24 marzo 2014
+tag: Rappresentanza
+desc: Consiglio di Scuola di Ingegneria Edile - Architettura del 24 marzo 2014
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Cesare De Mezza
-title: Consiglio di Scuola di Ingegneria Edile - Architettura del 24 marzo 2014
-fb_title: Consiglio di Scuola di Ingegneria Edile - Architettura del 24 marzo 2014
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2014-03-28T00:00:00.000Z
 ---
 
 Ieri, 24 marzo 2014, si è riunito il Consiglio di Scuola della Scuola di Ingegneria Edile - Architettura a Milano-Leonardo, convocato dal Preside Pizzi per comunicare gli ultimi aggiornamenti in merito allo stato dell'arte della nuova offerta formativa.

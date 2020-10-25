@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Budget
-  - ' Calendario accademico Prove in Itinire e Programmazione Didattica'
-date: '2014-03-15'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: News dagli organi centrali del mese di Febbraio - Senato Accademico
+tag: Rappresentanza
+desc: News dagli organi centrali del mese di Febbraio - Senato Accademico
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: News dagli organi centrali del mese di Febbraio - Senato Accademico
-fb_title: News dagli organi centrali del mese di Febbraio - Senato Accademico
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2014-03-15T00:00:00.000Z
 ---
 
 Nell'ultima seduta del Senato Accademico gli aspetti rilevanti si sono focalizzati sull'assetto spazi area 09- Campus La Masa, sul test d'ingresso per la scuola di Design, e sul  Bando di ammissione ai Corsi di Dottorato e borse di studio,

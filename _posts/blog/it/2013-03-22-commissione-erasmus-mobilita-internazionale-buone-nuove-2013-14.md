@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione e mobilità
-date: '2013-03-22'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Commissione "Erasmus" Mobilità Internazionale - Buone Nuove 2013/14
+tag: Rappresentanza
+desc: Commissione "Erasmus" Mobilità Internazionale - Buone Nuove 2013/14
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Commissione "Erasmus" Mobilità Internazionale - Buone Nuove 2013/14
-fb_title: Commissione "Erasmus" Mobilità Internazionale - Buone Nuove 2013/14
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-03-22T00:00:00.000Z
 ---
 
 **_SVOLTASTUDENTI_** SUL TAVOLO DI REVISIONE DEL REGOLAMENTO PER LA MOBILITA' INTERNAZIONALE

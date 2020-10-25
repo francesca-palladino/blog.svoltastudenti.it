@@ -1,19 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Elezioni studentesche
-date: '2013-01-20'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Il Politecnico che vorrei
+tag: Rappresentanza
+desc: Il Politecnico che vorrei
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Il Politecnico che vorrei
-fb_title: Il Politecnico che vorrei
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-01-20T00:00:00.000Z
 ---
 
 Dopo il gran successo del PoliMyIdea in cui ognuno di Noi, attraverso le proprie idee, può contribuire a far crescere il mondo Politecnico, SvoltaStudenti ha pensato di indire per la prima volta nella storia della rappresentanza del nostro Ateneo le "primarie delle idee".Dicci la tua e insieme potremo migliorare il Polimi!  

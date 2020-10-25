@@ -1,24 +1,20 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Architettura urbanistica ed ing. costru.
-  - Calendario accademico Prove in Itinire e Programmazione Didattica
-date: '2013-10-13'
-authors:
-  - Cesare De Mezza
+category: it
+isAmp: "true"
+noBrand: "false"
 title: >-
   21-10-2013 Giunta delle scuole di architettura civile, architettura e società
   e ingegneria edile-architettura
-fb_title: >-
+tag: Rappresentanza
+desc: >-
   21-10-2013 Giunta delle scuole di architettura civile, architettura e società
   e ingegneria edile-architettura
-
-image: 
-lang: it
-place: Milano
+article_th: /assets/img/uploads/article_placeholder.png
+authors:
+  - Cesare De Mezza
+published: true
+date: 2013-10-13T00:00:00.000Z
 ---
 
 Si discute il riassetto dell'area ICAR, tema analizzato dalla commissione ICAR e successivamente proposto alle giunte delle singole scuole interessate.

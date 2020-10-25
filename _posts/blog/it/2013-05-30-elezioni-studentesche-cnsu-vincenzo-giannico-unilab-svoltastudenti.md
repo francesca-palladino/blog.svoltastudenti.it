@@ -1,19 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Elezioni Studentesche
-date: '2013-05-30'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Elezioni Studentesche CNSU Vincenzo Giannico - UniLab-Svoltastudenti
+tag: Rappresentanza
+desc: Elezioni Studentesche CNSU Vincenzo Giannico - UniLab-Svoltastudenti
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Fabio Frassini
-title: Elezioni Studentesche CNSU Vincenzo Giannico - UniLab-Svoltastudenti
-fb_title: Elezioni Studentesche CNSU Vincenzo Giannico - UniLab-Svoltastudenti
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-05-30T00:00:00.000Z
 ---
 
 In occasione delle elezioni universitarie del **21-22 maggio 2013**, gli studenti italiani avranno il diritto di scegliere i loro rappresentanti nel **CNSU** (Consiglio Nazionale degli Studenti Universitari), organo di rappresentanza studentesca che dialoga direttamente con il Governo. **Svoltastudenti** per la prima volta entra in questa sfida candidando un proprio studente,**Vincenzo Giannico**. La lista è **UniLab-Svoltastudenti**, una piattaforma di idee per il confronto tra studenti, dove nessuna ideologia specifica è predominante. La circoscrizione è quella di **Nord-Ovest (Lombardia, Piemonte, Liguria)**. Se credi nella forza del cambiamento, sei sei stanco della partitocrazia nelle università e deluso dall'ideologismo miope predominante, sostienici! Sbarra **Unilab-SvoltaStudenti e scrivi Vincenzo Giannico** come portavoce delle istanze studentesche.

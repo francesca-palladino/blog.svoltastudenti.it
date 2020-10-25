@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Meritocrazia
-date: '2014-04-15'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: 'Al Polimi si premia anche lo sport, non solo sul podio!'
+tag: Rappresentanza
+desc: 'Al Polimi si premia anche lo sport, non solo sul podio!'
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: 'Al Polimi si premia anche lo sport, non solo sul podio!'
-fb_title: 'Al Polimi si premia anche lo sport, non solo sul podio!'
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2014-04-15T00:00:00.000Z
 ---
 
 AGGIORNAMENTO DEL 7.10.2015: **BANDO 2015! La seconda edizione della Borsa per meriti sportivi**

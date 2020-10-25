@@ -1,18 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-date: '2014-01-23'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Comunicato Svoltastudenti - 17 gennaio
+tag: Rappresentanza
+desc: Comunicato Svoltastudenti - 17 gennaio
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Comunicato Svoltastudenti - 17 gennaio
-fb_title: Comunicato Svoltastudenti - 17 gennaio
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2014-01-23T00:00:00.000Z
 ---
 
 17 gennaio 2014

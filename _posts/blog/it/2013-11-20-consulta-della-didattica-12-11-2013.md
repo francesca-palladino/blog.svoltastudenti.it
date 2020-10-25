@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Internazionalizzazione e mobilità
-  - Calendario accademico Prove in Itinire e Programmazione Didattica
-date: '2013-11-20'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Consulta della Didattica 12-11-2013
+tag: Rappresentanza
+desc: Consulta della Didattica 12-11-2013
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Consulta della Didattica 12-11-2013
-fb_title: Consulta della Didattica 12-11-2013
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-11-20T00:00:00.000Z
 ---
 
 In data 12 Novembre si è svolta la consulta della didattica in cui si sono trattati i seguenti punti all’ordine del giorno: Calendarizzazione Offerta Formativa 2014-2015, valutazione degli esami di profitto, linee guida per la gestione della mobilità internazionale degli studenti, Honor Code e proposte di accordi internazionali.

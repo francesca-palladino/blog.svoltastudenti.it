@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio Nazionale degli Studenti Universitari
-  - Elezioni Studentesche
-date: '2013-12-03'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: +++ Breaking news CNSU +++
+tag: Rappresentanza
+desc: +++ Breaking news CNSU +++
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: +++ Breaking news CNSU +++
-fb_title: +++ Breaking news CNSU +++
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-03T00:00:00.000Z
 ---
 
 Eletti Angelo ANTINORO all'#ANVUR e Francesco TESTA al #CUN. UniLab_SvoltaStudenti ancora più protagonista da oggi [#openCNSU ](https://www.facebook.com/hashtag/opencnsu)[#alLavoro](https://www.facebook.com/hashtag/allavoro)

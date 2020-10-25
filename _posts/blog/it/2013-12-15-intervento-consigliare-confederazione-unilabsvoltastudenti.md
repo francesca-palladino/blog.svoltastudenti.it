@@ -1,20 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Consiglio Nazionale degli Studenti Universitari
-  - Internazionalizzazione
-date: '2013-12-15'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: Intervento consigliare Confederazione - UnilabSvoltaStudenti
+tag: Rappresentanza
+desc: Intervento consigliare Confederazione - UnilabSvoltaStudenti
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: Intervento consigliare Confederazione - UnilabSvoltaStudenti
-fb_title: Intervento consigliare Confederazione - UnilabSvoltaStudenti
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-15T00:00:00.000Z
 ---
 
 Pubblichiamo l’interrogazione parlamentare scritta per il Ministro dell’Istruzione, Università e Ricerca Carrozza dal nostro Vincenzo Giannico e dagli altri rappresentanti del gruppo consiliare Unilab-Svoltastudenti in Consiglio Nazionale degli Studenti Universitari.

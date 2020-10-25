@@ -1,21 +1,16 @@
 ---
 layout: blog
-published: true
-category: blog
-tags:
-  - Rappresentanza
-  - Senato Accademico
-  - Budget
-  - ' Partecipazione e Servizi agli Studenti'
-date: '2013-12-29'
+category: it
+isAmp: "true"
+noBrand: "false"
+title: ACQUA PUBBLICA E GRATIS PER TUTTI!
+tag: Rappresentanza
+desc: ACQUA PUBBLICA E GRATIS PER TUTTI!
+article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Vincenzo Giannico
-title: ACQUA PUBBLICA E GRATIS PER TUTTI!
-fb_title: ACQUA PUBBLICA E GRATIS PER TUTTI!
-
-image: 
-lang: it
-place: Milano
+published: true
+date: 2013-12-29T00:00:00.000Z
 ---
 
 Nell’ultimo **Senato Accademico** il nostro rappresentante degli studenti, **Vincenzo Giannico**, ha presentato un interessantissimo emendamento al Piano Triennale 2014-2016 in cui si richiede l’acquisto e l’installazione di fontanelle (alcune già presenti nell’ateneo, ma in modo sporadico). L’emendamento, approvato all’unanimità, porterà **già da subito a 15 nuove postazioni** in cui si potrà usufruire di **acqua gratis** e prevederà nell’arco di mesi ad una diffusione delle stesse su tutte le sedi del Politecnico. Come **SvoltaStudenti** ci sembra una scelta razionale e giusta, il linea con il progetto **Campus Sostenibile**; inoltre, visto il recente aumento dei prezzi dei distributori, si tratta di una risposta efficace per **contrastare i continui rincari**che attanagliano la vita quotidiana dei nostri studenti.
