@@ -8,7 +8,7 @@ tag: Rappresentanza
 desc: Intervista candidati Rettore
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Associazione
+  - Carlo Giovani
 published: true
 date: 2016-11-07T00:00:00.000Z
 ---
