@@ -8,7 +8,7 @@ tag: Rappresentanza
 desc: Centro sportivo Giuriati – POLIMI SPORT
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Fabio Mauri
+  - Guido Sassaroli
 published: true
 date: 2020-02-12T15:08:25.753Z
 ---
