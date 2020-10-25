@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="/assets/img/favicon.png" type="image/png">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% case page.category %}
   {% when "it" %}
   <meta http-equiv="content-language" content="it-it">
@@ -14,9 +13,11 @@
   <!-- Hopefully Google will detect our lang automagically ;) -->
   {% endcase %}
   {% if page.translations.it  %}
+  <link rel="canonical" href="{{site.url}}/it/{{page.url | slugify}}">
   <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
   {% endif %}
   {% if page.translations.en  %}
+  <link rel="canonical" href="{{site.url}}/it/{{page.translations.en | slugify}}">
   <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.en | slugify}}" />
   {% endif %}
   <meta property="og:url"
@@ -32,33 +33,31 @@
   <meta name="twitter:description" content="{{ page.info.desc }}">
   <meta name="twitter:image" content="{{ page.images.social }}">
 
+  {% if page.layout == "blog" %}
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "author": {
-        "name": "{{ page.info.author }}"
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
       },
-      "datePublished": "{{ page.date }}",
-      "headline": "{{ page.title }}",
+      "headline": "{{ page.title | replace: '"' "'"}}",
       "image": [
-        "{{ page.images.amp_1-1 }}",
-        "{{ page.images.amp_4-3 }}",
-        "{{ page.images.amp_16-9 }}"
+        "{{ page.article_th }}"
       ],
-      "description": " {{ page.info.desc }} ",
+      "dateModified": "{{ page.date }}",
       "publisher": {
         "@type": "Organization",
+        "name": "Svoltastudenti",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://svoltastudenti.it/wp-content/uploads/logo_largo_bianco.png",
-          "width": "3484",
-          "height": "477"
-        },
-        "name": "Svoltastudenti"
+          "url": "https://blog.svoltastudenti.it/assets/img/svolta-mini-pos.png"
+        }
       }
     }
-  </script>
+    </script>
+  {% endif %}
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#FF6600">
@@ -838,13 +837,6 @@
   <article>
     {{ content }}
   </article>
-  {% unless page.noBrand == "true" %}
-  <div id="footer">
-    © <a href="/{{ page.category }}/legal">Svoltastudenti</a> 2020 ~ <a
-      href="https://www.iubenda.com/privacy-policy/27818292/cookie-policy">Cookie</a> <a
-      href="https://www.iubenda.com/privacy-policy/27818292/legal">Privacy</a>
-  </div>
-  {% endunless %}
   <amp-consent id="cookie" layout="nodisplay">
     <script type="application/json">
       {
