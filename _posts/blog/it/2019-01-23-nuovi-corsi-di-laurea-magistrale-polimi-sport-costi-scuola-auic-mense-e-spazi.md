@@ -9,7 +9,7 @@ desc: Nuovi corsi di Laurea Magistrale, POLIMI SPORT, costi scuola AUIC, mense e
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
   - Carlo Giovani
-  - Alessandro de Iasio
+  - Alessandro De Iasio
 published: true
 date: 2019-01-23T00:00:00.000Z
 ---
