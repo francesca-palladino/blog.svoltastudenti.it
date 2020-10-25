@@ -8,7 +8,8 @@ tag: Rappresentanza
 desc: Nuova Laurea Magistrale Ingegneria Matematica
 article_th: /assets/img/uploads/article_placeholder.png
 authors:
-  - Fabio Mauri
+  - Luca Sosta
+  - Davide Lo Piccolo
 published: true
 date: 2020-05-14T14:59:40.683Z
 ---
