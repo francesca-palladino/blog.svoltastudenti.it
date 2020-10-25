@@ -18,7 +18,7 @@ authors:
   - Riccardo Manta
   - Sofia Ferrabue
 published: true
-date: 2020-10-25T15:33:06.081Z
+date: 2020-04-24T15:33:06.081Z
 ---
 Carissime Studentesse e Studenti di Ingegneria Aerospaziale, 
 
