@@ -13,21 +13,6 @@ published: true
 date: 2018-07-04T00:00:00.000Z
 ---
 
-
-
-layout: blog
-category: it
-isAmp: "true"
-noBrand: "false"
-title: TODO
-tag: TODO
-desc: TODO
-article_th: /assets/img/uploads/article_placeholder.png
-authors:
-  - TODO
-published: true
-date: TODOT00:00:00.000Z
-
 Per l’A.A. 2018/19 sono stati ridefiniti gli importi delle borse per la mobilità internazionale, in base a regole ministeriali volte a tutelare i redditi più bassi.
 
 L’Agenzia Nazionale Erasmus+ ha comunicato un finanziamento di € 1.337.875 (+ € 79.960 rispetto allo scorso anno). Tali fondi possono essere incrementati con la metà dell’importo assegnato dall’Agenzia Nazionale per le attività di “Supporto all’organizzazione” arrivando quindi ad un totale di € 1.434.375.
