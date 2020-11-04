@@ -72,6 +72,7 @@ collections:
         fields:
           - {label: "Facebook Id", name: "fb", widget: "string", required: false}
           - {label: "Telegram Id", name: "tg", widget: "string", required: false}
+          - {label: "Instagram Id", name: "in", widget: "string", required: false}
           - {label: "Svolta Id", name: "mail", widget: "string"}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
@@ -102,6 +103,7 @@ collections:
         fields:
           - {label: "Facebook Id", name: "fb", widget: "string", required: false}
           - {label: "Telegram Id", name: "tg", widget: "string", required: false}
+          - {label: "Instagram Id", name: "in", widget: "string", required: false}
           - {label: "Svolta Id", name: "mail", widget: "string"}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
