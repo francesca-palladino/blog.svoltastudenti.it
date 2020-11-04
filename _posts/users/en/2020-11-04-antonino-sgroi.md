@@ -16,4 +16,4 @@ socials:
 published: true
 date: 2020-11-04T13:05:44.052Z
 ---
-Tiki taka tra metodo riflessivo e istinto
+Tiki taka between reflexive method and instinct
