@@ -4,7 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: Fabio Mauri
-article_th: /assets/img/uploads/4cf9b6749ecb17751890d6c5b4977cf8.jpeg
+article_th: /assets/img/uploads/fabio_mauri.png
 status:
   start_date: 2020-11-04T12:09:13.044Z
   end_date: 2020-11-04T12:09:13.076Z
