@@ -4,6 +4,7 @@ category: it
 isAmp: "true"
 noBrand: "false"
 title: Antonino Sgroi
+translations.en: Antonino Sgroi
 article_th: /assets/img/uploads/antoninosgroi.jpeg
 status:
   start_date: 2020-10-25T15:16:51.688Z
