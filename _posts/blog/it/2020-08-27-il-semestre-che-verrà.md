@@ -3,7 +3,7 @@ layout: blog
 category: it
 isAmp: "true"
 noBrand: "false"
-title: Il semestre che verrà
+title: Il semestre che verrà de
 tag: Rappresentanza
 desc: Il semestre che verrà
 article_th: /assets/img/uploads/article_placeholder.png
