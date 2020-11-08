@@ -5,104 +5,272 @@ layout: default
 {% assign tags = posts | map: page.thlist_tag | compact | uniq | sort_natural %}
 <style>
   .thList {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .thList .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  .thList .list {
     width: 100%;
-    background-color: green;
-    position: sticky;
-    top: 0;
-    left: 0;
-    font-size: 48px;
-    line-height: 50px;
-    height: 50px;
-    overflow: hidden;
-    z-index: 1;
   }
 
-  .thList #thList-checkbox:checked ~ .list {
-    height: 100%;
-  }
-
-  .thList .data {
-    padding-top: 50px;
+  .thList > .wrapper-full {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: flex-start;
-    background-color: gray;
+  }
+
+  .thList > .wrapper-third,
+  .thList > .wrapper-half,
+  .thList > .wrapper-vertical {
+    width: 1200px;
   }
 
   .thList .th {
-    min-width: 240px;
-    width: 240px;
-    height: 150px;
-    margin: 5px;
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px #000000;
+  }
+  .thList .th .info {
+    height: 90%;
+    margin-top: 2.5%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .thList .th .img {
+    background-origin: padding-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .thList .th .info .title {
+    font-size: x-large;
+    font-size: xx-large;
+    text-overflow: ellipsis;
+  }
+  .thList .th .info .category-a,
+  .thList .th .info .category-b {
+    margin-top: 5px;
+    font-size: small;
+    text-transform: uppercase;
+  }
+  
+  .thList .th .info .spacer {
     flex-grow: 1;
-    transform: scale(1);
-    display: initial;
-    opacity: 1;
-    transition: height 1s, width 1s, opacity 1s;
-    background: green;
-    background-origin:padding-box;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
+    flex-shrink: 1;
   }
 
-  @media all and (min-width: 720px) and (orientation: landscape) {
-    .thList .wrapper {
-      flex-direction: row;
-    }
-
-    .thList .list {
-      max-width: 320px;
-      margin-right: 10px;
-    }
-
-    .thList .data {
-      padding-top: initial;
-      max-width: 1200px;
-    }
-
-    .thList .list {
-      position: initial;
-      height: initial;
-    }
+  .thList .th .info .readmore {
+    border: 1px solid white;
+    padding: 10px;
+    width: 100px;
   }
-
-  .thList .wrapper input[type="radio"],
-  .thList .wrapper input[type="checkbox"] {
+  .thList > * {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .thList .wrapper-full {
+    height: 520px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .thList .wrapper-full > *:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
+  .thList .wrapper-full > *:nth-child(1) .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thList .wrapper-full > *:nth-child(1) .info .spacer {
     display: none;
   }
+  .thList .wrapper-full > *:nth-child(1) .info .category-a {
+    display: none;
+  }
+  .thList .wrapper-full > *:nth-child(1) .info .readmore {
+    margin-top: 20px;
+  }
+  .thList .wrapper-third {
+    height: 360px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .thList .wrapper-third > *:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
+    
+  .thList .wrapper-third > *:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
+  
+  .thList .wrapper-third > *:nth-child(1) .info,
+  .thList .wrapper-third > *:nth-child(2) .info {
+    display: flex;
+    flex-direction: column;
+  }
 
-  {% for tag in tags %}
-    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .data :not(*[data-cat="{{ tag | slugify }}"]) {
-      display: none;
-    }
+  .thList .wrapper-third > *:nth-child(1) .info .title {
+    text-align: right;
+  }
 
-    .thList #thList-catFilter-{{ tag | slugify }}:checked ~ .list label[for="thList-catFilter-{{ tag | slugify }}"] {
-      background-color: red;
-    }
+  .thList .wrapper-third > *:nth-child(1) .category-a,
+  .thList .wrapper-third > *:nth-child(2) .category-a {
+    display: none;
+  }
+    
+  .thList .wrapper-third > *:nth-child(1) .info {
+    align-items: flex-end;
+  }
 
-    .thList .th[data-cat="{{ tag | slugify }}"]{
-      background-color: red
-    }
-  {% endfor %}
+  .thList .wrapper-third > *:nth-child(2) .info {
+    align-items: flex-start;
+  }
+  .thList .wrapper-vertical {
+    height: 540px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .thList .wrapper-vertical > *:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
+  .thList .wrapper-vertical > *:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+  }
+  .thList .wrapper-vertical > *:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+  }
+  .thList .wrapper-vertical > *:nth-child(4) {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
+
+  .thList .wrapper-vertical > *:nth-child(1) .info,
+  .thList .wrapper-vertical > *:nth-child(2) .info,
+  .thList .wrapper-vertical > *:nth-child(3) .info,
+  .thList .wrapper-vertical > *:nth-child(4) .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .thList .wrapper-vertical > *:nth-child(1) .info,
+  .thList .wrapper-vertical > *:nth-child(2) .info
+  .thList .wrapper-vertical > *:nth-child(3) .info
+  .thList .wrapper-vertical > *:nth-child(4) .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thList .wrapper-vertical > *:nth-child(1) .info .title {
+    text-align: right;
+  }
+
+  .thList .wrapper-vertical > *:nth-child(3) .info .title {
+    text-align: center;
+  }
+
+  .thList .wrapper-vertical > *:nth-child(1) .category-a,
+  .thList .wrapper-vertical > *:nth-child(2) .category-a,
+  .thList .wrapper-vertical > *:nth-child(3) .category-a,
+  .thList .wrapper-vertical > *:nth-child(4) .category-a {
+    display: none;
+  }
+    
+  .thList .wrapper-vertical > *:nth-child(1) .info {
+    align-items: flex-end;
+  }
+  .thList .wrapper-vertical > *:nth-child(3) .info {
+    align-items: center;
+  }
+
+  .thList .wrapper-vertical > *:nth-child(2) .info,
+  .thList .wrapper-vertical > *:nth-child(4) .info {
+    align-items: flex-start;
+  }
+
+  .thList .wrapper-half {
+    height: 360px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .thList .wrapper-half > *:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
+  .thList .wrapper-half > *:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
 </style>
-<div  style="height: 600px; background-color: yellow"></div>
+<!-- <div  style="height: 600px; background-color: yellow"></div> -->
 <div class="thList">
+    {% for post in posts %}
+      {% if forloop.first %}
+        <div class="wrapper-full">
+      {% else %}
+        {% cycle 'open': '<div class="wrapper-third">', '', '<div class="wrapper-vertical">','', '', '', '<div class="wrapper-half">', '' %}
+      {% endif %}
+        <a class="th" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="img" style="background-image: url('https://source.unsplash.com/random/')"></div> <!--{{ post.article_th }}-->
+          <div class="info">
+            <div class="category-a">{{ post.tag }}</div>
+            <div class="title">{{ post.title }}</div>
+            <div class="category-b">{{ post.tag }}</div>
+            <div class="spacer"></div>
+            <div class="readmore">
+              Read More
+            </div>
+          </div>
+        </a>
+      {% if forloop.first %}
+        </div>
+      {% else %}
+        {% cycle 'close': '', '</div>', '', '', '', '</div>', '', '</div>' %}
+      {% endif %}
+    {% endfor %}
+  <!-- </div>
+  <div class="wrapper-third">
+
+  </div>
+  <div class="wrapper-vertical">
+    
+  </div>
+  <div class="wrapper-half">
+    
+  </div> -->
+</div>
+<!-- <div class="thList">
   <div class="wrapper">
     {% for tag in tags %}
       <input type="radio" name="thList-catFilter" id="thList-catFilter-{{ tag | slugify }}" />
@@ -120,10 +288,14 @@ layout: default
     </div>
     <div class="data">
       {% for post in posts %}
-        <a style="background-image: url('{{ post.article_th }}');" class="th" href="{{ post.url | prepend: site.baseurl }}"  data-cat="{{ post.tag | slugify }}">
-          {{ post.title }}
-        </a>
+      <a class="th" href="{{ post.url | prepend: site.baseurl }}">
+        <div class="img" style="background-image: url('{{ post.article_th }}')"></div>
+        <div class="info">
+          <div class="title">{{ post.title }}</div>
+          <div class="category">{{ post.tag }}</div>
+        </div>
+      </a>
       {% endfor %}
     </div>
   </div>
-</div>
+</div> -->

@@ -42,7 +42,7 @@
         "@type": "WebPage",
         "@id": "https://google.com/article"
       },
-      "headline": "{{ page.title | replace: '"' "'"}}",
+      "headline": "{{ page.title | replace: '"', "'"}}",
       "image": [
         "{{ page.article_th }}"
       ],
@@ -821,7 +821,7 @@
     </div>
   </div>
 
-  <div id="header">
+  <!-- <div id="header">
     <img id="logo" src="/assets/logonuovo2.png" alt="logo">
     <div id="logoBG"></div>
     <label id="menu-icon" for="menu-checkbox">
@@ -832,7 +832,7 @@
           d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
       </svg>
     </label>
-  </div>
+  </div> -->
 
   <article>
     {{ content }}
