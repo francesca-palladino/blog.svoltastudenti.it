@@ -10,19 +10,3 @@ layout: article
 <div id="content">
 	{{ content | replace: "<img", '<amp-img layout="fixed-height" height="200"' | replace: '</img', '</amp-img>' }}
 </div>
-<footer>
-	<ul id="authors">
-    {% for author_name in page.authors %}
-      {% assign author = site.posts | where: "category", page.category | where: "layout", "users" | where: "title", author_name %}
-			<li>
-        {% if author[0] %}
-          <a href="/{{ page.category }}/{{ author[0].title | slugify }}">
-            <amp-img layout="fixed" height="76" width="76" src="{{ author[0].article_th }}" alt="{{ author_name }}"></amp-img>
-          </a>
-        {% else %}
-          <span>{{ author_name }}</span>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</footer>

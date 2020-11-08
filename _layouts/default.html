@@ -524,9 +524,6 @@
 
     article .article {
       position: relative;
-      width: 90%;
-      padding-left: 5%;
-      padding-right: 5%;
     }
 
     article .article #th {
@@ -534,14 +531,13 @@
     }
 
     article .article>#content-wrapper {
-      width: 100%;
+      width: 40%;
+      position: absolute;
+      top: 0;
+      right: 5%;
       padding: 0;
     }
 
-    article #content-wrapper {
-      position: relative;
-      margin-top: 15vh;
-    }
 
     article #authors,
     article #authors li,
@@ -558,8 +554,8 @@
     }
 
     article #authors li {
-      height: 76px;
-      width: 76px;
+      height: 50px;
+      width: 50px;
       margin-right: 15px;
       margin-top: 15px;
       overflow: hidden;
@@ -567,7 +563,8 @@
     }
 
     article #authors li a img {
-      border-radius: 38px;
+      border-radius: 25px;
+      height: 50px;
       overflow: hidden;
     }
 
@@ -691,28 +688,40 @@
 
     @media all and (orientation: landscape) {
       article .article {
-        display: flex;
-        flex-direction: row;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
       }
 
       article .article #th {
+        position: relative;
         display: block;
-        height: calc(100vh - 160px);
-        width: 36%;
-        margin-left: 7%;
-        margin-right: 7%;
+        height: 100vh;
         position: sticky;
-        top: 110px;
+        top: 0;
+        left: 0;
+        width: 45%;
+      }
+
+      article .article #th amp-img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
       }
 
       article .article #th img {
-        object-fit: contain;
+        object-fit: cover;
       }
 
-      article .article>#content-wrapper {
-        width: 50%;
-        padding-left: 2vw;
-        padding-right: 2vw;
+      .article #authors {
+        position: absolute;
+        bottom: 5vh;
+        left: 5vw;
+        max-width: 80%;
       }
 
       article #related li {
@@ -720,6 +729,7 @@
         width: 15vw;
         overflow: hidden;
       }
+
     }
   </style>
 
