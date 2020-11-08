@@ -15,7 +15,7 @@ layout: default
   .thList > .wrapper-third,
   .thList > .wrapper-half,
   .thList > .wrapper-vertical {
-    width: 1200px;
+    max-width: 1200px;
   }
 
   .thList .th {
@@ -220,6 +220,9 @@ layout: default
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
+  .thList .wrapper-half .category-a {
+    display: none;
+  }
   .thList .wrapper-half > *:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: span 1;
@@ -231,6 +234,62 @@ layout: default
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
+  }
+
+  @media all and (max-width: 720px){
+    .thList > * {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+      height: 100%;
+    }
+
+    .thList > .wrapper-full, 
+    .thList > .wrapper-third,
+    .thList > .wrapper-half,
+    .thList > .wrapper-vertical {
+      height: 100%;
+    }
+
+    .thList > .wrapper-half .info {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .thList > .wrapper-full > .th > .info, 
+    .thList > .wrapper-third > .th > .info,
+    .thList > .wrapper-half > .th > .info,
+    .thList > .wrapper-vertical > .th > .info {
+      align-items: flex-end;
+    } 
+
+    .thList > .wrapper-full > .th > .info > .spacer, 
+    .thList > .wrapper-third > .th > .info > .spacer,
+    .thList > .wrapper-half > .th > .info > .spacer,
+    .thList > .wrapper-vertical > .th > .info > .spacer {
+      display: initial;
+    } 
+
+    .thList > .wrapper-full > .th > .info .title, 
+    .thList > .wrapper-third > .th > .info .title,
+    .thList > .wrapper-half > .th > .info .title,
+    .thList > .wrapper-vertical > .th > .info .title {
+      text-align: right;
+    }
+/* 
+    .thList .info {
+      align-items: flex-end;
+    } */
+
+    .thList .th {
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 720px;
+      height: 360px;
+      margin-bottom: 10px;
+    }
   }
 </style>
 <!-- <div  style="height: 600px; background-color: yellow"></div> -->
