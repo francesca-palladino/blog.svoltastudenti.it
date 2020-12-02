@@ -21,7 +21,6 @@ collections:
       - {label: "Testo", name: "body", widget: "markdown"}
       - {label: "Articolo in Inglese", name: "translations.en", widget: "relation", required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "article_th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
@@ -41,7 +40,6 @@ collections:
       - {label: "Testo", name: "body", widget: "markdown"}
       - {label: "Articolo in Inglese", name: "translations.it", widget: "relation", required: false, collection: "blog-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "article_th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "blog-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Referenti", name: "authors", widget: "relation", multiple: true, required: true, collection: "users-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
@@ -123,7 +121,6 @@ collections:
       - {label: "Descrizione", name: "body", widget: "markdown" }
       - {label: "Evento in Inglese", name: "translations.en", widget: "relation", required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Evento", name: "article_th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Programma"
         name: "days"
         widget: "object"
@@ -163,7 +160,6 @@ collections:
       - {label: "Descrizione", name: "body", widget: "markdown" }
       - {label: "Evento in Inglese", name: "translations.it", widget: "relation", required: false, collection: "events-it", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - {label: "Miniatura Articolo", name: "article_th", widget: "image", required: true}
-      - {label: "Correlati (max 4)", name: "article_related", widget: "relation", multiple: true, required: false, collection: "events-en", searchFields: ["title"], displayFields: ["title"], valueField: "title"}
       - label: "Programma"
         name: "days"
         widget: "object"

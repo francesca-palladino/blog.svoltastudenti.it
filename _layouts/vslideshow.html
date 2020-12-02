@@ -5,155 +5,68 @@ layout: default
 <div class="vslideshow">
   <style>
 		.vslideshow > .content section {
-      height: 100vh;
+      height: 90vh;
       width: 100vw;
-      scroll-snap-align: start;
-      position: relative;
-      display: block;
-    }
-
-    .vslideshow > .content section .title {
-      text-align: right;
-      color: rgba(255, 255, 255, 1);
-      font-size: 7vw;
-      font-weight: 700;
-      font-family: 'Montserrat', sans-serif;
-      padding-top: 40vh;
-      padding-right: 20vw;
-      opacity: 0;
-      transition: all 1s;
-    }
-
-    .vslideshow > .content section .title.animActive {
-      opacity: 1;
-      transform: translateY(-100px);
-    }
-
-    .vslideshow > .content section .subtitle {
-      font-style: italic;
-      text-align: right;
-      color: white;
-      font-size: 2.5vw;
-      font-weight: 400;
-      font-family: 'Montserrat', sans-serif;
-      padding-right: 20.1vw;
-      opacity: 0;
-      transition: all 1s;
-    }
-
-    .vslideshow > .content section .subtitle.animActive {
-      opacity: 1;
-      transform: translateY(-100px);
-    }
-
-    .vslideshow > .content section .btn {
-      text-align: center;
-      color: white;
-      font-size: large;
-      padding: 30px;
-      background-color: #FF6600;
-      border-radius: 20px;
-      margin-top: 4vh;
-      margin-left: 60vw;
-      width: 15vw;
-      opacity: 0;
-      transition: all 1s;
-      transition-delay: 0.5s;
-    }
-
-    .vslideshow > .content section .btn.animActive {
-      opacity: 1;
-      transform: translateY(-100px);
-    }
-
-    .vslideshow > .content section:before {
-      content: "";
       background-origin: padding-box;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-color: black;
-      filter: brightness(70%);
+      background-image: "url('" attr(src) "')";
       box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-    .vslideshow > .bar {
-      position: fixed;
-      right: 0;
-      top: 0;
-      padding-right: 20px;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: right;
-    }
-
-    .vslideshow > .bar ul {
-      padding-left: 0px;
-    }
-
-    .vslideshow > .bar ul li {
-      list-style-type: none;
-    }
-
-    .vslideshow > .bar ul li a {
-      display: block;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      border: solid 2px white;
       color: white;
-      background-color: rgba(255, 255, 255, 0);
-      margin: 10px 8vw 10px 0;
-      opacity: 0.5;
-      transition: all 0.5s;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
     }
 
-    .vslideshow > .bar ul li a.animActive {
-      background-color: rgba(255, 255, 255, 1);
-      margin: 25px 8vw 25px 0;
-      transform: scale(2);
-      opacity: 1;
+    .vslideshow > .content section .title {
+      font-size: 3vmax;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 1vh;
     }
 
-    .vslideshow > .bar ul li a:hover {
-      background-color: rgba(255, 255, 255, .75);
-      transform: scale(1.5);
+    .vslideshow > .content section .subtitle {
+      font-size: x-large;
+      margin-bottom: 3vh;
     }
 
-    .vslideshow > .bar ul li a.animActive:hover {
+    .vslideshow > .content section .subtitle p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .vslideshow > .content section > * {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .vslideshow > .content section .btn {
+      margin-bottom: 10vh;
+    }
+    
+    .vslideshow > .content section .btn a {
       background-color: #FF6600;
-      transform: scale(2.5);
-    }
-
-    @media only screen and (max-width: 800px) {
-      .vslideshow > .content section .title {
-        font-size: 7vw;
-      }
+      text-align: center;
+      color: white;
+      font-size: large;
+      text-transform: uppercase;
+      padding: 15px;
+      margin: 15px;
     }
 	</style>
   <div class="content">
+    {{ content }}
     {% for post in posts %}
-      <style>
-        .vslideshow .vslideshow-page-{{ post.title | slugify }}:before {
-          background-image: url('{{ post.bg }}');
-        }
-      </style>
-      <a name="{{ post.title | slugify }}"></a>
-      <section class="animTrigger vslideshow-page-{{ post.title | slugify }}" data-animId="{{ post.title | slugify }}">
-        <div class="title" data-animTarget="{{ post.title | slugify }}">{{ post.title }}</div>
-        <div class="subtitle" data-animTarget="{{ post.title | slugify }}">{{ post.body | markdownify }}</div>
-        <a href="{{ post.btn_link }}" class="btn" data-animTarget="{{ post.title | slugify }}">{{ post.btn_text}}</a>
+      <section style="background-image: url('{{ post.bg }}')">
+        <div class="title">{{ post.title }}</div>
+        <div class="subtitle">{{ post.content | markdownify }}</div>
+        <div class="btn"><a href="{{ post.btn_link }}">{{ post.btn_text}}</a></div>
       </section>
     {% endfor %}
   </div>
-	<div class="bar">
+	<!-- <div class="bar">
     <ul>
       {% for post in posts %}
     <li>
@@ -161,9 +74,9 @@ layout: default
     </li>
       {% endfor %}
     </ul>
-  </div>
+  </div> -->
   
-  <script>
+  <!-- <script>
     let options = {
       root: null,
       rootMargin: "0px",
@@ -196,6 +109,6 @@ layout: default
     document.querySelectorAll('.animTrigger').forEach(item => {
       observer.observe(item);
     })
-  </script>
+  </script> -->
 	
 </div>

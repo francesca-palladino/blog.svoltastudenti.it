@@ -2,16 +2,16 @@
 layout: default
 ---
 <div class="article">
-	<div id="th">
-		<div id="info">
-			<div id="title">
+	<div class="th">
+		<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/"></amp-img>
+		<div class="info">
+			<div class="title">
 				{{ page.title }}
 			</div>
-			<div id="category">
+			<div class="category">
 				{{ page.tags }}
 			</div>
 		</div>
-		<amp-img id="th" layout="fill" src="https://source.unsplash.com/random/"></amp-img>
 		<!-- {{ page.article_th }} -->
 		<ul id="authors">
 			{% for author_name in page.authors %}
