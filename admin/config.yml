@@ -217,3 +217,71 @@ collections:
       - {label: "Link Bottone", name: "btn_link", widget: "string"}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
+  - name: "rappresentanza-it" # Used in routes, e.g., /admin/collections/blog
+    label: "Rappresentanza (it)" # Used in the UI
+    folder: "_posts/rappresentanza/it" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "rappresentanza"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "false"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Immagine Background", name: "bg", widget: "image", required: true}
+      - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
+      - {label: "Link Bottone", name: "btn_link", widget: "string"}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
+  - name: "rappresentanza-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Rappresentanza (en)" # Used in the UI
+    folder: "_posts/rappresentanza/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "rappresentanza"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "false"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Immagine Background", name: "bg", widget: "image", required: true}
+      - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
+      - {label: "Link Bottone", name: "btn_link", widget: "string"}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
+  - name: "associazione-it" # Used in routes, e.g., /admin/collections/blog
+    label: "Associazione (it)" # Used in the UI
+    folder: "_posts/associazione/it" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "associazione"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "it"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "false"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Immagine Background", name: "bg", widget: "image", required: true}
+      - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
+      - {label: "Link Bottone", name: "btn_link", widget: "string"}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
+  - name: "associazione-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Associazione (en)" # Used in the UI
+    folder: "_posts/associazione/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "associazione"}
+      - {label: "Lingua", name: "category", widget: "hidden", default: "en"}
+      - {label: "Amp", name: "isAmp", widget: "hidden", default: "false"}
+      - {label: "Disable Branding", name: "noBrand", widget: "hidden", default: "true"}
+      - {label: "Titolo (max 66 caratteri)", name: "title", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+      - {label: "Immagine Background", name: "bg", widget: "image", required: true}
+      - {label: "Testo Bottone (max 20 caratteri)", name: "btn_text", widget: "string"}
+      - {label: "Link Bottone", name: "btn_link", widget: "string"}
+      - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
+      - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
