@@ -1,5 +1,5 @@
-translations.it
-translations.en
+translations_it
+translations_en
 title
 desc
 article_th

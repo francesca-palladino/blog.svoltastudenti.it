@@ -12,13 +12,13 @@
   {% else %}
   <!-- Hopefully Google will detect our lang automagically ;) -->
   {% endcase %}
-  {% if page.translations.it  %}
+  {% if page.translations_it  %}
   <link rel="canonical" href="{{site.url}}/it/{{page.url | slugify}}">
-  <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.it | slugify}}" />
+  <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations_it | slugify}}" />
   {% endif %}
-  {% if page.translations.en  %}
-  <link rel="canonical" href="{{site.url}}/it/{{page.translations.en | slugify}}">
-  <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations.en | slugify}}" />
+  {% if page.translations_en  %}
+  <link rel="canonical" href="{{site.url}}/it/{{page.translations_en | slugify}}">
+  <link rel="alternate" hreflang="en" href="{{site.url}}/it/{{page.translations_en | slugify}}" />
   {% endif %}
   <meta property="og:url"
     content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
@@ -135,10 +135,6 @@
             <rect></rect>
           </svg>
           FAQ
-          <p>
-            While I agree most of these examples probably shouldn’t be used in practice, I think the “Push Toggle”
-            examples are actually a perfect use case for this technique.
-          </p>
         </a>
       </li>
       <li>
@@ -178,18 +174,15 @@
 
   <div id="header">
     <label for="menu-checkbox" class="left">
-      {{ page.translations.en }} - 
-      {{ page.translations_it }} -
-      {{ page.translations }}
       <img src="/assets/img/svolta-mini-neg.png" alt="logo">
     </label>
-    {% if page.translations.it  %}
-      <a href="{{site.url}}/it/{{page.translations.it | slugify}}" class="right">
+    {% if page.translations_it  %}
+      <a href="{{site.url}}/it/{{page.translations_it | slugify}}" class="right">
         <img src="/assets/img/lang/it.png" alt="lang">
       </a>
     {% endif %}
-    {% if page.translations.en  %}
-      <a href="{{site.url}}/en/{{page.translations.en | slugify}}" class="right">
+    {% if page.translations_en  %}
+      <a href="{{site.url}}/en/{{page.translations_en | slugify}}" class="right">
         <img src="/assets/img/lang/en.png" alt="lang">
       </a>
     {% endif %}

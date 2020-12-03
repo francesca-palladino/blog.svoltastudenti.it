@@ -4,7 +4,7 @@ category: en
 isAmp: "true"
 noBrand: "false"
 title: Alessandro de Iasio
-translations.it: Alessandro De Iasio
+translations_it: Alessandro De Iasio
 article_th: /assets/img/uploads/alessandrodeiasio.jpg
 status:
   start_date: 2020-11-04T12:46:46.211Z

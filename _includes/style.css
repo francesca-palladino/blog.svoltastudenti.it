@@ -203,10 +203,9 @@ html {
 
 #menu-checkbox:checked~#menu #projects a:hover {
     color: var(--light-on);
-    text-decoration: line-through;
     text-decoration-thickness: 10;
     background-color: var(--orange);
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
 }
 
 #menu #projects a p {
