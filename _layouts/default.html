@@ -24,14 +24,14 @@
     content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.info.desc }}" />
-  <meta property="og:image" content="{{ page.images.social }}" />
+  <meta property="og:description" content="{{ page.desc }}" />
+  <meta property="og:image" content="{{ page.article_th }}" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@svoltastudenti">
   <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.info.desc }}">
-  <meta name="twitter:image" content="{{ page.images.social }}">
+  <meta name="twitter:description" content="{{ page.desc }}">
+  <meta name="twitter:image" content="{{ page.article_th }}">
 
   {% if page.layout == "blog" %}
   <script type="application/ld+json">
@@ -66,8 +66,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <meta name="application-name" content="Svoltastudenti">
   <meta name="apple-mobile-web-app-title" content="Svoltastudenti">
-  <meta name="description" content="{{ page.info.desc }}">
-  <meta name="author" content="{{ page.info.author }}">
+  <meta name="description" content="{{ page.desc }}">
+  <meta name="author" content="{{ page.authors }}">
 
   <title>
     {{ page.title }} | Svoltastudenti
@@ -178,6 +178,9 @@
 
   <div id="header">
     <label for="menu-checkbox" class="left">
+      {{ page.translations.en }} - 
+      {{ page.translations_it }} -
+      {{ page.translations }}
       <img src="/assets/img/svolta-mini-neg.png" alt="logo">
     </label>
     {% if page.translations.it  %}
