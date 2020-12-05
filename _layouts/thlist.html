@@ -301,7 +301,7 @@ layout: default
         {% cycle 'open': '<div class="wrapper-third">', '', '<div class="wrapper-vertical">','', '', '', '<div class="wrapper-half">', '' %}
       {% endif %}
         <a class="th" href="{{ post.url | prepend: site.baseurl }}">
-          <div class="img" style="background-image: url('https://source.unsplash.com/random/')"></div> <!--{{ post.article_th }}-->
+          <div class="img" style="background-image: url('{{ post.article_th }}')"></div> <!--{{ post.article_th }}-->
           <div class="info">
             <div class="category-a">{{ post.tag }}</div>
             <div class="title">{{ post.title }}</div>
